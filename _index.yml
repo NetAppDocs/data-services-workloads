@@ -1,14 +1,56 @@
 indexpage:
-  title: # Unquoted string 
-  lead: # Quoted string
-  summary: # Quoted string 
-  keywords: # Unquoted comma-delimited list of keywords 
+  title: Workload Factory in NetApp Console
+  lead: Workload Factory in NetApp Console helps you maintain reliable, secure, efficient, and cost-effective storage configurations aligned with your storage type's well-architected framework. Workload Factory provides a unified view across accounts and regions, helps teams identify and prioritize risks, and supports custom rules for specific requirements.
+  summary: Workload Factory in NetApp Console helps you maintain and operate reliable, secure, efficient, and cost-effective configurations that align with the well-architected frameworks for the storage type you use.
+  keywords: amazon, fsx, cloud volumes ontap, microsoft azure, netapp, ontap, well-architected framework, NetApp Console
   tiles: 
-    # Tile definition 
-    - title: # Quoted or unquoted string
-      links: 
-        # Link definition
-        - title: # Quoted or unquoted string
-          url: # Path to target
-        # Next link on this tile (title/url pair)
-    # Next tile on this page (title/links)
+    - title: Get started
+      links:
+        - title: Release notes
+          url: /whats-new.html
+        - title: Learn about NetApp Workload Factory
+          url: /learn-workload-factory.html
+        - title: Quick start
+          url: /quick-start.html
+    - title: Credentials and permissions
+      links:
+        - title: Add credentials
+          url: /add-credentials.html
+        - title: Permissions for Workload Factory
+          url: /permissions-workload-factory.html
+    - title: Use Workload Factory for your cloud provider
+      links:
+        - title: Amazon FSx for NetApp ONTAP
+          url: /learn-fsx-ontap.html
+        - title: Oracle Cloud Infrastructure Storage with NetApp
+          url: /learn-oci-storage.html
+        - title: Google Cloud NetApp Volumes
+          url: /learn-netapp-volumes.html
+    - title: Administer Workload Factory
+      links:
+        - title: Configure notifications
+          url: /configure-notifications.html
+        - title: Manage AI features
+          url: /manage-ai-features.html
+        - title: Automate tasks using Codebox
+          url: /use-codebox.html    
+    - title: Well-architected workloads
+      links:
+        - title: Learn about well-architected workloads
+          url: /learn-well-architected-workloads.html
+        - title: Implement well-architected workloads
+          url: /implement-well-architected-workloads.html
+    - title: Knowledge and support
+      links:
+        - title: Register for support
+          url: /register-support.html
+        - title: Get help
+          url: /get-help.html
+    - title: Blogs & community
+      links:
+        - title: NetApp Console
+          url: https://www.netapp.com/console
+        - title: NetApp Data Services
+          url: https://www.netapp.com/data-services/
+        - title: NetApp Community
+          url: https://community.netapp.com/
