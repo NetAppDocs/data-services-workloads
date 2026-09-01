@@ -1,12 +1,439 @@
 settings:
-  name: "Product Name"
+  name: Workload Factory for NetApp Console
   internal:
     pdf_enabled: true
+    termcheck_enabled: true
   prod:
     pdf_enabled: true
     harmony_enabled: true
-
+  rss_page: "whats-new.html"  
+  release_notes_autogen:
+    release_notes_repo: console-relnotes
 sidebar: 
   entries:
+    - title: Workload Factory for NetApp Console
+      url: /index.html
+    - title: Release notes
+      entries:
+        - title: What's new
+          url: /whats-new.html
+        - title: Known limitations
+          url: /known-limitations.html
+    - title: Get started
+      entries:
+        - title: Learn about Workload Factory in NetApp Console
+          url: /learn-workload-factory.html
+        - title: Quick start
+          url: /quick-start.html
+        - title: Sign up and log in to Workload Factory
+          url: /sign-up-log-in-saas.html 
+        - title: Add AWS credentials
+          url: /add-credentials.html 
+        - title: Connect to a storage system with a link
+          url: /connect-link.html
+    - title: Amazon FSx for NetApp ONTAP
+      entries:
+        - title: Use Amazon FSx for NetApp ONTAP for storage workloads
+          entries: 
+            - title: Create resources
+              entries: 
+                - title: Explore savings
+                  url: /explore-savings.html
+                - title: Create an FSx for ONTAP file system
+                  url: /create-file-system.html
+                - title: Create a storage VM
+                  url: /create-storage-vm.html
+                - title: Create a volume
+                  url: /create-volume.html
+                - title: Create an igroup
+                  url: /create-igroup.html
+                - title: Create a block device
+                  url: /create-block-device.html 
+            - title: Discover and view cache volumes
+              url: /discover-cache-volumes.html  
+            - title: Access your data
+              url: /access-data.html                  
+            - title: Protect your data
+              entries:
+                - title: Data protection overview 
+                  url: /data-protection-overview.html
+                - title: Use snapshots
+                  entries:
+                    - title: Create a snapshot
+                      url: /create-snapshot.html
+                    - title: Create a snapshot policy
+                      url: /create-snapshot-policy.html
+                    - title: Restore a volume from a snapshot
+                      url: /restore-volume-from-snapshot.html 
+                - title: Use backups to object storage
+                  entries: 
+                    - title: Create a manual backup
+                      url: /create-backup.html
+                    - title: Restore a volume from a backup
+                      url: /restore-from-backup.html
+                - title: Replicate data
+                  url: /create-replication.html
+                - title: Protect data with Autonomous Ransomware Protection
+                  url: /ransomware-protection.html   
+                - title: Clone a volume
+                  url: /clone-volume.html  
+                - title: Use on-premises ONTAP data
+                  url: /use-onprem-data.html
+                - title: Create a cyber vault to protect data
+                  url: /create-cyber-vault.html  
+            - title: Administer and monitor FSx for ONTAP storage
+              entries:
+                - title: Monitor operations with Tracker
+                  url: /monitor-operations.html
+                - title: Implement file system best practices
+                  entries: 
+                    - title: Configuration analysis for FSx for ONTAP
+                      url: /configuration-analysis.html
+                    - title: Implement well-architected file system configurations
+                      url: /improve-configurations.html 
+                - title: Analyze FSx for ONTAP EMS events      
+                  url: /analyze-events.html
+                - title: Volume administration
+                  entries:  
+                    - title: Edit volume autogrow
+                      url: /edit-volume-autogrow.html
+                    - title: Adjust volume capacity
+                      url: /adjust-volume-capacity.html
+                    - title: Set volume latency thresholds
+                      url: /set-volume-latency-thresholds.html
+                    - title: Rebalance volume capacity
+                      url: /rebalance-volume.html
+                    - title: Manage immutable files 
+                      url: /manage-immutable-files.html  
+                    - title: Manage volume tags
+                      url: /manage-volume-tags.html
+                    - title: Manage cache volumes
+                      url: /manage-cache-volumes.html
+                    - title: Change a tiering policy
+                      url: /change-tiering-policy.html   
+                    - title: Update storage efficiency
+                      url: /update-storage-efficiency.html
+                    - title: Manage NFS export policies
+                      url: /manage-nfs-export-policy.html  
+                    - title: Manage SMB/CIFS shares
+                      url: /manage-cifs-share.html 
+                    - title: Manage S3 access points 
+                      entries: 
+                        - title: Create and attach S3 access points
+                          url: /create-s3-access-points.html
+                        - title: Edit S3 access points
+                          url: /edit-s3-access-points.html
+                        - title: Set up the journal table infrastructure
+                          url: /setup-journal-table.html
+                        - title: View details about S3 access points
+                          url: /view-s3-details.html
+                        - title: Delete S3 access points
+                          url: /delete-s3-access-points.html           
+                    - title: Split a cloned volume
+                      url: /split-cloned-volume.html    
+                    - title: Delete a volume
+                      url: /delete-volume.html
+                - title: Block storage administration
+                  entries:
+                    - title: Manage block storage
+                      url: /manage-block-storage.html
+                    - title: Apply tags to block devices
+                      url: /apply-block-device-tags.html  
+                - title: File system administration
+                  entries: 
+                  - title: Adjust file system capacity manually
+                    url: /increase-file-system-capacity.html
+                  - title: Manage file system capacity automatically
+                    url: /manage-capacity-automatically.html
+                  - title: Manage file system tags
+                    url: /manage-fsx-tags.html
+                  - title: Reset fsxadmin password
+                    url: /reset-fsxadmin-password.html
+                  - title: Delete a file system
+                    url: /delete-file-system.html
+                - title: Storage VM administration
+                  entries: 
+                  - title: Replicate a storage VM to another file system
+                    url: /replicate-svm-to-file-system.html
+                  - title: Configure and update Active Directory for a storage VM
+                    url: /configure-active-directory.html
+                  - title: Manage storage VM tags
+                    url: /manage-svm-tags.html
+                  - title: Reset storage VM password
+                    url: /reset-svm-password.html
+                  - title: Delete a storage VM 
+                    url: /delete-svm.html
+                - title: Data protection administration
+                  entries:
+                    - title: Snapshots
+                      entries: 
+                        - title: Manage snapshot policies
+                          url: /manage-snapshot-policy.html
+                        - title: Enable and edit snapshots for long-term retention
+                          url: /enable-snapshots-long-term.html 
+                        - title: Manage snapshots
+                          url: /manage-snapshots.html  
+                    - title: Backups
+                      entries: 
+                        - title: Manage volume backup schedule
+                          url: /manage-backup-schedule.html
+                    - title: Replication
+                      entries: 
+                        - title: Replicate a data protection volume
+                          url: /cascade-replication.html
+                        - title: Track replication delays
+                          url: /track-replication-delays.html  
+                        - title: Manage replication relationships
+                          url: /manage-replication.html
+                - title: Performance administration
+                  entries: 
+                    - title: Provision IOPS for a file system
+                      url: /provision-iops.html
+                    - title: Update throughput capacity for a file system
+                      url: /update-throughput-capacity.html  
+            - title: Reference
+              entries: 
+                - title: Performance for FSx for ONTAP
+                  url: /performance-reference.html
+                - title: Security for FSx for ONTAP
+                  url: /security-reference.html   
+        - title: Use Amazon FSx for NetApp ONTAP for database workloads
+          entries:
+            - title: Explore savings
+              url: /explore-savings.html
+            - title: Create a new database server
+              entries:
+                - title: Create Microsoft SQL Server    
+                  url: /create-database-server.html
+                - title: Create PostgreSQL server
+                  url: /create-postgresql-server.html  
+            - title: Manage resources
+              entries: 
+                - title: Resource management
+                  url: /manage-instance.html
+                - title: Register resources
+                  url: /register-instance.html
+                - title: Create a database
+                  url: /create-database.html 
+                - title: Create a sandbox clone 
+                  url: /create-sandbox-clone.html                       
+                - title: Protect Microsoft SQL Server workloads
+                  url: /protect-sql-server.html   
+            - title: Administer and monitor FSx for ONTAP for database workloads
+              entries:
+                - title: Monitor database jobs
+                  url: /monitor-databases.html
+                - title: Implement configuration best practices
+                  entries: 
+                    - title: Configuration analysis for Databases
+                      url: /optimize-overview.html
+                    - title: Implement well-architected database configurations   
+                      url: /optimize-configurations.html     
+                - title: Analyze error logs
+                  url: /analyze-error-logs.html
+            - title: Manage clones
+              entries: 
+                - title: Check integrity of a sandbox clone
+                  url: /check-clone-integrity.html  
+                - title: Revert a sandbox clone
+                  url: /revert-clone.html 
+                - title: Refresh a sandbox clone
+                  url: /refresh-clone.html  
+                - title: Connect to the CI/CD pipeline
+                  url: /connect-clone-cicd.html  
+                - title: View clone connection information
+                  url: /view-clone-connection.html  
+                - title: Split a sandbox clone
+                  url: /split-clone.html  
+                - title: Delete a sandbox clone
+                  url: /delete-clone.html                                 
+                - title: Deregister resources
+                  url: /deregister-instance.html           
+        - title: Use Amazon FSx for NetApp ONTAP for EDA workloads
+          entries:   
+             - title: Learn about NetApp Workload Factory for EDA
+               url: /learn-eda.html 
+             - title: Quick start
+               url: /quick-start-eda.html
+             - title: Requirements
+               url: /requirements-eda.html
+             - title: EDA storage overview
+               entries:
+                 - title: Learn about the Overview dashboard
+                   url: /learn-overview-dashboard.html
+                 - title: Activate the Overview dashboard
+                   url: /task-activate-overview-dashboard.html
+                 - title: Use the Overview dashboard
+                   url: /task-use-overview-dashboard.html
+             - title: Project usage analysis
+               entries:
+                 - title: Learn about the Projects dashboard
+                   url: /learn-project-dashboard.html
+                 - title: Configure the Projects dashboard
+                   url: /task-configure-project-dashboard.html
+                 - title: Use the Projects dashboard
+                   url: /task-use-project-dashboard.html
+             - title: Use Perforce integration
+               entries: 
+                  - title: Learn about Perforce integration
+                    url: /learn-eda-workloads.html
+                  - title: Manage projects
+                    url: /manage-projects.html
+                  - title: Manage project versions
+                    url: /version-projects.html
+                  - title: Create a workspace
+                    url: /create-workspaces.html
+                  - title: Automate with Codebox
+                    url: /automate-codebox.html
+                  - title: Integrate with Perforce
+                    url: /integrate-perforce.html
+        - title: Use Amazon FSx for NetApp ONTAP for VMware workloads
+          entries:                   
+            - title: Learn about NetApp Workload Factory for VMware
+              url: /learn-about-vmware-workloads.html
+            - title: Quick start for migrating to Amazon EVS
+              url: /quick-start-evs.html        
+            - title: Quick start for migrating to Amazon EC2
+              url: /quick-start-native.html
+            - title: Quick start for migrating to VMware Cloud on AWS
+              url: /quick-start.html
+            - title: Quick start for migrating to Google Cloud VMware Engine
+              url: /quick-start-gcve.html
+            - title: Explore the VMware planning center
+              url: /explore-planning-center.html
+            - title: Use the VMware planning center
+              entries:
+                - title: Upload VM inventory data
+                  url: /upload-vm-inventory.html
+                - title: Migrate to Amazon Elastic VMware Service
+                  entries:
+                    - title: Explore savings
+                      url: /calculate-evs-savings.html
+                    - title: Manually create a deployment plan
+                      url: /launch-migration-advisor-evs-manual.html
+                    - title: Create a deployment plan using the migration advisor
+                      url: /launch-migration-advisor-evs.html
+                    - title: Deploy the recommended FSx for ONTAP file system
+                      url: /deploy-fsx-file-system-evs.html
+                - title: Migrate to Google Cloud VMware Engine
+                  entries:
+                    - title: Create a deployment plan using the migration advisor
+                      url: /launch-migration-advisor-gcve.html
+                - title: Migrate to Amazon EC2
+                  entries:
+                    - title: Create a deployment plan using the migration advisor
+                      url: /launch-onboarding-advisor-native.html
+                    - title: Deploy the recommended FSx for ONTAP file system
+                      url: /deploy-fsx-file-system-native.html
+                - title: Migrate to VMware Cloud on AWS
+                  entries:
+                    - title: Create a deployment plan using the migration advisor
+                      url: /launch-onboarding-advisor.html
+                    - title: Deploy the recommended FSx for ONTAP file system
+                      url: /deploy-fsx-file-system.html
+                    - title: Connect FSx for ONTAP to VMware Cloud on AWS
+                      url: /connect-sddc-to-fsx.html
+                    - title: Migrate your data to the new infrastructure
+                      url: /migrate-data.html
+                - title: Administer and monitor
+                  entries:
+                    - title: Configuration analysis for EVS configurations
+                      url: /configuration-analysis.html
+                    - title: Implement well-architected EVS configurations
+                      url: /view-evs-well-architected.html
+    - title: Administer Workload Factory
+      entries:
+        - title: Manage service accounts
+          url: /manage-service-accounts.html
+        - title: Build and operate well-architected workloads
+          url: /well-architected-workloads.html  
+        - title: Configure notifications
+          url: /configure-notifications.html
+        - title: Monitor operations with Tracker
+          url: /monitor-operations.html
+        - title: Manage links
+          url: /manage-links.html     
+        - title: Manage AI features
+          url: /manage-genai-features.html
+        - title: Custom dashboards
+          entries:
+            - title: Learn about custom dashboards
+              url: /learn-custom-dashboards.html
+            - title: Create a custom dashboard
+              url: /create-custom-dashboard.html
+            - title: Manage custom dashboards
+              url: /manage-custom-dashboards.html
+            - title: Troubleshoot custom dashboards
+              url: /troubleshoot-custom-dashboards.html
+        - title: Automate tasks using Codebox
+          entries:
+            - title: Learn about Codebox
+              url: /codebox-automation.html
+            - title: Use Codebox to generate code
+              url: /use-codebox.html
+        - title: Use CloudShell
+          url: /use-cloudshell.html
+        - title: Remove credentials
+          url: /manage-credentials.html 
+    - title: Knowledge and support
+      entries:
+        - title: Register for support
+          url: /support-registration.html
+        - title: Get help
+          url: /get-help.html     
+    - title: Legal notices
+      url: /legal-notices.html
+
+product-family:
+  name: NetApp Data Services
+  repo: data-services-family
+
+
+Where does this go? 
+
+        - title: FSx for ONTAP latency analysis
+          entries:
+            - title: Learn about latency monitoring
+              url: /learn-latency-monitoring.html
+            - title: Configure latency monitoring
+              url: /task-configure-latency-monitoring.html
+            - title: Analyze latency issues
+              url: /task-analyze-latency-issues.html
+            - title: Analyze latency trends
+              url: /task-analyze-latency-trends.html
+
+
+How do we integrate the well-architected dashboard content?
+
+    - title: Learn about the well-architected dashboard
+      url: /learn-well-architected-dashboard.html
+  - title: Supported products
+    entries:
+    - title: Amazon FSx for NetApp ONTAP
+      entries: 
+        - title: Configuration analysis
+          url: /fsx/configuration-analysis-fsx.html
+        - title: Improve file system configurations
+          url: /fsx/improve-configurations-fsx.html
+    - title: Cloud Volumes ONTAP
+      entries:
+        - title: Configuration analysis
+          url: /cvo/configuration-analysis-cvo.html
+        - title: Improve system configurations
+          url: /cvo/improve-configurations-cvo.html
+    - title: Google Cloud NetApp Volumes
+      entries:
+        - title: Configuration analysis
+          url: /gcnv/configuration-analysis-gcnv.html
+        - title: Improve storage pool configurations
+          url: /gcnv/improve-configurations-gcnv.html  
+  - title: Build your own rules
+    entries:
+     - title: Learn about custom rules
+       url: /learn-custom-rules.html
+     - title: Create a custom rule
+       url: /create-custom-rule.html
+     - title: Manage custom rules
+       url: /manage-custom-rules.html
   - title: Legal notices
     url: /legal-notices.html
