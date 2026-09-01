@@ -35,10 +35,12 @@ sidebar:
       entries:
         - title: Use FSx for ONTAP for storage workloads
           entries: 
-            - title: Create resources
+            - title: Learn about FSx for ONTAP
+              url: /learn-fsx-ontap.html
+            - title: Explore savings
+              url: /explore-savings.html              
+            - title: Create storage resources
               entries: 
-                - title: Explore savings
-                  url: /explore-savings.html
                 - title: Create an FSx for ONTAP file system
                   url: /create-file-system.html
                 - title: Create a storage VM
@@ -55,22 +57,12 @@ sidebar:
               url: /access-data.html                  
             - title: Protect your data
               entries:
-                - title: Data protection overview 
+                - title: Learn about data protection for FSx for ONTAP
                   url: /data-protection-overview.html
-                - title: Use snapshots
-                  entries:
-                    - title: Create a snapshot
-                      url: /create-snapshot.html
-                    - title: Create a snapshot policy
-                      url: /create-snapshot-policy.html
-                    - title: Restore a volume from a snapshot
-                      url: /restore-volume-from-snapshot.html 
+                - title: Use snapshots to protect data
+                  url: /use-snapshots-fsx.html
                 - title: Use backups to object storage
-                  entries: 
-                    - title: Create a manual backup
-                      url: /create-backup.html
-                    - title: Restore a volume from a backup
-                      url: /restore-from-backup.html
+                  url: /use-backups-fsx.html
                 - title: Replicate data
                   url: /create-replication.html
                 - title: Protect data with Autonomous Ransomware Protection
@@ -83,8 +75,6 @@ sidebar:
                   url: /create-cyber-vault.html  
             - title: Administer and monitor FSx for ONTAP storage
               entries:
-                - title: Monitor operations with Tracker
-                  url: /monitor-operations.html
                 - title: Implement file system best practices
                   entries: 
                     - title: Configuration analysis for FSx for ONTAP
@@ -95,6 +85,8 @@ sidebar:
                   url: /analyze-events.html
                 - title: Volume administration
                   entries:  
+                    - title: Manage volume capacity
+                      url: /manage-volume-capacity.html
                     - title: Edit volume autogrow
                       url: /edit-volume-autogrow.html
                     - title: Adjust volume capacity
