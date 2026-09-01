@@ -33,7 +33,7 @@ sidebar:
           url: /connect-link.html
     - title: Amazon FSx for NetApp ONTAP
       entries:
-        - title: Use Amazon FSx for NetApp ONTAP for storage workloads
+        - title: Use FSx for ONTAP for storage workloads
           entries: 
             - title: Create resources
               entries: 
@@ -197,7 +197,7 @@ sidebar:
                   url: /performance-reference.html
                 - title: Security for FSx for ONTAP
                   url: /security-reference.html   
-        - title: Use Amazon FSx for NetApp ONTAP for database workloads
+        - title: Use FSx for ONTAP for database workloads
           entries:
             - title: Explore savings
               url: /explore-savings.html
@@ -249,7 +249,7 @@ sidebar:
                   url: /delete-clone.html                                 
                 - title: Deregister resources
                   url: /deregister-instance.html           
-        - title: Use Amazon FSx for NetApp ONTAP for EDA workloads
+        - title: Use FSx for ONTAP for EDA workloads
           entries:   
              - title: Learn about NetApp Workload Factory for EDA
                url: /learn-eda.html 
