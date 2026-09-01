@@ -6,7 +6,7 @@ summary: "Learn how to manage volume capacity, including adjusting volume size m
 ---
 = Manage volume capacity
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 Volume capacity should be adjusted as needs change. You can adjust volume size manually or turn on volume autogrow to let Workload Factory manage volume capacity for you. Check the balance of FlexVol or FlexGroup volume capacity and rebalance volume capacity to spread files evenly across all FlexVol volumes in a node or across all constituents so that all nodes participate in the workload of a single FlexGroup volume.
