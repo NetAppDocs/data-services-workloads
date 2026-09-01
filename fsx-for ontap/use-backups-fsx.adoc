@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: create-backup.html
 keywords: create backup, volume backup, back up a volume, FSx for ONTAP backup, manual backup, restore from a backup, restore volume
-summary: "Create a manual backup of a volume or restore a volume from an existing backup in NetApp Workload Factory."
+summary: "Protect your volume data from accidental deletion, corruption, and other data loss events by creating and restoring backups in NetApp Workload Factory."
 ---
 = Use backups to protect data in NetApp Workload Factory
 :icons: font
