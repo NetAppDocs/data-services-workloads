@@ -1,5 +1,5 @@
 indexpage:
-    title: NetApp Workload Factory setup and administration documentation
+    title: NetApp Workload Factory documentation
     lead: "Get started with NetApp Workload Factory so you can get the most of your workloads when using Amazon FSx for NetApp ONTAP and Oracle Cloud Infrastructure Storage with NetApp. After set up is complete, you can create, optimize, and manage FSx for ONTAP file systems for your workloads, explore cost savings with FSx for ONTAP, use the built-in Infrastructure-as-Code co-pilot for automation across platforms, and manage your workloads in Workload Factory."
     summary: "Get started with NetApp Workload Factory so you can get the most of your cloud storage workloads. After set up is complete, you can create, optimize, and manage your storage systems for your workloads, explore cost savings, use the built-in Infrastructure-as-Code co-pilot for automation across platforms, and manage your workloads in Workload Factory."
     keywords: Workload Factory, fsx, account, credentials, users, permissions, log in, calculator, codebox
