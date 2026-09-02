@@ -1,0 +1,21 @@
+---
+sidebar: sidebar
+permalink: learn-about-permissions.html
+keywords: permissions, actions
+summary: "To use NetApp Workload Factory features and services, you'll need to provide permissions so that Workload Factory can perform operations in your cloud environment." 
+---
+
+= Permissions for NetApp Workload Factory
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+To use NetApp Workload Factory features and services, you'll need to provide permissions so that Workload Factory can perform operations in your cloud environment. 
+
+== Why use permissions
+When you provide permissions, Workload Factory attaches a policy to the instance with permissions to manage resources and processes within that AWS account. This allows Workload Factory to execute various operations starting from discovery of your storage environments to deploying AWS resources such as file systems in storage management.
+
+For database workloads for example, when Workload Factory is granted with the required permissions, it scans all EC2 instances in a given account and region, and filters all Windows-based machines. If AWS Systems Manager (SSM) Agent is installed and running on the host and System Manager networking is configured properly, Workload Factory can access the Windows machine and verify whether SQL Server software is installed or not.
