@@ -4,7 +4,6 @@ permalink: permissions-oci.html
 keywords: permissions, actions
 summary: "To use NetApp Workload Factory features and services, you'll need to provide permissions so that Workload Factory can perform operations in your cloud environment." 
 ---
-
 = Oracle Cloud Infrastructure Storage permissions for NetApp Workload Factory
 :hardbreaks:
 :nofooter:
