@@ -327,10 +327,6 @@ sidebar:
                       url: /configuration-analysis.html
                     - title: Implement well-architected EVS configurations
                       url: /view-evs-well-architected.html
-    - title: Oracle Cloud Infrastructure Storage with NetApp
-      entries:
-        - title: Learn about Oracle Cloud Infrastructure Storage with NetApp
-          url: /ocsn/learn-about-ocsn.html
     - title: Google Cloud NetApp Volumes
       entries: 
         - title: Learn about Google Cloud NetApp Volumes
@@ -339,6 +335,10 @@ sidebar:
           url: /gcnv/configuration-analysis-gcnv.html
         - title: Improve storage pool configurations
           url: /gcnv/improve-configurations.html
+    - title: Oracle Cloud Infrastructure Storage with NetApp
+      entries:
+        - title: Learn about Oracle Cloud Infrastructure Storage with NetApp
+          url: /ocsn/learn-about-ocsn.html
     - title: Administer Workload Factory
       entries:
         - title: Manage service accounts
