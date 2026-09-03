@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: create-backup.html
+permalink: fsx/create-backup.html
 keywords: create backup, volume backup, back up a volume, FSx for ONTAP backup, manual backup, restore from a backup, restore volume
 summary: "Protect your volume data from accidental deletion, corruption, and other data loss events by creating and restoring backups in NetApp Workload Factory."
 ---

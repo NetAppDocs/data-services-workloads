@@ -1,10 +1,9 @@
 ---
 sidebar: sidebar
-permalink: quick-start.html
+permalink: setup/quick-start.html
 keywords: quick start
 summary: Get started with Workload Factory by preparing networking for the Workload Factory console, signing up and creating an account, and adding credentials so that Workload Factory can manage AWS resources directly.
 ---
-
 = Quick start for NetApp Workload Factory
 :icons: font
 :imagesdir: ./media/

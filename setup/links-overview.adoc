@@ -1,38 +1,37 @@
 ---
 sidebar: sidebar
-permalink: links-overview.html
-keywords: links, accounts, lambda
-summary: "A Workload Factory link creates a trust relationship and connectivity between a Workload Factory account and one or more FSx for ONTAP file systems."
+permalink: setup/links-overview.html
+keywords: links, accounts, connectivity, 
+summary: "A Workload Factory link creates a trust relationship and connectivity between a Workload Factory account and one or more cloud storage systems."
 ---
-
 = Learn about NetApp Workload Factory links
 :icons: font
 :imagesdir: ./media/
 
 [.lead]
-A NetApp Workload Factory link creates a trust relationship and connectivity between a Workload Factory account and one or more FSx for ONTAP file systems. This allows you to monitor and manage certain file system features directly from the ONTAP REST API calls that are not available through the Amazon FSx for ONTAP API.
+A NetApp Workload Factory link creates a trust relationship and connectivity between a Workload Factory account and one or more cloud storage systems. This allows you to monitor and manage certain file system features directly from the ONTAP REST API calls that are not available through the Amazon FSx for ONTAP API.
 
 You don't need a link to get started with Workload Factory, but in some cases you'll need to create a link to unlock all Workload Factory features and workload capabilities. 
 
 == Why links are beneficial
-Links are beneficial because they allow Workload Factory to perform operations that are not natively available through the Amazon FSx for ONTAP API. Links enable advanced ONTAP capabilities and automations, which enhance the management of FSx for ONTAP file systems.
+Links are beneficial because they allow Workload Factory to perform operations that are not natively available through your cloud provider's API. Links enable advanced ONTAP capabilities and automation, which enhance the management of your cloud storage systems.
 
 Here are some benefits of using links:
  
-* The link enables the NetApp Console to send ONTAP commands directly to your FSx for ONTAP file system, bringing advanced ONTAP features beyond what AWS offers natively.
+* The link enables the NetApp Console to send ONTAP commands directly to your cloud storage system, bringing advanced ONTAP features beyond what your cloud provider offers natively.
 * Links leverage AWS Lambda to execute code in response to events. This serverless approach removes the dependency of an instance running in your VPC.
 
 == How links work
 
 Links leverage AWS Lambda. Lambda executes code in response to events and automatically manages the computing resources required by that code. The links that you create are part of your NetApp account and they are associated with an AWS account.
 
-After creating a link, you can associate it with one, or many, FSx for ONTAP file systems. Each file system can be associated only to one link in the same NetApp account. If you have multiple NetApp accounts, a single file system can be associated with additional links under different NetApp accounts.
+After creating a link, you can associate it with one, or many, cloud storage systems. Each cloud storage system can be associated only to one link in the same NetApp account. If you have multiple NetApp accounts, a single cloud storage system can be associated with additional links under different NetApp accounts.
 
-You create and associate links from the Storage workload in Workload Factory. 
+You create and associate links from the Links page in the NetApp Console for your cloud storage systems.
 
-You can authenticate links using credentials stored in the Workload Factory credentials service or with your credentials stored in AWS Secrets Manager. Workload factory doesn't support changing authentication modes.
+You can authenticate links using credentials stored in the Workload Factory credentials service or with your credentials stored in AWS Secrets Manager. Workload Factory doesn't support changing authentication modes.
 
-Link connectivity for GovCloud accounts is supported. Workload Factory uses GovCloud authentication keys, allowing secure, agentless access to FSx for ONTAP operations through GovCloud-approved mechanisms.
+Link connectivity for GovCloud accounts is supported. Workload Factory uses GovCloud authentication keys, allowing secure, agentless access to your cloud storage systems through GovCloud-approved mechanisms.
 
 == Costs
 
@@ -42,22 +41,22 @@ link:https://aws.amazon.com/lambda/pricing/[Learn more about the costs related t
 
 == When a link is required
 
-Workload Factory requires a link to display some information and to perform some tasks. If you attempt to perform an operation that requires a link and you haven't associated a link with the FSx for ONTAP file system, Workload Factory notifies you that the operation requires a link. 
+Workload Factory requires a link to display some information and to perform some tasks. If you attempt to perform an operation that requires a link and you haven't associated a link with the cloud storage system, Workload Factory notifies you that the operation requires a link. 
 
 The features that require a link include:
 
-* Well-architected status of FSx for ONTAP file system configurations for proactive maintenance, reliability, and cost-performance optimization
+* Well-architected status of cloud storage system configurations for proactive maintenance, reliability, and cost-performance optimization
 * ONTAP EMS event monitoring and alerting
 * NetApp Autonomous Ransomware Protection (ARP/AI)
-* Enhanced holistic capacity observability across FSx for ONTAP file systems
+* Enhanced holistic capacity observability across cloud storage systems
 * Volume and storage VM data replication, management, and monitoring
 * SMB/CIFS shares and NFS export policy provisioning and management
-* Management of iSCSI volumes on an FSx for ONTAP file system
+* Management of iSCSI volumes on a cloud storage system
 * Creation and management of snapshot policies for custom protection SLA
 * Inode management enhancements for automatic capacity management
 * Volume autogrow for elastic scaling
 * Clone creation and management, for instant, in-place, data cloning
-* Displaying additional metrics directly from ONTAP such as the ONTAP version
+* Displaying additional metrics directly from your cloud storage system such as the system version
 * Displaying storage VM and cluster LIF details including roles, endpoints, nodes, IP addresses, and status
 
-Learn how to link:create-link.html[connect a link to an FSx for ONTAP file system]. 
+Learn how to link:create-link.html[connect a link to a cloud storage system]. 

@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: monitor-operations.html 
+permalink: admin/monitor-operations.html 
 keywords: monitor databases, monitor jobs, track storage jobs, track jobs
 summary: "Track FSx for ONTAP, credentials, and link operations and monitor job progress with Tracker in NetApp Workload Factory for Storage."  
 ---
