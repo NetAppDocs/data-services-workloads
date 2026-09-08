@@ -22,10 +22,10 @@ indexpage:
       links:
         - title: Amazon FSx for NetApp ONTAP
           url: /learn-fsx-ontap.html
-        - title: Oracle Cloud Infrastructure Storage with NetApp
-          url: /learn-oci-storage.html
         - title: Google Cloud NetApp Volumes
           url: /learn-netapp-volumes.html
+        - title: Oracle Cloud Infrastructure Storage with NetApp
+          url: /learn-oci-storage.html
     - title: Administer Workload Factory
       links:
         - title: Configure notifications
