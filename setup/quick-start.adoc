@@ -9,7 +9,7 @@ summary: Get started with Workload Factory by preparing networking for the Workl
 :imagesdir: ./media/
 
 [.lead]
-Get started with NetApp Workload Factory by signing up and creating an account, adding credentials so that Workload Factory can manage AWS resources directly, and then optimize your workloads by using Amazon FSx for NetApp ONTAP.
+Get started with NetApp Workload Factory by signing up and creating an account, adding credentials so that Workload Factory can manage your resources directly, and then optimize your workloads for your cloud provider.
 
 NetApp Workload Factory is accessible to users as a cloud service from the web-based console. Before you get started, you should have an understanding of link:workload-factory-overview.html[Workload Factory].
 
@@ -29,10 +29,10 @@ This step is optional. You can use Workload Factory without adding credentials t
 [role="quick-margin-para"]
 link:add-credentials.html[Learn how to add credentials to your account].
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Optimize your workloads using FSx for ONTAP
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Create and associate a link with your storage systems in Workload Factory
 
 [role="quick-margin-para"]
-After you've signed up, created an account, and optionally added AWS credentials, you can start using Workload Factory to optimize your workloads using FSx for ONTAP. 
+This step is optional. After you've signed up, created an account, and added credentials for your cloud provider, you can create and associate a link to your storage systems so that Workload Factory can manage your resources using advanced ONTAP features. 
 
 [role="quick-margin-para"]
-link:whats-next.html[Optimize your workloads with FSx for ONTAP].
+link:create-link.html[Learn how to create and associate a link with your storage systems].

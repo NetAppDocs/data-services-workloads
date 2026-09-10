@@ -339,6 +339,8 @@ sidebar:
       entries:
         - title: Learn about Oracle Cloud Infrastructure Storage with NetApp
           url: /ocsn/learn-about-ocsn.html
+        - title: Discover Oracle Cloud Infrastructure Storage with NetApp systems
+          url: /ocsn/create-discover-systems-ocsn.html
     - title: Administer Workload Factory
       entries:
         - title: Manage service accounts
