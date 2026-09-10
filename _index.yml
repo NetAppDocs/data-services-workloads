@@ -9,37 +9,41 @@ indexpage:
         - title: Release notes
           url: /whats-new.html
         - title: Learn about NetApp Workload Factory
-          url: /learn-workload-factory.html
+          url: /learn-about-workload-factory.html
         - title: Quick start
-          url: /quick-start.html
+          url: /setup/quick-start.html
     - title: Credentials and permissions
       links:
         - title: Add credentials
-          url: /add-credentials.html
+          url: /setup/add-credentials-multicloud.html
         - title: Permissions for Workload Factory
-          url: /permissions-workload-factory.html
+          url: /setup/learn-about-permissions.html
     - title: Use Workload Factory for your cloud provider
       links:
         - title: Amazon FSx for NetApp ONTAP
-          url: /learn-fsx-ontap.html
+          url: /fsx/learn-fsx-ontap.html
         - title: Google Cloud NetApp Volumes
-          url: /learn-netapp-volumes.html
+          url: /gcnv/learn-netapp-volumes.html
         - title: Oracle Cloud Infrastructure Storage with NetApp
-          url: /learn-oci-storage.html
+          url: /ocsn/learn-about-ocsn.html
     - title: Administer Workload Factory
       links:
         - title: Configure notifications
-          url: /configure-notifications.html
+          url: /setup/configure-notifications.html
         - title: Manage AI features
-          url: /manage-ai-features.html
+          url: /admin/manage-genai-features.html
         - title: Automate tasks using Codebox
-          url: /use-codebox.html    
+          url: /setup/use-codebox.html
     - title: Well-architected workloads
       links:
         - title: Learn about well-architected workloads
           url: /learn-well-architected-workloads.html
-        - title: Implement well-architected workloads
-          url: /implement-well-architected-workloads.html
+        - title: Implement well-architected FSx for ONTAP workloads
+          url: /fsx/improve-configurations-fsx.html
+        - title: Implement well-architected Google Cloud NetApp Volumes workloads
+          url: /gcnv/improve-configurations-gcnv.html
+        - title: Implement well-architected Oracle Cloud Infrastructure Storage with NetApp workloads
+          url: /ocsn/improve-configurations-ocsn.html
     - title: Knowledge and support
       links:
         - title: Register for support
