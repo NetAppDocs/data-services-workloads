@@ -6,7 +6,7 @@ summary: "Codebox is an Infrastructure as Code (IaC) co-pilot that helps develop
 ---
 = Learn about Codebox automation in NetApp Workload Factory
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 Codebox is an Infrastructure as Code (IaC) co-pilot that helps developers and DevOps generate the code needed to execute any operation supported by NetApp Workload Factory. Codebox is aligned with the Workload Factory permission policies and it sets a clear path for execution readiness as well as providing an automation catalog for quick future reuse.

@@ -6,7 +6,7 @@ summary: "Track FSx for ONTAP, credentials, and link operations and monitor job 
 ---
 = Monitor operations with Tracker in NetApp Workload Factory
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 

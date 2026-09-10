@@ -6,7 +6,7 @@ summary: "Fix common problems with custom dashboards, including setup failures, 
 ---
 = Troubleshoot custom dashboards in NetApp Workload Factory
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 Use this information to resolve common issues you might encounter when creating or using custom dashboards.

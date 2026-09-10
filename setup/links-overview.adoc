@@ -6,7 +6,7 @@ summary: "A Workload Factory link creates a trust relationship and connectivity 
 ---
 = Learn about NetApp Workload Factory links
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 A NetApp Workload Factory link creates a trust relationship and connectivity between a Workload Factory account and one or more cloud storage systems. This allows you to monitor and manage certain file system features directly from the ONTAP REST API calls that are not available through the Amazon FSx for ONTAP API.

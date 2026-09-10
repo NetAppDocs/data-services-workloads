@@ -6,7 +6,7 @@ summary: "You can view links associated with your account, update passwords for 
 ---
 = Manage NetApp Workload Factory links
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 Manage links that you've associated with your Workload Factory account. You can view links that are associated with an FSx for ONTAP file system, provide passwords used for link authentication, and remove links from the Workload Factory console.

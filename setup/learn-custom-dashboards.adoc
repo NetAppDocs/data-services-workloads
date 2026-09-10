@@ -6,7 +6,7 @@ summary: "Create AI-powered dashboards personalized to your workloads and priori
 ---
 = Learn about custom dashboards in NetApp Workload Factory
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 As a cloud and storage admin, custom dashboards give you a clear view of the systems and workloads you manage. They let you build and personalize views that match your work, priorities, and business goals, instead of being limited to preset layouts.

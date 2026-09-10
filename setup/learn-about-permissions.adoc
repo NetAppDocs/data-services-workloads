@@ -9,7 +9,7 @@ summary: "To use NetApp Workload Factory features and services, you'll need to p
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 To use NetApp Workload Factory features and services, you'll need to provide permissions so that Workload Factory can perform operations in your cloud environment. 

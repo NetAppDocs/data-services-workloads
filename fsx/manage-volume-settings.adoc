@@ -6,7 +6,7 @@ summary: "Tags can help you categorize your resources. You can add, edit, and re
 ---
 = Manage volume settings in NetApp Workload Factory
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 Customize FSx for ONTAP volume settings in NetApp Workload Factory to fit your organization's needs. You can manage volume tags to categorize resources, update storage efficiency settings to optimize space and cost savings, and manage immutable files settings to control data retention and protect against unauthorized changes.

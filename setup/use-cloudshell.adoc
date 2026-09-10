@@ -7,7 +7,7 @@ summary: "You can use CloudShell from anywhere in the NetApp Workload Factory us
 
 = Use CloudShell in NetApp Workload Factory
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 Open CloudShell to execute AWS or ONTAP CLI commands from anywhere in the NetApp Workload Factory console.

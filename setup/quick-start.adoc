@@ -6,7 +6,7 @@ summary: Get started with Workload Factory by preparing networking for the Workl
 ---
 = Quick start for NetApp Workload Factory
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 Get started with NetApp Workload Factory by signing up and creating an account, adding credentials so that Workload Factory can manage your resources directly, and then optimize your workloads for your cloud provider.

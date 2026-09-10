@@ -6,7 +6,7 @@ summary: You can configure NetApp Workload Factory to send notifications to a pe
 ---
 = Configure NetApp Workload Factory notifications 
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can configure the NetApp Workload Factory notification service to send notifications as alerts in NetApp Console, to any email addresses associated with the account, or to an Amazon SNS topic. Notifications sent as alerts appear in NetApp Console when you have a Console agent or link deployed. When Workload Factory publishes notifications to an Amazon SNS topic, subscribers to the topic (such as people or other applications) receive the notifications at the endpoints configured for the topic (such as email or SMS messages).

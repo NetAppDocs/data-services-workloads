@@ -6,7 +6,7 @@ summary: "Protect volume data from accidental deletion or corruption by creating
 ---
 = Use snapshots to protect data in NetApp Workload Factory
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 Protect volume data from accidental deletion or corruption by creating and managing snapshots in NetApp Workload Factory. You can create an on-demand snapshot of a volume, define a snapshot policy to automate snapshot creation and retention for storage VMs, and restore a volume from an existing snapshot to recover data at a specific point in time.

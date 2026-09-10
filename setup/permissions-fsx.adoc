@@ -9,7 +9,7 @@ summary: "To use NetApp Workload Factory features and services, you'll need to p
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 Review the permissions required for managing Amazon FSx for ONTAP resources with NetApp Workload Factory.

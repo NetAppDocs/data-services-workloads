@@ -6,7 +6,7 @@ summary: "Workload Factory scans workload configurations for reliability, securi
 ---
 = How NetApp Workload Factory supports well-architected workloads
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 Workload Factory, the NetApp management suite for Amazon FSx for NetApp ONTAP, helps you maintain and operate reliable, secure, efficient, and cost-effective workload configurations that align with the AWS Well-Architected Framework. Workload Factory provides daily analysis of your workloads, recommendations, and automatic fixes to promote healthy workload operations. By automating this process, Workload Factory minimizes human error and ensures consistency in workload management.

@@ -9,7 +9,7 @@ summary: "Control access to Bedrock-based AI features in Workload Factory. You c
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 Control access to AI features in Workload Factory. You can turn off AI features or use AWS Bedrock managed by NetApp. 
