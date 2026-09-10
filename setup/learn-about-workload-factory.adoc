@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: setup/workload-factory-overview.html
+permalink: setup/learn-about-workload-factory.html
 keywords: overview, concepts, features, use case, workloads, how Workload Factory works
 summary: "NetApp Workload Factory is a powerful life-cycle management platform designed to help you optimize your workloads using Amazon FSx for NetApp ONTAP file systems."
 ---

@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: learn-about-ocsn.html
+permalink: ocsn/learn-about-ocsn.html
 keywords: Oracle Cloud Infrastructure Storage with NetApp, Oracle Cloud storage, storage, ocsn
 summary: "Oracle Cloud Infrastructure Storage with NetApp (OCSN) is a fully managed service allowing customers to create and manage storage pools as the storage backend for your workloads within Workload Factory." 
 ---

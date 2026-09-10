@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: fsx/manage-volume-tags.html
+permalink: fsx/manage-volume-settings.html
 keywords: volume tags, edit volume tags, edit tags, enable immutable files, disable immutable files, lock files, unlock files, storage efficiency change, update storage efficiency
 summary: "Tags can help you categorize your resources. You can add, edit, and remove volume tags at any time for FSx for ONTAP volumes." 
 ---

@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: fsx/create-snapshot.html
+permalink: fsx/use-snapshots-fsx.html
 keywords: create snapshot, snapshot 
 summary: "Protect volume data from accidental deletion or corruption by creating and managing snapshots in NetApp Workload Factory."
 ---

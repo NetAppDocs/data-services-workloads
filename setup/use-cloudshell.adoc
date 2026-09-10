@@ -1,10 +1,9 @@
 ---
 sidebar: sidebar
-permalink: use-cloudshell.html
+permalink: setup/use-cloudshell.html
 keywords: cloudshell, command line, aws cli, ontap cli, NetApp Workload Factory, Workload Factory
 summary: "You can use CloudShell from anywhere in the NetApp Workload Factory user interface to issue AWS or ONTAP CLI commands."
 ---
-
 = Use CloudShell in NetApp Workload Factory
 :icons: font
 :imagesdir: ../media/
