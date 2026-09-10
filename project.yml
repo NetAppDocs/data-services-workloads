@@ -28,7 +28,7 @@ sidebar:
         - title: Sign up and log in to Workload Factory
           url: /sign-up-log-in-saas.html 
         - title: Add AWS credentials
-          url: /add-credentials.html 
+          url: /add-credentials-multicloud.html 
         - title: Connect to a storage system with a link
           url: /connect-link.html
     - title: Amazon FSx for NetApp ONTAP
