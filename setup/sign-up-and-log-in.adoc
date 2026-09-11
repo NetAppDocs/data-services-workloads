@@ -73,13 +73,6 @@ Refer to NetApp Console documentation to link:https://docs.netapp.com/us-en/cons
 
 The invited user will receive an email with instructions to join your Workload Factory account.
 
----
-sidebar: sidebar
-permalink: log-in.html
-keywords: logging in, log in, sign in, signing in, user account, login with netapp, log in with netapp, sign up, create account
-summary: "After you sign up to Workload Factory, you can log in at any time from the web-based console to start managing your workloads and FSx for ONTAP file systems."
----
-
 == Log in to NetApp Workload Factory
 After you sign up to NetApp Workload Factory, you can log in at any time from the web-based console to start managing your workloads and FSx for ONTAP file systems.
 

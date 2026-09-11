@@ -4,7 +4,7 @@ permalink: fsx/manage-volume-capacity.html
 keywords: volume size, rebalance volume capacity, adjust volume capacity, volume autogrow, manage volume capacity, FlexVol volume, FlexGroup volume
 summary: "Learn how to manage volume capacity, including adjusting volume size manually and using volume autogrow in Workload Factory."
 ---
-= Manage volume capacity
+= Manage volume capacity in NetApp Workload Factory
 :icons: font
 :imagesdir: ../media/
 
