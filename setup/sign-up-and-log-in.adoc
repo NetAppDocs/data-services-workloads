@@ -52,7 +52,6 @@ image:screenshot-account-selection-govcloud.png[A screenshot of the Account page
 +
 
 .. Enter a name for the account.
-.. Optionally, make the account an AWS GovCloud (US) account. This account type uses only AWS GovCloud (US) endpoints and regions for setup and operations. Credentials and secrets remain in GovCloud. This selection is permanent.
 +
 NOTE: Workload Factory's AI features use AWS Bedrock services hosted in public AWS regions. If your security policies do not allow connections to public region services, you can turn off AI features in the Administration settings. link:manage-genai-features.html[Learn about managing AI features].
 .. Optionally, provide a job description for the account.
@@ -74,7 +73,7 @@ Refer to NetApp Console documentation to link:https://docs.netapp.com/us-en/cons
 The invited user will receive an email with instructions to join your Workload Factory account.
 
 == Log in to NetApp Workload Factory
-After you sign up to NetApp Workload Factory, you can log in at any time from the web-based console to start managing your workloads and FSx for ONTAP file systems.
+After you sign up to NetApp Workload Factory, you can log in at any time from the web-based console to start managing your workloads and storage systems.
 
 You can log in to the Workload Factory web-based console using one of the following options:
 
@@ -104,6 +103,6 @@ If this is the first time that you've logged in, you'll be directed to the *Acco
 
 .Result
 
-You're now logged in and can start using Workload Factory to manage FSx for ONTAP file systems and your workloads.
+You're now logged in and can start using Workload Factory to manage your storage systems and workloads.
 
 
