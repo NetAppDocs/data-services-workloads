@@ -11,28 +11,11 @@ summary: Get started with Workload Factory by preparing networking for the Workl
 [.lead]
 Get started with NetApp Workload Factory by signing up and creating an account, adding credentials so that Workload Factory can manage your resources directly, and then optimize your workloads for your cloud provider.
 
-NetApp Workload Factory is accessible to users as a cloud service from the web-based console. Before you get started, you should have an understanding of link:workload-factory-overview.html[Workload Factory].
+NetApp Workload Factory is accessible to users as a cloud service from the web-based console. Before you get started, you should have an understanding of link:learn-about-workload-factory.html[Workload Factory].
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Sign up and create an account
+Select the *Quick start* link for your cloud provider to get started: 
 
-[role="quick-margin-para"]
-Go to the https://console.workloads.netapp.com[Workload Factory console^], sign up, and create an account. 
+* link:fsx/quick-start-fsx.html[Quick start for Amazon FSx for NetApp ONTAP]
+* link:oci/quick-start-oci.html[Quick start for Oracle Cloud Infrastructure Storage with NetApp]
+* link:gcp/quick-start-gcp.html[Quick start for Google Cloud NetApp Volumes]
 
-[role="quick-margin-para"]
-link:sign-up-saas.html[Learn how to sign up and create an account].
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Add AWS credentials to Workload Factory 
-
-[role="quick-margin-para"]
-This step is optional. You can use Workload Factory without adding credentials to access your AWS account. Adding AWS credentials to Workload Factory gives your Workload Factory account the permissions needed to create and manage FSx for ONTAP file systems and to deploy and manage specific workloads like databases.
-
-[role="quick-margin-para"]
-link:add-credentials.html[Learn how to add credentials to your account].
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Create and associate a link with your storage systems in Workload Factory
-
-[role="quick-margin-para"]
-This step is optional. After you've signed up, created an account, and added credentials for your cloud provider, you can create and associate a link to your storage systems so that Workload Factory can manage your resources using advanced ONTAP features. 
-
-[role="quick-margin-para"]
-link:create-link.html[Learn how to create and associate a link with your storage systems].

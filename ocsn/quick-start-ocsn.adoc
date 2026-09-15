@@ -1,0 +1,43 @@
+---
+sidebar: sidebar
+permalink: ocsn/quick-start-ocsn.html
+keywords: Oracle Cloud Infrastructure Storage, ocsn, netapp, quick, get started, install, deploy, setup, launch, requirements, prerequisites, credentials, permissions, policy 
+summary: "You can get started with Oracle Cloud Infrastructure Storage in NetApp Workload Factory in just a few steps." 
+---
+= Quick start for Oracle Cloud Infrastructure Storage in NetApp Workload Factory
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+With Oracle Cloud Infrastructure Storage in NetApp Workload Factory, you can get started immediately in read mode. 
+
+If you'd like to use Workload Factory to create a storage pool, manage resources, and more, you can get started in a few steps. In this case, you need an Oracle Cloud Infrastructure account and credentials to get started. 
+
+Follow these steps to get started. 
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Log in to Workload Factory
+
+[role="quick-margin-para"]
+
+You'll need to link:https://docs.netapp.com/us-en/data-services-workloads/setup/sign-up-and-log-in.html[set up an account with Workload Factory and log in^]
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Add credentials and permissions
+
+[role="quick-margin-para"]
+
+Choose the link:https://docs.netapp.com/us-en/data-services-workloads/ocsn/permissions-ocsn.html[permission policies^] to meet your needs.
+
+[role="quick-margin-para"]
+If you choose not to grant permissions, you can start using Workload Factory for Oracle Cloud Infrastructure Storage to copy partially completed code samples.
+
+[role="quick-margin-para"]
+If you choose to grant permissions, you'll need to link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html[add credentials to an account manually^] that includes selecting workload capabilities and creating the IAM policies for the required permissions.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Discover or add an Oracle Cloud Infrastructure Storage system
+
+[role="quick-margin-para"]
+
+You'll discover a storage pool to begin managing your Oracle Cloud Infrastructure Storage resources in Workload Factory. In the link:https://console.workloads.netapp.com[Workload Factory console^], select *Storage*, then *Management*, and then *Discoverable systems*. link:create-discover-systems-ocsn.html[Learn how to discover a storage system]. 
+
+.What's next
+With a storage system in your Storage inventory, you can link:create-and-associate-link-ocsn.html[create and associate a link with your storage system] to begin managing your Oracle Cloud Infrastructure Storage resources.
