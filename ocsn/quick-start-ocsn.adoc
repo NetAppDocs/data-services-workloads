@@ -6,7 +6,7 @@ summary: "You can get started with Oracle Cloud Infrastructure Storage in NetApp
 ---
 = Quick start for Oracle Cloud Infrastructure Storage in NetApp Workload Factory
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 With Oracle Cloud Infrastructure Storage in NetApp Workload Factory, you can get started immediately in read mode. 

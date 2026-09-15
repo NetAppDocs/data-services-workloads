@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: setup/create-link.html
+permalink: fsx/create-link-fsx.html
 keywords: connect, connection, link, lambda link, associate link, create link, authenticate link
 summary: "You can create and manage links to provide a trust relationship and connectivity between a NetApp Workload Factory account and one or more FSx for ONTAP file systems."
 ---

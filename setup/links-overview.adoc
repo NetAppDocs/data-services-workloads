@@ -9,7 +9,7 @@ summary: "A Workload Factory link creates a trust relationship and connectivity 
 :imagesdir: ../media/
 
 [.lead]
-A NetApp Workload Factory link creates a trust relationship and connectivity between a Workload Factory account and one or more cloud storage systems. This allows you to monitor and manage certain file system features directly from the ONTAP REST API calls that are not available through the Amazon FSx for ONTAP API.
+A NetApp Workload Factory link creates a trust relationship and connectivity between a Workload Factory account and one or more cloud storage systems. This allows you to monitor and manage certain storage system features directly from the ONTAP REST API calls that are not available through the your cloud provider API.
 
 You don't need a link to get started with Workload Factory, but in some cases you'll need to create a link to unlock all Workload Factory features and workload capabilities. 
 
@@ -19,11 +19,11 @@ Links are beneficial because they allow Workload Factory to perform operations t
 Here are some benefits of using links:
  
 * The link enables the NetApp Console to send ONTAP commands directly to your cloud storage system, bringing advanced ONTAP features beyond what your cloud provider offers natively.
-* Links leverage AWS Lambda to execute code in response to events. This serverless approach removes the dependency of an instance running in your VPC.
+* Links leverage remote serverless functions to execute code in response to events. This serverless approach removes the dependency of an instance running in your VPC.
 
 == How links work
 
-Links leverage AWS Lambda. Lambda executes code in response to events and automatically manages the computing resources required by that code. The links that you create are part of your NetApp account and they are associated with an AWS account.
+Links leverage remote serverless functions, such as AWS Lambda. The serverless function executes code in response to events and automatically manages the computing resources required by that code. The links that you create are part of your NetApp account and they are associated with an AWS account.
 
 After creating a link, you can associate it with one, or many, cloud storage systems. Each cloud storage system can be associated only to one link in the same NetApp account. If you have multiple NetApp accounts, a single cloud storage system can be associated with additional links under different NetApp accounts.
 
@@ -59,4 +59,8 @@ The features that require a link include:
 * Displaying additional metrics directly from your cloud storage system such as the system version
 * Displaying storage VM and cluster LIF details including roles, endpoints, nodes, IP addresses, and status
 
-Learn how to link:create-link.html[connect a link to a cloud storage system]. 
+== Related information
+Learn how to create and associate links for:
+
+* link:create-link-fsx.adoc[FSx for ONTAP]
+* link:create-link-ocsn.adoc[Create and associate a link for ONTAP Cloud Storage Node]

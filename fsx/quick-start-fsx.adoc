@@ -6,7 +6,7 @@ summary: "You can get started with FSx for ONTAP in NetApp Workload Factory in j
 ---
 = Quick start for Amazon FSx for NetApp ONTAP in NetApp Workload Factory
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 With Amazon FSx for NetApp ONTAP in NetApp Workload Factory, you can get started immediately in read mode. 

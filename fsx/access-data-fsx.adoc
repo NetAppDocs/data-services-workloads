@@ -1,0 +1,38 @@
+---
+sidebar: sidebar
+permalink: access-data-fsx.html
+keywords: access data, mount point, mount volumes, mount clients, on-premises
+summary: "You can access your FSx for ONTAP file systems from on-premises by mounting volumes for NAS clients and mounting iSCSI LUNs for SAN clients." 
+---
+= Access your FSx for ONTAP file system data 
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can access your FSx for ONTAP file systems from on-premises by mounting volumes for NAS clients and mounting iSCSI LUNs for SAN clients. 
+
+link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/supported-fsx-clients.html[Accessing data^] in Amazon FSx for NetApp ONTAP documentation provides topics about how to access data for your reference. 
+
+You can also get the mount point for volumes in NetApp Workload Factory. 
+
+== Get mount point for volumes in NetApp Workload Factory
+Get the mount point for a volume to mount a share on a CIFS share or NFS client.
+
+.Steps
+. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Storage*.
+. From the Storage menu, select *Volumes explorer*. 
+. Select the actions menu for the volume, then *Basic actions*, and then *View mount command*. 
+. In the Mount command dialog, select *Copy* to copy the command for either the NFS mount point or CIFS share. You'll enter the copied command in your terminal. 
+. Select *Close*. 
+
+== Connect to NAS clients
+
+* link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/attach-linux-client.html[Mount a volume on Linux clients^]
+* link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/attach-windows-client.html[Mount a volume on Windows clients^]
+* link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/attach-mac-client.html[Mount a volume on macOS clients^]
+
+== Connect to SAN clients
+
+* link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/mount-iscsi-luns-linux.html[Mount an iSCSI LUN on Linux clients^]
+* link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/mount-iscsi-windows.html[Mount an iSCSI LUN on Windows clients^]
