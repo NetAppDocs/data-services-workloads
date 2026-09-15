@@ -16,21 +16,21 @@ sidebar:
     - title: Release notes
       entries:
         - title: What's new
-          url: /whats-new.html
+          url: /release-notes/whats-new.html
         - title: Known limitations
-          url: /known-limitations.html
+          url: /release-notes/known-limitations.html
     - title: Get started
       entries:
         - title: Learn about Workload Factory in NetApp Console
-          url: /learn-workload-factory.html
+          url: /setup/learn-workload-factory.html
         - title: Quick start
-          url: /quick-start.html
+          url: /setup/quick-start.html
         - title: Sign up and log in to Workload Factory
-          url: /sign-up-log-in-saas.html 
-        - title: Add AWS credentials
-          url: /add-credentials-multicloud.html 
-        - title: Connect to a storage system with a link
-          url: /connect-link.html
+          url: /setup/sign-up-log-in-saas.html 
+        - title: Learn about links
+          url: /setup/links-overview.html
+        - title: Learn about permissions
+          url: /setup/learn-about-permissions.html
     - title: Amazon FSx for NetApp ONTAP
       entries:
         - title: Use FSx for ONTAP for storage workloads
@@ -340,7 +340,7 @@ sidebar:
         - title: Build and operate well-architected workloads
           url: /well-architected-workloads.html  
         - title: Configure notifications
-          url: /configure-notifications.html
+          url: /administer/configure-notifications.html
         - title: Monitor operations with Tracker
           url: /monitor-operations.html
         - title: Manage links
