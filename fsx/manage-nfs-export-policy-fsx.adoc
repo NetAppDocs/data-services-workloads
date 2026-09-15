@@ -1,0 +1,43 @@
+---
+sidebar: sidebar
+permalink: fsx/manage-nfs-export-policy-fsx.html
+keywords: NFS, nfs, export policy, change export policy, update export policy, modify export policy
+summary: "Manage the NFS export policy for a volume that uses NFSv3 or NFSv4.1 protocol types in NetApp Workload Factory." 
+---
+= Manage the NFS export policy for a volume in NetApp Workload Factory
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Manage the NFS export policy for a volume that uses NFSv3 or NFSv4.1 protocol types in NetApp Workload Factory. 
+
+.About this task
+Managing a volume's export policy involves adding export policy rules that detail client specifications, access control, super user access, and NFS version. You can add more than one export policy and prioritize them. 
+
+.Before you begin
+Determine the client specifications for the export policy rules. Valid values for the client specification are as follows: 
+
+* IP addresses
+* IP addresses with subnet masks
+* IP addresses with a network mask
+* A netgroup name preceded by the “@” character
+* A domain name preceded by a period “.”
+* Host names
+
+.Steps
+. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Storage*.
+. From the Storage menu, select *Volumes explorer*. 
+. Select the actions menu for the volume to change the NFS export policy for. 
+. Select *Advanced actions*, then *Edit NFS export policy*. 
+. On the Edit NFS export policy page, provide the following: 
+.. *Access control*: Select *Custom export policy* or *Existing export policy*. 
++
+Alternatively, you can select *No access to the volume*. 
+.. *Export policy name*: Optionally, enter a name for the export policy.
+.. *Add export policy rule*: Provide the following details and rank the policies starting with #1 as the priority rule: 
+... *Client specification*: Separate multiple values with commas. 
+... *Access control*: Select *Read/Write*, *Read only*, or *No access* from the dropdown menu.
+... *Super user access*: Select *Yes* or *No*.
+... *NFS version*: Select *All*, *NFSv3*, or *NFSv4*. 
+. Select *Apply*. 
