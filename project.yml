@@ -336,37 +336,37 @@ sidebar:
     - title: Administer Workload Factory
       entries:
         - title: Manage service accounts
-          url: /manage-service-accounts.html
+          url: /administer/manage-service-accounts.html
         - title: Build and operate well-architected workloads
-          url: /well-architected-workloads.html  
+          url: /administer/well-architected-workloads.html  
         - title: Configure notifications
           url: /administer/configure-notifications.html
         - title: Monitor operations with Tracker
-          url: /monitor-operations.html
+          url: /administer/monitor-operations.html
         - title: Manage links
-          url: /manage-links.html     
+          url: /administer/manage-links.html     
         - title: Manage AI features
-          url: /manage-genai-features.html
+          url: /administer/manage-genai-features.html
         - title: Custom dashboards
           entries:
             - title: Learn about custom dashboards
-              url: /learn-custom-dashboards.html
+              url: /administer/learn-custom-dashboards.html
             - title: Create a custom dashboard
-              url: /create-custom-dashboard.html
+              url: /administer/create-custom-dashboard.html
             - title: Manage custom dashboards
-              url: /manage-custom-dashboards.html
+              url: /administer/manage-custom-dashboards.html
             - title: Troubleshoot custom dashboards
-              url: /troubleshoot-custom-dashboards.html
+              url: /administer/troubleshoot-custom-dashboards.html
         - title: Automate tasks using Codebox
           entries:
             - title: Learn about Codebox
-              url: /codebox-automation.html
+              url: /administer/codebox-automation.html
             - title: Use Codebox to generate code
-              url: /use-codebox.html
+              url: /administer/use-codebox.html
         - title: Use CloudShell
-          url: /use-cloudshell.html
+          url: /administer/use-cloudshell.html
         - title: Remove credentials
-          url: /manage-credentials.html 
+          url: /administer/manage-credentials.html 
     - title: Knowledge and support
       entries:
         - title: Register for support
