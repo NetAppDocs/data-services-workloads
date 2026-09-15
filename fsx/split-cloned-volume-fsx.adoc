@@ -1,0 +1,41 @@
+---
+sidebar: sidebar
+permalink: fsx/split-cloned-volume-fsx.html
+keywords: split clone volume, FlexVol volume
+summary: "Split a clone FlexVol volume from its parent volume to make the clone a normal read/write FlexVol volume." 
+---
+= Split a cloned volume in NetApp Workload Factory
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Split a cloned FlexVol volume from its parent volume to make the clone a normal read/write FlexVol volume in NetApp Workload Factory. 
+
+Data is accessible on the clone and the parent during the split. The split process only updates metadata and requires minimal IO. No data blocks are copied.
+
+.About this task 
+The clone splitting operation involves the following: 
+
+* New snapshot copies of the FlexClone volume cannot be created during the split operation.
+* A FlexClone volume cannot be split from the parent volume if it belongs to a data protection relationship.
+* If you take the FlexClone volume offline while splitting is in progress, the split operation is suspended; when you bring the FlexClone volume back online, the splitting operation resumes.
+* After the split, both the parent FlexVol volume and the clone require the full space allocation determined by their volume guarantees.
+* After a FlexClone volume is split from its parent the two cannot be rejoined.
+
+.Before you begin
+Consider the following before you split a cloned volume: 
+
+* To split a cloned volume, you must associate a link. link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html[Learn how to associate an existing link or to create and associate a new link^]. After the link associates, return to this operation. 
+* The FlexClone volume must be online when the split operation begins.
+* The parent volume must be online for the split to succeed.
+
+.Steps
+. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Storage*.
+.. From the Storage menu, select *Volumes explorer*. 
+. Select the actions menu of the volume with the cloned volume to split. 
+. Select *Data protection actions*, then *Split cloned volume*. 
+. In the Split volume dialog, select *Delete*. 
+
+.Result
+The volume clone is split and appears in the Volumes tab. 
