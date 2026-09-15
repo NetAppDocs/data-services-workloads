@@ -311,6 +311,10 @@ sidebar:
       entries: 
         - title: Learn about Google Cloud NetApp Volumes
           url: /gcnv/learn-about-gcnv.html
+        - title: Quick start for Google Cloud NetApp Volumes
+          url: /gcnv/quick-start-gcnv.html
+        - title: Add Google Cloud NetApp Volumes credentials
+          url: /gcnv/add-credentials-gcnv.html
         - title: Configuration analysis for NetApp Volumes
           url: /gcnv/configuration-analysis-gcnv.html
         - title: Improve storage pool configurations
@@ -319,8 +323,16 @@ sidebar:
       entries:
         - title: Learn about Oracle Cloud Infrastructure Storage with NetApp
           url: /ocsn/learn-about-ocsn.html
+        - title: Quick start for Oracle Cloud Infrastructure Storage with NetApp
+          url: /ocsn/quick-start-ocsn.html  
+        - title: Add Oracle Cloud Infrastructure Storage with NetApp credentials
+          url: /ocsn/add-credentials-ocsn.html
         - title: Discover Oracle Cloud Infrastructure Storage with NetApp systems
           url: /ocsn/create-discover-systems-ocsn.html
+        - title: Connect to an Oracle Cloud Infrastructure Storage with NetApp system
+          url: /ocsn/connect-to-system-ocsn.html
+        - title: Permissions reference for Oracle Cloud Infrastructure Storage with NetApp
+          url: /ocsn/permissions-reference-ocsn.html
     - title: Administer Workload Factory
       entries:
         - title: Manage service accounts
