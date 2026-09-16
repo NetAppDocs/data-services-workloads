@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: setup/configure-notifications.html
+permalink: admin/configure-notifications.html
 keywords: amazon, sns, notification, topic, notifications, notifications service, alerts, email, email notifications, console notifications, filter, filtering
 summary: You can configure NetApp Workload Factory to send notifications to a person or another application when certain types of events happen. 
 ---

@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: setup/create-custom-dashboard.html
+permalink: admin/create-custom-dashboard.html
 keywords: create dashboard, custom dashboard, AI dashboard, dashboard creation, personalized dashboard
 summary: "Create a custom dashboard using AI-guided prompts to monitor what matters most to your workloads and operational priorities."
 ---

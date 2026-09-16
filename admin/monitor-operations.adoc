@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: monitor-operations.html 
+permalink: admin/monitor-operations.html 
 keywords: monitor fsx for ontap, monitor jobs, track jobs, tracker
 summary: "Track workload operations and monitor job progress with Tracker in NetApp Workload Factory for FSx for ONTAP."  
 ---

@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: setup/links-overview.html
+permalink: admin/links-overview.html
 keywords: links, accounts, connectivity, 
 summary: "A Workload Factory link creates a trust relationship and connectivity between a Workload Factory account and one or more cloud storage systems."
 ---

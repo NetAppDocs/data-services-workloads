@@ -9,15 +9,17 @@ indexpage:
         - title: Release notes
           url: /whats-new.html
         - title: Learn about NetApp Workload Factory
-          url: /learn-about-workload-factory.html
+          url: /setup/learn-about-workload-factory.html
         - title: Quick start
           url: /setup/quick-start.html
-    - title: Credentials and permissions
+        - title: Sign up and log in
+          url: /setup/sign-up-and-log-in.html
+    - title: Permissions
       links:
-        - title: Add credentials
-          url: /setup/add-credentials-multicloud.html
-        - title: Permissions for Workload Factory
-          url: /setup/learn-about-permissions.html
+        - title: Permissions for Amazon FSx for NetApp ONTAP
+          url: /fsx-storage/permissions-fsx.html  
+        - title: Permissions for Oracle Cloud Infrastructure Storage with NetApp
+          url: /ocsn/permissions-ocsn.html  
     - title: Use Workload Factory for your cloud provider
       links:
         - title: Amazon FSx for NetApp ONTAP
@@ -29,15 +31,15 @@ indexpage:
     - title: Administer Workload Factory
       links:
         - title: Configure notifications
-          url: /setup/configure-notifications.html
+          url: /admin/configure-notifications.html
         - title: Manage AI features
           url: /admin/manage-genai-features.html
         - title: Automate tasks using Codebox
-          url: /setup/use-codebox.html
+          url: /admin/use-codebox.html
     - title: Well-architected workloads
       links:
         - title: Learn about well-architected workloads
-          url: /learn-well-architected-workloads.html
+          url: /admin/learn-well-architected-workloads.html
         - title: Implement well-architected FSx for ONTAP workloads
           url: /fsx/improve-configurations-fsx.html
         - title: Implement well-architected Google Cloud NetApp Volumes workloads

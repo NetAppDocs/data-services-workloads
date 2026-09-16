@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: setup/use-codebox.html
+permalink: admin/use-codebox.html
 keywords: codebox, automation, cloudformation, rest api, aws cli, permissions
 summary: "You can use Codebox to generate the code needed to execute any operation supported by NetApp Workload Factory."
 ---
