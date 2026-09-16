@@ -1,0 +1,12 @@
+---
+sidebar: sidebar
+permalink: fsx-storage/performance-reference.html
+keywords: performance, FSx for ONTAP performance
+summary: "Performance reference is provided for FSx for ONTAP in NetApp Workload Factory." 
+---
+= Performance for FSx for ONTAP in NetApp Workload Factory
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+For an overview about performance, refer to link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/performance.html[Amazon FSx for NetApp ONTAP performance^] documentation. 

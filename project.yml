@@ -16,9 +16,9 @@ sidebar:
     - title: Release notes
       entries:
         - title: What's new
-          url: /release-notes/whats-new.html
+          url: /whats-new.html
         - title: Known limitations
-          url: /release-notes/known-limitations.html
+          url: /known-limitations.html
     - title: Get started
       entries:
         - title: Learn about Workload Factory in NetApp Console
@@ -166,55 +166,55 @@ sidebar:
         - title: Use FSx for ONTAP for database workloads
           entries:
             - title: Explore savings
-              url: /explore-savings.html
+              url: /fsx-databases/explore-savings.html
             - title: Create a new database server
               entries:
                 - title: Create Microsoft SQL Server    
-                  url: /create-database-server.html
+                  url: fsx-databases/create-database-server.html
                 - title: Create PostgreSQL server
-                  url: /create-postgresql-server.html  
+                  url: fsx-databases/create-postgresql-server.html  
             - title: Manage resources
               entries: 
                 - title: Resource management
-                  url: /manage-instance.html
+                  url: /fsx-databases/manage-instance.html
                 - title: Register resources
-                  url: /register-instance.html
+                  url: /fsx-databases/register-instance.html
                 - title: Create a database
-                  url: /create-database.html 
+                  url: /fsx-databases/create-database.html 
                 - title: Create a sandbox clone 
-                  url: /create-sandbox-clone.html                       
+                  url: /fsx-databases/create-sandbox-clone.html                       
                 - title: Protect Microsoft SQL Server workloads
-                  url: /protect-sql-server.html   
+                  url: /fsx-databases/protect-sql-server.html   
             - title: Administer and monitor FSx for ONTAP for database workloads
               entries:
                 - title: Monitor database jobs
-                  url: /monitor-databases.html
+                  url: /fsx-databases/monitor-databases.html
                 - title: Implement configuration best practices
                   entries: 
                     - title: Configuration analysis for Databases
-                      url: /optimize-overview.html
+                      url: /fsx-databases/optimize-overview.html
                     - title: Implement well-architected database configurations   
-                      url: /optimize-configurations.html     
+                      url: /fsx-databases/optimize-configurations.html     
                 - title: Analyze error logs
                   url: /analyze-error-logs.html
             - title: Manage clones
               entries: 
                 - title: Check integrity of a sandbox clone
-                  url: /check-clone-integrity.html  
+                  url: /fsx-databases/check-clone-integrity.html  
                 - title: Revert a sandbox clone
-                  url: /revert-clone.html 
+                  url: /fsx-databases/revert-clone.html 
                 - title: Refresh a sandbox clone
-                  url: /refresh-clone.html  
+                  url: /fsx-databases/refresh-clone.html  
                 - title: Connect to the CI/CD pipeline
-                  url: /connect-clone-cicd.html  
+                  url: /fsx-databases/connect-clone-cicd.html  
                 - title: View clone connection information
-                  url: /view-clone-connection.html  
+                  url: /fsx-databases/view-clone-connection.html  
                 - title: Split a sandbox clone
-                  url: /split-clone.html  
+                  url: /fsx-databases/split-clone.html  
                 - title: Delete a sandbox clone
-                  url: /delete-clone.html                                 
+                  url: /fsx-databases/delete-clone.html                                 
                 - title: Deregister resources
-                  url: /deregister-instance.html           
+                  url: /fsx-databases/deregister-instance.html           
         - title: Use FSx for ONTAP for EDA workloads
           entries:   
              - title: Learn about NetApp Workload Factory for EDA
@@ -322,17 +322,17 @@ sidebar:
     - title: Oracle Cloud Infrastructure Storage with NetApp
       entries:
         - title: Learn about Oracle Cloud Infrastructure Storage with NetApp
-          url: learn-about-ocsn.html
+          url: /ocsn/learn-about-ocsn.html
         - title: Quick start for Oracle Cloud Infrastructure Storage with NetApp
-          url: quick-start-ocsn.html  
+          url: /ocsn/quick-start-ocsn.html  
         - title: Add Oracle Cloud Infrastructure Storage with NetApp credentials
-          url: add-credentials-ocsn.html
+          url: /ocsn/add-credentials-ocsn.html
         - title: Discover Oracle Cloud Infrastructure Storage with NetApp systems
-          url: create-discover-systems-ocsn.html
+          url: /ocsn/create-discover-systems-ocsn.html
         - title: Connect to an Oracle Cloud Infrastructure Storage with NetApp system
-          url: connect-to-system-ocsn.html
+          url: /ocsn/connect-to-system-ocsn.html
         - title: Permissions reference for Oracle Cloud Infrastructure Storage with NetApp
-          url: permissions-reference-ocsn.html
+          url: /ocsn/permissions-reference-ocsn.html
     - title: Administer Workload Factory
       entries:
         - title: Manage service accounts
