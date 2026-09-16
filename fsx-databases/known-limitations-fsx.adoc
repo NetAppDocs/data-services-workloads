@@ -1,0 +1,93 @@
+---
+sidebar: sidebar
+permalink: fsx-databases/known-limitations.html
+keywords: limitations, databases
+summary: "Known limitations identify platforms, devices, or functions that are not supported by this release of the product, or that do not interoperate correctly with it. Review these limitations carefully."
+---
+= Known limitations for NetApp Workload Factory for Databases
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Known limitations identify platforms, devices, or functions that are not supported with NetApp Workload Factory for Databases, or that do not interoperate correctly with it. Review these limitations carefully.
+
+== Instance detection support
+Workload Factory supports the detection of PostgreSQL instances running only on Amazon Linux operating systems and Oracle instances running only on Red Hat Enterprise Linux.
+
+== AMI image version support
+We only show up to four recent versions or revisions of AMI images for each SQL version. We don't allow installation from an AMI image that is older than the latest four versions.
+
+== Custom AMI
+Deployment with a custom AMI assumes that install media is present in the image. This is needed for FCI configuration for the following reasons: 
+
+* To uninstall and reconfigure to form the FCI cluster
+* When selecting a collation other than the collation set in the image for standalone deployment
+
+As part of deployment, Workload Factory doesn't install a custom AMI with multiple Microsoft SQL Server instances. Only the default Microsoft SQL Server instance is selected and configured as part of deployment.
+
+== Roll back and retry for failed deployments 
+Rollback and retry for failed deployments aren't supported in Workload Factory. You can roll back or retry a failed stack from the CloudFormation console in AWS. 
+
+== Active Directory and DNS resource rollback
+The following DNS resources aren't removed from Active Directory and DNS when you roll back a test or failed deployment from the CloudFormation console in AWS: 
+
+* Each node of the SQL deployment to its management IP address
+* Windows Cluster name to the reserved secondary IP addresses of EC2 instances in cases of FCI 
+* SQL FCI name to the two reserved IP addresses from both EC2 instances in FCI
+
+You'll need to cleanup these up manually or wait for the domain to purge stale entries. 
+
+== Always On availability groups configuration support
+Managing Always On availability groups configurations isn't supported in Workload Factory.
+
+== Custom encryption keys
+Custom encryption keys for FSx for ONTAP aren't listed based on service applicability. You must choose the appropriate key. AWS managed keys are filtered based on applicability to service.
+
+== CloudFormation template 
+A downloaded or copied Codebox-generated CloudFormation template (YAML file) has a limited retention period of seven days. 
+
+== Sandbox support
+The maximum number of sandbox clones that can be created from a database server is 90.
+
+== Microsoft SQL Server detection and management
+Microsoft SQL Server detection isn't saved. Each time you access Databases in Workload Factory, Microsoft SQL Server detection runs again to identify SQL installations in the region.
+
+== Explore savings
+In the Inventory tab, the estimated cost shown for each Microsoft SQL instance is calculated at the FSx for ONTAP file system level and not for volumes hosting the SQL instance.
+
+== Multiple FSx for ONTAP file systems 
+Workload Factory doesn't support creating or saving configurations for Microsoft SQL Server with multiple FSx for ONTAP file systems. Only one FSx for ONTAP file system configuration deployment is supported. 
+
+== Optimization limitations
+
+=== Compute rightsizing optimization
+When changing to certain instance types, network configuration may be reset which may then cause node connection failure during optimization and result in job failure. Manual intervention may be needed to check and update the DNS setting and iSCSI sessions. Refer to link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/resize-limitations.html[Amazon Elastic Compute Cloud documentation^] for more information about EC2 resize limitations.
+
+=== ONTAP and OS configuration optimization 
+Bulk optimization for more than one SQL Server instance is not supported for ONTAP configuration and OS configuration.
+
+=== Operating system patch assessment for optimization
+The operating system patch assessment that is made for optimization purposes may not work in a private network. The assessment relies on AWS Patch Manager. To understand how to patch Windows EC2 instances in a private network, refer to the AWS Cloud Operations Blog link:https://aws.amazon.com/blogs/mt/how-to-patch-windows-ec2-instances-in-private-subnets-using-aws-systems-manager/["How to patch Windows EC2 instances in private subnets Using AWS Systems Manager"^].
+
+== On-premises savings calculation
+Cost and percentage savings calculations of volume size for Microsoft SQL Server on-premises storage isn't taken into consideration.
+
+== Cross-region replication assessment
+* The optimization assessment can't determine if cross-region replication (CRR) is being used when the target FSx for ONTAP file system is in a different AWS account.
+* Workload Factory assesses only the CRR configuration of the source FSx for ONTAP file system. 
+
+== Database host authentication when exploring savings
+In some cases with limited permissions, the explore savings page doesn't load data after successful authentication.
+
+== Integration with NetApp Backup and Recovery
+After adding hosts to NetApp Backup and Recovery for protection, database discovery sometimes fails.
+
+== Region support
+The following AWS regions aren't supported: 
+
+* China regions
+* Secret Cloud
+* Top Secret 
+
+== Registering Oracle on SUSE Linux Enterprise Server 12
+When registering Oracle Database on SUSE Linux Enterprise Server 12, Workload Factory does not install Python dependencies. You must manually configure the required Python version. Workload Factory requires the minimum version of 3.6; however, we recommend version 3.11.

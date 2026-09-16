@@ -7,7 +7,7 @@ indexpage:
     - title: Get started
       links:
         - title: Release notes
-          url: /whats-new.html
+          url: /whats-new.html  
         - title: Learn about NetApp Workload Factory
           url: /setup/learn-about-workload-factory.html
         - title: Quick start
