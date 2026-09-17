@@ -322,9 +322,9 @@ sidebar:
         - title: Discover Oracle Cloud Infrastructure Storage with NetApp systems
           url: /ocsn/create-discover-systems-ocsn.html
         - title: Connect to an Oracle Cloud Infrastructure Storage with NetApp system
-          url: /ocsn/connect-to-system-ocsn.html
+          url: /ocsn/create-link-ocsn.html
         - title: Permissions reference for Oracle Cloud Infrastructure Storage with NetApp
-          url: /ocsn/permissions-reference-ocsn.html
+          url: /ocsn/permissions-ocsn.html
     - title: Administer Workload Factory
       entries:
         - title: Manage service accounts
