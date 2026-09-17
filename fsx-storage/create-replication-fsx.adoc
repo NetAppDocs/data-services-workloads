@@ -69,9 +69,10 @@ Review these requirements before you begin.
 * To replicate select volumes: From the file system overview, select the *Volumes* tab.
 +
 In the Volumes table, select one or more volumes and then select *Replicate data*. 
-. On the Replicate data page, under Replication target, provide the following: 
-include::_include/create-replication.adoc[]
-//Referenced in repo: storage-management-fsx-ontap in file: use/task-replicate-data.adoc
+. On the Replicate data page, under Replication target, provide the following:
++ 
+include::https://raw.githubusercontent.com/NetAppDocs/workload-fsx-ontap/main/_include/create-replication.adoc[]
+//include comes from workload-fsx-ontap-internal repo
 
 [start=8]
 //Rachel L: Added a hack to make the last step have a numbered step in the right order.
@@ -94,8 +95,9 @@ Consider when you choose to complete this operation. Initialization can be time-
 .Steps
 . Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
 . Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Storage*.
-include::_include/initialize-replication.adoc[]
-//Referenced in repo: storage-management-fsx-ontap in file: use/task-replicate-data.adoc
++
+include::https://raw.githubusercontent.com/NetAppDocs/workload-fsx-ontap/main/_include/initialize-replication.adoc[]
+//include comes from workload-fsx-ontap-internal repo
 
 . In the Initialize relationship dialog, select *Initialize*. 
 +
@@ -138,8 +140,9 @@ Review these requirements before you begin.
 .Steps
 . Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
 . Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Storage*.
-include::_include/cutover-replication.adoc[]
-//Referenced in repo: storage-management-fsx-ontap in file: use/task-replicate-data.adoc
++
+include::https://raw.githubusercontent.com/NetAppDocs/workload-fsx-ontap/main/_include/cutover-replication.adoc[]
+//include comes from workload-fsx-ontap-internal repo
 
 [start=8]
 //Rachel L: Added a hack to make the last step have a numbered step in the right order.
@@ -186,7 +189,8 @@ Consider the following before you begin:
 . In the Volumes table, select one or more data protection volumes (DP/replicated volumes), and then select *Replicate data*. 
 . On the Replicate data page, under Replication target, provide the following: 
 
-include::_include/create-replication.adoc[]
+include::https://raw.githubusercontent.com/NetAppDocs/workload-fsx-ontap/main/_include/create-replication.adoc[]
+//include comes from workload-fsx-ontap-internal repo
 
 . Select *Create*. 
 
