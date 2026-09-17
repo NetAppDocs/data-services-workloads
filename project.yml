@@ -185,6 +185,8 @@ sidebar:
                   url: /fsx-databases/create-sandbox-clone.html                   
             - title: Manage resources
               entries: 
+                - title: Resource management
+                  url: /fsx-databases/manage-resources-fsx.html
                 - title: Register resources
                   url: /fsx-databases/register-instance.html
                 - title: Manage database clones
