@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: fsx-storage/create-volume.html
+permalink: fsx-storage/create-volume-fsx.html
 keywords: create volume, FSx for ONTAP volume
 summary: "After setting up your FSx for ONTAP file system, create FSx for ONTAP volumes in Workload Factory."
 ---

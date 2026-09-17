@@ -41,8 +41,8 @@ sidebar:
               url: /fsx-storage/explore-savings-fsx.html
             - title: Create storage resources
               entries: 
-                - title: Create an FSx for ONTAP file system
-                  url: /fsx-storage/create-file-system-fsx.html
+                - title: Create or discover an FSx for ONTAP file system
+                  url: /fsx-storage/create-discover-systems-fsx.html
                 - title: Create a storage VM
                   url: /fsx-storage/create-storage-vm-fsx.html
                 - title: Create a volume
@@ -52,7 +52,7 @@ sidebar:
                 - title: Create a block device  
                   url: /fsx-storage/create-block-device-fsx.html
             - title: Learn about links
-              url: /fsx-storage/learn-about-links-fsx.html
+              url: /fsx-storage/links-overview-fsx.html
             - title: Discover and view cache volumes
               url: /fsx-storage/discover-cache-volumes-fsx.html
             - title: Access your data
@@ -157,12 +157,6 @@ sidebar:
                   url: /fsx-storage/delete-svm-fsx.html
             - title: Monitor operations with Tracker
               url: /fsx-storage/monitor-operations-fsx.html       
-        - title: Reference
-          entries: 
-            - title: Performance for FSx for ONTAP
-              url: /fsx-storage/performance-reference-fsx.html
-            - title: Security for FSx for ONTAP
-              url: /fsx-storage/security-reference-fsx.html   
         - title: Use FSx for ONTAP for database workloads
           entries:
             - title: Learn about Workload Factory for Databases
@@ -299,6 +293,12 @@ sidebar:
                       url: /configuration-analysis.html
                     - title: Implement well-architected EVS configurations
                       url: /view-evs-well-architected.html
+        - title: Reference
+          entries: 
+            - title: Performance for FSx for ONTAP
+              url: /fsx-storage/performance-reference-fsx.html
+            - title: Security for FSx for ONTAP
+              url: /fsx-storage/security-reference-fsx.html   
     - title: Google Cloud NetApp Volumes
       entries: 
         - title: Learn about Google Cloud NetApp Volumes
