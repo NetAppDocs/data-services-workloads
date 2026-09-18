@@ -13,9 +13,15 @@ Get started with NetApp Workload Factory by signing up and creating an account, 
 
 NetApp Workload Factory is accessible to users as a cloud service from the web-based console. Before you get started, you should have an understanding of link:learn-about-workload-factory.html[Workload Factory].
 
-Select the *Quick start* link for your cloud provider to get started: 
+Select the *Quick start* link for your cloud provider to get started.
 
-* link:fsx/quick-start-fsx.html[Quick start for Amazon FSx for NetApp ONTAP]
-* link:oci/quick-start-oci.html[Quick start for Oracle Cloud Infrastructure Storage with NetApp]
-* link:gcp/quick-start-gcp.html[Quick start for Google Cloud NetApp Volumes]
+== Get started with Amazon FSx for NetApp ONTAP
+
+link:fsx-storage/quick-start-fsx.html[Quick start for Amazon FSx for NetApp ONTAP]
+
+== Get started with Oracle Cloud Infrastructure Storage with NetApp
+link:ocsn/quick-start-ocsn.html[Quick start for Oracle Cloud Infrastructure Storage with NetApp]
+
+== Get started with Google Cloud NetApp Volumes
+link:gcnv/quick-start-gcnv.html[Quick start for Google Cloud NetApp Volumes]
 
