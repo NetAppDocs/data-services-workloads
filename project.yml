@@ -350,13 +350,13 @@ sidebar:
         - title: Custom dashboards
           entries:
             - title: Learn about custom dashboards
-              url: /administer/learn-custom-dashboards.html
+              url: /administer/learn-custom-dashboards-fsx.html
             - title: Create a custom dashboard
-              url: /administer/create-custom-dashboard.html
+              url: /administer/create-custom-dashboard-fsx.html
             - title: Manage custom dashboards
-              url: /administer/manage-custom-dashboards.html
+              url: /administer/manage-custom-dashboards-fsx.html
             - title: Troubleshoot custom dashboards
-              url: /administer/troubleshoot-custom-dashboards.html
+              url: /administer/troubleshoot-custom-dashboards-fsx.html
         - title: Automate tasks using Codebox
           entries:
             - title: Learn about Codebox

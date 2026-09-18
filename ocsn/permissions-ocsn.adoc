@@ -14,38 +14,39 @@ summary: "To use NetApp Workload Factory features and services, you'll need to p
 [.lead]
 Review the permissions required for managing Oracle Cloud Infrastructure Storage resources with NetApp Workload Factory.
 
-Cross-tenancy trust
+== Cross-tenancy trust
 
 NetApp operates the `workload-factory-OCI-SN` group in a NetApp-owned OCI tenancy, with API-key credentials mounted into a K8s secret. Each customer establishes a cross-tenancy policy (paired Endorse on the NetApp side, Admit on the customer side) that grants this group a narrow, explicit set of permissions in the customer's tenancy. Every OCI API call is evaluated against this contract per request; the customer can audit and revoke it at any time.
 
-NetApp side
+== NetApp side
+Endorse group workload-factory-OCI-SN to do the following: 
 
-Endorse group workload-factory-OCI-SN to read compartments in any-tenancy
-Endorse group workload-factory-OCI-SN to read instance-family in any-tenancy
-Endorse group workload-factory-OCI-SN to read virtual-network-family in any-tenancy
-Endorse group workload-factory-OCI-SN to read file-family in any-tenancy
-Endorse group workload-factory-OCI-SN to manage file-family in any-tenancy
-Endorse group workload-factory-OCI-SN to read metrics in any-tenancy
-Endorse group workload-factory-OCI-SN to inspect file-systems in any-tenancy
-Endorse group workload-factory-OCI-SN to manage functions-family in any-tenancy
-Endorse group workload-factory-OCI-SN to use virtual-network-family in any-tenancy
-Endorse group workload-factory-OCI-SN to read log-content in any-tenancy
-Endorse group workload-factory-OCI-SN to inspect log-groups in any-tenancy
-Endorse group workload-factory-OCI-SN to manage log-groups in any-tenancy
-Endorse group workload-factory-OCI-SN to inspect tenancies in any-tenancy
+* read compartments in any-tenancy
+* read instance-family in any-tenancy
+* read virtual-network-family in any-tenancy
+* read file-family in any-tenancy
+* manage file-family in any-tenancy
+* read metrics in any-tenancy
+* inspect file-systems in any-tenancy
+* manage functions-family in any-tenancy
+* use virtual-network-family in any-tenancy
+* read log-content in any-tenancy
+* inspect log-groups in any-tenancy
+* manage log-groups in any-tenancy
+* inspect tenancies in any-tenancy
 
-Customer side (default — tenancy root)
+== Customer side (default — tenancy root)
 
-Define tenancy NetAppWF as ocid1.tenancy.oc1..<>
-Define group NetAppOpsWF as ocid1.group.oc1..<>
-Admit group NetAppOpsWF of tenancy NetAppWF to inspect tenancies in tenancy
-Admit group NetAppOpsWF of tenancy NetAppWF to read compartments in tenancy
-Admit group NetAppOpsWF of tenancy NetAppWF to read instance-family in tenancy
-Admit group NetAppOpsWF of tenancy NetAppWF to read metrics in tenancy
-Admit group NetAppOpsWF of tenancy NetAppWF to read log-content in tenancy
-Admit group NetAppOpsWF of tenancy NetAppWF to use virtual-network-family in tenancy
-Admit group NetAppOpsWF of tenancy NetAppWF to manage file-family in tenancy
-Admit group NetAppOpsWF of tenancy NetAppWF to manage functions-family in tenancy
-Admit group NetAppOpsWF of tenancy NetAppWF to manage log-groups in tenancy
+* Define tenancy NetAppWF as ocid1.tenancy.oc1..<>
+* Define group NetAppOpsWF as ocid1.group.oc1..<>
+* Admit group NetAppOpsWF of tenancy NetAppWF to inspect tenancies in tenancy
+* Admit group NetAppOpsWF of tenancy NetAppWF to read compartments in tenancy
+* Admit group NetAppOpsWF of tenancy NetAppWF to read instance-family in tenancy
+* Admit group NetAppOpsWF of tenancy NetAppWF to read metrics in tenancy
+* Admit group NetAppOpsWF of tenancy NetAppWF to read log-content in tenancy
+* Admit group NetAppOpsWF of tenancy NetAppWF to use virtual-network-family in tenancy
+* Admit group NetAppOpsWF of tenancy NetAppWF to manage file-family in tenancy
+* Admit group NetAppOpsWF of tenancy NetAppWF to manage functions-family in tenancy
+* Admit group NetAppOpsWF of tenancy NetAppWF to manage log-groups in tenancy
 
 Optional: When you require least privilege, you can replace in tenancy with in compartment <name> on each line.

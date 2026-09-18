@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: admin/manage-custom-dashboards.html
+permalink: admin/manage-custom-dashboards-fsx.html
 keywords: manage dashboards, delete dashboard, refresh dashboard, dashboard catalog
 summary: "Access your dashboard catalog to view, refresh, and delete custom dashboards in Workload Factory."
 ---
