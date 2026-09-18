@@ -6,7 +6,7 @@ summary: "Learn what's new with Workload Factory in the NetApp Console like upda
 ---
 = What's new with Workload Factory in the NetApp Console
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 Learn what's new with Workload Factory in the NetApp Console like updates and enhancements for workload management, service administration, storage features, permissions, and more.
@@ -14,4 +14,3 @@ Learn what's new with Workload Factory in the NetApp Console like updates and en
 == 27 September 2026
 
 include::_whatsnew/2026-09-27.adoc[]
-

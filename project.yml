@@ -22,219 +22,185 @@ sidebar:
     - title: Get started
       entries:
         - title: Learn about Workload Factory in NetApp Console
-          url: /learn-workload-factory.html
+          url: /setup/learn-workload-factory.html
         - title: Quick start
-          url: /quick-start.html
+          url: /setup/quick-start.html
         - title: Sign up and log in to Workload Factory
-          url: /sign-up-log-in-saas.html 
-        - title: Add AWS credentials
-          url: /add-credentials-multicloud.html 
-        - title: Connect to a storage system with a link
-          url: /connect-link.html
+          url: /setup/sign-up-log-in-saas.html 
+        - title: Learn about links
+          url: /setup/links-overview.html
+        - title: Learn about permissions
+          url: /setup/learn-about-permissions.html
     - title: Amazon FSx for NetApp ONTAP
       entries:
         - title: Use FSx for ONTAP for storage workloads
           entries: 
             - title: Learn about FSx for ONTAP
-              url: /learn-fsx-ontap.html
+              url: /fsx-storage/learn-fsx-ontap-fsx.html
             - title: Explore savings
-              url: /explore-savings.html              
+              url: /fsx-storage/explore-savings-fsx.html
             - title: Create storage resources
               entries: 
-                - title: Create an FSx for ONTAP file system
-                  url: /create-file-system.html
+                - title: Create or discover an FSx for ONTAP file system
+                  url: /fsx-storage/create-discover-systems-fsx.html
                 - title: Create a storage VM
-                  url: /create-storage-vm.html
+                  url: /fsx-storage/create-storage-vm-fsx.html
                 - title: Create a volume
-                  url: /create-volume.html
+                  url: /fsx-storage/create-volume-fsx.html
                 - title: Create an igroup
-                  url: /create-igroup.html
-                - title: Create a block device
-                  url: /create-block-device.html 
+                  url: /fsx-storage/create-igroup-fsx.html
+                - title: Create a block device  
+                  url: /fsx-storage/create-block-device-fsx.html
+            - title: Learn about links
+              url: /fsx-storage/links-overview-fsx.html
             - title: Discover and view cache volumes
-              url: /discover-cache-volumes.html  
+              url: /fsx-storage/discover-cache-volumes-fsx.html
             - title: Access your data
-              url: /access-data.html                  
-            - title: Protect your data
-              entries:
-                - title: Learn about data protection for FSx for ONTAP
-                  url: /data-protection-overview.html
-                - title: Use snapshots to protect data
-                  url: /use-snapshots-fsx.html
-                - title: Use backups to object storage
-                  url: /use-backups-fsx.html
-                - title: Replicate data
-                  url: /create-replication.html
-                - title: Protect data with Autonomous Ransomware Protection
-                  url: /ransomware-protection.html   
-                - title: Clone a volume
-                  url: /clone-volume.html  
-                - title: Use on-premises ONTAP data
-                  url: /use-onprem-data.html
-                - title: Create a cyber vault to protect data
-                  url: /create-cyber-vault.html  
-            - title: Administer and monitor FSx for ONTAP storage
-              entries:
-                - title: Implement file system best practices
-                  entries: 
-                    - title: Configuration analysis for FSx for ONTAP
-                      url: /configuration-analysis.html
-                    - title: Implement well-architected file system configurations
-                      url: /improve-configurations.html 
-                - title: Analyze FSx for ONTAP EMS events      
-                  url: /analyze-events.html
-                - title: Volume administration
-                  entries:  
-                    - title: Manage volume capacity
-                      url: /manage-volume-capacity.html
-                    - title: Set volume latency thresholds
-                      url: /set-volume-latency-thresholds.html
-                    - title: Manage immutable files 
-                      url: /manage-immutable-files.html  
-                    - title: Manage volume tags
-                      url: /manage-volume-tags.html
-                    - title: Manage cache volumes
-                      url: /manage-cache-volumes.html
-                    - title: Change a tiering policy
-                      url: /change-tiering-policy.html   
-                    - title: Update storage efficiency
-                      url: /update-storage-efficiency.html
-                    - title: Manage NFS export policies
-                      url: /manage-nfs-export-policy.html  
-                    - title: Manage SMB/CIFS shares
-                      url: /manage-cifs-share.html 
-                    - title: Manage S3 access points 
-                      entries: 
-                        - title: Create and attach S3 access points
-                          url: /create-s3-access-points.html
-                        - title: Edit S3 access points
-                          url: /edit-s3-access-points.html
-                        - title: Set up the journal table infrastructure
-                          url: /setup-journal-table.html
-                        - title: View details about S3 access points
-                          url: /view-s3-details.html
-                        - title: Delete S3 access points
-                          url: /delete-s3-access-points.html           
-                    - title: Split a cloned volume
-                      url: /split-cloned-volume.html    
-                    - title: Delete a volume
-                      url: /delete-volume.html
-                - title: Block storage administration
-                  entries:
-                    - title: Manage block storage
-                      url: /manage-block-storage.html
-                    - title: Apply tags to block devices
-                      url: /apply-block-device-tags.html  
-                - title: File system administration
-                  entries: 
-                  - title: Adjust file system capacity manually
-                    url: /increase-file-system-capacity.html
-                  - title: Manage file system capacity automatically
-                    url: /manage-capacity-automatically.html
-                  - title: Manage file system tags
-                    url: /manage-fsx-tags.html
-                  - title: Reset fsxadmin password
-                    url: /reset-fsxadmin-password.html
-                  - title: Delete a file system
-                    url: /delete-file-system.html
-                - title: Storage VM administration
-                  entries: 
-                  - title: Replicate a storage VM to another file system
-                    url: /replicate-svm-to-file-system.html
-                  - title: Configure and update Active Directory for a storage VM
-                    url: /configure-active-directory.html
-                  - title: Manage storage VM tags
-                    url: /manage-svm-tags.html
-                  - title: Reset storage VM password
-                    url: /reset-svm-password.html
-                  - title: Delete a storage VM 
-                    url: /delete-svm.html
-                - title: Data protection administration
-                  entries:
-                    - title: Snapshots
-                      entries: 
-                        - title: Manage snapshot policies
-                          url: /manage-snapshot-policy.html
-                        - title: Enable and edit snapshots for long-term retention
-                          url: /enable-snapshots-long-term.html 
-                        - title: Manage snapshots
-                          url: /manage-snapshots.html  
-                    - title: Backups
-                      entries: 
-                        - title: Manage volume backup schedule
-                          url: /manage-backup-schedule.html
-                    - title: Replication
-                      entries: 
-                        - title: Replicate a data protection volume
-                          url: /cascade-replication.html
-                        - title: Track replication delays
-                          url: /track-replication-delays.html  
-                        - title: Manage replication relationships
-                          url: /manage-replication.html
-                - title: Performance administration
-                  entries: 
-                    - title: Provision IOPS for a file system
-                      url: /provision-iops.html
-                    - title: Update throughput capacity for a file system
-                      url: /update-throughput-capacity.html  
-            - title: Reference
+              url: /fsx-storage/access-data-fsx.html
+        - title: Protect your data
+          entries:
+            - title: Data protection overview 
+              url: /fsx-storage/data-protection-overview-fsx.html
+            - title: Use snapshots to protect data
               entries: 
-                - title: Performance for FSx for ONTAP
-                  url: /performance-reference.html
-                - title: Security for FSx for ONTAP
-                  url: /security-reference.html   
+                - title: Use snapshots to protect data
+                  url: /fsx-storage/use-snapshots-fsx.html
+                - title: Manage snapshot policies
+                  url: /fsx-storage/manage-snapshot-policy-fsx.html
+                - title: Manage snapshots
+                  url: /fsx-storage/manage-snapshots-fsx.html    
+            - title: Use backups to object storage
+              url: /fsx-storage/use-backups-fsx.html
+            - title: Use replication to protect data
+              entries: 
+                - title: Replicate data
+                  url: /fsx-storage/create-replication-fsx.html
+                - title: Replicate on-premises ONTAP data to FSx for ONTAP
+                  url: /fsx-storage/use-onprem-data-fsx.html              
+                - title: Replicate a storage VM to another file system
+                  url: /fsx-storage/replicate-svm-to-file-system-fsx.html              
+                - title: Track replication delays
+                  url: /fsx-storage/track-replication-delays-fsx.html  
+                - title: Manage replication relationships
+                  url: /fsx-storage/manage-replication-fsx.html  
+            - title: Protect data with Autonomous Ransomware Protection
+              url: /fsx-storage/ransomware-protection-fsx.html   
+            - title: Clone a volume
+              url: /fsx-storage/clone-volume-fsx.html  
+            - title: Create a cyber vault to protect data
+              url: /fsx-storage/create-cyber-vault-fsx.html  
+        - title: Manage FSx for ONTAP in Workload Factory
+          entries:
+            - title: Analyze FSx for ONTAP EMS events      
+              url: /fsx-storage/analyze-events-fsx.html
+            - title: Implement file system best practices
+              entries: 
+                - title: Configuration analysis for FSx for ONTAP
+                  url: /fsx-storage/configuration-analysis-fsx.html
+                - title: Implement well-architected file system configurations
+                  url: /fsx-storage/improve-configurations-fsx.html 
+            - title: Track and analyze FSx for ONTAP costs
+              url: /fsx-storage/track-costs-fsx.html           
+            - title: Manage volumes
+              entries:  
+                - title: Manage volume capacity
+                  url: /fsx-storage/manage-volume-capacity-fsx.html
+                - title: Set volume latency thresholds
+                  url: /fsx-storage/set-volume-latency-thresholds-fsx.html
+                - title: Manage volume settings
+                  url: /fsx-storage/manage-volume-settings-fsx.html  
+                - title: Manage cache volumes
+                  url: /fsx-storage/manage-cache-volumes-fsx.html
+                - title: Change a tiering policy
+                  url: /fsx-storage/change-tiering-policy-fsx.html   
+                - title: Manage NFS export policies
+                  url: /fsx-storage/manage-nfs-export-policy-fsx.html  
+                - title: Manage SMB/CIFS shares
+                  url: /fsx-storage/manage-cifs-share-fsx.html 
+                - title: Manage S3 access points 
+                  entries: 
+                    - title: Create and attach S3 access points
+                      url: /fsx-storage/create-s3-access-points-fsx.html
+                    - title: Edit S3 access points
+                      url: /fsx-storage/edit-s3-access-points-fsx.html
+                    - title: Set up the journal table infrastructure
+                      url: /fsx-storage/setup-journal-table-fsx.html
+                    - title: View details about S3 access points
+                      url: /fsx-storage/view-s3-details-fsx.html
+                    - title: Delete S3 access points
+                      url: /fsx-storage/delete-s3-access-points-fsx.html           
+                - title: Split a cloned volume
+                  url: /fsx-storage/split-cloned-volume-fsx.html    
+                - title: Delete a volume
+                  url: /fsx-storage/delete-volume-fsx.html
+            - title: Manage block storage
+              entries:
+                - title: Manage block storage
+                  url: /fsx-storage/manage-block-storage-fsx.html
+                - title: Apply tags to block devices
+                  url: /fsx-storage/apply-block-device-tags-fsx.html  
+            - title: Manage file systems
+              entries: 
+                - title: Adjust file system capacity
+                  url: /fsx-storage/adjust-file-system-capacity-fsx.html
+                - title: Manage file system settings
+                  url: /fsx-storage/manage-file-system-settings-fsx.html
+                - title: Provision IOPS for a file system
+                  url: /fsx-storage/provision-iops-fsx.html              
+                - title: Delete a file system
+                  url: /fsx-storage/delete-file-system-fsx.html
+            - title: Manage storage VMs
+              entries: 
+                - title: Manage storage VM settings
+                  url: /fsx-storage/manage-svm-settings-fsx.html
+                - title: Delete a storage VM 
+                  url: /fsx-storage/delete-svm-fsx.html
+            - title: Monitor operations with Tracker
+              url: /fsx-storage/monitor-operations-fsx.html       
         - title: Use FSx for ONTAP for database workloads
           entries:
+            - title: Learn about Workload Factory for Databases
+              url: /fsx-databases/learn-about-databases-fsx.html
+            - title: Quick start for Workload Factory for Databases
+              url: /fsx-databases/quick-start-databases-fsx.html
             - title: Explore savings
-              url: /explore-savings.html
-            - title: Create a new database server
+              url: /fsx-databases/explore-savings-fsx-databases.html
+            - title: Known limitations for Workload Factory for Databases
+              url: /fsx-databases/known-limitations-fsx-databases.html
+            - title: Create database resources
               entries:
                 - title: Create Microsoft SQL Server    
-                  url: /create-database-server.html
+                  url: /fsx-databases/create-sql-database-server-fsx.html
                 - title: Create PostgreSQL server
-                  url: /create-postgresql-server.html  
+                  url: /fsx-databases/create-postgresql-server-fsx.html  
+                - title: Create a database
+                  url: /fsx-databases/create-database.html 
+                - title: Create a sandbox clone 
+                  url: /fsx-databases/create-sandbox-clone.html                   
             - title: Manage resources
               entries: 
                 - title: Resource management
-                  url: /manage-instance.html
+                  url: /fsx-databases/manage-resources-fsx.html
                 - title: Register resources
-                  url: /register-instance.html
-                - title: Create a database
-                  url: /create-database.html 
-                - title: Create a sandbox clone 
-                  url: /create-sandbox-clone.html                       
-                - title: Protect Microsoft SQL Server workloads
-                  url: /protect-sql-server.html   
-            - title: Administer and monitor FSx for ONTAP for database workloads
+                  url: /fsx-databases/register-instance.html
+                - title: Manage database clones
+                  url: /fsx-databases/manage-clones-fsx.html                               
+                - title: Deregister resources
+                  url: /fsx-databases/deregister-instance.html                                               
+            - title: Protect, monitor, and optimize database resources
               entries:
-                - title: Monitor database jobs
-                  url: /monitor-databases.html
+                - title: Analyze error logs
+                  url: /fsx-databases/analyze-error-logs-fsx.html  
                 - title: Implement configuration best practices
                   entries: 
                     - title: Configuration analysis for Databases
-                      url: /optimize-overview.html
+                      url: /fsx-databases/optimize-overview.html
                     - title: Implement well-architected database configurations   
-                      url: /optimize-configurations.html     
-                - title: Analyze error logs
-                  url: /analyze-error-logs.html
-            - title: Manage clones
-              entries: 
-                - title: Check integrity of a sandbox clone
-                  url: /check-clone-integrity.html  
-                - title: Revert a sandbox clone
-                  url: /revert-clone.html 
-                - title: Refresh a sandbox clone
-                  url: /refresh-clone.html  
-                - title: Connect to the CI/CD pipeline
-                  url: /connect-clone-cicd.html  
-                - title: View clone connection information
-                  url: /view-clone-connection.html  
-                - title: Split a sandbox clone
-                  url: /split-clone.html  
-                - title: Delete a sandbox clone
-                  url: /delete-clone.html                                 
-                - title: Deregister resources
-                  url: /deregister-instance.html           
+                      url: /fsx-databases/optimize-configurations.html  
+                - title: Monitor database jobs
+                  url: /fsx-databases/monitor-databases.html                          
+                - title: Protect SQL Server database resources
+                  url: /fsx-databases/protect-sql-server-fsx.html
         - title: Use FSx for ONTAP for EDA workloads
           entries:   
              - title: Learn about NetApp Workload Factory for EDA
@@ -273,7 +239,7 @@ sidebar:
                     url: /automate-codebox.html
                   - title: Integrate with Perforce
                     url: /integrate-perforce.html
-        - title: Use Amazon FSx for NetApp ONTAP for VMware workloads
+        - title: Use FSx for ONTAP for VMware workloads
           entries:                   
             - title: Learn about NetApp Workload Factory for VMware
               url: /learn-about-vmware-workloads.html
@@ -327,10 +293,20 @@ sidebar:
                       url: /configuration-analysis.html
                     - title: Implement well-architected EVS configurations
                       url: /view-evs-well-architected.html
+        - title: Reference
+          entries: 
+            - title: Performance for FSx for ONTAP
+              url: /fsx-storage/performance-reference-fsx.html
+            - title: Security for FSx for ONTAP
+              url: /fsx-storage/security-reference-fsx.html   
     - title: Google Cloud NetApp Volumes
       entries: 
         - title: Learn about Google Cloud NetApp Volumes
           url: /gcnv/learn-about-gcnv.html
+        - title: Quick start for Google Cloud NetApp Volumes
+          url: /gcnv/quick-start-gcnv.html
+        - title: Add Google Cloud NetApp Volumes credentials
+          url: /gcnv/add-credentials-gcnv.html
         - title: Configuration analysis for NetApp Volumes
           url: /gcnv/configuration-analysis-gcnv.html
         - title: Improve storage pool configurations
@@ -339,42 +315,50 @@ sidebar:
       entries:
         - title: Learn about Oracle Cloud Infrastructure Storage with NetApp
           url: /ocsn/learn-about-ocsn.html
+        - title: Quick start for Oracle Cloud Infrastructure Storage with NetApp
+          url: /ocsn/quick-start-ocsn.html  
+        - title: Add Oracle Cloud Infrastructure Storage with NetApp credentials
+          url: /ocsn/add-credentials-ocsn.html
         - title: Discover Oracle Cloud Infrastructure Storage with NetApp systems
           url: /ocsn/create-discover-systems-ocsn.html
+        - title: Connect to an Oracle Cloud Infrastructure Storage with NetApp system
+          url: /ocsn/create-link-ocsn.html
+        - title: Permissions reference for Oracle Cloud Infrastructure Storage with NetApp
+          url: /ocsn/permissions-ocsn.html
     - title: Administer Workload Factory
       entries:
         - title: Manage service accounts
-          url: /manage-service-accounts.html
+          url: /administer/manage-service-accounts.html
         - title: Build and operate well-architected workloads
-          url: /well-architected-workloads.html  
+          url: /administer/well-architected-workloads.html  
         - title: Configure notifications
-          url: /configure-notifications.html
+          url: /administer/configure-notifications.html
         - title: Monitor operations with Tracker
-          url: /monitor-operations.html
+          url: /administer/monitor-operations.html
         - title: Manage links
-          url: /manage-links.html     
+          url: /administer/manage-links.html     
         - title: Manage AI features
-          url: /manage-genai-features.html
+          url: /administer/manage-genai-features.html
         - title: Custom dashboards
           entries:
             - title: Learn about custom dashboards
-              url: /learn-custom-dashboards.html
+              url: /administer/learn-custom-dashboards.html
             - title: Create a custom dashboard
-              url: /create-custom-dashboard.html
+              url: /administer/create-custom-dashboard.html
             - title: Manage custom dashboards
-              url: /manage-custom-dashboards.html
+              url: /administer/manage-custom-dashboards.html
             - title: Troubleshoot custom dashboards
-              url: /troubleshoot-custom-dashboards.html
+              url: /administer/troubleshoot-custom-dashboards.html
         - title: Automate tasks using Codebox
           entries:
             - title: Learn about Codebox
-              url: /codebox-automation.html
+              url: /administer/codebox-automation.html
             - title: Use Codebox to generate code
-              url: /use-codebox.html
+              url: /administer/use-codebox.html
         - title: Use CloudShell
-          url: /use-cloudshell.html
+          url: /administer/use-cloudshell.html
         - title: Remove credentials
-          url: /manage-credentials.html 
+          url: /administer/manage-credentials.html 
     - title: Knowledge and support
       entries:
         - title: Register for support
