@@ -19,7 +19,7 @@ Create custom rules by describing them in plain language. The AI rule builder in
 The rule creation process walks you through the steps: defining the rule, reviewing how the AI interpreted it, and checking the results before scheduling regular evaluations. You stay in control at every step. The system suggests a rule based on your prompt, but nothing moves forward until you confirm it.
 
 
-NOTE: If your account administrator turned off AI features, you won't be able to create custom rules. Contact your administrator or link:https://docs.netapp.com/us-en/workload-setup-admin/manage-genai-features.html[learn about AI administration^].
+NOTE: If your account administrator turned off AI features, you won't be able to create custom rules. Contact your administrator or link:admin/manage-genai-features.html[learn about AI administration^].
 
 === Limitations
 
@@ -29,28 +29,6 @@ The following limitations apply to custom rules:
 * Each rule can check only one type of resource. To check multiple resource types, create separate rules.
 * The shortest evaluation interval is 1 hour to avoid excessive scanning.
 * Rules have read-only access and cannot make changes to your environment.
-
-=== Rule definition model
-
-Each custom rule consists of the following components:
-
-Rule name:: A user-defined name for the rule.
-Description:: Your rationale for why this rule matters to your organization.
-Resource type:: The FSx resource to evaluate (file system, volume, or cache). Currently, one resource type per rule.
-Scheduler:: How often the rule is evaluated (minimum 1 hour, default 24 hours).
-Condition logic:: The specific criteria to check.
-Evaluation scope:: Which resources are evaluated (all applicable resources in scope).
-Remediation logic:: Manual guidance for addressing non-compliant resources.
-
-=== Rule lifecycle
-
-Custom rules progress through the following states:
-
-Draft:: Rule is being created. No evaluation occurs.
-Dry-run:: One-time evaluation to preview which resources would be affected. Used for validation before scheduling.
-Scheduled (Enabled):: Rule is active and runs on the defined schedule.
-Disabled:: Rule is paused but not deleted. Can be re-enabled.
-Deleted:: Rule is permanently removed.
 
 === Custom rule examples
 
@@ -71,8 +49,8 @@ This rule validates that file systems adhere to organizational naming convention
 == Before you begin
 Before you can create and run custom rules, ensure you have the following: 
 
-* You have configured AWS credentials with read-only access. link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html[Add AWS credentials to Workload Factory^].
-* You have ONTAP credentials with viewer permissions. link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html[Add ONTAP credentials to Workload Factory^].
+* You have configured AWS credentials with read-only access. link:fsx-storage/add-credentials-fsx.html[Add AWS credentials to Workload Factory^].
+* You have ONTAP credentials with viewer permissions. link:fsx-storage/add-credentials-fsx.html[Add ONTAP credentials to Workload Factory^].
 * You have a link or agent configured for FSx for ONTAP connectivity.
 * You understand that custom rule creation uses NetApp's Bedrock AI service.
 

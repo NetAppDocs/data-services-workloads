@@ -55,22 +55,6 @@ Scheduled (Enabled):: Rule is active and runs on the defined schedule.
 Disabled:: Rule is paused but not deleted. Can be re-enabled.
 Deleted:: Rule is permanently removed.
 
-=== Custom rule examples
-
-The following examples illustrate common custom rules:
-
-*Production volume protection*:: "All volumes with tag 'Prod' must have a snapshot policy installed"
-+
-This rule automatically creates snapshots to protect production volumes according to company requirements.
-
-*Archive volume tiering*:: "All volumes with tag 'Archive' should have a tiering policy set to 'All'"
-+
-This rule lowers costs by automatically moving archived data to cheaper storage.
-
-*File system naming standards*:: "All file systems must follow the naming convention 'fsx-{environment}-{application}'"
-+
-This rule validates that file systems adhere to organizational naming conventions for easier management and cost allocation.
-
 
 == Related information
 
