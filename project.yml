@@ -325,11 +325,11 @@ sidebar:
           url: /ocsn/learn-about-ocsn.html
         - title: Quick start for Oracle Cloud Infrastructure Storage with NetApp
           url: /ocsn/quick-start-ocsn.html  
-        - title: Add Oracle Cloud Infrastructure Storage with NetApp credentials
+        - title: Add OCI credentials
           url: /ocsn/add-credentials-ocsn.html
-        - title: Discover Oracle Cloud Infrastructure Storage with NetApp systems
+        - title: Discover OCI Storage systems
           url: /ocsn/create-discover-systems-ocsn.html
-        - title: Connect to an Oracle Cloud Infrastructure Storage with NetApp system
+        - title: Connect to an OCI Storage system 
           url: /ocsn/create-link-ocsn.html
         - title: Permissions reference for Oracle Cloud Infrastructure Storage with NetApp
           url: /ocsn/permissions-ocsn.html
