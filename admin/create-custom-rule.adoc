@@ -1,18 +1,27 @@
-The Rule builder lets you create custom best-practice rules using plain language. These rules are checked across all of your resources.
+---
+sidebar: sidebar
+permalink: admin/create-custom-rule.html
+keywords: create custom rule, byor, custom rules, fsx, ontap, well architected, rule builder
+summary: Create a custom architectural rule using natural language to enforce your organizational standards for FSx for ONTAP.
+---
+= Create a custom rule in NetApp Workload Factory
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ..media/
 
-Custom rules help you enforce your organization's standards, risk limits, and operational requirements—things that generic vendor rules might not fully cover.
+[.lead]
+Create custom rules by describing them in plain language. The AI rule builder in NetApp Workload Factory turns your request into a validated rule that checks your FSx for ONTAP resources.
 
-NOTE: If your account administrator has turned off AI features, the Rule builder will not be available and you will not be able to create custom rules. link:https://docs.netapp.com/us-en/workload-setup-admin/manage-genai-features.html[Learn about managing AI features^].
+== About this task
 
-== Before you begin
+The rule creation process walks you through the steps: defining the rule, reviewing how the AI interpreted it, and checking the results before scheduling regular evaluations. You stay in control at every step. The system suggests a rule based on your prompt, but nothing moves forward until you confirm it.
 
-Before you can create and run custom rules, ensure you have the following:
 
-AWS credentials:: Read-only access to your AWS environment. Custom rules require read-only permissions as a security boundary. link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html[Add AWS credentials to Workload Factory^].
-ONTAP credentials:: FSx viewer user with read-only permissions. Workload Factory creates this user automatically with the required permissions.
-Link or agent:: Required for connectivity to FSx file systems when evaluating rules. link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html[Connect to an FSx for ONTAP file system with a link^].
+NOTE: If your account administrator turned off AI features, you won't be able to create custom rules. Contact your administrator or link:https://docs.netapp.com/us-en/workload-setup-admin/manage-genai-features.html[learn about AI administration^].
 
-== Limitations
+=== Limitations
 
 The following limitations apply to custom rules:
 
@@ -58,3 +67,116 @@ This rule lowers costs by automatically moving archived data to cheaper storage.
 *File system naming standards*:: "All file systems must follow the naming convention 'fsx-{environment}-{application}'"
 +
 This rule validates that file systems adhere to organizational naming conventions for easier management and cost allocation.
+
+== Before you begin
+Before you can create and run custom rules, ensure you have the following: 
+
+* You have configured AWS credentials with read-only access. link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html[Add AWS credentials to Workload Factory^].
+* You have ONTAP credentials with viewer permissions. link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html[Add ONTAP credentials to Workload Factory^].
+* You have a link or agent configured for FSx for ONTAP connectivity.
+* You understand that custom rule creation uses NetApp's Bedrock AI service.
+
+== Create a rule
+Use the Rule builder to create custom best-practice rules using plain language. These rules are checked across all of your resources.
+
+.Steps
+
+. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon] and then select *Well-architected*.
+. From the Well-architected menu, select *Rule builder*.
++
+When you open the rule builder, it shows sample prompts to help you write your custom rule. You can select *Copy prompt* to copy a sample prompt into the AI dialog text box.
+
+. In the *Create a rule* field, enter your rule description in natural language. Be as specific as possible about:
+
+* What resource type you're checking (file system, volume, or cache).
+* What condition you're validating.
+* What threshold defines compliance.
+* Why this rule matters (optional but recommended).
+
+. Select image:arrow.png[The menu icon is used to begin generating rules., width=18].
++
+The AI analyzes your prompt and generates a rule definition.
+
+== Review the AI interpretation
+
+The rule builder displays:
+
+* *Parsed interpretation*: How the AI understood your prompt in plain language.
+* *Rule definition*: The structured rule including resource type, condition logic, and evaluation criteria.
+* *Reasoning*: Why the AI interpreted your prompt this way.
+* *Confidence indicator*: How confident the system is in the interpretation.
+
+.Steps
+
+. Review the interpretation to make sure it matches what you intended. 
++ 
+Check that the rule definition is correct.
+If the interpretation is unclear or wrong, the system may ask questions such as:
+* Which resource should be checked?
+* What value or limit defines compliance?
+* How often should the rule run?
+
+. Respond to the AI's clarifying questions.
++
+The AI might ask you to choose from several options to better understand what you need. Answer each question and select *Continue*, or select *Skip* to move past optional questions.
+
+. After answering all questions, select *Continue* to create your rule.
+
+== Test the rule
+
+Before scheduling the rule, run a one-time test to see which resources it will affect.
+
+.Steps
+
+. Select *Validate rule*.
++
+The system evaluates all resources in scope against your rule logic.
+
+. Review the validation results:
+** *Resources evaluated*: Total number of resources checked
+** *Compliant*: Resources that meet the rule criteria
+** *Non-compliant*: Resources that do not meet the criteria
+** *Failed evaluations*: Resources that could not be evaluated (with error details)
+
+. If some resources failed evaluation, review the error reasons:
+** *AWS credential errors*: Read-only permissions may be insufficient for certain resources
+** *Connectivity errors*: Link or agent might not be configured for specific file systems
+** *ONTAP permission errors*: The viewer user might not have access to certain resources
+== Save or schedule the rule
+
+After you test your rule, you can save it as a draft or set it to run regularly.
+
+.Steps
+
+. Do one of the following:
++
+* To schedule regular evaluation, set the evaluation frequency (minimum 1 hour, default 24 hours) and select *Schedule*. The rule is enabled and runs on the defined schedule.
+* To save without scheduling, select *Save as draft*. The rule is saved but not evaluated until you schedule it.
+* To discard the rule, select *Discard* to cancel rule creation and start over.
+
+.Result
+
+Your custom rule has been created and is listed in the rule catalog. If you set a schedule, it will check your FSx for ONTAP resources at the specified frequency.
+
+== Troubleshooting
+
+No file systems available::
+Set up your AWS credentials and make sure your environment has at least one FSx for ONTAP file system. The rule builder needs a file system to apply rules.
+
+Low confidence interpretation::
+More information is needed. Answer the questions or rewrite your prompt with clear details about the resource type, limits, and conditions.
+
+Partial validation failures::
+Check which resources failed and why. Common causes are missing link or agent settings, or not having enough permissions. Fix the problem, then validate again.
+
+Ambiguous prompt::
+Be more specific about what you want to check. Include the resource type, the condition, and the threshold. See the prompt examples for help.
+
+Rule targets multiple resource types::
+Create a separate rule for each resource type. Only one resource type per rule is supported.
+
+== What to do next
+
+link:admin/manage-custom-rules.html[Manage custom rules]
+
