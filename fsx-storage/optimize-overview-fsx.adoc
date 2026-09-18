@@ -13,9 +13,7 @@ Workload Factory for Databases analyzes database configurations regularly to det
 
 Workload Factory provides best practices and recommendations for well-architected database workloads. The well-architected analysis assesses Microsoft SQL Server and Oracle Database configurations and settings related to storage, compute, application, resiliency, and cloning. 
 
-include::https://raw.githubusercontent.com/NetAppDocs/workload-setup-admin/main/_include/well-architected-workloads.adoc[]
-
-//include comes from workload-setup-admin repository because the content is shared between workload-setup-admin and all workload repos that offer the well-architected feature.
+include::_include/well-architected-workloads.adoc[]
 
 == Options for analyzing your database environment
 Workload Factory provides the following options for analyzing your database environment:

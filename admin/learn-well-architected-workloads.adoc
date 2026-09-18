@@ -22,6 +22,7 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html[Quick s
 == Use custom rules to enforce your architecture standards 
 
 Custom rules let you set, check, and enforce your own architecture standards, along with NetApp best practices, in the Well-architected dashboard.
+////
 
 === How custom rules work
 
@@ -54,7 +55,7 @@ Dry-run:: One-time evaluation to preview which resources would be affected. Used
 Scheduled (Enabled):: Rule is active and runs on the defined schedule.
 Disabled:: Rule is paused but not deleted. Can be re-enabled.
 Deleted:: Rule is permanently removed.
-
+////
 
 == Related information
 
@@ -71,7 +72,3 @@ Implement well-architected workloads on FSx for ONTAP:
 Implement well-architected workloads on Google Cloud NetApp Volumes: 
 
 link:gcnv/improve-configurations-gcnv.html[Implement well-architected NetApp Volumes configurations]
-
-Create custom rules:
-
-* link:admin/create-custom-rule.html[Create a custom rule]

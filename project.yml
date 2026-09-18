@@ -194,7 +194,7 @@ sidebar:
                 - title: Implement configuration best practices
                   entries: 
                     - title: Configuration analysis for Databases
-                      url: /fsx-databases/optimize-overview.html
+                      url: /fsx-databases/optimize-overview.html  
                     - title: Implement well-architected database configurations   
                       url: /fsx-databases/optimize-configurations.html  
                 - title: Monitor database jobs
