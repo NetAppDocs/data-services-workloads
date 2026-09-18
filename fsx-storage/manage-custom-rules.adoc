@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: admin/manage-custom-rules.html
+permalink: fsx-storage/manage-custom-rules.html
 keywords: manage custom rules, disable rules, delete rules, rule catalog, byor
 summary: View, enable, disable, and delete custom architectural rules from the Rules catalog.
 ---
@@ -118,4 +118,4 @@ If a rule keeps failing or only partly succeeds, check that:
 
 == What to do next
 
-link:learn-custom-rules.html[Learn more about custom rules]
+link:fsx-storage/learn-custom-rules.html[Learn more about custom rules]

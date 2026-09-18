@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: admin/create-custom-rule.html
+permalink: fsx-storage/create-custom-rule.html
 keywords: create custom rule, byor, custom rules, fsx, ontap, well architected, rule builder
 summary: Create a custom architectural rule using natural language to enforce your organizational standards for FSx for ONTAP.
 ---

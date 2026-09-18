@@ -195,6 +195,14 @@ sidebar:
                   entries: 
                     - title: Configuration analysis for Databases
                       url: /fsx-databases/optimize-overview.html  
+                    - title: Custom rules
+                      entries: 
+                        - title: Learn about custom rules
+                          url: /fsx-storage/learn-custom-rules.html
+                        - title: Create a custom rule
+                          url: /fsx-storage/create-custom-rule.html
+                        - title: Manage custom rules
+                          url: /fsx-storage/manage-custom-rules.html
                     - title: Implement well-architected database configurations   
                       url: /fsx-databases/optimize-configurations.html  
                 - title: Monitor database jobs
