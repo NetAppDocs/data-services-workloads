@@ -99,6 +99,14 @@ sidebar:
                   url: /fsx-storage/configuration-analysis-fsx.html
                 - title: Implement well-architected file system configurations
                   url: /fsx-storage/improve-configurations-fsx.html 
+                - title: Custom rules
+                  entries: 
+                    - title: Learn about custom rules
+                      url: /fsx-storage/learn-custom-rules.html
+                    - title: Create a custom rule
+                      url: /fsx-storage/create-custom-rule.html
+                    - title: Manage custom rules
+                      url: /fsx-storage/manage-custom-rules.html                  
             - title: Track and analyze FSx for ONTAP costs
               url: /fsx-storage/track-costs-fsx.html           
             - title: Manage volumes
@@ -195,14 +203,6 @@ sidebar:
                   entries: 
                     - title: Configuration analysis for Databases
                       url: /fsx-databases/optimize-overview.html  
-                    - title: Custom rules
-                      entries: 
-                        - title: Learn about custom rules
-                          url: /fsx-storage/learn-custom-rules.html
-                        - title: Create a custom rule
-                          url: /fsx-storage/create-custom-rule.html
-                        - title: Manage custom rules
-                          url: /fsx-storage/manage-custom-rules.html
                     - title: Implement well-architected database configurations   
                       url: /fsx-databases/optimize-configurations.html  
                 - title: Monitor database jobs
