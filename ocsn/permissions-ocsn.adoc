@@ -21,7 +21,7 @@ You do not share user passwords or API keys. Access exists only while your polic
 
 == Cross-tenancy trust
 
-NetApp operates the `workload-factory-OCI-SN` group in a NetApp-owned OCI tenancy, with API-key credentials mounted into a K8s secret. You establish a cross-tenancy policy in the tenancy root compartment that grants this group a narrow, explicit set of permissions in your tenancy. Every OCI API call is evaluated against this contract per request; you can audit and revoke it at any time.
+NetApp operates the `workload-factory-OCI-SN` group in a NetApp-owned OCI tenancy, with API-key credentials mounted into a K8s secret. You'll establish a cross-tenancy policy (paired `Endorse` on the NetApp side, `Admit` on your side) in the tenancy root compartment that grants this group a narrow, explicit set of permissions in your tenancy. Every OCI API call is evaluated against this contract per request; you can audit and revoke it at any time.
 
 === OCSN tenancy (default — tenancy root)
 The default tenancy for OCSN is the root compartment of your OCI tenancy.
