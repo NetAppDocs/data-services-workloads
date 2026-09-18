@@ -48,4 +48,4 @@ Admit group NetAppOpsWF of tenancy NetAppWF to manage file-family in tenancy
 Admit group NetAppOpsWF of tenancy NetAppWF to manage functions-family in tenancy
 Admit group NetAppOpsWF of tenancy NetAppWF to manage log-groups in tenancy
 
-Optional: Customers who require least privilege can replace in tenancy with in compartment <name> on each line.
+Optional: When you require least privilege, you can replace in tenancy with in compartment <name> on each line.
