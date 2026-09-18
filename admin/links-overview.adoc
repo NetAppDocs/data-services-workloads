@@ -23,7 +23,7 @@ Here are some benefits of using links:
 
 == How links work
 
-Links leverage remote serverless compute services, such as AWS Lambda and Oracle Cloud InfrastructureFunctions. The services execute code in response to events and automatically manage the computing resources required by that code. The links that you create are part of your NetApp account and they are associated with the corresponding cloud provider account.
+Links leverage remote serverless compute services, such as AWS Lambda and Oracle Cloud Infrastructure Functions. The services execute code in response to events and automatically manage the computing resources required by that code. The links that you create are part of your NetApp account and they are associated with the corresponding cloud provider account.
 
 After creating a link, you can associate it with one, or many, cloud storage systems. Each cloud storage system can be associated only to one link in the same NetApp account. If you have multiple NetApp accounts, a single cloud storage system can be associated with additional links under different NetApp accounts.
 
