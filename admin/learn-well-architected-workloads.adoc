@@ -18,11 +18,11 @@ include::_include/well-architected-workloads.adoc[]
 To get started with Workload Factory, sign up, add credentials, and establish connectivity to manage AWS resources and optimize workloads using Amazon FSx for NetApp ONTAP.
 
 link:https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html[Quick start]
+////
 
 == Use custom rules to enforce your architecture standards 
 
 Custom rules let you set, check, and enforce your own architecture standards, along with NetApp best practices, in the Well-architected dashboard.
-////
 
 === How custom rules work
 

@@ -23,21 +23,20 @@ Here are some benefits of using links:
 
 == How links work
 
-Links leverage remote serverless functions, such as AWS Lambda. The serverless function executes code in response to events and automatically manages the computing resources required by that code. The links that you create are part of your NetApp account and they are associated with an AWS account.
+Links leverage remote serverless compute services, such as AWS Lambda and Oracle Cloud InfrastructureFunctions. The services execute code in response to events and automatically manage the computing resources required by that code. The links that you create are part of your NetApp account and they are associated with the corresponding cloud provider account.
 
 After creating a link, you can associate it with one, or many, cloud storage systems. Each cloud storage system can be associated only to one link in the same NetApp account. If you have multiple NetApp accounts, a single cloud storage system can be associated with additional links under different NetApp accounts.
 
 You create and associate links from the Links page in the NetApp Console for your cloud storage systems.
 
-You can authenticate links using credentials stored in the Workload Factory credentials service or with your credentials stored in AWS Secrets Manager. Workload Factory doesn't support changing authentication modes.
-
-Link connectivity for GovCloud accounts is supported. Workload Factory uses GovCloud authentication keys, allowing secure, agentless access to your cloud storage systems through GovCloud-approved mechanisms.
+You can authenticate links using credentials stored in the Workload Factory credentials service or with your cloud provider's credential service. Workload Factory doesn't support changing authentication modes.
 
 == Costs
 
-Each transaction that Lambda performs incurs a charge. Because Lambda acts as a proxy between the two systems, there is a charge when Lambda sends a request to the ONTAP REST API on a file system, and when it sends the response back to Workload Factory.
+Each transaction that your cloud provider's serverless compute service performs incurs a charge. Because it acts as a proxy between the two systems, there is a charge when the service sends a request to the ONTAP REST API on a file system, and when it sends the response back to Workload Factory.
 
 link:https://aws.amazon.com/lambda/pricing/[Learn more about the costs related to using AWS Lambda^]
+link:https://www.oracle.com/cloud/cloud-native/functions/[Learn more about the costs related to using Oracle Cloud Infrastructure Functions^]
 
 == When a link is required
 
@@ -62,5 +61,5 @@ The features that require a link include:
 == Related information
 Learn how to create and associate links for:
 
-* link:create-link-fsx.adoc[FSx for ONTAP]
-* link:create-link-ocsn.adoc[Create and associate a link for ONTAP Cloud Storage Node]
+* link:fsx-storage/create-link-fsx.adoc[Amazon FSx for NetApp ONTAP]
+* link:ocsn/create-link-ocsn.adoc[Oracle Cloud Infrastructure Storage with NetApp]
