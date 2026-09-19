@@ -1,0 +1,4 @@
+---
+permalink: task-configure-dashboard-eda.html
+redirect: learn-project-dashboard-eda.html
+---

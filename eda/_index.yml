@@ -1,0 +1,58 @@
+indexpage:
+  title: NetApp Workload Factory for EDA documentation
+  lead: Streamline your EDA storage operations in NetApp Workload Factory by optimizing performance, integrating with your IaC to automate storage parameters, and ensuring operational health.
+  tiles: 
+    - title: Get started
+      links:
+        - title: Known limitations
+          url: /known-limitations-eda.html
+        - title: Learn about NetApp Workload Factory for EDA
+          url: /learn-eda.html
+        - title: Quick start
+          url: /quick-start-eda.html
+        - title: Requirements
+          url: /requirements-eda.html
+    - title: EDA storage overview
+      links:
+        - title: Learn about the Overview dashboard
+          url: /learn-overview-dashboard-eda.html
+        - title: Activate the Overview dashboard
+          url: /task-activate-overview-dashboard-eda.html
+        - title: Use the Overview dashboard
+          url: /task-use-overview-dashboard-eda.html
+    - title: FSx for ONTAP latency analysis
+      links:
+        - title: Learn about latency monitoring
+          url: /learn-latency-monitoring-eda.html
+        - title: Configure latency monitoring
+          url: /task-configure-latency-monitoring-eda.html
+        - title: Analyze latency issues
+          url: /task-analyze-latency-issues-eda.html
+    - title: Project usage analysis
+      links:
+        - title: Learn about the Projects dashboard
+          url: /learn-project-dashboard-eda.html
+        - title: Configure the Projects dashboard
+          url: /task-configure-project-dashboard-eda.html
+        - title: Use the Projects dashboard
+          url: /task-use-project-dashboard-eda.html
+    - title: Use Perforce integration
+      links:
+        - title: Learn about Perforce integration
+          url: /learn-eda-workloads-eda.html
+        - title: Automate with Codebox
+          url: /automate-codebox-eda.html
+    - title: Knowledge and support
+      links:
+        - title: Register for support
+          url: /support-registration-eda.html
+        - title: Get help
+          url: /get-help-eda.html
+    - title: Blogs & community
+      links:
+        - title: NetApp Console
+          url: https://www.netapp.com/console
+        - title: NetApp Data Services
+          url: https://www.netapp.com/data-services/
+        - title: NetApp Community
+          url: https://community.netapp.com/  

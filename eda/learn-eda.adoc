@@ -1,0 +1,25 @@
+---
+sidebar: sidebar
+permalink: learn-eda.html
+keywords: software builders, development, benefits, eda, electronic design automation
+summary: NetApp Workload Factory for EDA helps you optimize FSx for ONTAP usage performance. 
+---
+= Learn about Workload Factory for EDA
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+
+Workload Factory for EDA helps you manage Amazon FSx for ONTAP across multiple file systems. It improves performance and lowers costs by automatically adjusting storage settings, finding latency issues, and providing insights into your EDA projects.
+
+It is designed to integrate with your Infrastructure as Code (IaC) frameworks.
+
+Workload Factory for EDA offers dashboards, automation tools, and utilities that help you manage multiple FSx for ONTAP file systems.
+
+It offers the following: 
+
+* link:learn-overview-dashboard-eda.html[Overview dashboard]: Provides a single view of your FSx for ONTAP cluster so you can monitor health, capacity, and throughput. Use it to decide where to place new volumes, plan when to increase capacity or throughput, and get automatic capacity recommendations or enable automatic scaling. You can also review past decisions to see how the system's recommendations have changed over time.
+* link:learn-latency-monitoring-eda.html[Monitor volume latency]: Monitors volume read and write latency and lets you set warning and critical thresholds. When thresholds are exceeded, it sends notifications by email or SNS. Includes automated basic analysis using ONTAP QoS delay center metrics, with optional AI analysis for more complex issues that require deeper root cause identification.
+* link:task-analyze-latency-trends-eda.html[Analyze latency trends]: Use synced performance graphs for latency, IOPS, and throughput to see how these metrics change over time. This helps you spot patterns, determine whether issues repeat or happen only once, and make informed decisions about fixes.
+* link:learn-project-dashboard-eda.html[Projects dashboard]: Shows storage use for all your FSx for ONTAP file systems in one place, helping you plan capacity, estimate costs, and see how each project uses storage.
+* link:learn-eda-workloads-eda.html[CI/CD]: Speeds up software builds by quickly cloning FSx for ONTAP volumes.
