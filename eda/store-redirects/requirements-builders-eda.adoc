@@ -1,4 +1,0 @@
----
-permalink: requirements-builders-eda.html
-redirect: workload-builders/requirements-eda.html 
----

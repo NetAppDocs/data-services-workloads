@@ -1,4 +1,0 @@
----
-permalink: learn-builders-eda.html
-redirect: workload-builders/learn-eda.html
----
