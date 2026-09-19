@@ -21,6 +21,8 @@ You can create a link in your account when defining an FSx for ONTAP file system
 
 Links require authentication. You can authenticate links using credentials stored in the Workload Factory credentials service or with your credentials stored in AWS Secrets Manager. Only one authentication method is supported per link. For example, if you select link authentication with AWS Secrets Manager, you can't change the authentication method later.
 
+Link connectivity for GovCloud accounts is supported. Workload Factory uses GovCloud authentication keys, allowing secure, agentless access to your cloud storage systems through GovCloud-approved mechanisms.
+
 NOTE: AWS Secrets Manager isn't supported when using a Console agent.
 
 == Associate a new link

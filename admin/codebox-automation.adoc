@@ -32,6 +32,6 @@ The supported code formats include:
 
 == Related information
 
-link:use-codebox.html[Learn how to use Codebox].
+link:admin/use-codebox.html[Learn how to use Codebox].
 
 link:https://console.workloads.netapp.com/api-doc[Workload Factory REST API documentation^].

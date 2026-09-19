@@ -2,38 +2,34 @@
 sidebar: sidebar
 permalink: ocsn/create-link-ocsn.html
 keywords: connect, connection, link, associate link, create link, authenticate link
-summary: "You can create and manage links to provide a trust relationship and connectivity between a NetApp Workload Factory account and one or more OCSN storage systems."
+summary: "You can create and associate links to provide a trust relationship and connectivity between a NetApp Workload Factory account and an OCSN storage system."
 ---
 = Connect to an OCSN storage system with a link
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-To perform advanced Oracle Cloud Infrastructure Storage with NetApp management operations, set up a connection between your NetApp Workload Factory account and one or more OCSN storage systems. This involves associating new and existing links, and authenticating the links. Link association lets you monitor and manage certain features directly from the OCSN storage system that are unavailable through the OCSN API. 
+To perform advanced Oracle Cloud Infrastructure Storage with NetApp management operations, set up a connection between your NetApp Workload Factory account and an OCSN storage system. This process involves creating and associating new links. Link association lets you monitor and manage certain features directly from the OCSN storage system that are unavailable through OCI APIs. 
 
-link:links-overview.html[Learn more about links].
+link:admin/links-overview.html[Learn more about links].
 
 .About this task
 
-Links use AWS Lambda to execute code in response to events and automatically manage the computing resources required by that code. The links that you create are part of your NetApp account and they are associated with an Oracle Cloud Infrastructure account.
+**Rachel edit to make useful**: OCI Functions is an event-driven compute service that runs code in response to events. When you create a link, a package is deployed to OCI Functions in the VCN where your ONTAP file systems reside. This package enables connectivity from Workload Factory to the resources associated with your ONTAP workloads. No outbound connectivity from OCI Functions is required. OCI Functions interacts with ONTAP file systems via HTTPS (TCP port 443) and SSH (TCP port 22).
+
+Links use Oracle Cloud Infrastructure (OCI) Functions to execute code in response to events and automatically manage the computing resources required by that code. The links that you create are part of your NetApp account and they are associated with an Oracle Cloud Infrastructure account.
 
 You can create a link in your account when defining an OCSN storage system. You use the link for that storage system, and you can use it for other OCSN storage systems. You can also associate a link for a storage system later. 
 
-Links require authentication. You can authenticate links using credentials stored in the Workload Factory credentials service or with your credentials stored in AWS Secrets Manager. Only one authentication method is supported per link. For example, if you select link authentication with AWS Secrets Manager, you can't change the authentication method later.
+Links require authentication. You can authenticate links using credentials stored in the Workload Factory credentials service or with your credentials stored in Oracle Cloud Infrastructure (OCI) Vault. Only one authentication method is supported per link. For example, if you select link authentication with OCI Vault, you can't change the authentication method later.
 
-NOTE: AWS Secrets Manager isn't supported when using a Console agent.
+NOTE: OCI Vault isn't supported when using a Console agent.
 
 == Associate a new link
 Associating a new link includes link creation and association. 
 
-You have two options for creating links in this workflow - automatically or manually. If you have an AWS GovCloud account, you must create a new link manually.  
-
-* Automatically: Creates a link with automatic registration via Workload Factory. A link created automatically requires tokens for Workload Factory automation and the CloudFormation code is short-lived. It can only be used for up to six hours. 
-* Manually: Creates a link with manual registration using either CloudFormation or Terraform from the Codebox. The code persists giving you more time to complete the operation. This is useful when working with different teams like Security and DevOps that might first need to grant the permissions necessary to complete link creation.
-
-.Before you begin
-* You should consider which link creation option you'll use. 
-* You need to have at least one OCSN storage system in Workload Factory. To discover OCSN storage systems, you must have an Oracle Cloud Infrastructure account with permissions for OCSN instances and link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html#overview[add credentials in Workload Factory^] with _view, planning, and analysis_ permissions for Storage management. 
+.Before you begin 
+* You need to have at least one OCSN storage system in Workload Factory. To discover OCSN storage systems, you must have an Oracle Cloud Infrastructure account with link:ocsn/add-credentials-ocsn.html[add credentials in Workload Factory^] with _view, plan, and analyze_ permissions. 
 * The following ports must be open in the security group associated with the OCSN storage system for link connectivity. 
 ** For the Workload Factory console: port 443 (HTTPS)
 ** For CloudShell and OCSN Emergency Management System (EMS) events analysis: port 22 (SSH)
@@ -78,120 +74,56 @@ You have two options for creating links in this workflow - automatically or manu
 ]
 ==== 
 
-[role="tabbed-block"]
-====
-
-.Create automatically
---
-Use CloudFormation to automatically create and register the link within Workload Factory.
-
-NOTE: Automatic link creation isn't supported for AWS GovCloud accounts.
+== Create a new link
+Use the OCI CLI or OCI Terraform to create and register the link within Workload Factory.
 
 .Steps
 
 . Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
 . Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Administration*.
 . From the Administration menu, select *Links*. 
-. On the Links page, select *Create and associate*. 
-. In the Associate Link dialog, select the file system to associate with the link and select *Continue*.
-. Select *Create a new link* and then select *Continue*.
-. On the Create Link page, select *Create automatically* and then provide the following: 
+. On the Links page, select *Create and associate link* > *OCI Storage with NetApp*. 
+. In the Add Link dialog under *Details*, provide the following: 
 .. *Link name*: Enter the name that you want to use for this link. The name must be unique within your account.
-.. *AWS Secrets Manager*: Optional. Allows Workload Factory to fetch FSx for ONTAP access credentials from your AWS Secrets Manager. 
+.. *OCI Vault*: Optional. Allows Workload Factory to fetch ONTAP access credentials securely from your OCI Vault. 
 +
-The link deployment stack automatically adds the following default secret manager ARN regex to the Lambda permission policy: `arn:aws:secretsmanager:<link_deployment_region>:<link_deployment_account_id>:secret:FSxSecret*`. 
+The link deployment stack adds the following default OCI Vault secret OCID regex to the OCI Functions permission policy: `ocid1.vaultsecret.oc1.iad.<unique_id>.ONTAPSecret*`.
 +
-You can either create secrets in alignment with the default permissions or assign your custom permissions for the link policy.
+You can either create secrets in alignment with the default regex or update the regex in the Terraform configuration file to match your secret OCID.
+.. *Tags*: Optionally, add up to 50 tags to associate with this link so you can more easily categorize your resources. For example, you could add a tag that identifies this link as being used by OCSN storage systems.
+.. *Link registration*: Follow the instructions in the Workload Factory console to register the link. Link registration happens from your OCI Terraform environment. Select OCI Terraform from the Codebox for the instructions.
+..  *Link association*: Select the OCSN system to associate with this link, and enter the user name and password.
+.. *Link permissions*: Specify the permissions to create the link. 
 +
-*Configure VPC private endpoint to AWS Secrets Manager* is disabled by default. Selecting this option stores the secret using the VPC private endpoint instead of storing it locally.
-.. *Link permissions*: Select one of the following options for link permissions:
+.Required permissions for the link
+[source,text]
+----
+Allow group to manage orm-stacks in compartment id
+Allow group to manage orm-jobs in compartment id
+Allow group to manage dynamic-groups in tenancy
+Allow group to manage policies in compartment id
+Allow group to manage functions-family in compartment id
+Allow group to manage log-groups in compartment id
+Allow group to use virtual-network-family in compartment id
+----
 
-* *Automatic*: Select this option so that AWS CloudFormation code automatically creates the Lambda permission policy and execution role. 
-* *User-provided execution role*: Select this option to assign a specified Lambda execution role and its attached policies to the Lambda link. The following permissions are required for the Lambda permission policy. The `secretsmanager:GetSecretValue` permission is required only if you enabled AWS Secrets Manager.
+. In the Add Link dialog under *Location*, provide the following: 
+.. *OCI tenancy*: Enter the OCI tenancy. 
+.. *Compartment*: Enter the compartment.
+.. *Region*: Select the region. 
+.. *Subnet*: Select the subnet. 
+.. *Network security group*: Enter the security group.
 +
-[source,json]
-"ec2:CreateNetworkInterface",
-"ec2:DescribeNetworkInterfaces",
-"ec2:DeleteNetworkInterface",
-"ec2:AssignPrivateIpAddresses",
-"ec2:UnassignPrivateIpAddresses",
-+
-Enter the Lambda execution role ARN in the text box.
-.. *Tags*: Optionally, add any tags that you want to associate with this link so you can more easily categorize your resources. For example, you could add a tag that identifies this link as being used by FSx for ONTAP file systems.
-+
-Workload Factory automatically retrieves the AWS account, location, and security group based on the FSx for ONTAP file system.
-. Select *Create*. 
-+
-The Redirect to CloudFormation dialog appears and explains how to create the link from the AWS CloudFormation service.
-. Select *Continue* to open the AWS Management Console, and then log in to the AWS account for this FSx for ONTAP file system.
-. On the Quick create stack page, under Capabilities, select *I acknowledge that AWS CloudFormation might create IAM resources*.
-+
-The CloudFormation template grants Lambda three permissions when you launch it. Workload Factory uses these permissions when using links.
-+
-[source,json]
-"lambda:InvokeFunction",
-"lambda:GetFunction",
-"lambda:UpdateFunctionCode"
-
-. Select *Create stack* and then Select *Continue*.
+Workload Factory automatically retrieves the OCI account, location, and security group based on the selected OCSN system.
+. Select *Add*. 
 +
 You can monitor the link creation status on the Events page. This should take no more than five minutes.
-. Return to the Workload Factory interface and you'll see that the link is associated with the FSx for ONTAP file system.
---
-.Create manually
---
-You can create a link using two Infrastructure-as-Code (IaC) tools from the Codebox: CloudFormation or Terraform. With this option, you extract the ARN for the link from AWS CloudFormation and report it here. Workload Factory manually registers the link for you. 
-
-.Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Administration*.
-. From the Administration menu, select *Links*. 
-. On the Links page, select *Create and associate*. 
-. In the Associate Link dialog, select the file system to associate with the link and select *Continue*.
-. Select *Create a new link* and then select *Continue*.
-. On the Create Link page, select *Create manually* and then select CloudFormation or Terraform from the Codebox.
-. Under Details and credentials, provide the following: 
-.. *Link name*: Enter the name that you want to use for this link. The name must be unique within your account.
-.. *AWS Secrets Manager*: Always enabled for GovCloud accounts. Optional for other accounts. Allows Workload Factory to fetch FSx for ONTAP access credentials from your AWS Secrets Manager. 
-+
-You can either create secrets in alignment with the default permissions or assign your custom permissions for the link policy.
-+
-*Configure VPC private endpoint to AWS Secrets Manager* is disabled by default. Selecting this option stores the secret using the VPC private endpoint instead of storing it locally.
-.. *Link permissions*: Select one of the following options for link permissions:
-
-* *Automatic*: Select this option so that AWS CloudFormation code automatically creates the Lambda permission policy and execution role. 
-* *User-provided*: Select this option to assign a specified Lambda execution role and its attached policies to the Lambda link. The following permissions are required for the Lambda permission policy. The `secretsmanager:GetSecretValue` permission is required only when using AWS Secrets Manager.
-+
-[source,json]
-"ec2:CreateNetworkInterface",
-"ec2:DescribeNetworkInterfaces",
-"ec2:DeleteNetworkInterface",
-"ec2:AssignPrivateIpAddresses",
-"ec2:UnassignPrivateIpAddresses"
-+
-Enter the Lambda execution role ARN in the text box.
-
-.. *Tags*: Optionally, add any tags that you want to associate with this link so you can more easily categorize your resources. For example, you could add a tag that identifies this link as being used by FSx for ONTAP file systems.
-.. *Link registration*: Select CloudFormation or Terraform for the instructions for how to register the link, and follow the instructions. 
-+
-The CloudFormation template grants Lambda three permissions when you launch it. Workload Factory uses these permissions when using links.
-+
-[source,json]
-"lambda:InvokeFunction",
-"lambda:GetFunction",
-"lambda:UpdateFunctionCode"
-
-... After you successfully create the stack, paste the Lambda ARN in the text box in the Workload Factory console. Workload Factory automatically retrieves the AWS account, location, and security group based on the FSx for ONTAP file system.
-... Select *Create*. 
-+
-You can monitor the link creation status on the Events page. This should take no more than five minutes.
-
---
-====
+. Return to the Workload Factory interface and you'll see that the link is associated with the OCSN storage system.
 
 .Result
 
-Workload Factory associates the link with the FSx for ONTAP file system. You can perform advanced ONTAP operations. 
+Workload Factory associates the link with the OCSN storage system. You can perform advanced ONTAP operations. 
+////
 
 == Associate an existing link with an OCSN storage system
 After you create a link, associate it with one or more OCSN storage systems.
@@ -219,9 +151,10 @@ NOTE: Authentication with AWS Secrets Manager requires a user, either the _FSx_u
 
 .Result
 
-The link is associated with the FSx for ONTAP file system. You can perform advanced ONTAP operations.
+The link is associated with the OCSN storage system. You can perform advanced ONTAP operations.
+////
 
 .Related information
 
-link:setup/links-overview.html#when-a-link-is-required[Learn more about links].
+link:admin/links-overview.html#when-a-link-is-required[Learn more about links].
 
