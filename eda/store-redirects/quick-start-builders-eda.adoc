@@ -1,4 +1,0 @@
----
-permalink: quick-start-builders-eda.html
-redirect: workload-builders/quick-start-eda.html 
----
