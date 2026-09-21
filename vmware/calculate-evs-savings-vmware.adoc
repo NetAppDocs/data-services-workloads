@@ -7,7 +7,7 @@ summary: Calculate how much you can save by using Amazon EVS with FSx for ONTAP.
 
 = Explore savings for Amazon Elastic VMware Service with NetApp Workload Factory
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 Explore potential savings for migrating your VMware workloads to Amazon Elastic VMware Service (EVS). The calculator enables you to compare costs of using Amazon EVS with and without Amazon FSx for NetApp ONTAP as storage.

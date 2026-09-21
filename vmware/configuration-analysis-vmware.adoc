@@ -7,7 +7,7 @@ summary: Learn how Workload Factory analyzes Amazon Elastic VMware Service confi
 
 = Configuration analysis for EVS configurations
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 Workload Factory analyzes Amazon Elastic VMware Service (EVS) configurations regularly to identify misalignments with best practices. Use the results to improve performance, cost efficiency, and compliance.

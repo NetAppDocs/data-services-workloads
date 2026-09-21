@@ -7,7 +7,7 @@ summary: Log in to the NetApp Workload Factory to access the VMware planning cen
 
 = Manually create a deployment plan for Amazon EVS
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 Log in to the NetApp Workload Factory to access the VMware planning center. From there, you can manually create a deployment plan or migration plan for Amazon EVS that is customized for your needs.

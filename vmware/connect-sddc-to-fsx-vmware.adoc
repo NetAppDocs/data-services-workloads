@@ -7,7 +7,7 @@ summary: After you deploy an FSx for ONTAP file system, you need to connect that
 
 = Connect your FSx for ONTAP file systems to VMware Cloud on AWS
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 After you deploy FSx for ONTAP file systems, you need to connect that system to your VMware Cloud on AWS infrastructure. Your Software-Defined Data Center (SDDC) offers network options for connecting to the FSx for ONTAP file system by using the VPC peering capability to extend network connectivity to the external NFS storage volumes.

@@ -7,7 +7,7 @@ summary: You can use the Migration advisor VM collector script or RVTools to cap
 
 = Capture your VM configurations before migrating to VMware Cloud with VMware workloads
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can use the Migration advisor VM collector script or RVTools to capture your current VM configurations. We recommend that you use the Migration advisor VM collector script because it gathers both VM configuration and performance data for the most accurate plan.

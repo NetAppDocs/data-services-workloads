@@ -7,7 +7,7 @@ summary: NetApp Workload Factory for VMware provides tools to move your data fro
 
 = Learn about NetApp Workload Factory for VMware 
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 NetApp Workload Factory for VMware provides tools to move your data from on-premises systems to Amazon Elastic VMware Service (EVS), VMware Cloud on AWS (VMC), Amazon EC2, or Google Cloud VMware Engine.

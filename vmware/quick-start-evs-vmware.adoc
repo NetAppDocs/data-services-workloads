@@ -7,7 +7,7 @@ summary: Get started with the VMware migration advisor to move your current infr
 
 = Quick start for migrating to Amazon EVS using the VMware workloads migration advisor
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 Get started with the VMware migration advisor to move your current infrastructure to Amazon EVS using Amazon FSx for ONTAP as external NFS datastores.

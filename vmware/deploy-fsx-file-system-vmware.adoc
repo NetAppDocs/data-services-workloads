@@ -7,7 +7,7 @@ summary: After you verify that the recommended FSx for ONTAP file system, or fil
 
 = Deploy the recommended FSx for ONTAP file system
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 After you verify that the recommended FSx for ONTAP file system (or multiple file systems in some cases) meets your exact requirements, you can use Workload Factory to deploy the system in your AWS environment.

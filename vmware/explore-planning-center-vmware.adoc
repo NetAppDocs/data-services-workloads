@@ -7,7 +7,7 @@ summary: You can use the VMware planning center to manage uploaded inventory dat
 
 = Explore the VMware planning center
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The VMware planning center enables you to upload new VM inventory data and create new migration plans, as well as manage the VM inventory data and migration plans that you have already saved with NetApp Workload Factory.

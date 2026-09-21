@@ -7,7 +7,7 @@ summary: From the VMware planning center, you can launch the Amazon EVS migratio
 
 = Create a deployment plan for Amazon EVS using the migration advisor
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 From the VMware planning center, you can launch the Amazon EVS migration advisor to help create a migration plan that is customized for your needs.

@@ -7,7 +7,7 @@ summary: You can use the Migration advisor VM collector script or RVTools to cap
 
 = Capture your VM configurations before migrating to Amazon EC2 with VMware workloads
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can use the Migration advisor VM data collector script, RVTools, or NetApp Data Infrastructure Insights to capture your current VM configurations. We recommend that you use the Migration advisor VM collector script or Data Infrastructure Insights because these options gather both VM configuration and performance data for the most accurate plan.

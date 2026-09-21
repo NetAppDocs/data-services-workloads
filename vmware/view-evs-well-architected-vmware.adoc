@@ -7,7 +7,7 @@ summary: Review well-architected status for EVS configurations in Workload Facto
 
 = Implement well-architected EVS configurations
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 Use Workload Factory configuration analysis to review well-architected status for your Amazon Elastic VMware Service (EVS) configurations and remediate issues that affect reliability, security, and cost.
