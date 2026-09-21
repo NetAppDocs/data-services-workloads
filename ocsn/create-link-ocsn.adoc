@@ -9,7 +9,7 @@ summary: "You can create and associate links to provide a trust relationship and
 :imagesdir: ../media/
 
 [.lead]
-To perform advanced Oracle Cloud Infrastructure Storage with NetApp management operations, set up a connection between your NetApp Workload Factory account and an OCSN storage system. This process involves creating and associating new links. Link association lets you monitor and manage certain features directly from the OCSN storage system that are unavailable through OCI APIs. 
+To perform advanced OCI NetApp Storage Service management operations, set up a connection between your NetApp Workload Factory account and an OCSN storage system. This process involves creating and associating new links. Link association lets you monitor and manage certain features directly from the OCSN storage system that are unavailable through OCI APIs. 
 
 link:admin/links-overview.html[Learn more about links].
 

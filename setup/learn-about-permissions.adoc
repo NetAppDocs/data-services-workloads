@@ -26,5 +26,5 @@ Workload Factory uses permissions to perform certain tasks. Permissions are bund
 Refer to the following pages to learn about permission requirements for your cloud provider:
 
 * link:fsx-storage/permissions-fsx.html[Amazon FSx for NetApp ONTAP]
-* link:ocsn/permissions-ocsn.html[Oracle Cloud Infrastructure Storage with NetApp]
+* link:ocsn/permissions-ocsn.html[OCI NetApp Storage Service]
 

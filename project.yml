@@ -319,11 +319,11 @@ sidebar:
           url: /gcnv/configuration-analysis-gcnv.html
         - title: Improve storage pool configurations
           url: /gcnv/improve-configurations.html
-    - title: Oracle Cloud Infrastructure Storage with NetApp
+    - title: OCI NetApp Storage Service
       entries:
-        - title: Learn about Oracle Cloud Infrastructure Storage with NetApp
+        - title: Learn about OCI NetApp Storage Service
           url: /ocsn/learn-about-ocsn.html
-        - title: Quick start for Oracle Cloud Infrastructure Storage with NetApp
+        - title: Quick start for OCI NetApp Storage Service
           url: /ocsn/quick-start-ocsn.html  
         - title: Add OCI credentials
           url: /ocsn/add-credentials-ocsn.html
@@ -331,7 +331,7 @@ sidebar:
           url: /ocsn/create-discover-systems-ocsn.html
         - title: Connect to an OCI Storage system 
           url: /ocsn/create-link-ocsn.html
-        - title: Permissions reference for Oracle Cloud Infrastructure Storage with NetApp
+        - title: Permissions reference for OCI NetApp Storage Service
           url: /ocsn/permissions-ocsn.html
     - title: Administer Workload Factory
       entries:

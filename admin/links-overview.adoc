@@ -62,4 +62,4 @@ The features that require a link include:
 Learn how to create and associate links for:
 
 * link:fsx-storage/create-link-fsx.adoc[Amazon FSx for NetApp ONTAP]
-* link:ocsn/create-link-ocsn.adoc[Oracle Cloud Infrastructure Storage with NetApp]
+* link:ocsn/create-link-ocsn.adoc[OCI NetApp Storage Service]
