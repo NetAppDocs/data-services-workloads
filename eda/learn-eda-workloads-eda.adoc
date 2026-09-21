@@ -6,7 +6,7 @@ summary: Learn how to use Perforce integration in NetApp Workload Factory for ED
 ---
 = Learn about Perforce integration in Workload Factory for EDA
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 

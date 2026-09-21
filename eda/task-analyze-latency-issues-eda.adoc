@@ -6,7 +6,7 @@ summary: View and analyze latency events to find performance issues with FSx for
 ---
 = Analyze latency issues in Workload Factory for EDA
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 See detected delays and use automated tools to find the cause and fix slow performance in your FSx for ONTAP volumes.

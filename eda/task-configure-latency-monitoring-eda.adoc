@@ -6,7 +6,7 @@ summary: Configure latency monitoring thresholds and notification settings to de
 ---
 = Configure latency monitoring in Workload Factory for EDA
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 Set warning and critical limits for read and write latency to track FSx for ONTAP volume performance. You can also enable email or Amazon SNS alerts to get real-time notifications when latency issues occur.

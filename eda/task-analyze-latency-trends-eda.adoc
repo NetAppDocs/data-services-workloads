@@ -6,7 +6,7 @@ summary: Use the interactive graphs to analyze volume latency trends over time, 
 ---
 = Analyze latency trends for EDA in Workload Factory
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 

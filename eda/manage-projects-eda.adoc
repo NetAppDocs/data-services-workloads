@@ -6,7 +6,7 @@ summary: Manage Microsoft SQL Server instances in Workload Factory for Databases
 ---
 = Manage EDA projects in Workload Factory for EDA
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can manage EDA projects to control how your code and artifacts are managed for each project in NetApp Workload Factory for EDA. 

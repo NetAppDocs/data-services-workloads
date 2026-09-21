@@ -6,7 +6,7 @@ summary: Learn how to integrate EDA with Perforce.
 ---
 = Integrate Workload Factory for EDA with Perforce
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 Integrate EDA with the Perforce Helix Visual Client (P4V) so that developers can manage your workspaces using the Perforce CLI. This enables developers to quickly switch between projects and workspaces, saving time during development.

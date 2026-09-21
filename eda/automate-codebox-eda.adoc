@@ -6,7 +6,7 @@ summary: You can automate host deployment, database creation, and more with Code
 ---
 = Automate EDA workloads with Codebox
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can automate project creation and data protection operations with Codebox. Codebox is an infrastructure as code (IaC) co-pilot that helps you generate code to execute any operations supported by Workload Factory. 

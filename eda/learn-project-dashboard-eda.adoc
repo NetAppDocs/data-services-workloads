@@ -6,7 +6,7 @@ summary: Learn how the Projects dashboard in Workload Factory for EDA helps you 
 ---
 = Learn about the Projects dashboard in Workload Factory for EDA
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The Projects dashboard lets IT admins and project managers see how projects use storage across FSx for ONTAP file systems and volumes. It shows storage usage patterns so you can spot projects using the most resources, track costs, and adjust storage before capacity or performance problems affect EDA simulations.
