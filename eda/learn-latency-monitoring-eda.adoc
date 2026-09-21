@@ -6,7 +6,7 @@ summary: Learn how latency monitoring in Workload Factory for EDA helps you dete
 ---
 = Learn about latency monitoring in Workload Factory for EDA
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 Latency monitoring in Workload Factory for EDA helps you find and fix performance slowdowns in your FSx for ONTAP volumes. It tracks read and write latency using CloudWatch metrics and automatically analyzes the data to help identify the cause of performance issues.

@@ -6,7 +6,7 @@ summary: NetApp Workload Factory for EDA helps you optimize FSx for ONTAP usage 
 ---
 = Learn about Workload Factory for EDA
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 

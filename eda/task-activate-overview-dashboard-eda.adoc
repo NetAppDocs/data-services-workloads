@@ -6,7 +6,7 @@ summary: Activate the Overview dashboard to begin collecting CloudWatch metrics 
 ---
 = Activate the Overview dashboard in Workload Factory for EDA
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 Activate the Overview dashboard to start collecting CloudWatch metrics for your FSx for ONTAP file systems. The dashboard lets you see cluster health, capacity, and throughput in one place.

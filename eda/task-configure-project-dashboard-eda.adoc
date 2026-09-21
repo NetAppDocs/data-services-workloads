@@ -6,7 +6,7 @@ summary: Configure custom filters for the Projects dashboard to organize metrics
 ---
 = Configure the Projects dashboard in Workload Factory for EDA
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 Set up custom filters on the Projects dashboard to organize data in a way that matches how your business works, such as by project, team, or cost center. This makes it easier to see costs clearly, spot which resources use the most capacity, and make better decisions about budgets and staffing. When the filters match your organization's structure, you can quickly find the data you need and manage capacity, costs, and performance more efficiently.

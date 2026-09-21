@@ -6,7 +6,7 @@ summary: Use the Projects dashboard to monitor storage usage, filter data by pro
 ---
 = Use the Projects dashboard in Workload Factory for EDA
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 Use the Projects dashboard to track storage use across your FSx for ONTAP file systems and volumes. Filter the data by project, team, or application. View both overall and per-volume performance to help plan capacity and use resources more efficiently.

@@ -7,7 +7,7 @@ summary: Get started with Workload Factory for EDA by setting up your environmen
 
 = Quick start for Workload Factory for EDA
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 Get started with Workload Factory for EDA by setting up your environment, enabling monitoring dashboards, and configuring latency analysis to optimize FSx for ONTAP performance for your EDA workloads.

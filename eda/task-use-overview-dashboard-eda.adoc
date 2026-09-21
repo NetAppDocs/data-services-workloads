@@ -6,7 +6,7 @@ summary: Use the Overview dashboard to monitor cluster health, view capacity rec
 ---
 = Use the Overview dashboard in Workload Factory for EDA
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 Use the Overview dashboard to check the health and capacity of your FSx for ONTAP file systems. You can filter the data, see capacity recommendations, adjust SSD and throughput settings, and review performance trends to help decide where to place volumes and when to scale capacity.
