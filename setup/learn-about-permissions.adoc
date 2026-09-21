@@ -1,0 +1,30 @@
+---
+sidebar: sidebar
+permalink: setup/learn-about-permissions.html
+keywords: permissions, actions
+summary: "To use NetApp Workload Factory features and services, you'll need to provide permissions so that Workload Factory can perform operations in your cloud environment." 
+---
+= Permissions for NetApp Workload Factory
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ../media/
+
+[.lead]
+To use NetApp Workload Factory features and services, you'll need to provide permissions so that Workload Factory can perform operations in your cloud environment. 
+
+== Why use permissions
+When you provide permissions, Workload Factory attaches a policy to the instance with permissions to manage resources and processes within your cloud provider account. This allows Workload Factory to execute various operations starting from discovery of your storage environments to deploying cloud resources such as volumes in storage management.
+
+For FSx for ONTAP database workloads for example, when Workload Factory is granted with the required permissions, it scans all EC2 instances in a given account and region, and filters all Windows-based machines. If AWS Systems Manager (SSM) Agent is installed and running on the host and System Manager networking is configured properly, Workload Factory can access the Windows machine and verify whether SQL Server software is installed or not.
+
+== How permissions are used
+Workload Factory uses permissions to perform certain tasks. Permissions are bundled into set permission policies. Permission policies appear in link:admin/codebox-automation.html[the Codebox] and are copiable JSON. Each cloud provider has its own set of permission policies tailored to the specific requirements and capabilities of that cloud environment. This documentation provides permission references for each cloud provider.
+
+=== Permission references by cloud provider
+Refer to the following pages to learn about permission requirements for your cloud provider:
+
+* link:fsx-storage/permissions-fsx.html[Amazon FSx for NetApp ONTAP]
+* link:ocsn/permissions-ocsn.html[Oracle Cloud Infrastructure Storage with NetApp]
+

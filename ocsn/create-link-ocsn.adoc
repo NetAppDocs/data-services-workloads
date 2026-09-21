@@ -1,0 +1,160 @@
+---
+sidebar: sidebar
+permalink: ocsn/create-link-ocsn.html
+keywords: connect, connection, link, associate link, create link, authenticate link
+summary: "You can create and associate links to provide a trust relationship and connectivity between a NetApp Workload Factory account and an OCSN storage system."
+---
+= Connect to an OCSN storage system with a link
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+To perform advanced Oracle Cloud Infrastructure Storage with NetApp management operations, set up a connection between your NetApp Workload Factory account and an OCSN storage system. This process involves creating and associating new links. Link association lets you monitor and manage certain features directly from the OCSN storage system that are unavailable through OCI APIs. 
+
+link:admin/links-overview.html[Learn more about links].
+
+.About this task
+
+**Rachel edit to make useful**: OCI Functions is an event-driven compute service that runs code in response to events. When you create a link, a package is deployed to OCI Functions in the VCN where your ONTAP file systems reside. This package enables connectivity from Workload Factory to the resources associated with your ONTAP workloads. No outbound connectivity from OCI Functions is required. OCI Functions interacts with ONTAP file systems via HTTPS (TCP port 443) and SSH (TCP port 22).
+
+Links use Oracle Cloud Infrastructure (OCI) Functions to execute code in response to events and automatically manage the computing resources required by that code. The links that you create are part of your NetApp account and they are associated with an Oracle Cloud Infrastructure account.
+
+You can create a link in your account when defining an OCSN storage system. You use the link for that storage system, and you can use it for other OCSN storage systems. You can also associate a link for a storage system later. 
+
+Links require authentication. You can authenticate links using credentials stored in the Workload Factory credentials service or with your credentials stored in Oracle Cloud Infrastructure (OCI) Vault. Only one authentication method is supported per link. For example, if you select link authentication with OCI Vault, you can't change the authentication method later.
+
+NOTE: OCI Vault isn't supported when using a Console agent.
+
+== Associate a new link
+Associating a new link includes link creation and association. 
+
+.Before you begin 
+* You need to have at least one OCSN storage system in Workload Factory. To discover OCSN storage systems, you must have an Oracle Cloud Infrastructure account with link:ocsn/add-credentials-ocsn.html[add credentials in Workload Factory^] with _view, plan, and analyze_ permissions. 
+* The following ports must be open in the security group associated with the OCSN storage system for link connectivity. 
+** For the Workload Factory console: port 443 (HTTPS)
+** For CloudShell and OCSN Emergency Management System (EMS) events analysis: port 22 (SSH)
+* The link must be able to connect to the following endpoint: \https://api.workloads.netapp.com. The web-based console contacts this endpoint to interact with the Workload Factory APIs to manage and operate OCSN workloads.
+* You must have the following permissions in your Oracle Cloud Infrastructure account when adding a link using a CloudFormation stack:
++
+[%collapsible]
+====
+[source,json]
+[
+  "cloudformation:GetTemplateSummary",
+  "cloudformation:CreateStack",
+  "cloudformation:DescribeStacks",
+  "cloudformation:ListStacks",
+  "cloudformation:DescribeStackEvents",
+  "cloudformation:ListStackResources",
+  "ec2:DescribeSubnets",
+  "ec2:DescribeSecurityGroups",
+  "ec2:DescribeVpcs",
+  "iam:ListRoles",
+  "iam:GetRolePolicy",
+  "iam:GetRole",
+  "iam:DeleteRolePolicy",
+  "iam:CreateRole",
+  "iam:DetachRolePolicy",
+  "iam:PutRolePolicy",
+  "iam:DeleteRole",
+  "iam:AttachRolePolicy",
+  "lambda:InvokeFunction",
+  "lambda:GetFunction",
+  "lambda:CreateFunction",
+  "lambda:DeleteFunction",
+  "iam:PassRole",
+  "lambda:TagResource",
+  "ecr:BatchGetImage",
+  "ecr:GetDownloadUrlForLayer",
+  "lambda:AddPermission",
+  "lambda:RemovePermission",
+  "cloudformation:DeleteStack",
+  "kms:CreateGrant",
+  "kms:GenerateDataKey"
+]
+==== 
+
+== Create a new link
+Use the OCI CLI or OCI Terraform to create and register the link within Workload Factory.
+
+.Steps
+
+. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Administration*.
+. From the Administration menu, select *Links*. 
+. On the Links page, select *Create and associate link* > *OCI Storage with NetApp*. 
+. In the Add Link dialog under *Details*, provide the following: 
+.. *Link name*: Enter the name that you want to use for this link. The name must be unique within your account.
+.. *OCI Vault*: Optional. Allows Workload Factory to fetch ONTAP access credentials securely from your OCI Vault. 
++
+The link deployment stack adds the following default OCI Vault secret OCID regex to the OCI Functions permission policy: `ocid1.vaultsecret.oc1.iad.<unique_id>.ONTAPSecret*`.
++
+You can either create secrets in alignment with the default regex or update the regex in the Terraform configuration file to match your secret OCID.
+.. *Tags*: Optionally, add up to 50 tags to associate with this link so you can more easily categorize your resources. For example, you could add a tag that identifies this link as being used by OCSN storage systems.
+.. *Link registration*: Follow the instructions in the Workload Factory console to register the link. Link registration happens from your OCI Terraform environment. Select OCI Terraform from the Codebox for the instructions.
+..  *Link association*: Select the OCSN system to associate with this link, and enter the user name and password.
+.. *Link permissions*: Specify the permissions to create the link. 
++
+.Required permissions for the link
+[source,text]
+----
+Allow group to manage orm-stacks in compartment id
+Allow group to manage orm-jobs in compartment id
+Allow group to manage dynamic-groups in tenancy
+Allow group to manage policies in compartment id
+Allow group to manage functions-family in compartment id
+Allow group to manage log-groups in compartment id
+Allow group to use virtual-network-family in compartment id
+----
+
+. In the Add Link dialog under *Location*, provide the following: 
+.. *OCI tenancy*: Enter the OCI tenancy. 
+.. *Compartment*: Enter the compartment.
+.. *Region*: Select the region. 
+.. *Subnet*: Select the subnet. 
+.. *Network security group*: Enter the security group.
++
+Workload Factory automatically retrieves the OCI account, location, and security group based on the selected OCSN system.
+. Select *Add*. 
++
+You can monitor the link creation status on the Events page. This should take no more than five minutes.
+. Return to the Workload Factory interface and you'll see that the link is associated with the OCSN storage system.
+
+.Result
+
+Workload Factory associates the link with the OCSN storage system. You can perform advanced ONTAP operations. 
+////
+
+== Associate an existing link with an OCSN storage system
+After you create a link, associate it with one or more OCSN storage systems.
+
+.Steps
+. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Storage*.
+. From the Storage menu, select *OCSN*. 
+. From *OCSN*, select the actions menu of the storage system to associate a link to and then select *Associate link*. 
+. In the Associate link page, select *Associate an existing link*, select the link, and select *Continue*.
+. Select the authentication mode. 
+* Workload Factory: enter the password twice. 
+* AWS Secrets Manager: enter the secret ARN.
++
+Verify that the secret ARN contains the following key-value pairs, though the _filesystemID_ is optional.
+
+** filesystemID = FSx_filesystem_id (optional)
+** user = FSx_user
+** password = user_password
++
+NOTE: Authentication with AWS Secrets Manager requires a user, either the _FSx_user_ that you provide or another user that was created on the FSx for ONTAP file system. The default user is `fsxadmin` if you don't provide a user.
+
+. Select *Apply*. 
+
+
+.Result
+
+The link is associated with the OCSN storage system. You can perform advanced ONTAP operations.
+////
+
+.Related information
+
+link:admin/links-overview.html#when-a-link-is-required[Learn more about links].
+

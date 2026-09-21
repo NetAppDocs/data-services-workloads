@@ -1,0 +1,5 @@
+=== Initial release of Oracle Cloud Infrastructure Storage with NetApp for Workload Factory 
+The initial release of Oracle Cloud Infrastructure Storage with NetApp (OCSN) for Workload Factory offers onboarding, system discovery, credential management, and link creation and association. This gives users the chance to discover and view their OCSN systems efficiently within the Workload Factory environment.
+
+=== Workload Factory documentation for NetApp Console users
+You can find detailed documentation for Workload Factory in the NetApp Console, including guides for onboarding, system discovery, credential management, and link creation and association.

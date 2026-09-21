@@ -1,0 +1,18 @@
+---
+sidebar: sidebar
+permalink: fsx-storage/security-reference-fsx.html
+keywords: security, data protection, IAM, file system access control, vpc
+summary: "Amazon FSx for NetApp ONTAP documentation provides the following security topics for your reference."
+---
+= Security for FSx for ONTAP in NetApp Workload Factory
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Amazon FSx for NetApp ONTAP documentation provides the following security topics for your reference. 
+
+* link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/data-protection.html[Data protection in Amazon FSx for NetApp ONTAP^]
+* link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/security-iam.html[Identity and access management for Amazon FSx for NetApp ONTAP^]
+* link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/limit-access-security-groups.html[File System Access Control with Amazon VPC^] in Amazon FSx for NetApp ONTAP documentation
+
+Workload Factory provides documentation about information security for understanding and implementing security best practices within Workload Factory and FSx for ONTAP. link:https://docs.netapp.com/us-en/workload-infosec/index.html[Learn more^].
