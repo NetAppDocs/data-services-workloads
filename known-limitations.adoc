@@ -162,3 +162,8 @@ After adding hosts to NetApp Backup and Recovery for protection, database discov
 
 === Registering Oracle on SUSE Linux Enterprise Server 12
 When registering Oracle Database on SUSE Linux Enterprise Server 12, Workload Factory does not install Python dependencies. You must manually configure the required Python version. Workload Factory requires the minimum version of 3.6; however, we recommend version 3.11.
+
+== Known limitations for EDA workloads
+
+=== Operator permissions required
+NetApp Workload Factory for EDA requires Operator permissions to function correctly.
