@@ -14,16 +14,15 @@ Managing a volume's SMB/CIFS share in Workload Factory includes SMB/CIFS share c
 .Before you begin
 Before you begin, do the following: 
 
-* To manage SMB/CIFS shares, you must associate a link. link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html[Learn how to associate an existing link or to create and associate a new link^]. After the link associates, return to this operation. 
+* To manage SMB/CIFS shares, you must associate a link. link:fsx-storage/create-link-fsx.html[Learn how to associate an existing link or to create and associate a new link^]. After the link associates, return to this operation. 
 * Determine the users or groups to give access to and the level of permissions to give them. 
 
 == Create an SMB/CIFS share for a volume
 Follow the steps to create an SMB/CIFS share for a volume. 
 
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Storage*.
-. From the Storage menu, select *Volumes explorer*. 
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Volumes explorer*. 
 . Select the actions menu of the volume to change the SMB share for. 
 . Select *Advanced actions*, then *Manage SMB/CIFS shares*. 
 . On the Manage SMB/CIFS shares page, select *Create SMB/CIFS share*.
@@ -50,8 +49,8 @@ Valid path inputs for share name, for example "Server", are as follows:
 Follow the steps to change the SMB/CIFS share settings for a volume.
 
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Storage*.
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Storage* > *FSx for ONTAP*. 
 . In the *FSx for ONTAP* tab, select the actions menu of the file system with the volume to update and then select *Manage*.
 . From the file system overview, select the *Volumes* tab. 
 . From the Volumes tab, select the actions menu of the volume to change the SMB share for. 
@@ -66,8 +65,8 @@ Changes might cause current users or groups to lose access to the SMB/CIFS share
 Follow the steps to delete an SMB/CIFS share for a volume.
 
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Storage*.
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Storage* > *FSx for ONTAP*. 
 . In the *FSx for ONTAP* tab, select the actions menu of the file system with the volume to update and then select *Manage*.
 . From the file system overview, select the *Volumes* tab. 
 . From the Volumes tab, select the actions menu of the volume to change the SMB share for. 

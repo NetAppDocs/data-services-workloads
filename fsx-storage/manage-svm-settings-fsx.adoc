@@ -17,9 +17,8 @@ Configure and update Active Directory for a storage VM in an FSx for ONTAP file 
 The same steps apply for configuring and updating Active Directory for a storage VM. 
 
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Storage*.
-. From the Storage menu, select *FSx for ONTAP*. 
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Storage* > *FSx for ONTAP*. 
 . From *FSx for ONTAP*, select the actions menu of the file system with the storage VM to update and then select *Manage*.
 . In the file system overview under Storage VMs, select *Manage*.
 . From the Manage storage VMs screen, select the actions menu of the storage VM to configure Active Directory for, then select *Basic actions* > *Manage AD configuration*. 
@@ -48,9 +47,8 @@ If you are connecting to a self-managed AD, use the name of the group in your AD
 Tags can help you categorize your resources. You can add, edit, and remove tags for a storage VM at any time in NetApp Workload Factory. 
 
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Storage*.
-. From the Storage menu, select *FSx for ONTAP*. 
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Storage* > *FSx for ONTAP*. 
 . From *FSx for ONTAP*, select the actions menu of the file system with the storage VM to update and then select *Manage*.
 . In the file system overview under Storage VMs, select *Manage*.
 . From the Manage storage VMs screen, select the actions menu of the storage VM to edit tags for, then select *Basic actions* > *Edit storage VM tags*. 
@@ -63,9 +61,8 @@ The maximum number of tags you can apply to a storage VM is 50.
 Reset the password for a storage VM in NetApp Workload Factory when necessary. 
 
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Storage*.
-. From the Storage menu, select *FSx for ONTAP*. 
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Storage* > *FSx for ONTAP*. 
 . From *FSx for ONTAP*, select the actions menu of the file system with the storage VM password to reset and then select *Manage*.
 . In the file system overview under Storage VMs, select *Manage*.
 . From the Manage storage VMs screen, select the actions menu of the storage VM to reset the password for, then select *Basic actions* > *Reset password*.

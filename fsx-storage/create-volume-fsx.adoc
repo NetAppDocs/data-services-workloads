@@ -47,18 +47,17 @@ Review the following prerequisites before you create a volume:
 * You must have an FSx for ONTAP file system in the Workload Factory console. 
 * You must have a storage VM. 
 * For protocol access, complete the following: 
-** To configure access to the volume, you must associate a link. link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html[Learn how to associate an existing link or to create and associate a new link^]. After the link associates, return to this operation. 
+** To configure access to the volume, you must associate a link. link:fsx-storage/create-link-fsx.html[Learn how to associate an existing link or to create and associate a new link^]. After the link associates, return to this operation. 
 ** You must configure access for the protocol you select, either SMB/CIFS, NFS, or iSCSI. 
 
 == Create a volume
-You can create a volume using the following tools available in the Codebox: REST API, CloudFormation, and Terraform. link:https://docs.netapp.com/us-en/workload-setup-admin/use-codebox.html#how-to-use-codebox[Learn how to use Codebox for automation^].
+You can create a volume using the following tools available in the Codebox: REST API, CloudFormation, and Terraform. link:admin/use-codebox.html#how-to-use-codebox[Learn how to use Codebox for automation^].
 
 NOTE: When using Terraform from Codebox, the code you copy or download hides `fsxadmin` and `vsadmin` passwords. You'll need to re-enter the passwords when you run the code.
 
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Storage*.
-. From the Storage menu, select *Volumes explorer*. 
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Volumes explorer*. 
 . Select *Create volume*. 
 . On the Create volume page under General details, provide the following details: 
 .. *Volume name*: Enter a name for the volume. 
@@ -155,11 +154,11 @@ _Balanced (Auto)_ is the default tiering policy when creating a volume using the
 ... *Autocommit*: Disable or enable autocommit. If you enable autocommit, set the autocommit period.
 ... *Privileged delete*: Disable or enable. If you enable privileged delete, a SnapLock administrator can delete a file before its retention period expires. 
 ... *Volume append mode*: Disable or enable. Enables you to add new content to WORM files.
-.. *ARP/AI*: NetApp Autonomous Ransomware Protection with AI (ARP/AI) is enabled by default when a link is associated with the file system. link:https://docs.netapp.com/us-en/workload-fsx-ontap/ransomware-protection.html[Learn more about ARP/AI]. Accept the statement to proceed.
+.. *ARP/AI*: NetApp Autonomous Ransomware Protection with AI (ARP/AI) is enabled by default when a link is associated with the file system. link:fsx-storage/ransomware-protection-fsx.html[Learn more about ARP/AI]. Accept the statement to proceed.
 +
 If the feature is unavailable, it is because of one of the following reasons: 
 +
-* A link is not associated with the file system. link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html[Learn how to associate an existing link or to create and associate a new link^]. After the link associates, return to this operation.
+* A link is not associated with the file system. link:fsx-storage/create-link-fsx.html[Learn how to associate an existing link or to create and associate a new link^]. After the link associates, return to this operation.
 * Volumes with immutable files and volumes with the NVMe protocol are not supported for ARP/AI. iSCSI volumes are supported beginning with ONTAP 9.17.1.
 * The file system already has an ARP/AI policy.
 
@@ -172,6 +171,6 @@ If the feature is unavailable, it is because of one of the following reasons:
 
 .Related information
 
-* link:manage-volume-capacity.html[Adjust volume capacity in Workload Factory]
-* link:change-tiering-policy.html[Change volume tiering policy in Workload Factory]
-* link:manage-s3-access-points.html[Manage S3 access points in Workload Factory]
+* link:fsx-storage/manage-volume-capacity-fsx.html[Adjust volume capacity in Workload Factory]
+* link:fsx-storage/change-tiering-policy-fsx.html[Change volume tiering policy in Workload Factory]
+* link:fsx-storage/manage-s3-access-points-fsx.html[Manage S3 access points in Workload Factory]

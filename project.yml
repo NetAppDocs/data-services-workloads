@@ -129,14 +129,10 @@ sidebar:
                   entries: 
                     - title: Create and attach S3 access points
                       url: /fsx-storage/create-s3-access-points-fsx.html
-                    - title: Edit S3 access points
-                      url: /fsx-storage/edit-s3-access-points-fsx.html
+                    - title: Manage S3 access points
+                      url: /fsx-storage/manage-s3-access-points-fsx.html
                     - title: Set up the journal table infrastructure
-                      url: /fsx-storage/setup-journal-table-fsx.html
-                    - title: View details about S3 access points
-                      url: /fsx-storage/view-s3-details-fsx.html
-                    - title: Delete S3 access points
-                      url: /fsx-storage/delete-s3-access-points-fsx.html           
+                      url: /fsx-storage/setup-journal-table-fsx.html        
                 - title: Split a cloned volume
                   url: /fsx-storage/split-cloned-volume-fsx.html    
                 - title: Delete a volume

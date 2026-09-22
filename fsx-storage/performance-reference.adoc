@@ -6,7 +6,7 @@ summary: "Performance reference is provided for FSx for ONTAP in NetApp Workload
 ---
 = Performance for FSx for ONTAP in NetApp Workload Factory
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 For an overview about performance, refer to link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/performance.html[Amazon FSx for NetApp ONTAP performance^] documentation. 

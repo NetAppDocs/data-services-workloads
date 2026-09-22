@@ -6,19 +6,19 @@ summary: "Workload Factory scans Amazon FSx for NetApp ONTAP configurations prov
 ---
 = Implement well-architected FSx for ONTAP file system configurations
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 Use Workload Factory to implement best practices for your FSx for ONTAP file systems. You can easily review the well-architected status, learn about issues with your configurations, and fix issues to improve the architecture of any systems that aren't optimized for reliability, security, efficiency, performance, and cost.
 
-link:configuration-analysis-fsx.html[Learn about the configuration analysis and well-architected status.]
+link:fsx-storage/configuration-analysis-fsx.html[Learn about the configuration analysis and well-architected status.]
 
 == About this task
 Workload Factory analyzes Amazon FSx for NetApp ONTAP file system deployment configurations daily. 
 
 Because requirements for storage configurations vary, you can dismiss the analysis of specific configurations that don't apply to your storage environment. 
 
-Link connectivity allows Workload Factory to scan for issues with performance, data protection, and configurations. link:create-link-fsx.html[Connect to an FSx for ONTAP file system using a link] for the most comprehensive analysis of your file system resources.
+Link connectivity allows Workload Factory to scan for issues with performance, data protection, and configurations. link:fsx-storage/create-link-fsx.html[Connect to an FSx for ONTAP file system using a link] for the most comprehensive analysis of your file system resources.
 
 .What is analyzed
 Workload Factory analyzes the well-architected status of the following configurations for FSx for ONTAP file systems:
@@ -31,8 +31,8 @@ Workload Factory analyzes the well-architected status of the following configura
 
 == Before you begin
 
-* You must link:add-credentials-fsx.html[grant _operations and remediation_ permissions] in your AWS account. 
-* link:create-link-fsx.html[Connect to an FSx for ONTAP file system using a link] for the most comprehensive analysis of your file system resources.
+* You must link:fsx-storage/add-credentials-fsx.html[grant _operations and remediation_ permissions] in your AWS account. 
+* link:fsx-storage/create-link-fsx.html[Connect to an FSx for ONTAP file system using a link] for the most comprehensive analysis of your file system resources.
 
 == Fix a configuration issue
 You can fix configuration issues for an FSx for ONTAP file system or for selected volumes in a file system. You can select one or more configurations to fix.
@@ -40,8 +40,8 @@ You can fix configuration issues for an FSx for ONTAP file system or for selecte
 Fix operations can cause instance downtimes or service interruptions. Review each recommendation carefully before fixing a configuration issue.
 
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Well-architected*.
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Well-architected* > *FSx for ONTAP*. 
 . Select *View and fix* for any configuration. Make sure you review the recommendation carefully. 
 + 
 The recommendation explains best practices and potential pitfalls of unoptimized configurations.

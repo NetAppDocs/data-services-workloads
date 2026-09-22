@@ -17,12 +17,11 @@ Turn on volume autogrow to let Workload Factory manage volume capacity for you. 
 NOTE: Volume autogrow isn't supported for iSCSI volumes. 
 
 .Before you begin
-To enable volume autogrow, you must associate a link. link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html[Learn how to associate an existing link or to create and associate a new link^]. After the link associates, return to this operation. 
+To enable volume autogrow, you must associate a link. link:fsx-storage/create-link-fsx.html[Learn how to associate an existing link or to create and associate a new link^]. After the link associates, return to this operation. 
 
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Storage*.
-. From the Storage menu, select *Volumes explorer*. 
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Volumes explorer*. 
 . Select the actions menu for the volume you want to modify. 
 . Select *Basic actions*, then *Set volume autogrow*. 
 . In the Set autogrow dialog, enable volume autogrow to automatically expand the volume capacity until the volume reaches the maximum size. This feature accommodates increasing data usage, ensuring uninterrupted operations.
@@ -55,9 +54,8 @@ Decreasing volume size is supported only for NFS and SMB/CIFS volumes.
 To adjust volume capacity, you must associate a link. link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html[Learn how to associate an existing link or to create and associate a new link^]. After the link associates, return to this operation.  
 
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Storage*.
-. From the Storage menu, select *Volumes explorer*. 
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Volumes explorer*. 
 . Select the actions menu for the volume you want to modify. 
 . Select *Basic actions*, then *Adjust volume capacity*.
 . In the Adjust volume capacity dialog, set the *Provisioned capacity* and unit.  
@@ -89,12 +87,11 @@ Check the balance of FlexVol or FlexGroup volumes in an FSx for ONTAP file syste
 
 .Before you begin
 * FlexGroup volume balance is available only for FSx for ONTAP file systems using a scale-out deployment with at least two HA pairs.
-* To check the balance of a volume, you must link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html[create and associate a link or associate an existing link to the file system^]. After the link associates, return to this operation.  
+* To check the balance of a volume, you must link:fsx-storage/create-link-fsx.html[create and associate a link or associate an existing link to the file system^]. After the link associates, return to this operation.  
 
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Storage*.
-. From the Storage menu, select *FSx for ONTAP*. 
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Storage* > *FSx for ONTAP*. 
 . From *FSx for ONTAP*, select the actions menu of the file system that contains volumes to rebalance and then select *Manage*.
 . From the file system overview, select the *Volumes* tab. 
 . From the Volumes tab, select *Check volume balance* at the top of the table.
@@ -112,7 +109,7 @@ NOTE: A Workload Factory admin can <<Stop a volume rebalance operation,stop reba
 
 .Before you begin
 * <<Check the balance of your volumes,Check the balance of a volume>> before rebalancing volumes.
-* To rebalance a volume, you must link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html[create and associate a link or associate an existing link to the file system^]. After the link associates, return to this operation.
+* To rebalance a volume, you must link:fsx-storage/create-link-fsx.html[create and associate a link or associate an existing link to the file system^]. After the link associates, return to this operation.
 * Note that existing snapshots on volumes you rebalance become partial and cannot be used to restore volume data, but new snapshots taken after rebalancing can be used to restore volume data. 
 * FlexVol volumes are best rebalanced altogether to balance all volume resources evenly. Deselected volumes don't actively participate in the balancing procedure.
 
@@ -123,9 +120,8 @@ NOTE: A Workload Factory admin can <<Stop a volume rebalance operation,stop reba
 A FlexVol volume can be balanced in relation to other FlexVol volumes within one node in an FSx for ONTAP file system. When the file system has more then one FlexVol volume per node and a single FlexVol volume is selected, then the FlexVol volume is balanced in the context of all FlexVols but only the selected volume is allowed to move.
 
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Storage*.
-. From the Storage menu, select *FSx for ONTAP*. 
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Storage* > *FSx for ONTAP*.
 . From *FSx for ONTAP*, select the actions menu of the file system that contains the volume to rebalance and then select *Manage*.
 . From the file system overview, select the *Volumes* tab. 
 . From the Volumes tab, select *Check volume balance* at the top of the table.
@@ -149,9 +145,8 @@ The FlexVol volume is rebalanced. When the operation completes, the file system 
 Data redistributes across member volumes to rebalance the FlexGroup volume. Based on your chosen layout, the rebalance operation might add FlexGroup member volumes and increase the size of provisioned volumes. 
 
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. In *Storage*, select *Go to Storage*
-. From the Storage menu, select *FSx for ONTAP*. 
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Storage* > *FSx for ONTAP*. 
 . From *FSx for ONTAP*, select the actions menu of the file system that contains the volume to rebalance and then select *Manage*.
 . From the file system overview, select the *Volumes* tab. 
 . From the Volumes tab, select *Check FlexGroup balance* at the top of the table.

@@ -13,7 +13,7 @@ Manage snapshot policies for FSx for ONTAP volumes in Workload Factory. A snapsh
 
 Snapshot management operations like assigning, changing, and deleting snapshot policies for volumes in an FSx for ONTAP file system are managed at the storage VM level. Snapshot policies can be shared with a single storage VM or with all storage VMs. 
 
-Some management tasks require you to associate a link with the FSx for ONTAP file system. link:https://docs.netapp.com/us-en/workload-setup-admin/links-overview.html[Learn about Workload Factory links^]. 
+Some management tasks require you to associate a link with the FSx for ONTAP file system. link:admin/links-overview.html[Learn about Workload Factory links^]. 
 
 By default, every volume is associated with the file system's `default` snapshot policy. We recommend using this policy for most workloads.
 
@@ -21,12 +21,13 @@ By default, every volume is associated with the file system's `default` snapshot
 You can assign a snapshot policy to a single volume to create scheduled snapshots for the volume. 
 
 .Before you begin
-You must associate a link to assign a snapshot policy. link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html[Learn how to associate an existing link or to create and associate a new link^]. After the link associates, return to this operation. 
+You must associate a link to assign a snapshot policy. link:fsx-storage/create-link-fsx.html[Learn how to associate an existing link or to create and associate a new link^]. After the link associates, return to this operation. 
 
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Storage*.
-. In the *FSx for ONTAP* tab, select the actions menu of the file system that contains the volume to assign a snapshot policy to and then select *Manage*. 
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Storage*. 
+. From the Storage menu, select *Inventory*. 
+. Select the actions menu of the file system that contains the volume to assign a snapshot policy to and then select *Manage*. 
 . In the file system overview, select the *Storage VMs* tab.
 . From the *Storage VMs* tab, select the actions menu for the storage VM containing the volume to protect with scheduled snapshots, then *Advanced actions*, and then *Manage snapshot policies*.
 . On the Snapshot policy management page, select the actions menu of the snapshot policy and then select *Assign policy to volume*.
@@ -42,12 +43,13 @@ The snapshot policy is assigned to the volume.
 You can change the snapshot policy name, schedule, and number of copies to retain, and enable or disable immutable snapshots. It isn't possible to enable or disable policy sharing across storage VMs. This option is available only during snapshot policy creation.
 
 .Before you begin
-To display existing snapshot policies, you must associate a link. link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html[Learn how to associate an existing link or to create and associate a new link^]. After the link associates, return to this operation. 
+To display existing snapshot policies, you must associate a link. link:fsx-storage/create-link-fsx.html[Learn how to associate an existing link or to create and associate a new link^]. After the link associates, return to this operation. 
 
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Storage*.
-. In the *FSx for ONTAP* tab, select the actions menu of the file system and then select *Manage*. 
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Storage*. 
+. From the Storage menu, select *Inventory*.
+. Select the actions menu of the file system and then select *Manage*. 
 . In the file system overview, select the *Storage VMs* tab.
 . From the *Storage VMs* tab, select the actions menu for the storage VM containing the volume to protect with scheduled snapshots, then *Advanced actions*, and then *Manage snapshot policies*.
 . On the Snapshot policy management page, select the actions menu for the snapshot policy to change and then select *Edit*.
@@ -61,14 +63,12 @@ The snapshot policy is updated.
 Lock snapshots to prevent them from being deleted during the retention period.
 
 .Before you begin
-You must associate a link to enable immutable snapshots. link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html[Learn how to associate an existing link or to create and associate a new link^]. After the link associates, return to this operation. 
+You must associate a link to enable immutable snapshots. link:fsx-storage/create-link-fsx.html[Learn how to associate an existing link or to create and associate a new link^]. After the link associates, return to this operation. 
 
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Storage*.
-. In the *FSx for ONTAP* tab, select the actions menu of the file system that contains the volume to lock snapshots for and then select *Manage*.  
-. In the file system overview, select the *Volumes* tab.
-. From the *Volumes* tab, select the actionsenu for the volume to protect. 
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Volumes explorer*. 
+. Select the actions menu of the volume to lock snapshots for.
 . Select *Data protection actions*, *Snapshots*, then *Make a snapshot immutable*. 
 . In the Make a snapshot immutable dialog, do the following: 
 .. *Snapshot name*: Select the snapshot to lock.  

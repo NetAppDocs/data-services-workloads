@@ -17,13 +17,12 @@ Only FlexVol volumes are supported for block devices in NetApp Workload Factory.
 The block size must be smaller than the available FlexVol volume size.
 
 .Before you begin
-* You must associate a link to create block devices. link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html[Learn how to associate an existing link or to create and associate a new link^]. After you associate the link, return to this operation.
+* You must associate a link to create block devices. link:fsx-storage/create-link-fsx.html[Learn how to associate an existing link or to create and associate a new link^]. After you associate the link, return to this operation.
 
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. In the Storage tile, select *Go to Storage*.
-. From the Storage menu, select *FSx for ONTAP*.
-. From *FSx for ONTAP*, select the *Block devices* tab. 
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Storage* > *FSx for ONTAP*. 
+. From FSx for ONTAP, select the file system to create a block device for, and then select the *Block devices* tab. 
 . Select *Create block device*.
 . Under *Volume details*, do the following: 
 .. *Volume name*: Select one of the following options. 
@@ -51,7 +50,7 @@ The block size must be smaller than the available FlexVol volume size.
 ONTAP achieves storage efficiency using deduplication and compression features. Deduplication eliminates duplicate data blocks. Data compression compresses the data blocks to reduce the amount of physical storage that is required. 
 .. *Snapshot policy*: Select the snapshot policy to specify the frequency and retention of snapshots. 
 +
-The following are default policies from AWS. To display existing snapshot policies, you must link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html[associate a link^]. 
+The following are default policies from AWS. To display existing snapshot policies, you must link:fsx-storage/create-link-fsx.html[associate a link^]. 
 +
 `default`::: This policy automatically creates snapshots on the following schedule, with the oldest snapshot copies deleted to make room for newer copies:
 +
@@ -69,11 +68,11 @@ NOTE: Snapshot times are based on the file system's time zone, which defaults to
 .. *Tiering policy*: Select the tiering policy for the data stored in the volume. 
 +
 _Balanced (Auto)_ is the default tiering policy when creating a volume using the Workload Factory console. For more information about volume tiering policies, refer to link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/volume-storage-capacity.html#data-tiering-policy[Volume storage capacity^] in AWS FSx for NetApp ONTAP documentation. Note that Workload Factory uses use-case based names in the Workload Factory console for tiering policies and includes FSx for ONTAP tiering policy names in parentheses. 
-.. *ARP/AI*: NetApp Autonomous Ransomware Protection with AI (ARP/AI) is enabled by default when a link is associated with the file system. link:https://docs.netapp.com/us-en/workload-fsx-ontap/ransomware-protection.html[Learn more about ARP/AI]. Accept the statement to proceed.
+.. *ARP/AI*: NetApp Autonomous Ransomware Protection with AI (ARP/AI) is enabled by default when a link is associated with the file system. link:fsx-storage/ransomware-protection-fsx.html[Learn more about ARP/AI]. Accept the statement to proceed.
 +
 If the feature is unavailable, it is because of one of the following reasons: 
 +
-* A link is not associated with the file system. link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html[Learn how to associate an existing link or to create and associate a new link^]. After the link associates, return to this operation.
+* A link is not associated with the file system. link:fsx-storage/create-link-fsx.html[Learn how to associate an existing link or to create and associate a new link^]. After the link associates, return to this operation.
 * Volumes with immutable files and volumes with the NVMe protocol are not supported for ARP/AI.
 * The file system already has an ARP/AI policy.
 
@@ -81,4 +80,4 @@ If the feature is unavailable, it is because of one of the following reasons:
 
 .Related information
 
-link:https://docs.netapp.com/us-en/workload-fsx-ontap/manage-block-storage.html[Manage the block storage for an FSx for ONTAP file system]
+link:fsx-storage/manage-block-storage-fsx.html[Manage the block storage for an FSx for ONTAP file system]

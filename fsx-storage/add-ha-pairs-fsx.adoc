@@ -37,12 +37,13 @@ Do the following before you add HA pairs to a file system:
 * Make sure that the file system has no more than 5 storage VMs.
 
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Storage*.
-. From the Storage menu, select *FSx for ONTAP*. 
-. From *FSx for ONTAP* under *Information*, select the pencil icon next to *HA pairs*.
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Storage* > *FSx for ONTAP*. 
+. From the FSx for ONTAP page, select *Inventory*. 
+. Select the file system to add HA pairs to. 
+. Under *Information*, select the pencil icon next to *HA pairs*.
 . In the *Add HA pairs* dialog, select the number of HA pairs to add to the file system.
 . Select *Add* to confirm the addition of the HA pairs.
 
 .Result
-Workload Factory initiates the process to add the HA pair(s) to the file system. The file system isn't available for other operations like volume creation until the HA pairs are added. You can monitor the progress of the operation in the *Tracker* tab.
+Workload Factory initiates the process to add the HA pair(s) to the file system. The file system isn't available for other operations like volume creation until the HA pairs are added. You can monitor the progress of the operation in *Tracker*.

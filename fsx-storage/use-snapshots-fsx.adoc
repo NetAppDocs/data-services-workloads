@@ -21,12 +21,11 @@ FSx for ONTAP volumes use just-in-time copy-on-write so that any unmodified file
 NOTE: Snapshots aren't copies of your data. If you want to make copies of your data, consider using the volume backups or volume replication features. 
 
 .Before you begin
-You must associate a link to create a manual snapshot of a volume. link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html[Learn how to associate an existing link or to create and associate a new link]. After the link associates, return to this operation.  
+You must associate a link to create a manual snapshot of a volume. link:fsx-storage/create-link-fsx.html[Learn how to associate an existing link or to create and associate a new link]. After the link associates, return to this operation.  
 
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Storage*.
-. From the Storage menu, select *FSx for ONTAP*. 
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Storage* > *FSx for ONTAP*. 
 . From *FSx for ONTAP*, select the actions menu of the file system that contains the volume to create a snapshot for and then select *Manage*.  
 . In the file system overview, select the *Volumes* tab.
 . From the *Volumes* tab, select the actions menu for the volume to protect with snapshots. 
@@ -59,12 +58,11 @@ Customizing a policy lets you specify when to create snapshots, how many copies 
 * Consider the following about snapshot capacity before you use snapshots:
 ** For most datasets, an additional capacity of 20% is enough to keep snapshots for up to four weeks. As data gets older, its use for restorations becomes less likely.
 ** Overwriting all the data in a snapshot consumes significant volume capacity, which factors into provisioning volume capacity.
-* To create a custom snapshot policy, you must associate a link. link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html[Learn how to associate an existing link or to create and associate a new link]. After the link associates, return to this operation. 
+* To create a custom snapshot policy, you must associate a link. link:fsx-storage/create-link-fsx.html[Learn how to associate an existing link or to create and associate a new link]. After the link associates, return to this operation. 
 
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Storage*.
-. From the Storage menu, select *FSx for ONTAP*. 
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Storage* > *FSx for ONTAP*. 
 . From *FSx for ONTAP*, select the actions menu of the file system with the volume and then select *Manage*. 
 . In the file system overview, select the *Storage VMs* tab.
 . From the *Storage VMs* tab, select the actions menu for the volume to protect with scheduled snapshots, then *Advanced actions*, and then *Manage snapshot policies*.
@@ -100,9 +98,8 @@ Consider the following limitations before you create a volume from a snapshot:
 * Changes to permission models: If you use this operation to switch the network-attached storage (NAS) protocol type, it might also switch the permission model that the security style provides. You might experience file access permission issues, which you can only fix manually with administrator access using the NAS client tools for permissions setting.
 
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Storage*. 
-. From the Storage menu, select *FSx for ONTAP*. 
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Storage* > *FSx for ONTAP*.  
 . From *FSx for ONTAP*, select the actions menu of the file system with the volume and then select *Manage*.  
 . In the file system overview, select the *Volumes* tab.
 . From the *Volumes* tab, select the actions menu for the volume to restore from a snapshot.

@@ -54,16 +54,15 @@ Review these requirements before you begin.
 
 * Ensure that one FSx for ONTAP file system is available to use for the target in the replication relationship.
 * Open TCP ports 11104 and 11105 for secure data transfer and management between storage systems. ICMP is optional, but can help with network checks and troubleshooting.   
-* The FSx for ONTAP file system you use for the replication relationship must have an associated link. link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html[Learn how to associate an existing link or to create and associate a new link^]. After you associate the link, return to this operation.
+* The FSx for ONTAP file system you use for the replication relationship must have an associated link. link:fsx-storage/create-link-fsx.html[Learn how to associate an existing link or to create and associate a new link^]. After you associate the link, return to this operation.
 * For replication from an on-premises ONTAP system to an FSx for ONTAP file system, make sure you have discovered the on-premises ONTAP system. 
 * Replication isn't supported for volumes in a state other than available, created, or misconfigured, and when the ONTAP version isn't compatible.
 * For migration use cases ensure that the last replication for the volume completed in the last 24 hours before you create a replication relationship with storage VM data and configuration settings.
 
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Storage*.
-. From the Storage menu, select *FSx for ONTAP*. 
-. From *FSx for ONTAP*, select the file system that contains the volume(s) to replicate.
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Storage* > *FSx for ONTAP*. 
+. From the FSx for ONTAP page, select the file system that contains the volume(s) to replicate.
 . Either replicate all volumes in a file system or replicate select volumes. 
 * To replicate all volumes in a file system: From the file system overview, select *Replicate data*.
 * To replicate select volumes: From the file system overview, select the *Volumes* tab.
@@ -71,8 +70,7 @@ Review these requirements before you begin.
 In the Volumes table, select one or more volumes and then select *Replicate data*. 
 . On the Replicate data page, under Replication target, provide the following:
 + 
-include::https://raw.githubusercontent.com/NetAppDocs/workload-fsx-ontap/main/_include/create-replication.adoc[]
-//include comes from workload-fsx-ontap-internal repo
+include::_include/create-replication.adoc[]
 
 [start=8]
 //Rachel L: Added a hack to make the last step have a numbered step in the right order.
@@ -93,11 +91,10 @@ Initialization performs a _baseline_ transfer: it makes a snapshot of the source
 Consider when you choose to complete this operation. Initialization can be time-consuming. You might want to run the baseline transfer in off-peak hours.
 
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Storage*.
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Storage* > *FSx for ONTAP*. 
 +
-include::https://raw.githubusercontent.com/NetAppDocs/workload-fsx-ontap/main/_include/initialize-replication.adoc[]
-//include comes from workload-fsx-ontap-internal repo
+include::_include/initialize-replication.adoc[]
 
 . In the Initialize relationship dialog, select *Initialize*. 
 +
@@ -134,14 +131,14 @@ Review these requirements before you begin.
 * Stop any client access to your storage VM before you cut over replication.
 * Ensure all source volumes are not serving any data before you cut over replication.
 * Ensure the data is synced between the source and target volumes before you cut over replication. 
-* The FSx for ONTAP file system you use for the replication relationship must have an associated link. link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html[Learn how to associate an existing link or to create and associate a new link^]. After you associate the link, return to this operation.
+* The FSx for ONTAP file system you use for the replication relationship must have an associated link. link:fsx-storage/create-link-fsx.html[Learn how to associate an existing link or to create and associate a new link^]. After you associate the link, return to this operation.
 ** The following ports must be open in the security group associated with the FSx for ONTAP file system for link connectivity: port 443 (HTTPS) and port 22 (SSH).
 
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Storage*.
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Storage* > *FSx for ONTAP*. 
 +
-include::https://raw.githubusercontent.com/NetAppDocs/workload-fsx-ontap/main/_include/cutover-replication.adoc[]
+include::_include/cutover-replication.adoc[]
 //include comes from workload-fsx-ontap-internal repo
 
 [start=8]

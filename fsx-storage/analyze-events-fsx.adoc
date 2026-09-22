@@ -17,11 +17,8 @@ Storage administrators often respond to FSx for ONTAP events only after customer
 
 The event analyzer automatically extracts the following event types from FSx for ONTAP file systems:
 
-* *EMS events*: Error, alert, and emergency events from the ONTAP Event Management System. To view and analyze EMS events, you must link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html[connect to the file system using a link^].
-
-* *Latency events*: Read and write latency events. Latency events can be viewed without a link connection. To analyze latency events and receive AI-powered insights, you must link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html[connect to the file system using a link^].
-
-To view events, you must link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html[grant _view, planning, and analysis_ permissions^] in your AWS account. Events are displayed for 72 hours before removal.
+* *EMS events*: Error, alert, and emergency events from the ONTAP Event Management System. 
+* *Latency events*: Read and write latency events. Latency events can be viewed without a link connection. 
 
 With Amazon Bedrock integration, Workload Factory uses AI to analyze events and provide actionable insights to maintain the health and performance of your FSx for ONTAP file systems. 
 
@@ -36,7 +33,7 @@ To allow Workload Factory to analyze events, you must activate Amazon Bedrock, s
 
 link:https://aws.amazon.com/bedrock/pricing/[Amazon Bedrock pricing^]
 
-NOTE: If your account admin has turned off AI features, you'll see a message and won't be able to use AI analysis. Contact your administrator or https://docs.netapp.com/us-en/workload-setup-admin/manage-genai-features.html[learn about AI administration^].
+NOTE: If your account admin has turned off AI features, you'll see a message and won't be able to use AI analysis. Contact your administrator or link:admin/manage-genai-features.html[learn about AI administration^].
 
 === Data privacy and security
 Your data privacy and security are protected through: 
@@ -51,14 +48,14 @@ For more details, refer to the link:https://docs.aws.amazon.com/bedrock/latest/u
 
 To view latency events you must do the following: 
 
-* link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html[grant _view, planning, and analysis_ permissions^] in your AWS account.
+* link:fsx-storage/add-credentials-fsx.html[grant _view, planning, and analysis_ permissions^] in your AWS account.
 
-* link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html[Connect to the file system using a link^].
+* link:fsx-storage/create-link-fsx.html[Connect to the file system using a link^].
 
 To analyze EMS and latency events and receive AI-powered insights and recommendations, ensure the following:
 
-* You have link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html[_operations and remediation_ permissions^] in your AWS account. 
-* You have link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html[connected to the file system using a link^].
+* You have link:fsx-storage/add-credentials-fsx.html[_operations and remediation_ permissions^] in your AWS account. 
+* You have link:fsx-storage/create-link-fsx.html[connected to the file system using a link^].
 * Port 22 (SSH) is open in the security group associated with your FSx for ONTAP file system. 
 
 Additional requirements (the system will prompt you during event analysis):
@@ -73,7 +70,7 @@ Recommended model: `anthropic.claude-sonnet-4-20250514-v1:0`. Provide the Infere
 +
 Create and associate a link with an FSx for ONTAP file system to enable AI-powered events analysis. A link establishes a trust relationship between Workload Factory and one or more FSx for ONTAP file systems and leverages AWS Lambda.
 +
-link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html^[Learn how to associate an existing link or to create and associate a new link]. After the link associates, return to this operation.
+link:fsx-storage/create-link-fsx.html^[Learn how to associate an existing link or to create and associate a new link]. After the link associates, return to this operation.
 
 ** *AWS IAM permissions* 
 +
@@ -96,8 +93,8 @@ Use the Workload Factory console to view and analyze EMS and latency events for 
 
 .Steps
 
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Storage*.
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Storage* > *FSx for ONTAP*. 
 . From the Storage menu, select *Analysis*. 
 . From the Analysis screen, select the AWS accounts, credentials, and regions that contain the FSx for ONTAP file systems you want to view.
 +
@@ -116,4 +113,4 @@ If needed, complete the AI analysis setup requirements by following the on-scree
 
 .Related information
 
-* link:set-volume-latency-thresholds.html[Set volume latency thresholds in Workload Factory]
+* link:fsx-storage/set-volume-latency-thresholds-fsx.html[Set volume latency thresholds in Workload Factory]

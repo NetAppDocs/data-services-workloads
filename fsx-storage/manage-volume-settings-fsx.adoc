@@ -15,9 +15,8 @@ Customize FSx for ONTAP volume settings in NetApp Workload Factory to fit your o
 Tags can help you categorize your resources. You can add, edit, and remove volume tags at any time for FSx for ONTAP volumes in NetApp Workload Factory. 
 
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Storage*.
-. From the Storage menu, select *Volumes explorer*. 
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Volumes explorer*.
 . Select the actions menu for the volume to modify tags for. 
 . Select *Basic actions* then *Edit volume tags*. 
 . On the Edit volume tags page, add, edit, or remove tags. 
@@ -35,9 +34,8 @@ If you chose not to enable storage efficiency when you created a volume, you can
 Volumes use thin provisioning whether you enable or disable storage efficiency. 
 
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Storage*.
-. From the Storage menu, select *Volumes explorer*. 
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Volumes explorer*.
 . Select the actions menu of the volume to update the storage efficiency setting for. 
 . Select *Advanced actions*, then *Set storage efficiency*.  
 . Choose to enable or disable volume storage efficiency.
@@ -46,12 +44,11 @@ Volumes use thin provisioning whether you enable or disable storage efficiency.
 == Manage immutable files for a volume in NetApp Workload Factory
 You can update certain immutable files settings for a volume when the feature is enabled, such as the retention policy and periods, the autocommit period, and volume append mode.
 
-Note that enabling immutable files is only possible during link:create-volume.html[volume creation].
+Note that enabling immutable files is only possible during link:fsx-storage/create-volume-fsx.html[volume creation].
 
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Storage*. 
-. From the Storage menu, select *Volumes explorer*. 
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Volumes explorer*.
 . Select the actions menu of the volume to update. 
 . Select *Data protection actions*, then *Manage immutable files*.
 . On the Manage Immutable files page, you can update the following:  
@@ -67,7 +64,7 @@ Note that enabling immutable files is only possible during link:create-volume.ht
 . Click *Apply*. 
 
 == Related information
-* link:create-volume.html[Create a volume in Workload Factory]
-* link:manage-volume-capacity.html[Manage volume capacity in Workload Factory]
-* link:change-tiering-policy.html[Change volume tiering policy in Workload Factory]
-* link:manage-s3-access-points.html[Manage S3 access points in Workload Factory]
+* link:fsx-storage/create-volume-fsx.html[Create a volume in Workload Factory]
+* link:fsx-storage/manage-volume-capacity-fsx.html[Manage volume capacity in Workload Factory]
+* link:fsx-storage/change-tiering-policy-fsx.html[Change volume tiering policy in Workload Factory]
+* link:fsx-storage/manage-s3-access-points-fsx.html[Manage S3 access points in Workload Factory]

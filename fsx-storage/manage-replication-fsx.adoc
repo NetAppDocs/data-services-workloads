@@ -19,10 +19,10 @@ Choose how frequently snapshots from the source volume are transferred to the re
 When an on-premises ONTAP cluster is the target for the replication relationship, changing the replication schedule isn't supported. 
 
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Storage*.
-. From the Storage menu, select *FSx for ONTAP*. 
-. From *FSx for ONTAP*, select the actions menu of the file system to update and then select *Manage*.  
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Storage*. 
+. From the Storage menu, select *Inventory*. 
+. In the *Inventory*, select the actions menu of the file system to update and then select *Manage*.  
 . From the file system overview, select the *Replication relationships* tab. 
 . In the Replication relationships tab, select the actionsenu of the replication relationship schedule to change. 
 . Select *Edit replication interval*. 
@@ -44,12 +44,12 @@ Alternatively, we recommend an unlimited transfer rate for FSx for ONTAP file sy
 Consider how much bandwidth to allocate for replication.
 
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Storage*.
-. From the Storage menu, select *FSx for ONTAP*. 
-. From *FSx for ONTAP*, select the actions menu of the file system to update and then select *Manage*.  
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Storage*. 
+. From the Storage menu, select *Inventory*. 
+. In the *Inventory*, select the actions menu of the file system to update and then select *Manage*.  
 . From the file system overview, select the *Replication relationships* tab. 
-. In the Replication relationships tab, select the actionsenu of the replication relationship to limit the max transfer rate for. 
+. In the Replication relationships tab, select the actions menu of the replication relationship to limit the max transfer rate for. 
 . Select *Edit max transfer rate*. 
 . In the Edit max transfer rate dialog, select *Limited* and enter the max transfer limit in MB/s. 
 +
@@ -60,10 +60,10 @@ Alternatively, select *Unlimited*.
 A replication relationship has a set replication schedule, but you can manually update snapshot data transferred between source and target volumes in NetApp Workload Factory at any time. 
 
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Storage*.
-. From the Storage menu, select *FSx for ONTAP*. 
-. From *FSx for ONTAP*, select the actions menu of the file system to update and then select *Manage*.  
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Storage*.
+. From the Storage menu, select *Inventory*. 
+. In the *Inventory*, select the actions menu of the file system to update and then select *Manage*.  
 . From the file system overview, select the *Replication relationships* tab. 
 . In the Replication relationships tab, select the actions menu of the replication relationship to update. 
 . Select *Update*. 
@@ -76,10 +76,10 @@ Pause a replication relationship to stop scheduled replication updates from the 
 If you pause when a transfer is in progress, the transfer is not affected, and the relationship becomes "Quiescing" until the transfer completes. If the current transfer aborts, it is now a future transfer and will not restart.
 
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Storage*.
-. From the Storage menu, select *FSx for ONTAP*. 
-. From *FSx for ONTAP*, select the actions menu of the file system to update and then select *Manage*.  
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Storage*. 
+. From the Storage menu, select *Inventory*. 
+. In the *Inventory*, select the actions menu of the file system to update and then select *Manage*.  
 . From the file system overview, select the *Replication relationships* tab. 
 . In the Replication relationships tab, select the actions menu of the replication relationship to pause. 
 . Select *Pause (Quiesce)*. 
@@ -94,10 +94,10 @@ When you resume a replication relationship, any changes to the destination volum
 NOTE: Any data written to the original source volume between the last data replication and the time that the source volume is disabled is not preserved.
 
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Storage*.
-. From the Storage menu, select *FSx for ONTAP*. 
-. From *FSx for ONTAP*, select the actions menu of the file system to update and then select *Manage*.  
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Storage*. 
+. From the Storage menu, select *Inventory*. 
+. In the *Inventory*, select the actions menu of the file system to update and then select *Manage*.  
 . From the file system overview, select the *Replication relationships* tab. 
 . In the Replication relationships tab, select the actions menu of the replication relationship to resume. 
 . Select *Resume*. 
@@ -129,10 +129,10 @@ NOTE:
 Make sure that you know the current and future roles of your source and target volumes because changes on the new target volume are overwritten with the new source volume. If used incorrectly, you can experience unintended data loss.
 
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Storage*.
-. From the Storage menu, select *FSx for ONTAP*. 
-. From *FSx for ONTAP*, select the actions menu of the file system to update and then select *Manage*.  
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Storage*. 
+. From the Storage menu, select *Inventory*. 
+. In the *Inventory*, select the actions menu of the file system to update and then select *Manage*.  
 . From the file system overview, select the *Replication relationships* tab. 
 . In the Replication relationships tab, select the actions menu of the replication relationship to reverse. 
 . Select *Reverse relationship*. 
@@ -142,10 +142,10 @@ Make sure that you know the current and future roles of your source and target v
 Stop a replication relationship in NetApp Workload Factory. When you stop a replication relationship, scheduled replication updates from the source volume to the target volume pause. The target volume transitions from read-only to read/write. 
 
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Storage*.
-. From the Storage menu, select *FSx for ONTAP*. 
-. From *FSx for ONTAP*, select the actions menu of the file system to update and then select *Manage*.  
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Storage*. 
+. From the Storage menu, select *Inventory*. 
+. In the *Inventory*, select the actions menu of the file system to update and then select *Manage*.  
 . From the file system overview, select the *Replication relationships* tab. 
 . In the Replication relationships tab, select the actions menu of the replication relationship to stop. 
 . Select *Break*. 
@@ -160,10 +160,10 @@ Delete a replication relationship in NetApp Workload Factory. When you delete a 
 When you delete a replication relationship, FSx for ONTAP also deletes the common replication snapshots of the source and target volume. 
 
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Storage*.
-. From the Storage menu, select *FSx for ONTAP*. 
-. From *FSx for ONTAP*, select the actions menu of the file system to update and then select *Manage*.  
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Storage*. 
+. From the Storage menu, select *Inventory*. 
+. In the *Inventory*, select the actions menu of the file system to update and then select *Manage*.  
 . From the file system overview, select the *Replication relationships* tab. 
 . In the Replication relationships tab, select the actions menu of the replication relationship to delete. 
 . Select *Delete*. 

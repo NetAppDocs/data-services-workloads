@@ -25,14 +25,13 @@ The clone splitting operation involves the following:
 .Before you begin
 Consider the following before you split a cloned volume: 
 
-* To split a cloned volume, you must associate a link. link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html[Learn how to associate an existing link or to create and associate a new link^]. After the link associates, return to this operation. 
+* To split a cloned volume, you must associate a link. link:fsx-storage/create-link-fsx.html[Learn how to associate an existing link or to create and associate a new link^]. After the link associates, return to this operation. 
 * The FlexClone volume must be online when the split operation begins.
 * The parent volume must be online for the split to succeed.
 
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Storage*.
-.. From the Storage menu, select *Volumes explorer*. 
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Volumes explorer*. 
 . Select the actions menu of the volume with the cloned volume to split. 
 . Select *Data protection actions*, then *Split cloned volume*. 
 . In the Split volume dialog, select *Delete*. 

@@ -11,7 +11,7 @@ summary: "You can create and manage links to provide a trust relationship and co
 [.lead]
 To perform advanced ONTAP management operations, set up a connection between your Workload Factory account and one or more FSx for ONTAP file systems. This involves associating new and existing Lambda links, and authenticating the links. Link association lets you monitor and manage certain features directly from the FSx for ONTAP file system that are unavailable through the Amazon FSx for ONTAP API. 
 
-link:links-overview.html[Learn more about links].
+link:admin/links-overview.html[Learn more about links].
 
 .About this task
 
@@ -35,7 +35,7 @@ You have two options for creating links in this workflow - automatically or manu
 
 .Before you begin
 * You should consider which link creation option you'll use. 
-* You need to have at least one FSx for ONTAP file system in Workload Factory. To discover FSx for ONTAP file systems, you must have an AWS account with permissions for FSx for ONTAP instances and link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html#overview[add credentials in Workload Factory^] with _view, planning, and analysis_ permissions for Storage management. 
+* You need to have at least one FSx for ONTAP file system in Workload Factory. To discover FSx for ONTAP file systems, you must have an AWS account with permissions for FSx for ONTAP instances and link:fsx-storage/add-credentials-fsx.html#overview[add credentials in Workload Factory^] with _view, planning, and analysis_ permissions for Storage management. 
 * The following ports must be open in the security group associated with the FSx for ONTAP file system for link connectivity. 
 ** For the Workload Factory console: port 443 (HTTPS)
 ** For CloudShell and FSx for ONTAP Emergency Management System (EMS) events analysis: port 22 (SSH)
@@ -91,9 +91,8 @@ NOTE: Automatic link creation isn't supported for AWS GovCloud accounts.
 
 .Steps
 
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Administration*.
-. From the Administration menu, select *Links*. 
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Administration* > *Links*. 
 . On the Links page, select *Create and associate*. 
 . In the Associate Link dialog, select the file system to associate with the link and select *Continue*.
 . Select *Create a new link* and then select *Continue*.
@@ -145,9 +144,8 @@ You can monitor the link creation status on the Events page. This should take no
 You can create a link using two Infrastructure-as-Code (IaC) tools from the Codebox: CloudFormation or Terraform. With this option, you extract the ARN for the link from AWS CloudFormation and report it here. Workload Factory manually registers the link for you. 
 
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Administration*.
-. From the Administration menu, select *Links*. 
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Administration* > *Links*.
 . On the Links page, select *Create and associate*. 
 . In the Associate Link dialog, select the file system to associate with the link and select *Continue*.
 . Select *Create a new link* and then select *Continue*.
@@ -199,10 +197,9 @@ Workload Factory associates the link with the FSx for ONTAP file system. You can
 After you create a link, associate it with one or more FSx for ONTAP file systems.
 
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Storage*.
-. From the Storage menu, select *FSx for ONTAP*. 
-. From *FSx for ONTAP*, select the actions menu of the file system to associate a link to and then select *Associate link*. 
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Storage* > *FSx for ONTAP*. 
+. From the FSx for ONTAP page, select the actions menu of the file system to associate a link to and then select *Associate link*. 
 . In the Associate link page, select *Associate an existing link*, select the link, and select *Continue*.
 . Select the authentication mode. 
 * Workload Factory: enter the password twice. 

@@ -30,13 +30,13 @@ The costs shown in the Workload Factory console in the Cost dashboard are based 
 .Before you begin
 Ensure that you meet the following requirements: 
 
-* You must link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html[grant credentials with the _view, planning, and analysis_ permission policy^] in Workload Factory to track FSx for ONTAP costs.
+* You must link:fsx-storage/add-credentials-fsx.html[grant credentials with the _view, planning, and analysis_ permission policy^] in Workload Factory to track FSx for ONTAP costs.
 * To filter by AWS allocation tags, ensure that your FSx for ONTAP file systems have tags assigned to them.
 
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Storage*.
-. From the Storage menu, select *Cost*.
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Storage* > *FSx for ONTAP*.
+. From the *FSx for ONTAP* menu, select *Cost*.
 . From the Cost dashboard, filter cost and capacity data for your FSx for ONTAP resources by providing the following:
 .. *AWS accounts*: Select the accounts you want to view cost data for.
 .. *Credentials*: Select credentials with _view, planning, and analysis_ permissions.

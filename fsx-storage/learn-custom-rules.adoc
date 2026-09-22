@@ -32,14 +32,6 @@ This process ensures that:
 - No free-form code is run  
 - You can see exactly what will be evaluated before you approve the rule
 
-== Before you begin
-
-Before you can create and run custom rules, ensure you have the following:
-
-AWS credentials:: Read-only access to your AWS environment. Custom rules require read-only permissions as a security boundary. link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html[Add AWS credentials to Workload Factory^].
-ONTAP credentials:: FSx viewer user with read-only permissions. Workload Factory creates this user automatically with the required permissions.
-Link or agent:: Required for connectivity to FSx file systems when evaluating rules. link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html[Connect to an FSx for ONTAP file system with a link^].
-
 == Limitations
 
 The following limitations apply to custom rules:

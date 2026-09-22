@@ -15,7 +15,7 @@ Use the NetApp Workload Factory console to manage cache volumes for FSx for ONTA
 You can manage cache volumes that are associated with cache relationships in the NetApp Workload Factory console. 
 
 .Before you begin
-* You must associate a link to manage cache volumes and relationships. link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html[Learn how to associate an existing link or to create and associate a new link^]. After you associate the link, return to this operation.
+* You must associate a link to manage cache volumes and relationships. link:fsx-storage/create-link-fsx.html[Learn how to associate an existing link or to create and associate a new link^]. After you associate the link, return to this operation.
 * You must have an existing cache volume to edit.
 
 == Edit the cache volume name
@@ -23,9 +23,8 @@ Change the name of an existing cache volume at any time.
 
 .Steps
 
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Storage*.
-. From the Storage menu, select FSx for ONTAP.
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Storage* > *FSx for ONTAP*.
 . From FSx for ONTAP, select the actions menu of the file system with the cache volume and then select *Manage*.
 . From the file system overview, select the *Cache relationships* tab.
 . Select the actions menu for the cache volume you want to modify and then select *Edit cache name*.
@@ -36,9 +35,8 @@ You can adjust the capacity of an existing cache volume at any time.
 
 .Steps
 
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Storage*.
-. From the Storage menu, select FSx for ONTAP.
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Storage* > *FSx for ONTAP*.
 . From FSx for ONTAP, select the actions menu of the file system with the cache volume and then select *Manage*.
 . From the file system overview, select the *Cache relationships* tab.
 . Select the actions menu for the cache volume you want to modify and then select *Adjust cache capacity*.
@@ -48,9 +46,8 @@ You can adjust the capacity of an existing cache volume at any time.
 Change the mount path or the export policy assigned to an existing cache volume. 
 
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Storage*.
-. From the Storage menu, select FSx for ONTAP.
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Storage* > *FSx for ONTAP*.
 . From FSx for ONTAP, select the actions menu of the file system with the cache volume and then select *Manage*.
 . From the file system overview, select the *Cache relationships* tab.
 . Select the actions menu for the cache volume you want to modify and then select *Edit export policy*.
@@ -63,9 +60,8 @@ You can change how the cache works for an existing cache volume to write-around 
 Learn more about link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/using-flexcache.html[write modes^].
 
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Storage*.
-. From the Storage menu, select FSx for ONTAP.
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Storage* > *FSx for ONTAP*.
 . From FSx for ONTAP, select the actions menu of the file system with the cache volume and then select *Manage*.
 . From the file system overview, select the *Cache relationships* tab.
 . Select the actions menu for the cache volume you want to modify and then select *Change caching method*.
@@ -75,9 +71,8 @@ Learn more about link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/using-fl
 Fill the cache volume with data from the origin volume before you use it to make cached data available faster. 
 
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Storage*.
-. From the Storage menu, select FSx for ONTAP.
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Storage* > *FSx for ONTAP*.
 . From FSx for ONTAP, select the actions menu of the file system with the cache volume and then select *Manage*.
 . From the file system overview, select the *Cache relationships* tab.
 . Select the actions menu for the cache volume you want to modify and then select *Prepopulate cache*.
@@ -87,9 +82,8 @@ Fill the cache volume with data from the origin volume before you use it to make
 When you delete a cache volume, you remove its cache relationship. Cached data is no longer available.
 
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Storage*.
-. From the Storage menu, select FSx for ONTAP.
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Storage* > *FSx for ONTAP*.
 . From FSx for ONTAP, select the actions menu of the file system with the cache volume and then select *Manage*.
 . From the file system overview, select the *Cache relationships* tab.
 . Select the actions menu for the cache volume you want to delete and then select *Delete cache volume*.
