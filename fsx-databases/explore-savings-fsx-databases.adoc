@@ -59,7 +59,7 @@ Explore savings via customization: You provide the configuration settings for Mi
 
 Explore savings for detected hosts: Workload Factory links to your existing Microsoft SQL servers and pulls in the details to the calculator for automatic comparison. You'll need to grant _view, planning, and analysis_ permissions to use this calculator option. You can change the use case, but all other details are automatically determined in the calculation.
 
-Additionally, you can link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html[add AWS credentials^] to improve the accuracy of the calculator analysis. Select *Calculate savings based on existing resources*. You'll be redirected to the Add credentials page. After you add credentials, select the existing resources to compare with FSx for ONTAP, and select *Explore savings*.
+Additionally, you can link:fsx-storage/add-credentials-fsx.html[add AWS credentials^] to improve the accuracy of the calculator analysis. Select *Calculate savings based on existing resources*. You'll be redirected to the Add credentials page. After you add credentials, select the existing resources to compare with FSx for ONTAP, and select *Explore savings*.
 
 === Explore savings via customization
 Customize the fields in the calculator to get the most accurate savings estimate. 
@@ -74,9 +74,9 @@ Follow the steps under the tab for your storage type.
 .Amazon Elastic Block Store (EBS)
 --
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Databases*.
-. From Databases, select *Explore savings* then *Microsoft SQL Server on EBS*. 
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Databases*. 
+. From the Databases menu, select *Explore savings* then *Microsoft SQL Server on EBS*. 
 . In the Savings calculator, provide the following details: 
 .. *Region*: Select a region from the dropdown menu. 
 .. *Deployment model*: Select a deployment model from the dropdown menu.
@@ -100,9 +100,9 @@ Follow the steps under the tab for your storage type.
 .Amazon FSx for Windows File Server
 --
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Databases*.
-. From Databases, select *Explore savings* then *Microsoft SQL Server on FSx for Windows*. 
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Databases*. 
+. From the Databases menu, select *Explore savings* then *Microsoft SQL Server on FSx for Windows*. 
 . In the Savings calculator, provide the following details: 
 .. *Region*: Select a region from the dropdown menu. 
 .. *Deployment model*: Select a deployment model from the dropdown menu.
@@ -136,9 +136,9 @@ To switch to FSx for ONTAP, follow the instructions to <<Deploy Microsoft SQL Se
 Customize the fields in the calculator to get the most accurate savings estimate for your Oracle hosts running on Amazon Elastic Block Store (EBS). 
 
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Databases*.
-. From Databases, select *Explore savings* then *Oracle on EBS*. 
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Databases*. 
+. From the Databases menu, select *Explore savings* then *Oracle on EBS*. 
 . In the Savings calculator, provide the following details: 
 .. *Region*: Select a region from the dropdown menu. 
 .. *Deployment model*: Select a deployment model from the dropdown menu.
@@ -173,7 +173,7 @@ Workload Factory enters the detected host characteristics so that you can explor
 .Before you begin
 Complete the following prerequisites before you begin: 
 
-* link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html[Grant _view, planning, and analysis_ permissions^] in your AWS account to detect Elastic Block Store (EBS) and FSx for Windows systems under the *Explore savings* tab and to show the savings calculation in the savings calculator. 
+* link:fsx-storage/add-credentials-fsx.html[Grant _view, planning, and analysis_ permissions^] in your AWS account to detect Elastic Block Store (EBS) and FSx for Windows systems under the *Explore savings* tab and to show the savings calculation in the savings calculator. 
 * To get instance type recommendations and improve cost accuracy, do the following: 
 . Grant Amazon CloudWatch and AWS Compute Optimizer permissions.
 .. Sign in to the AWS Management Console and open the IAM service.
@@ -228,8 +228,8 @@ Follow the steps under the tab for your storage type.
 .Amazon Elastic Block Store (EBS)
 --
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Databases*.
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Databases*. 
 . From the Databases menu, select *Explore savings*.
 . In Explore savings, select the *SQL Server on Elastic Block Store (EBS)* tab.
 +
@@ -250,8 +250,8 @@ Workload Factory consolidates multiple SQL Server hosts into a single FSx for ON
 .Amazon FSx for Windows File Server
 --
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Databases*.
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Databases*. 
 . From the Databases menu, select *Explore savings*.
 . In Explore savings, select the *SQL Server on FSx for Windows* tab.
 +
@@ -271,8 +271,8 @@ If Workload Factory detects FSx for Windows shadow copies, it sets the default v
 .Microsoft SQL Server on-premises 
 --
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Databases*.
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Databases*. 
 . From the Databases menu, select *Explore savings*.
 . In Explore savings, select engine type *Microsoft SQL Server*. 
 . Next, select the *SQL Server on-premises* tab.
@@ -318,8 +318,8 @@ Follow the steps under the tab for your storage type.
 .Amazon Elastic Block Store (EBS)
 --
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Databases*.
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Databases*.
 . From the Databases menu, select *Explore savings*.
 . In Explore savings, select the *Oracle on Elastic Block Store (EBS)* tab.
 +
@@ -340,8 +340,8 @@ Workload Factory consolidates multiple Oracle hosts into a single FSx for ONTAP 
 .Oracle Server on-premises 
 --
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Databases*.
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Databases*. 
 . From the Databases menu, select *Explore savings*.
 . In Explore savings, select engine type *Microsoft SQL Server*. 
 . Next, select the *Oracle Server on-premises* tab.
@@ -382,10 +382,10 @@ If you'd like to switch to FSx for ONTAP to realize cost savings, click *Create*
 NOTE: Workload Factory doesn't support saving or creating multiple FSx for ONTAP file systems. 
 
 .Deployment methods
-With _database host creation permissions_, you can deploy the new Microsoft SQL server on AWS EC2 using FSx for ONTAP directly from Workload Factory. You can also copy the content from the Codebox window and deploy the recommended configuration using one of the Codebox methods.
+With _database host creation_ permissions, you can deploy the new Microsoft SQL server on AWS EC2 using FSx for ONTAP directly from Workload Factory. You can also copy the content from the Codebox window and deploy the recommended configuration using one of the Codebox methods.
 
 Without permissions, you can copy the content from the Codebox window and deploy the recommended configuration using one of the Codebox methods.
 
 .Related information
 
-link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html[Workload Factory permissions reference^]
+link:fsx-storage/permissions-fsx.html[Workload Factory FSx for ONTAP permissions reference^]

@@ -161,8 +161,8 @@ You can reactivate the analysis at any time. The configuration is no longer incl
 Reactivate a dismissed configuration analysis at any time. You can select one or more configurations to reactivate.
 
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] Then select *Databases*.
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Databases*. 
 . From the Databases menu, select *Inventory*. 
 . In the Inventory, select the database engine type: *Microsoft SQL Server* or *Oracle*.
 . Navigate to the SQL Server instance or Oracle database with the configuration to postpone, select the action menu, and then select *Well-architected*.
@@ -176,4 +176,4 @@ Workload Factory reactivates the configuration analysis and runs it every day fr
 
 * link:fsx-databases/optimize-overview-fsx.html[Learn about the configuration analysis for database resources and well-architected status in Workload Factory]
 * link:fsx-storage/create-link-fsx.html[Connect to an FSx for ONTAP file system using a link^]
-* link:fsx-storage/learn-custom-rules.html[Learn about custom rules^]
+* link:fsx-storage/learn-custom-rules-fsx.html[Learn about custom rules^]

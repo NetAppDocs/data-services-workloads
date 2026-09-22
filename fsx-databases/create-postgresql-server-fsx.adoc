@@ -24,12 +24,12 @@ FSx for ONTAP file systems have two PostgreSQL server deployment models: _High A
 * *Single instance deployment*: A Single Availability Zone FSx for ONTAP file system is created when a new PostgreSQL server is created. In addition, separate volumes and LUNs are created for data, log, and tempdb files.
 
 == Before you begin
-You must have link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html[grant _database host creation_ permissions^] in your AWS account to create a new database host in workload factory. 
+You must have link:fsx-ontap/add-credentials-fsx.html[grant _database host creation_ permissions^] in your AWS account to create a new database host in workload factory. 
 
 == Create a PostgreSQL server
-You can use _Quick create_ or _Advanced create_ deployment modes to complete this task in workload factory with _Automate_ mode permissions. You can also use the following tools available in the Codebox: REST API, AWS CLI, AWS CloudFormation, and Terraform. link:https://docs.netapp.com/us-en/workload-setup-admin/use-codebox.html#how-to-use-codebox[Learn how to use Codebox for automation^]. 
+You can use _Quick create_ or _Advanced create_ deployment modes to complete this task in workload factory with _Automate_ mode permissions. You can also use the following tools available in the Codebox: REST API, AWS CLI, AWS CloudFormation, and Terraform. link:admin/use-codebox.html#how-to-use-codebox[Learn how to use Codebox for automation^]. 
 
-NOTE: When using Terraform from Codebox, the code you copy or download hides `fsxadmin` and `vsadmin` passwords. You'll need to re-enter the passwords when you run the code. You'll need to include the following permissions for the user account in addition to _Automate_ mode permissions: `iam:TagRole` and `iam:TagInstanceProfile`. link:https://docs.netapp.com/us-en/workload-setup-admin/use-codebox.html#use-terraform-from-codebox[Learn how to use Terraform from Codebox^].
+NOTE: When using Terraform from Codebox, the code you copy or download hides `fsxadmin` and `vsadmin` passwords. You'll need to re-enter the passwords when you run the code. You'll need to include the following permissions for the user account in addition to _Automate_ mode permissions: `iam:TagRole` and `iam:TagInstanceProfile`. link:admin/use-codebox.html#use-terraform-from-codebox[Learn how to use Terraform from Codebox^].
 
 [role="tabbed-block"]
 ====
@@ -39,21 +39,22 @@ NOTE: When using Terraform from Codebox, the code you copy or download hides `fs
 NOTE: In _Quick create_, HA is the default deployment model, Windows 2016 is the default Windows version, and SQL 2019 Standard Edition is the default SQL version. 
 
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. In the Databases tile, select *Deploy host* and then select *PostgreSQL Server* from the menu.
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Databases*. 
+. From the Databases Overview, select *Deploy host* and then select *PostgreSQL Server* from the menu.
 . Select *Quick create*.  
 . Under *Landing zone*, provide the following: 
 .. *AWS credentials*: Select AWS credentials with automate permissions to deploy the new database host. 
 +
-AWS credentials with _read/write_ permissions let workload factory deploy and manage the new database host from your AWS account within workload factory.
+AWS credentials with _database host creation_ permissions let Workload Factory deploy and manage the new database host from your AWS account within workload factory.
 +
-AWS credentials with _read-only_ permissions let workload factory generate a CloudFormation template for you to use in the AWS CloudFormation console. 
+AWS credentials with _view, planning, and analysis_ permissions let Workload Factory generate a CloudFormation template for you to use in the AWS CloudFormation console. 
 +
-If you don't have AWS credentials associated in workload factory and you want to create the new server in workload factory, follow *Option 1* to go to the Credentials page. Manually add the required credentials and permissions for _read/write_ mode for Database workloads.  
+If you don't have AWS credentials associated in Workload Factory and you want to create the new server in Workload Factory, follow *Option 1* to go to the Credentials page. Manually add the required credentials and _database host creation_ permissions for Database workloads.  
 +
-If you want to complete the create new server form in workload factory so you can download a complete YAML file template for deployment in AWS CloudFormation, follow *Option 2* to ensure you have the required permissions to create the new server within AWS CloudFormation. Manually add the required credentials and permissions for _read-only_ mode for Database workloads. 
+If you want to complete the create new server form in Workload Factory so you can download a complete YAML file template for deployment in AWS CloudFormation, follow *Option 2* to ensure you have the required permissions to create the new server within AWS CloudFormation. Manually add the required credentials and _view, planning, and analysis_ permissions for Database workloads. 
 +
-Optionally, you can download a partially completed YAML file template from the Codebox to create the stack outside workload factory without any credentials or permissions. Select *CloudFormation* from the dropdown in the Codebox to download the YAML file. 
+Optionally, you can download a partially completed YAML file template from the Codebox to create the stack outside Workload Factory without any credentials or permissions. Select *CloudFormation* from the dropdown in the Codebox to download the YAML file. 
 
 .. *Region & VPC*: Select a Region and VPC network. 
 +
@@ -100,22 +101,24 @@ You can also select *Save configuration* to deploy the host later.
 .Advanced create
 --
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. In the Databases tile, select *Deploy host* and then select *PostgreSQL Server* from the menu.
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Databases*. 
+. From the Databases Overview, select *Deploy host* and then select *PostgreSQL Server* from the menu.
 . Select *Advanced create*. 
 . Under *Deployment model*,  select *Standalone instance* or *High availability (HA)*.
 . Under *Landing zone*, provide the following: 
 .. *AWS credentials*: Select AWS credentials with automate permissions to deploy the new database host. 
 +
-AWS credentials with _automate_ permissions let workload factory deploy and manage the new database host from your AWS account within workload factory.
+AWS credentials with _database host creation_ permissions let Workload Factory deploy and manage the new database host from your AWS account within workload factory.
 +
-AWS credentials with _read-only_ permissions let workload factory generate a CloudFormation template for you to use in the AWS CloudFormation console. 
+AWS credentials with _view, planning, and analysis_ permissions let Workload Factory generate a CloudFormation template for you to use in the AWS CloudFormation console. 
 +
-If you don't have AWS credentials associated in workload factory and you want to create the new server in workload factory, follow *Option 1* to go to the Credentials page. Manually add the required credentials and permissions for _read/write_ mode for Database workloads.  
+If you don't have AWS credentials associated in Workload Factory and you want to create the new server in Workload Factory, follow *Option 1* to go to the Credentials page. Manually add the required credentials and _database host creation_ permissions for Database workloads.  
 +
-If you want to complete the create new server form in workload factory so you can download a complete YAML file template for deployment in AWS CloudFormation, follow *Option 2* to ensure you have the required permissions to create the new server within AWS CloudFormation. Manually add the required credentials and permissions for _read-only_ mode for Database workloads. 
+If you want to complete the create new server form in Workload Factory so you can download a complete YAML file template for deployment in AWS CloudFormation, follow *Option 2* to ensure you have the required permissions to create the new server within AWS CloudFormation. Manually add the required credentials and _view, planning, and analysis_ permissions for Database workloads. 
 +
-Optionally, you can download a partially completed YAML file template from the Codebox to create the stack outside workload factory without any credentials or permissions. Select *CloudFormation* from the dropdown in the Codebox to download the YAML file. 
+Optionally, you can download a partially completed YAML file template from the Codebox to create the stack outside Workload Factory without any credentials or permissions. Select *CloudFormation* from the dropdown in the Codebox to download the YAML file. 
+
 .. *Region & VPC*: Select a Region and VPC network. 
 +
 Ensure security groups for an existing interface endpoint allow access to HTTPS (443) protocol to the selected subnets. 

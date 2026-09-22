@@ -17,7 +17,7 @@ sidebar:
       entries:
         - title: What's new
           url: /whats-new.html
-        - title: Known limitations
+        - title: Known limitations for FSx for ONTAP in Workload Factory
           url: /known-limitations.html
     - title: Get started
       entries:
@@ -169,8 +169,6 @@ sidebar:
               url: /fsx-databases/quick-start-databases-fsx.html
             - title: Explore savings
               url: /fsx-databases/explore-savings-fsx-databases.html
-            - title: Known limitations for Workload Factory for Databases
-              url: /fsx-databases/known-limitations-fsx-databases.html
             - title: Create database resources
               entries:
                 - title: Create Microsoft SQL Server    
@@ -239,8 +237,6 @@ sidebar:
                     url: /version-projects.html
                   - title: Create a workspace
                     url: /create-workspaces.html
-                  - title: Automate with Codebox
-                    url: /automate-codebox.html
                   - title: Integrate with Perforce
                     url: /integrate-perforce.html
         - title: Use FSx for ONTAP for VMware workloads

@@ -6,7 +6,7 @@ summary: "Deregister a resource if you no longer want to deploy or monitor resou
 ---
 = Deregister a resource in NetApp Workload Factory for Databases
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 Deregister a resource, such as a Microsoft SQL Server instance or an Oracle database, if you no longer want to deploy or monitor resources from the NetApp Workload Factory console. Deregistering resources also removes the amount of FSx for ONTAP storage capacity used by the instance. 
@@ -14,8 +14,8 @@ Deregister a resource, such as a Microsoft SQL Server instance or an Oracle data
 You can register the resource again.
 
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Databases*. 
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Databases*. 
 . From the Databases menu, select *Inventory*. 
 . In the Inventory, select the engine type: *Microsoft SQL Server*, *Oracle*, or *PostgreSQL*. 
 . Locate the resource you want to deregister, select the action menu, and then select *Deregister*.
