@@ -2,87 +2,86 @@
 sidebar: sidebar
 permalink: oci/create-link-oci.html
 keywords: connect, connection, link, associate link, create link, authenticate link
-summary: "You can create and associate links to provide a trust relationship and connectivity between a NetApp Workload Factory account and an OCSN storage system."
+summary: "You can create and associate links to provide a trust relationship and connectivity between a NetApp Workload Factory account and an OCI NetApp Storage Service storage system."
 ---
-= Connect to an OCS storage system with a link
+= Connect to an OCI NetApp Storage Service storage system with a link
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-To perform advanced OCI NetApp Storage Service management operations, set up a connection between your NetApp Workload Factory account and an OCSN storage system. This process involves creating and associating new links. Link association lets you monitor and manage certain features directly from the OCSN storage system that are unavailable through OCI APIs. 
+To perform advanced storage management operations, set up a connection between your NetApp Workload Factory account and an Oracle Cloud Infrastructure (OCI) NetApp Storage Service system. This process involves creating and associating a link with your storage system. Link association lets you monitor and manage certain features directly from the OCI NetApp Storage Service system that are unavailable through OCI APIs. 
 
 link:admin/links-overview.html[Learn more about links].
 
-.About this task
+== About this task
 
-**Rachel edit to make useful**: OCI Functions is an event-driven compute service that runs code in response to events. When you create a link, a package is deployed to OCI Functions in the VCN where your ONTAP file systems reside. This package enables connectivity from Workload Factory to the resources associated with your ONTAP workloads. No outbound connectivity from OCI Functions is required. OCI Functions interacts with ONTAP file systems via HTTPS (TCP port 443) and SSH (TCP port 22).
+A _link_ in Workload Factory is an OCI Functions application in your tenancy. Workload Factory uses it to talk to the ONTAP system on an Oracle Cloud Infrastructure (OCI) NetApp Storage Service storage pool (HTTPS 443 and SSH 22).
 
 Links use Oracle Cloud Infrastructure (OCI) Functions to execute code in response to events and automatically manage the computing resources required by that code. The links that you create are part of your NetApp account and they are associated with an Oracle Cloud Infrastructure account.
 
-You can create a link in your account when defining an OCSN storage system. You use the link for that storage system, and you can use it for other OCSN storage systems. You can also associate a link for a storage system later. 
+You deploy the link, or function, with Terraform, then register the function OCID in Workload Factory.
+
+This stack runs in your tenancy with your OCI user. It is not the cross-tenancy credentials policy. That policy belongs at the tenancy root when you add credentials; you do not create it again to create a link.
+
+=== What Terraform creates
+
+| Resource | Example name |
+| --- | --- |
+| Functions application | `netapp-wf-app-<suffix>` |
+| Function | `netapp-wf-function-<suffix>` |
+| Log group + Functions invoke log | `netapp-wf-link-logs-<suffix>` |
+| Dynamic group + vault-read policy | Only if you enable **Local OCI Vault Authentication** (`netapp-functions-dg`, shared in the tenancy) |
+
+== Create a new link
+You can create a link in your account when defining an OCI NetApp Storage Service system. You use the link for that storage system, and you can use it for other OCI NetApp Storage Service systems. You can also associate a link for a storage system later. 
 
 Links require authentication. You can authenticate links using credentials stored in the Workload Factory credentials service or with your credentials stored in Oracle Cloud Infrastructure (OCI) Vault. Only one authentication method is supported per link. For example, if you select link authentication with OCI Vault, you can't change the authentication method later.
 
 NOTE: OCI Vault isn't supported when using a Console agent.
 
-== Associate a new link
-Associating a new link includes link creation and association. 
-
 .Before you begin 
-* You need to have at least one OCSN storage system in Workload Factory. To discover OCSN storage systems, you must have an Oracle Cloud Infrastructure account with link:ocsn/add-credentials-ocsn.html[add credentials in Workload Factory^] with _view, plan, and analyze_ permissions. 
-* The following ports must be open in the security group associated with the OCSN storage system for link connectivity. 
-** For the Workload Factory console: port 443 (HTTPS)
-** For CloudShell and OCSN Emergency Management System (EMS) events analysis: port 22 (SSH)
-* The link must be able to connect to the following endpoint: \https://api.workloads.netapp.com. The web-based console contacts this endpoint to interact with the Workload Factory APIs to manage and operate OCSN workloads.
-* You must have the following permissions in your Oracle Cloud Infrastructure account when adding a link using a CloudFormation stack:
+* You added Workload Factory credentials for the tenancy. 
+* You can sign in to the OCI Console for the tenancy and region where the storage pool lives.
+* Networking:
+** A **private subnet** in the VCN that can reach the ONTAP management LIF
+** A **service gateway** with a route to All \<Region\> Services in Oracle Services Network (needed to pull the function image)
+* Create an IAM policy for the group that will deploy the stack. Learn more about link:oci/permissions-oci.html[OCI NetApp Storage Service permissions].
 +
-[%collapsible]
-====
-[source,json]
-[
-  "cloudformation:GetTemplateSummary",
-  "cloudformation:CreateStack",
-  "cloudformation:DescribeStacks",
-  "cloudformation:ListStacks",
-  "cloudformation:DescribeStackEvents",
-  "cloudformation:ListStackResources",
-  "ec2:DescribeSubnets",
-  "ec2:DescribeSecurityGroups",
-  "ec2:DescribeVpcs",
-  "iam:ListRoles",
-  "iam:GetRolePolicy",
-  "iam:GetRole",
-  "iam:DeleteRolePolicy",
-  "iam:CreateRole",
-  "iam:DetachRolePolicy",
-  "iam:PutRolePolicy",
-  "iam:DeleteRole",
-  "iam:AttachRolePolicy",
-  "lambda:InvokeFunction",
-  "lambda:GetFunction",
-  "lambda:CreateFunction",
-  "lambda:DeleteFunction",
-  "iam:PassRole",
-  "lambda:TagResource",
-  "ecr:BatchGetImage",
-  "ecr:GetDownloadUrlForLayer",
-  "lambda:AddPermission",
-  "lambda:RemovePermission",
-  "cloudformation:DeleteStack",
-  "kms:CreateGrant",
-  "kms:GenerateDataKey"
-]
-==== 
+Grant the group permission to create the stack and function. Replace `<deploy-group>` and `<compartment-name>` with your values. Use a named group, not `any-user`.
++
+```
+Allow group <deploy-group> to manage orm-stacks in compartment <compartment-name>
+Allow group <deploy-group> to manage orm-jobs in compartment <compartment-name>
+Allow group <deploy-group> to manage functions-family in compartment <compartment-name>
+Allow group <deploy-group> to manage log-groups in compartment <compartment-name>
+Allow group <deploy-group> to use virtual-network-family in compartment <compartment-name>
+```
++
+If you enable **Local OCI Vault Authentication**, add:
 
-== Create a new link
-Use the OCI CLI or OCI Terraform to create and register the link within Workload Factory.
+```
+Allow group <deploy-group> to manage dynamic-groups in tenancy
+Allow group <deploy-group> to manage policies in compartment <compartment-name>
+```
++
+The stack then creates (or reuses) dynamic group `netapp-functions-dg` so the function can read the Vault secret. Matching rule:
+
+```
+ALL {resource.type = 'fnfunc', resource.compartment.id = '<compartment-ocid>'}
+```
++
+Vault policy in the compartment where the function and secret live:
+
+```
+Allow dynamic-group netapp-functions-dg to read secret-bundles in compartment <compartment-name>
+Allow dynamic-group netapp-functions-dg to use keys in compartment <compartment-name>
+```
 
 .Steps
+Use the OCI CLI or OCI Terraform to create and register the link within Workload Factory.
 
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Administration*.
-. From the Administration menu, select *Links*. 
-. On the Links page, select *Create and associate link* > *OCI Storage with NetApp*. 
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Administration* > *Links*. 
+. On the Links page, select *Create and associate link* > *OCI NetApp Storage Service*. 
 . In the Add Link dialog under *Details*, provide the following: 
 .. *Link name*: Enter the name that you want to use for this link. The name must be unique within your account.
 .. *OCI Vault*: Optional. Allows Workload Factory to fetch ONTAP access credentials securely from your OCI Vault. 
@@ -120,9 +119,57 @@ Workload Factory automatically retrieves the OCI account, location, and security
 You can monitor the link creation status on the Events page. This should take no more than five minutes.
 . Return to the Workload Factory interface and you'll see that the link is associated with the OCSN storage system.
 
-.Result
+== Deploy the Terraform stack in OCI Resource Manager
 
-Workload Factory associates the link with the OCSN storage system. You can perform advanced ONTAP operations. 
+.Steps
+
+. In the Codebox, select *OCI Terraform*.
+. Select *Redirect to OCI Resource Manager*.
+. In the dialog, select *Continue*.
+. Sign in to the OCI tenancy that contains the storage pool.
+. Review compartment, region, and variables (pre-filled from Workload Factory).
+. Select *Create*.Wait until the apply job succeeds.
+. Open Job *Output* and copy `function_ocid`.
+
+== Register the function in Workload Factory
+
+.Steps
+
+. Return to the *Add link* page.
+. Under *Link registration*, paste the function OCID (`ocid1.fnfunc.oc1...`).
+. Select *Add*.
+
+== Other ways to apply the same template
+
+Use these only if you are not using Resource Manager from the Codebox.
+
+**Terraform CLI**
+
+1. Create a folder.
+2. Copy or download **OCI Terraform** from the Codebox (`main.tf`) into that folder.
+3. From the folder:
+
+```bash
+terraform init
+terraform plan
+terraform apply
+```
+
+4. Copy `function_ocid` from the apply output and continue with [Register the function](#3-register-the-function-in-workload-factory).
+
+**OCI CLI**
+
+Use the **OCI CLI** tab in the Codebox to download the zip, create the Resource Manager stack, then run plan and apply jobs.
+
+.Result 
+The link appears in your *Links* list.
+
+To remove the function, delete the link in Workload Factory, then destroy the Resource Manager stack (or run `terraform destroy`).
+
+.Result
+The link appears in your *Links* list. 
+
+To remove the function, delete the link in Workload Factory, then destroy the Resource Manager stack (or run `terraform destroy`). 
 ////
 
 == Associate an existing link with an OCSN storage system
@@ -151,126 +198,9 @@ NOTE: Authentication with AWS Secrets Manager requires a user, either the _FSx_u
 
 .Result
 
-The link is associated with the OCSN storage system. You can perform advanced ONTAP operations.
+Workload Factory associates the link with the OCI NetApp Storage Service system. You can perform advanced ONTAP operations.
 ////
 
-.Related information
-
-link:admin/links-overview.html#when-a-link-is-required[Learn more about links].
-
-= Create an Oracle Cloud Infrastructure NetApp Storage Service link with Terraform
-
-A **link** is an OCI Functions application in your tenancy. Workload Factory uses it to talk to the ONTAP system on an Oracle Cloud Infrastructure Storage with NetApp storage pool (HTTPS 443 and SSH 22).
-
-You deploy the function with Terraform, then register the function OCID in Workload Factory.
-
-This stack runs in **your** tenancy with **your** OCI user. It is not the cross-tenancy credentials policy. That policy belongs at tenancy root when you add credentials; you do not create it again to deploy a link.
-
-== Before you begin
-
-- Workload Factory credentials for the tenancy are already added.
-- You can sign in to the OCI Console for the tenancy and region where the storage pool lives.
-- Networking:
-  - A **private subnet** in the VCN that can reach the ONTAP management LIF
-  - A **service gateway** with a route to All \<Region\> Services in Oracle Services Network (needed to pull the function image)
-- Create an IAM policy for the group that will deploy the stack. Workload Factory also lists these statements under **Link permissions**.
-
-Grant that group permission to create the stack and function. Replace `<deploy-group>` and `<compartment-name>` with your values. Use a named group, not `any-user`.
-
-```
-Allow group <deploy-group> to manage orm-stacks in compartment <compartment-name>
-Allow group <deploy-group> to manage orm-jobs in compartment <compartment-name>
-Allow group <deploy-group> to manage functions-family in compartment <compartment-name>
-Allow group <deploy-group> to manage log-groups in compartment <compartment-name>
-Allow group <deploy-group> to use virtual-network-family in compartment <compartment-name>
-```
-
-If you enable **Local OCI Vault Authentication**, add:
-
-```
-Allow group <deploy-group> to manage dynamic-groups in tenancy
-Allow group <deploy-group> to manage policies in compartment <compartment-name>
-```
-
-The stack then creates (or reuses) dynamic group `netapp-functions-dg` so the function can read the Vault secret. Matching rule:
-
-```
-ALL {resource.type = 'fnfunc', resource.compartment.id = '<compartment-ocid>'}
-```
-
-Vault policy in the compartment where the function and secret live:
-
-```
-Allow dynamic-group netapp-functions-dg to read secret-bundles in compartment <compartment-name>
-Allow dynamic-group netapp-functions-dg to use keys in compartment <compartment-name>
-```
-
-## What Terraform creates
-
-| Resource | Example name |
-| --- | --- |
-| Functions application | `netapp-wf-app-<suffix>` |
-| Function | `netapp-wf-function-<suffix>` |
-| Log group + Functions invoke log | `netapp-wf-link-logs-<suffix>` |
-| Dynamic group + vault-read policy | Only if you enable **Local OCI Vault Authentication** (`netapp-functions-dg`, shared in the tenancy) |
-
-## Steps
-
-### 1. Start Add link in Workload Factory
-
-1. Open **Workload Factory** and go to **OCI Storage with NetApp**.
-2. Select **Add link** (or start from a storage pool in inventory).
-3. Review **Link type** (OCI Functions).
-4. Enter a **link name**.
-5. Optional: enable **Local OCI Vault Authentication** if ONTAP credentials should come from OCI Vault. Leave it off to store credentials in Workload Factory.
-6. Optional: add tags.
-7. Under **Link association**, choose the Oracle system / storage pool and enter ONTAP credentials (user and password) or the Vault secret OCID.
-8. Confirm **Location** (tenancy, compartment, region, VCN, subnet, NSG).
-
-The **Codebox** on the right fills in when location is complete. Use that template; do not write Terraform by hand.
-
-### 2. Deploy the stack in OCI Resource Manager (recommended)
-
-1. In the Codebox, select **OCI Terraform**.
-2. Select **Redirect to OCI Resource Manager**.
-3. In the dialog, select **Continue**.
-4. Sign in to the OCI tenancy that contains the storage pool.
-5. Review compartment, region, and variables (pre-filled from Workload Factory).
-6. Select **Create**.Wait until the apply job succeeds.
-7. Open Job **Output** and copy `function_ocid`.
-
-### 3. Register the function in Workload Factory
-
-1. Return to the **Add link** page.
-2. Under **Link registration**, paste the function OCID (`ocid1.fnfunc.oc1...`).
-3. Select **Add**.
-
-## Other ways to apply the same template
-
-Use these only if you are not using Resource Manager from the Codebox.
-
-**Terraform CLI**
-
-1. Create a folder.
-2. Copy or download **OCI Terraform** from the Codebox (`main.tf`) into that folder.
-3. From the folder:
-
-```bash
-terraform init
-terraform plan
-terraform apply
-```
-
-4. Copy `function_ocid` from the apply output and continue with [Register the function](#3-register-the-function-in-workload-factory).
-
-**OCI CLI**
-
-Use the **OCI CLI** tab in the Codebox to download the zip, create the Resource Manager stack, then run plan and apply jobs.
-
-.Result 
-The link appears in your *Links* list.
-
-To remove the function, delete the link in Workload Factory, then destroy the Resource Manager stack (or run `terraform destroy`).
 
 .Related information
 
