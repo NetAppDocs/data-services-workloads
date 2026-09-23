@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: learn-latency-monitoring-eda.html
+permalink: fsx-eda/learn-latency-monitoring-eda.html
 keywords: latency analysis, CloudWatch alarms, volume latency, read latency, write latency, critical events, warning events, latency thresholds, IOPS thresholds, latency monitoring, FSx for ONTAP, root cause analysis, QoS delay center, automated analysis
 summary: Learn how latency monitoring in Workload Factory for EDA helps you detect and analyze performance issues with FSx for ONTAP volumes using automated basic analysis and optional AI analysis.
 ---

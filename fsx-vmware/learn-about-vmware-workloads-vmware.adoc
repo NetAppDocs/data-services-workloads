@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: learn-about-vmware-workloads-vmware.html
+permalink: fsx-vmware/learn-about-vmware-workloads-vmware.html
 keywords: overview, concepts, features, use case, workloads, how Workload Factory works
 summary: NetApp Workload Factory for VMware provides tools to move your data from on-premises systems to Amazon EVS, VMware Cloud on AWS (VMC), Amazon EC2, or Google Cloud VMware Engine. 
 ---

@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task-activate-overview-dashboard-eda.html
+permalink: fsx-eda/task-activate-overview-dashboard-eda.html
 keywords: activate dashboard, CloudWatch metrics, AWS credentials, view permissions, FSx for ONTAP, cluster overview, enable dashboard
 summary: Activate the Overview dashboard to begin collecting CloudWatch metrics for your FSx for ONTAP file systems.
 ---

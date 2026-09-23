@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: quick-start-evs-vmware.html
+permalink: fsx-vmware/quick-start-evs-vmware.html
 keywords: quick start
 summary: Get started with the VMware migration advisor to move your current infrastructure to Amazon EVS using Amazon FSx for ONTAP as external NFS datastores.
 ---

@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task-configure-project-dashboard-eda.html
+permalink: fsx-eda/task-configure-project-dashboard-eda.html
 keywords: configure, dashboard, AWS tags, CloudWatch, FSx for ONTAP, Workload Factory, EDA, custom filters, project tags, team tags
 summary: Configure custom filters for the Projects dashboard to organize metrics by your business structure such as projects, teams, or applications.
 ---

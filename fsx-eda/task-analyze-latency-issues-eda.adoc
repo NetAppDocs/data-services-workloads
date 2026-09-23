@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task-analyze-latency-issues-eda.html
+permalink: fsx-eda/task-analyze-latency-issues-eda.html
 keywords: latency analysis, analyze latency, latency events, root cause analysis, QoS delay center, AI analysis, latency troubleshooting, volume latency, basic analysis, affected clients, remediation steps, iops, throughput
 summary: View and analyze latency events to find performance issues with FSx for ONTAP volumes. Use basic analysis, and optional AI analysis, to identify the root cause and suggested fixes.
 ---

@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: create-workspaces-eda.html
+permalink: fsx-eda/create-workspaces-eda.html
 keywords: manage, workspace, snapshot, project 
 summary: A workspace in NetApp Workload Factory for EDA is a Perforce representation of a project that is based off of a project snapshot. You can create workspaces as part of an EDA project.
 ---

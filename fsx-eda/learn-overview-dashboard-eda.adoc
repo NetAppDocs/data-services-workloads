@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: learn-overview-dashboard-eda.html
+permalink: fsx-eda/learn-overview-dashboard-eda.html
 keywords: cluster overview, cluster dashboard, FSx for ONTAP, cluster health, EMS events, latency events, SSD management, throughput management, capacity automation, capacity recommendations, decision points
 summary: Learn how the Overview dashboard in Workload Factory for EDA helps you monitor FSx for ONTAP cluster health, capacity, and throughput at scale.
 ---

@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task-analyze-latency-trends-eda.html
+permalink: fsx-eda/task-analyze-latency-trends-eda.html
 keywords: latency graph, latency visualization, latency trends, breach patterns, latency spikes, latency patterns, time range analysis, breach frequency, iops, throughput
 summary: Use the interactive graphs to analyze volume latency trends over time, identify patterns, and track remediation effectiveness.
 ---

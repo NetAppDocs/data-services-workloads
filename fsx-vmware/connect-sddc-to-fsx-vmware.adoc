@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: connect-sddc-to-fsx-vmware.html
+permalink: fsx-vmware/connect-sddc-to-fsx-vmware.html
 keywords: vm workloads, fsx for ontap, sddc, vmware cloud on aws
 summary: After you deploy an FSx for ONTAP file system, you need to connect that system to your VMware Cloud on AWS infrastructure. Your SDDC offers network options for connecting to the FSx for ONTAP file system by using the VPC Peering capability to extend network connectivity to the external NFS storage volumes.
 ---

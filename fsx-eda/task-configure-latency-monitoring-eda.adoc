@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task-configure-latency-monitoring-eda.html
+permalink: fsx-eda/task-configure-latency-monitoring-eda.html
 keywords: latency analysis, configure thresholds, CloudWatch alarms, latency monitoring, FSx for ONTAP, warning events, critical events, latency notifications, email notifications, SNS notifications, latency configuration
 summary: Configure latency monitoring thresholds and notification settings to detect and respond to performance issues with FSx for ONTAP volumes.
 ---

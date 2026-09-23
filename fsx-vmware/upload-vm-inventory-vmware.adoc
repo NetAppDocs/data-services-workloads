@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: upload-vm-inventory-vmware.html
+permalink: fsx-vmware/upload-vm-inventory-vmware.html
 keywords: vm workloads, capture vm details
 summary: You can use the Planning Center to upload information about your current VMware environment.
 ---

@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: launch-migration-advisor-evs-manual-vmware.html
+permalink: fsx-vmware/launch-migration-advisor-evs-manual-vmware.html
 keywords: overview, concepts, features, use case, workloads, how Workload Factory works, migration, manual, specification, deploy, deployment, plan
 summary: Log in to the NetApp Workload Factory to access the VMware planning center. You can create a deployment plan for EVS manually.
 ---

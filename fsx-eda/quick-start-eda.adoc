@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: quick-start-eda.html  
+permalink: fsx-eda/quick-start-eda.html  
 keywords: requirements, permissions, eda, builders, quick start, electronic design automation
 summary: Get started with Workload Factory for EDA by setting up your environment, enabling monitoring dashboards, and configuring latency analysis.
 ---

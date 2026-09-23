@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: calculate-evs-savings-vmware.html
+permalink: fsx-vmware/calculate-evs-savings-vmware.html
 keywords: vm workloads, deploy fsx, deploy storage for vms, evs, savings, calculate, tco, regions
 summary: Calculate how much you can save by using Amazon EVS with FSx for ONTAP.
 ---

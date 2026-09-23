@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task-use-overview-dashboard-eda.html
+permalink: fsx-eda/task-use-overview-dashboard-eda.html
 keywords: cluster overview, filter dashboard, cluster health, capacity recommendations, SSD management, throughput management, bulk edit, decision points, clusters table, ONTAP events, latency events
 summary: Use the Overview dashboard to monitor cluster health, view capacity recommendations, manage SSD and throughput settings, and analyze performance trends across your FSx for ONTAP file systems.
 ---

@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: view-evs-well-architected-vmware.html
+permalink: fsx-vmware/view-evs-well-architected-vmware.html
 keywords: evs, well-architected, wad, best practices, recommendations, security, resiliency
 summary: Review well-architected status for EVS configurations in Workload Factory and follow remediation guidance based on AWS and NetApp best practices.
 ---

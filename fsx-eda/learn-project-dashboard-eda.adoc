@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: learn-project-dashboard-eda.html
+permalink: fsx-eda/learn-project-dashboard-eda.html
 keywords: projects dashboard, AWS tags, CloudWatch, FSx for ONTAP, Workload Factory, EDA, electronic design automation, volume details, capacity utilization, throughput utilization, IOPS utilization, custom filters
 summary: Learn how the Projects dashboard in Workload Factory for EDA helps you monitor and analyze project storage usage across FSx for ONTAP file systems and volumes.
 ---

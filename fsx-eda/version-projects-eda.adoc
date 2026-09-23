@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: version-projects-eda.html
+permalink: fsx-eda/version-projects-eda.html
 keywords: snapshot, clone, project, protect, API, version, versions, versioning
 summary: Manage versions of your EDA projects using snapshots and clones. 
 ---

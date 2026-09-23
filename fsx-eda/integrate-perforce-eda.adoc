@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: integrate-perforce-eda.html
+permalink: fsx-eda/integrate-perforce-eda.html
 keywords: software builders, integrate, integration, Perforce, EDA, electronic design automation
 summary: Learn how to integrate EDA with Perforce. 
 ---
