@@ -314,55 +314,55 @@ sidebar:
     - title: OCI NetApp Storage Service
       entries:
         - title: Learn about OCI NetApp Storage Service
-          url: /ocsn/learn-about-ocsn.html
+          url: /oci/learn-about-oci.html
         - title: Quick start for OCI NetApp Storage Service
-          url: /ocsn/quick-start-ocsn.html  
+          url: /oci/quick-start-oci.html  
         - title: Add OCI credentials
-          url: /ocsn/add-credentials-ocsn.html
+          url: /oci/add-credentials-oci.html
         - title: Discover OCI Storage systems
-          url: /ocsn/create-discover-systems-ocsn.html
+          url: /oci/create-discover-systems-oci.html
         - title: Connect to an OCI Storage system 
-          url: /ocsn/create-link-ocsn.html
+          url: /oci/create-link-oci.html
         - title: Permissions reference for OCI NetApp Storage Service
-          url: /ocsn/permissions-ocsn.html
+          url: /oci/permissions-oci.html
     - title: Administer Workload Factory
       entries:
         - title: Manage service accounts
-          url: /administer/manage-service-accounts.html
+          url: /admin/manage-service-accounts.html
         - title: Build and operate well-architected workloads
-          url: /administer/well-architected-workloads.html  
+          url: /admin/well-architected-workloads.html  
         - title: Configure notifications
-          url: /administer/configure-notifications.html
+          url: /admin/configure-notifications.html
         - title: Monitor operations with Tracker
-          url: /administer/monitor-operations.html
+          url: /admin/monitor-operations.html
         - title: Manage links
-          url: /administer/manage-links.html     
+          url: /admin/manage-links.html     
         - title: Manage AI features
-          url: /administer/manage-genai-features.html
+          url: /admin/manage-genai-features.html
         - title: Custom dashboards
           entries:
             - title: Learn about custom dashboards
-              url: /administer/learn-custom-dashboards-fsx.html
+              url: /admin/learn-custom-dashboards-fsx.html
             - title: Create a custom dashboard
-              url: /administer/create-custom-dashboard-fsx.html
+              url: /admin/create-custom-dashboard-fsx.html
             - title: Manage custom dashboards
-              url: /administer/manage-custom-dashboards-fsx.html
+              url: /admin/manage-custom-dashboards-fsx.html
             - title: Troubleshoot custom dashboards
-              url: /administer/troubleshoot-custom-dashboards-fsx.html
+              url: /admin/troubleshoot-custom-dashboards-fsx.html
         - title: Automate tasks using Codebox
           entries:
             - title: Learn about Codebox
-              url: /administer/codebox-automation.html
+              url: /admin/codebox-automation.html
             - title: Use Codebox to generate code
-              url: /administer/use-codebox.html
+              url: /admin/use-codebox.html
         - title: Use CloudShell
-          url: /administer/use-cloudshell.html
+          url: /admin/use-cloudshell.html
         - title: Remove credentials
-          url: /administer/manage-credentials.html 
+          url: /admin/manage-credentials.html 
     - title: Knowledge and support
       entries:
         - title: Register for support
-          url: /support-registration.html
+          url: /register-support.html
         - title: Get help
           url: /get-help.html     
     - title: Legal notices
