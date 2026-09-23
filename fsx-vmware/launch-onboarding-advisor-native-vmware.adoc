@@ -4,7 +4,6 @@ permalink: fsx-vmware/launch-onboarding-advisor-native-vmware.html
 keywords: overview, concepts, features, use case, workloads, how Workload Factory works
 summary: Log in to the NetApp Workload Factory to access the VMware migration advisor. You'll follow the steps in the wizard to create a deployment plan or migration plan that is customized for your needs.
 ---
-
 = Create a deployment plan for Amazon EC2 using the VMware workloads migration advisor
 :icons: font
 :imagesdir: ../media/
@@ -12,8 +11,7 @@ summary: Log in to the NetApp Workload Factory to access the VMware migration ad
 [.lead]
 Log in to the NetApp Workload Factory to access the VMware migration advisor. You'll follow the steps in the wizard to create a deployment plan or migration plan that is customized for your needs.
 
-
-Note that you must have a user name and password to access Workload Factory. If you don't have access, create an account now. See the instructions https://docs.netapp.com/us-en/workload-setup-admin/quick-start-vmware.html[here].
+Note that you must have a user name and password to access Workload Factory. If you don't have access, create an account now. Review the instructions link:fsx-vmware/quick-start-vmware.html[here].
 
 == Create a deployment plan based on an on-premises vSphere environment
 
@@ -21,17 +19,16 @@ You can migrate your current virtual machine configurations in on-premises vSphe
 
 .Requirements
 
-* You must have link:upload-vm-inventory-vmware.html[uploaded a VM inventory].
+* You must have link:fsx-vmware/upload-vm-inventory-vmware.html[uploaded a VM inventory].
 //* You must have access to the inventory file from the system on which you are logging in to Workload Factory.
 
 .Steps
 
-. Log in to Workload Factory using one of the https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *VMware*.
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *VMware*. 
 +
 The planning center is displayed.
-. If you have not yet uploaded a VM inventory, select *Upload VM inventory* and follow the instructions in link:upload-vm-inventory-vmware.html[Upload VM inventory data].
+. If you have not yet uploaded a VM inventory, select *Upload VM inventory* and follow the instructions in link:fsx-vmware/upload-vm-inventory-vmware.html[Upload VM inventory data].
 . Choose a VM inventory dataset from the list, and open the *Start planning* menu for the dataset.
 . Select *AWS native compute*.
 +

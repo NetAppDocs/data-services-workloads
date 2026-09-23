@@ -4,7 +4,6 @@ permalink: fsx-vmware/view-evs-well-architected-vmware.html
 keywords: evs, well-architected, wad, best practices, recommendations, security, resiliency
 summary: Review well-architected status for EVS configurations in Workload Factory and follow remediation guidance based on AWS and NetApp best practices.
 ---
-
 = Implement well-architected EVS configurations
 :icons: font
 :imagesdir: ../media/
@@ -47,16 +46,15 @@ NOTE: On-demand execution of well-architected scans is not currently supported. 
 
 == Before you begin
 
-* You must have https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html[added AWS credentials^] with _View, planning, and analysis_ permissions for VMware workloads.
+* You must have link:fsx-storage/add-credentials-fsx.html[added AWS credentials^] with _View, planning, and analysis_ permissions for VMware workloads.
 * You must have at least one discovered Amazon Elastic VMware Service environment in your AWS account.
 
 == Access the well-architected status tab
 
 .Steps
 
-. Log in to Workload Factory using one of the https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *VMware*. 
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *VMware*.  
 +
 The planning center is displayed.
 
@@ -168,6 +166,6 @@ After reviewing your well-architected insights and implementing recommended chan
 
 .Related links
 
-* https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs-vmware.html[Create a deployment plan for Amazon EVS using the migration advisor]
-* https://docs.netapp.com/us-en/workload-vmware/deploy-fsx-file-system-evs-vmware.html[Deploy the recommended FSx for ONTAP file system]
-* https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html[AWS placement groups documentation^]
+* link:fsx-vmware/launch-migration-advisor-evs-vmware.html[Create a deployment plan for Amazon EVS using the migration advisor]
+* link:fsx-vmware/deploy-fsx-file-system-evs-vmware.html[Deploy the recommended FSx for ONTAP file system]
+* link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html[AWS placement groups documentation^]

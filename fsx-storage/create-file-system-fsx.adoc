@@ -1,0 +1,156 @@
+---
+sidebar: sidebar
+permalink: fsx-storage/create-file-system-fsx.html
+keywords: create, FSx file system, ONTAP file system, Workload Factory, storage
+summary: "Using NetApp Workload Factory you can create an FSx for ONTAP file system to add and manage volumes and additional data services." 
+---
+= Create an FSx for ONTAP file system in NetApp Workload Factory
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Using NetApp Workload Factory you can create first and second-generation FSx for ONTAP file systems to add and manage volumes and additional data services. 
+
+.About this task
+A storage VM and a security group are created as part of file system creation. 
+
+.Before you begin
+Before creating your FSx for ONTAP file system, you will need:
+
+* Credentials with _file system creation and deletion_ permissions to create an FSx for ONTAP file system. link:fsx-storage/add-credentials-fsx.html[Learn how to grant permissions to an AWS account^].
+
+* The region and VPC information for where you will create the FSx for ONTAP instance.
+
+== Create an FSx for ONTAP file system
+You can create an FSx for ONTAP file system using _Quick create_ or _Advanced create_. You can also use the following tools available in the Codebox: REST API, CloudFormation, and Terraform. link:admin/use-codebox.html#how-to-use-codebox[Learn how to use Codebox for automation^]. 
+
+NOTE: When using Terraform from Codebox, the code you copy or download hides `fsxadmin` and `vsadmin` passwords. You'll need to re-enter the passwords when you run the code.  
+
+[role="tabbed-block"]
+====
+
+.Quick create
+--
+Quick create enables you to use a recommended best-practice configuration. You can change most settings after you create an FSx for ONTAP file system. 
+
+Second-generation FSx for ONTAP file systems are the default deployment type for quick create unless the selected region doesn't support second-generation FSx for ONTAP file systems.
+
+.Steps
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Storage*. 
+. From the Storage dashboard, select *Create file system*.
+include::_include/create-file-system-quick-create.adoc[]
+
+If you created the file system, you can now view the FSx for ONTAP file system in the *Inventory* page.
+--
+
+.Advanced create
+--
+With Advanced create, you set all of the configuration options, including availability, security, backups, and maintenance. 
+
+.Steps
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Storage*. 
+. From the Storage dashboard, select *Create file system*.
+include::_include/create-file-system-advanced-create.adoc[]
+
+If you created the file system, you can now view the FSx for ONTAP file system in the *Inventory* page.
+--
+
+====
+
+== Security group details
+The following table provides security group details including protocols, ports, and roles. 
+
+====
+[cols="2,2,4a" options="header"]
+|===
+| Protocol
+| Port
+| Role
+
+| SSH
+| 22
+| SSH access to the IP address of the cluster management LIF or a node management LIF
+
+| TCP
+| 80
+| Web page access to the IP address of the cluster management LIF
+
+| TCP/UDP
+| 111
+| Remote procedure call for NFS
+
+| TCP/UDP
+| 135
+| Remote procedure call for CIFS
+
+| UDP
+| 137
+| NetBIOS name resolution for CIFS
+
+| TCP/UDP
+| 139
+| NetBIOS service session for CIFS
+
+| TCP
+| 443
+| ONTAP REST API access to the IP address of the cluster management LIF or an SVM management LIF
+
+| TCP
+| 445
+| Microsoft SMB/CIFS over TCP with NetBIOS framing
+
+| TCP/UDP
+| 635
+| NFS mount
+
+| TCP
+| 749
+| Kerberos
+
+| TCP/UDP
+| 2049
+| NFS server daemon
+
+| TCP 
+| 3260
+| iSCSI access through the iSCSI data LIF
+
+| TCP/UDP
+| 4045
+| NFS lock daemon
+
+| TCP/UDP
+| 4046
+| Network status monitor for NFS
+
+| UDP
+| 4049
+| NFS quota protocol
+
+| TCP
+| 10000
+| Network data management protocol (NDMP) and NetApp SnapMirror intercluster communication
+
+| TCP 
+| 11104
+| Management of NetApp SnapMirror intercluster communication
+
+| TCP
+| 11105
+| SnapMirror data transfer using intercluster LIFs
+
+| TCP/UDP
+| 161-162
+| Simple network management protocol (SNMP)
+
+| All ICMP
+| All
+| Pinging the instance
+
+|===
+====
+
+.What's next
+With a file system in your Storage inventory, you can link:fsx-storage/create-volume-fsx.html[create volumes], manage your FSx for ONTAP file system, and set up link:fsx-storage/data-protection-overview.html[data protection] for your resources.

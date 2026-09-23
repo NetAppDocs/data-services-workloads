@@ -4,7 +4,6 @@ permalink: fsx-vmware/capture-vm-configurations-vmware.html
 keywords: vm workloads, capture vm details
 summary: You can use the Migration advisor VM collector script or RVTools to capture your current VM configurations. We recommend that you use the Migration advisor VM collector script because it gathers both VM configuration and performance data for the most accurate plan.
 ---
-
 = Capture your VM configurations before migrating to VMware Cloud with VMware workloads
 :icons: font
 :imagesdir: ../media/
@@ -36,9 +35,8 @@ Note that if you plan to capture long-term statistics from your VMs (daily stati
 
 .Steps
 
-. Log in to Workload Factory using one of the https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *VMware*. 
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *VMware*. 
 +
 The planning center is displayed.
 . From the VMware menu, select *Assess and plan* and then select *Migration to VMware Cloud on AWS*.
@@ -110,4 +108,4 @@ The xlsx or xls file that contains your results is saved to your working directo
 
 .What's next?
 
-link:launch-onboarding-advisor-vmware.html[Create a VMware Cloud on AWS deployment plan using the migration advisor].
+link:fsx-vmware/launch-onboarding-advisor-vmware.html[Create a VMware Cloud on AWS deployment plan using the migration advisor].

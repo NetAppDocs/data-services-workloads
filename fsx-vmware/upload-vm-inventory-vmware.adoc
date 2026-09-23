@@ -4,7 +4,6 @@ permalink: fsx-vmware/upload-vm-inventory-vmware.html
 keywords: vm workloads, capture vm details
 summary: You can use the Planning Center to upload information about your current VMware environment.
 ---
-
 = Upload VM inventory data to NetApp Workload Factory
 :icons: font
 :imagesdir: ../media/
@@ -12,11 +11,10 @@ summary: You can use the Planning Center to upload information about your curren
 [.lead]
 Before you can create a migration plan, you need to upload your VM inventory data.
 
-
 .Steps
 
-. Log in to Workload Factory using one of the https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *VMware*. 
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *VMware*. 
 +
 The planning center is displayed.
 From the planning center, you can upload your VM inventory data, see previous inventory data uploads, and plan a migration using any of the VM inventory datasets. 
@@ -32,7 +30,7 @@ From the planning center, you can upload your VM inventory data, see previous in
 --
 RVTools is a Windows application that interacts with VCenter and ESX server (5.x to 8.0) to capture information about your VMware virtual environments. It gathers information about VMs, CPU, memory, disks, clusters, ESX hosts, datastores, and more. You can export this information to an xlsx file to use with the migration advisor.
 
-in the https://www.dell.com/en-us/shop/vmware/sl/rvtools[Learn more about RVTools^]
+link:https://www.dell.com/en-us/shop/vmware/sl/rvtools[Learn more about RVTools^]
 
 .Steps
 
@@ -41,13 +39,13 @@ in the https://www.dell.com/en-us/shop/vmware/sl/rvtools[Learn more about RVTool
 +
 The *Prepare for AWS Cloud onboarding* page is displayed.
 . Enter a name for the VM inventory dataset you will create.
-. Download and install RVTools 4.4.2 or greater from the https://www.dell.com/en-us/shop/vmware/sl/rvtools[RVTools website^]
+. Download and install RVTools 4.4.2 or greater from the link:https://www.dell.com/en-us/shop/vmware/sl/rvtools[RVTools website^]
 . Launch RVTools and log in to the target VCenter Server.
 +
 This will capture information about that VCenter Server.
 . Export your VMware information to an xlsx or xls file. 
 +
-See the chapter on "commandline parameters" in the https://www.dell.com/en-us/shop/vmware/sl/rvtools[RVTools documentation located in the Resources section^] for details.
+See the chapter on "commandline parameters" in the link:https://www.dell.com/en-us/shop/vmware/sl/rvtools[RVTools documentation located in the Resources section^] for details.
 . Select image:button-upload-file.png[the upload button] and choose the RVTools file you exported.
 . Select *Upload*.
 . Select *Finish*.
@@ -148,8 +146,8 @@ Workload Factory gathers information from Data Infrastructure Insights.
 
 Manage your uploaded VM inventory data from the planning center, or create a deployment plan.
 
-* link:explore-planning-center-vmware.html[Explore the VMware workloads planning center]
-* link:launch-onboarding-advisor-vmware.html[Create an Amazon VMware Cloud deployment plan]
-* link:launch-migration-advisor-evs-vmware.html[Create an Amazon Elastic VMware Service deployment plan]
-* link:launch-onboarding-advisor-native-vmware.html[Create an Amazon EC2 deployment plan]
-* link:launch-migration-advisor-gcve-vmware.html[Create a Google Cloud VMware Engine deployment plan]
+* link:fsx-vmware/explore-planning-center-vmware.html[Explore the VMware workloads planning center]
+* link:fsx-vmware/launch-onboarding-advisor-vmware.html[Create an Amazon VMware Cloud deployment plan]
+* link:fsx-vmware/launch-migration-advisor-evs-vmware.html[Create an Amazon Elastic VMware Service deployment plan]
+* link:fsx-vmware/launch-onboarding-advisor-native-vmware.html[Create an Amazon EC2 deployment plan]
+* link:fsx-vmware/launch-migration-advisor-gcve-vmware.html[Create a Google Cloud VMware Engine deployment plan]

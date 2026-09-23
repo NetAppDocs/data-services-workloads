@@ -19,7 +19,7 @@ Key capabilities include:
 * Proactive observability
 * Insights to action
 
-include::https://raw.githubusercontent.com/NetAppDocs/workload-setup-admin/main/_include/well-architected-workloads.adoc[]
+include::_include/well-architected-workloads.adoc[]
 
 == Analysis requirements
 For a complete configuration analysis, you must do the following: 
@@ -29,7 +29,7 @@ For a complete configuration analysis, you must do the following:
 link:fsx-storage/create-link-fsx.html[Learn how to associate an existing link or to create and associate a new link].
 * Grant _view, planning, and analysis_ permissions for VMware workloads. 
 +
-link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html[Learn how to grant permissions to an AWS account^]
+link:fsx-storage/add-credentials-fsx.html[Learn how to grant permissions to an AWS account^]
 
 * You must have at least one discovered Amazon Elastic VMware Service environment in your AWS account.
 
@@ -55,4 +55,4 @@ Ensure that your EVS cluster nodes have appropriate EC2 stop and termination pro
 
 .What's next
 
-link:view-evs-well-architected-vmware.html[Implement well-architected configurations]
+link:fsx-vmware/view-evs-well-architected-vmware.html[Implement well-architected configurations]

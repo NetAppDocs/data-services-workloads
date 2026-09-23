@@ -4,7 +4,6 @@ permalink: fsx-vmware/launch-migration-advisor-evs-vmware.html
 keywords: overview, concepts, features, use case, workloads, how Workload Factory works, migration, manual, specification, deploy, deployment, plan
 summary: From the VMware planning center, you can launch the Amazon EVS migration advisor to help create a migration plan that is customized for your needs.
 ---
-
 = Create a deployment plan for Amazon EVS using the migration advisor
 :icons: font
 :imagesdir: ../media/
@@ -16,13 +15,13 @@ You can create a deployment plan to migrate virtual machines to Amazon Elastic V
 
 == Requirements
 
-* You must have a user name and password to access Workload Factory. If you don't have access, create an account now. See the instructions https://docs.netapp.com/us-en/workload-setup-admin/quick-start-vmware.html[here].
+* You must have a user name and password to access Workload Factory. If you don't have access, create an account now. Review the instructions link:fsx-vmware/quick-start-vmware.html[here].
 * You must have an Amazon Elastic VMware Service subscription.
 
 == Steps
 
-. Log in to Workload Factory using one of the https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *VMware*. 
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *VMware*. 
 +
 The planning center is displayed.
 . Select a VM inventory from the list that you want to use to make a deployment plan, and select *Start planning* in that row.
@@ -86,4 +85,4 @@ The migration plan is automatically saved in the list of plans in the planning c
 The .csv file creates a map of all the VMs included in the migration plan, along with their assigned storage volumes.
 . When you are ready to proceed with the plan, select *Provision* to begin deploying the recommended Amazon FSx for NetApp ONTAP file system.
 
-link:deploy-fsx-file-system-evs-vmware.html[Deploy the VMware workloads recommended FSx for ONTAP file system].
+link:fsx-vmware/deploy-fsx-file-system-evs-vmware.html[Deploy the VMware workloads recommended FSx for ONTAP file system].

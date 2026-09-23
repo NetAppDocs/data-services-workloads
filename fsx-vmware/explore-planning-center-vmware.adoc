@@ -4,7 +4,6 @@ permalink: fsx-vmware/explore-planning-center-vmware.html
 keywords: vm workloads, netapp Workload Factory
 summary: You can use the VMware planning center to manage uploaded inventory data and migration plans that you have created.
 ---
-
 = Explore the VMware planning center
 :icons: font
 :imagesdir: ../media/
@@ -16,10 +15,8 @@ The VMware planning center enables you to upload new VM inventory data and creat
 == Manage VM inventory data
 Use the planning center to create and manage VM inventory data.
 
-
-
 === Upload VM inventory data
-You can upload VM inventory data when you are ready to use Workload Factory to explore migration options to Amazon AWS environments. Refer to link:upload-vm-inventory-vmware.html[Upload VM inventory data] for instructions.
+You can upload VM inventory data when you are ready to use Workload Factory to explore migration options to Amazon AWS environments. Refer to link:fsx-vmware/upload-vm-inventory-vmware.html[Upload VM inventory data] for instructions.
 
 === Rename a dataset
 You can change the name of a saved dataset.

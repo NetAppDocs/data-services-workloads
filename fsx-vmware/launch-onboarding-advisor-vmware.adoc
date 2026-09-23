@@ -4,7 +4,6 @@ permalink: fsx-vmware/launch-onboarding-advisor-vmware.html
 keywords: overview, concepts, features, use case, workloads, how Workload Factory works
 summary: Log in to the NetApp Workload Factory to access the VMware migration advisor. You'll follow the steps in the wizard to create a deployment plan or migration plan that is customized for your needs.
 ---
-
 = Create a deployment plan for VMware Cloud on AWS using the VMware workloads migration advisor
 :icons: font
 :imagesdir: ../media/
@@ -14,7 +13,7 @@ Log in to the NetApp Workload Factory to access the VMware migration advisor. Yo
 
 When migrating to VMware Cloud, you can use the migration advisor to to migrate your current on-premises vSphere environment to VMWare cloud.
 
-Note that you must have a user name and password to access Workload Factory. If you don't have access, create an account now. See the instructions https://docs.netapp.com/us-en/workload-setup-admin/quick-start-vmware.html[here].
+Note that you must have a user name and password to access Workload Factory. If you don't have access, create an account now. Review the instructions link:fsx-vmware/quick-start-vmware.html[here].
 
 == Create a deployment plan based on an on-premises vSphere environment
 
@@ -27,9 +26,8 @@ You can migrate your current virtual machine configurations in on-premises vSphe
 
 .Steps
 
-. Log in to Workload Factory using one of the https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *VMware*.
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *VMware*. 
 +
 The planning center is displayed.
 

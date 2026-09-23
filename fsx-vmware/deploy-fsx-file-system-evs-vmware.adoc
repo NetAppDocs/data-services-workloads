@@ -4,7 +4,6 @@ permalink: fsx-vmware/deploy-fsx-file-system-evs-vmware.html
 keywords: vm workloads, deploy fsx, deploy storage for vms, evs, elastic vmware service
 summary: After you verify that the recommended FSx for ONTAP file system, or file systems in some cases, meets your exact requirements, you can use Workload Factory to deploy the system in your AWS environment.
 ---
-
 = Deploy the recommended FSx for ONTAP file system
 :icons: font
 :imagesdir: ../media/
@@ -21,7 +20,7 @@ Depending on the policy and permissions that you added to your Workload Factory 
 * You must have the necessary permissions to create an FSx for ONTAP file system in your AWS account.
 
 == Considerations
-* You can use the Quick create or Advanced create option. Advanced create offers a few additional storage parameters that you can customize. https://docs.netapp.com/us-en/workload-fsx-ontap/create-file-system.html[See what these two options offer]. 
+* You can use the Quick create or Advanced create option. Advanced create offers a few additional storage parameters that you can customize. link:fsx-storage/create-file-system-fsx.html[Learn what these two options offer]. 
 
 * In the "Amazon Elastic VMware Service preferences" section, you can choose the EVS virtualization environment to connect to the external datastores. This auto-populates some of the fields with the best-practice options for the deployment. You can change these options as required.
 
