@@ -51,8 +51,6 @@ sidebar:
                   url: /fsx-storage/create-igroup-fsx.html
                 - title: Create a block device  
                   url: /fsx-storage/create-block-device-fsx.html
-            - title: Learn about links
-              url: /fsx-storage/links-overview-fsx.html
             - title: Discover and view cache volumes
               url: /fsx-storage/discover-cache-volumes-fsx.html
             - title: Access your data

@@ -51,7 +51,7 @@ Before you can create and run custom rules, ensure you have the following:
 
 * You have configured AWS credentials with read-only access. link:fsx-storage/add-credentials-fsx.html[Add AWS credentials to Workload Factory^].
 * You have ONTAP credentials with viewer permissions. link:fsx-storage/add-credentials-fsx.html[Add ONTAP credentials to Workload Factory^].
-* You have a link or agent configured connectivity to the cloud storage system. link:setup/create-link.html[Create and associate a link] or link:https://docs.netapp.com/us-en/console-setup-admin/concept-agent-install-options.html#agent-console-deploy[deploy a Console agent^].
+* You have a link or agent configured connectivity to the cloud storage system. link:fsx-storage/create-link-fsx.html[Create and associate a link] or link:https://docs.netapp.com/us-en/console-setup-admin/concept-agent-install-options.html#agent-console-deploy[deploy a Console agent^].
 * You understand that custom rule creation uses NetApp's Bedrock AI service.
 
 == Create a rule

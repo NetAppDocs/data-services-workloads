@@ -51,7 +51,7 @@ For an iSCSI LUN, increasing the size of the volume also increases the size of t
 Decreasing volume size is supported only for NFS and SMB/CIFS volumes. 
 
 .Before you begin
-To adjust volume capacity, you must associate a link. link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html[Learn how to associate an existing link or to create and associate a new link^]. After the link associates, return to this operation.  
+To adjust volume capacity, you must associate a link. link:fsx-storage/create-link-fsx.html[Learn how to associate an existing link or to create and associate a new link^]. After the link associates, return to this operation.
 
 .Steps
 . Log in to the link:https://console.netapp.com[NetApp Console^].

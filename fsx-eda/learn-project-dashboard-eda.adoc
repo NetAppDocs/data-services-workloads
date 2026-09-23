@@ -102,5 +102,5 @@ When you hover over any volume line in the graphs, you can view:
 
 == Related information
 
-* link:task-configure-project-dashboard-eda.html[Configure the Projects dashboard]
-* link:task-use-project-dashboard-eda.html[Use the Projects dashboard]
+* link:fsx-eda/task-configure-project-dashboard-eda.html[Configure the Projects dashboard]
+* link:fsx-eda/task-use-project-dashboard-eda.html[Use the Projects dashboard]

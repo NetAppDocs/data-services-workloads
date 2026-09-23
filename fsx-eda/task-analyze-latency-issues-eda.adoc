@@ -13,7 +13,7 @@ See detected delays and use automated tools to find the cause and fix slow perfo
 
 == Before you begin
 
-You must have link:task-configure-latency-monitoring-eda.html[configured latency monitoring] before you can view and analyze latency events.
+You must have link:fsx-eda/task-configure-latency-monitoring-eda.html[configured latency monitoring] before you can view and analyze latency events.
 
 == View volumes with latency above threshold
 
@@ -27,21 +27,21 @@ The Volumes with latency above threshold table shows volumes that breached the w
 
 .Steps
 
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon] and then select *EDA*.
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *EDA*. 
 . Select the *Latency* tab.
 . Review the information for each event in the table.
 . To view details for a latency event, select the event in the *Severity* column. This opens a latency analysis panel for that event.
 . To sort the table, select any column header. By default, critical events are displayed first sorted by time, followed by warning events sorted by time.
 . To dismiss one or more events, next to each event select image:icon-action.png[The action menu icon] *Dismiss*.
 . To add columns to the table, select image:column-icon.png[The column icon], choose the columns, and select *Apply*.
-. The latency analysis panel provides a quick view of the breach, including a latency chart and controls for time frame and type. Select *View full analysis* to open the detailed Latency analysis page with basic analysis, AI analysis (optional), and additional charts. See link:task-analyze-latency-trends-eda.html[Analyze latency trends] for details.
+. The latency analysis panel provides a quick view of the breach, including a latency chart and controls for time frame and type. Select *View full analysis* to open the detailed Latency analysis page with basic analysis, AI analysis (optional), and additional charts. See link:fsx-eda/task-analyze-latency-trends-eda.html[Analyze latency trends] for details.
 
 == Analyze a latency event
 
 Latency analysis helps you quickly find what is causing slowdowns without having to investigate manually.
 
-NOTE: To use AI analysis, you must have NetApp-managed AI enabled. For more information, refer to link:https://docs.netapp.com/us-en/workload-setup-admin/manage-genai-features.html[Manage AI features^].
+NOTE: To use AI analysis, you must have NetApp-managed AI enabled. For more information, refer to link:admin/manage-genai-features.html[Manage AI features^].
 
 Basic analysis helps you quickly find what is causing slowdowns without having to investigate manually.
 
@@ -52,13 +52,14 @@ Select a latency event in the *Severity* column to open the latency analysis pan
 AI analysis availability depends on your account setup. If NetApp-managed AI is enabled, you can run AI analysis without setting up Bedrock. AI analysis is unavailable if the monthly credit limit is reached or your administrator disables AI features.
 
 * *Basic*: Shows the results of an automatic analysis. If linked to the file system, it displays a breakdown of components and shows which one is causing the delay. If no link exists, you are prompted to add one.
++
 An interactive latency graph of CloudWatch metrics for the affected volume is displayed. It shows either read or write metrics, depending on which alarm triggered the event. You can choose different time ranges and use a filter to view All, Read, Write, or Metadata operations.
 
 * *AI analysis*: Shows a deeper investigation to determine the specific root cause and potential remediation steps.
 
 * *Detailed latency analysis*: Shows interactive graphs of CloudWatch metrics for the affected volume. These graphs display latency, IOPS, and throughput over time. They show either read or write metrics, depending on which alarm triggered the event. You can choose different time ranges and use a filter to view All, Read, Write, or Metadata operations.
 
-For detailed instructions on using the graphs, see link:task-analyze-latency-trends-eda.html[Analyze latency trends].
+For detailed instructions on using the graphs, see link:fsx-eda/task-analyze-latency-trends-eda.html[Analyze latency trends].
 
 === Steps
 
@@ -86,10 +87,10 @@ Consider these recommendations when analyzing latency issues:
 
 * *Review dismissed events*: Regularly review why events were dismissed to see if thresholds should be adjusted or the system improved.
 
-For best practices on analyzing latency trends, see link:task-analyze-latency-trends-eda.html#graph-interpretation[Graph interpretation].
+For best practices on analyzing latency trends, see link:fsx-eda/task-analyze-latency-trends-eda.html#graph-interpretation[Graph interpretation].
 
 == Related information
 
-* link:learn-latency-monitoring-eda.html[Learn about latency monitoring]
-* link:task-configure-latency-monitoring-eda.html[Configure latency monitoring]
-* link:task-analyze-latency-trends-eda.html[Analyze latency trends]
+* link:fsx-eda/learn-latency-monitoring-eda.html[Learn about latency monitoring]
+* link:fsx-eda/task-configure-latency-monitoring-eda.html[Configure latency monitoring]
+* link:fsx-eda/task-analyze-latency-trends-eda.html[Analyze latency trends]

@@ -14,7 +14,7 @@ After a latency breach is detected, use the charts to see how volume latency, IO
 
 == Before you begin
 
-You need to have link:task-configure-latency-monitoring-eda.html[configured latency monitoring] and at least one detected breach. To view the charts, ensure AWS credentials are available. To view QoS latency component breakdown, ensure the file system is linked.
+You need to have link:fsx-eda/task-configure-latency-monitoring-eda.html[configured latency monitoring] and at least one detected breach. To view the charts, ensure AWS credentials are available. To view QoS latency component breakdown, ensure the file system is linked.
 
 == Analyze latency trends
 
