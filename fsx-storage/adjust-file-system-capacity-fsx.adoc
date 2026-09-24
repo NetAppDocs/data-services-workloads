@@ -6,7 +6,7 @@ summary: "Manually adjust the SSD storage capacity of an FSx for ONTAP file syst
 ---
 = Adjust file system capacity in NetApp Workload Factory
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 Adjust the solid-state drive (SSD) storage capacity of an FSx for ONTAP file system to match the needs of workloads with varying active working sets in NetApp Workload Factory. Manually increase capacity when usage exceeds your threshold, or reduce it when you're not using the working sets to save money. Alternatively, enable automatic capacity management so Workload Factory adds incremental storage as needs change over time, removing the burden of manual monitoring.

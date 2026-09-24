@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: fsx-storage/create-discover-system.html
+permalink: fsx-storage/create-discover-systems.html
 keywords: Amazon FSx for NetApp ONTAP, fsx, volumes, create system, delete system, access key, secret key, region, availability zones, discover, storage capacity, iops, throughput, security group, security, NetApp Console
 summary: "Create or discover cloud storage systems to add and manage volumes and additional data services from the NetApp Console."
 ---

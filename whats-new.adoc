@@ -6,7 +6,7 @@ summary: "Learn what's new with Workload Factory in the NetApp Console like upda
 ---
 = What's new with Workload Factory in the NetApp Console
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 [.lead]
 Learn what's new with Workload Factory in the NetApp Console like updates and enhancements for workload management, service administration, storage features, permissions, and more.

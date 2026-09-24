@@ -6,7 +6,7 @@ summary: "Track workload operations and monitor job progress with Tracker in Net
 ---
 = Monitor NetApp Workload Factory operations with Tracker
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 

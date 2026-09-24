@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: fsx-storage/learn-custom-rules.html
+permalink: fsx-storage/learn-custom-rules-fsx.html
 keywords: custom rules, byor, bring your own rules, fsx, ontap, well architected, organizational standards
 summary: Learn how to define and manage your own architectural rules to enforce organizational standards alongside NetApp best practices.
 ---

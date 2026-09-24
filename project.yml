@@ -337,15 +337,15 @@ sidebar:
           url: /admin/manage-links.html     
         - title: Manage AI features
           url: /admin/manage-genai-features.html
-        - title: Custom dashboards
+        - title: Custom dashboards for FSx for ONTAP
           entries:
-            - title: Learn about custom dashboards
+            - title: Learn about custom dashboards for FSx for ONTAP
               url: /admin/learn-custom-dashboards-fsx.html
-            - title: Create a custom dashboard
+            - title: Create a custom dashboard for FSx for ONTAP
               url: /admin/create-custom-dashboard-fsx.html
-            - title: Manage custom dashboards
+            - title: Manage custom dashboards for FSx for ONTAP
               url: /admin/manage-custom-dashboards-fsx.html
-            - title: Troubleshoot custom dashboards
+            - title: Troubleshoot custom dashboards for FSx for ONTAP
               url: /admin/troubleshoot-custom-dashboards-fsx.html
         - title: Automate tasks using Codebox
           entries:

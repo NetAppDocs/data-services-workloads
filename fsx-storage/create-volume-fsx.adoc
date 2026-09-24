@@ -6,7 +6,7 @@ summary: "After setting up your FSx for ONTAP file system, create FSx for ONTAP 
 ---
 = Create an FSx for ONTAP volume in Workload Factory
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 After setting up your FSx for ONTAP file system, create FSx for ONTAP volumes in Workload Factory as virtual resources for grouping your data.
