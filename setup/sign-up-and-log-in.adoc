@@ -72,9 +72,9 @@ Refer to NetApp Console documentation to link:https://docs.netapp.com/us-en/cons
 The invited user will receive an email with instructions to join your Workload Factory account.
 
 == Log in to NetApp Workload Factory
-After you sign up to NetApp Workload Factory, you can log in at any time from the web-based console to start managing your workloads and storage systems.
+After you sign up to NetApp Workload Factory, you can log in at any time from NetApp Console to start managing your workloads and storage systems.
 
-You can log in to the Workload Factory web-based console using one of the following options:
+You can log in using one of the following options:
 
 * Your existing NetApp Support Site (NSS) credentials
 * A NetApp cloud login using your email address and a password
