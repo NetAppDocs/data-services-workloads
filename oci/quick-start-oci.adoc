@@ -9,29 +9,28 @@ summary: "You can get started with Oracle Cloud Infrastructure NetApp Storage Se
 :imagesdir: ../media/
 
 [.lead]
-With Oracle Cloud Infrastructure (OCI) NetApp Storage Service in NetApp Workload Factory, you can get started immediately in read mode. 
-
-If you'd like to use Workload Factory to create a storage pool, manage resources, and more, you can get started in a few steps. In this case, you need an Oracle Cloud Infrastructure (OCI) account and credentials to get started. 
+Get started with Oracle Cloud Infrastructure (OCI) NetApp Storage Service by adding credentials and permissions, creating a link if needed, and creating or discovering a storage system.
 
 Follow these steps to get started. 
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Log in to Workload Factory
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Add credentials and permissions
+
+[role="quick-margin-para"]
+link:oci/add-credentials-oci.html[Add credentials to an account]. This includes selecting workload capabilities and creating the IAM policies for the required permissions.
 
 [role="quick-margin-para"]
 
-You'll need to link:setup/sign-up-and-log-in.html[set up an account with Workload Factory and log in^]
+Select the default link:oci/permissions-oci.html[view, planning, and analysis] permission policy. 
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Add credentials and permissions
-
-[role="quick-margin-para"]
-
-Choose the link:oci/permissions-oci.html[permission policies^] to meet your needs.
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Create a link
 
 [role="quick-margin-para"]
-If you choose not to grant permissions, you can start using Workload Factory for OCI NetApp Storage Service to copy partially completed code samples.
+This step is optional. To perform some management tasks from the NetApp Console, you need a NetApp Workload Factory link. A _link_ leverages Oracle Functions to create a trust relationship and connectivity to your OCI NetApp Storage Service systems.
 
-[role="quick-margin-para"]
-If you choose to grant permissions, you'll need to link:oci/add-credentials-oci.html[add credentials to an account manually^] that includes selecting workload capabilities and creating the IAM policies for the required permissions.
+[role="quick-margin-list"]
+* link:setup/links-overview.html[Learn when a Console agent or link is required for OCI NetApp Storage Service management]
+* link:oci/create-link.html[Learn how to create a link^]
+
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Discover or add an OCI NetApp Storage Service system
 
@@ -40,4 +39,4 @@ If you choose to grant permissions, you'll need to link:oci/add-credentials-oci.
 You'll discover a storage pool to begin managing your OCI NetApp Storage Service resources in Workload Factory. In the link:https://console.netapp.com[NetApp Console^], select *Storage*, then *Management*, and then *Discoverable systems*. link:oci/create-discover-systems-oci.html[Learn how to discover a storage system]. 
 
 .What's next
-With a storage system in your Storage inventory, you can link:oci/create-link-oci.html[create and associate a link with your storage system] to begin managing your Oracle Cloud Infrastructure (OCI) NetApp Storage Service resources.
+With a storage pool in your Storage inventory, you can begin managing your Oracle Cloud Infrastructure (OCI) NetApp Storage Service resources.

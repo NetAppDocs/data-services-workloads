@@ -9,35 +9,35 @@ summary: "You can get started with FSx for ONTAP in NetApp Workload Factory in j
 :imagesdir: ../media/
 
 [.lead]
-With Amazon FSx for NetApp ONTAP in NetApp Workload Factory, you can get started immediately in read mode. 
-
-If you'd like to use Workload Factory to create a file system, manage resources, and more, you can get started in a few steps. In this case, you need an AWS account and credentials to get started. 
+Get started with Amazon FSx for NetApp ONTAP by adding credentials and permissions, creating a link if needed, and creating or discovering a storage system.  
 
 Follow these steps to get started. 
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Log in to Workload Factory
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Add credentials and permissions
 
 [role="quick-margin-para"]
-
-You'll need to link:setup/sign-up-and-log-in.html[set up an account with Workload Factory^] and log in. 
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Add credentials and permissions
+link:fsx-storage/add-credentials-fsx.html[Add credentials to an account manually^] that includes selecting workload capabilities, such as Databases and EDA, and creating the IAM policies for the required permissions.
 
 [role="quick-margin-para"]
-
 Choose the link:fsx-storage/permissions-fsx.html[permission policies^] to meet your needs.
 
-[role="quick-margin-para"]
-If you choose not to grant permissions, you can start using Workload Factory for FSx for ONTAP to copy partially completed code samples.
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Optional: Create a Console agent or a link
+
 
 [role="quick-margin-para"]
-If you choose to grant permissions, you'll need to link:fsx-storage/add-credentials-fsx.html[add credentials to an account manually^] that includes selecting workload capabilities, such as Databases and AI, and creating the IAM policies for the required permissions.
+To perform some management tasks from the NetApp Console, you either need a Console agent or a NetApp Workload Factory link. A _Console agent_ is a virtual machine that you deploy in your VPC to manage your FSx for ONTAP file systems. A _link_ leverages AWS Lambda to create a trust relationship and connectivity to your FSx for ONTAP file systems.
+
+[role="quick-margin-list"]
+* link:../start/concept-fsx-aws.html#console-agents-and-links-unlock-all-fsx-for-ontap-features[Learn when a Console agent or link is required for FSx for ONTAP management]
+* https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-aws.html[Learn how to create a Console agent in AWS^]
+* https://docs.netapp.com/us-en/console-setup-admin/task-install-connector-on-prem.html[Learn how to create a Console agent on-premises^]
+* https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html[Learn how to create a link^]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Create a file system
 
 [role="quick-margin-para"]
 
-You'll create an FSx file system to begin managing your storage and FSx for ONTAP resources in Workload Factory. In the link:https://console.netapp.com[NetApp console^], in Storage, select *Create file system*. link:fsx-storage/create-file-system-fsx.html[Learn how to create a file system]. 
+Create your FSx for ONTAP file system directly from the NetApp Console or discover a file system that you've already created in your AWS environment. link:fsx-storage/create-discover-systems-fsx.html[Learn how to create a file system or discover an existing one.]
 
 [role="quick-margin-para"]
 

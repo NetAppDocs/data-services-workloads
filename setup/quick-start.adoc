@@ -2,21 +2,24 @@
 sidebar: sidebar
 permalink: setup/quick-start.html
 keywords: quick start
-summary: Get started with Workload Factory by preparing networking for the Workload Factory console, signing up and creating an account, and adding credentials so that Workload Factory can manage AWS resources directly.
+summary: "Get started with Workload Factory by signing up and creating an account in NetApp Console and adding cloud provider credentials so that Workload Factory can manage your resources directly and optimize your workloads."
 ---
 = Quick start for NetApp Workload Factory
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Get started with NetApp Workload Factory by signing up and creating an account, adding credentials so that Workload Factory can manage your resources directly, and then optimize your workloads for your cloud provider.
+NetApp Workload Factory is accessible to users as a cloud data service from NetApp Console. Get started with Workload Factory by signing up and creating an account in NetApp Console and adding cloud provider credentials so that Workload Factory can manage your resources directly and optimize your workloads.
 
-NetApp Workload Factory is accessible to users as a cloud service from the web-based console. Before you get started, you should have an understanding of link:learn-about-workload-factory.html[Workload Factory].
+Before you get started, you should have an understanding of link:learn-about-workload-factory.html[Workload Factory].
 
-Select the *Quick start* link for your cloud provider to get started.
+== Sign up and log in to Workload Factory from NetApp Console
+
+link:setup/sign-up-and-log-in.html[Sign up and log in to Workload Factory from NetApp Console]
+
+Next, select the *Quick start* link for your cloud provider to get started.
 
 == Get started with Amazon FSx for NetApp ONTAP
-
 link:fsx-storage/quick-start-fsx.html[Quick start for Amazon FSx for NetApp ONTAP]
 
 == Get started with OCI NetApp Storage Service
