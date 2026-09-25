@@ -35,8 +35,8 @@ You can authenticate links using credentials stored in the Workload Factory cred
 
 Each transaction that your cloud provider's serverless compute service performs incurs a charge. Because it acts as a proxy between the two systems, there is a charge when the service sends a request to the ONTAP REST API on a file system, and when it sends the response back to Workload Factory.
 
-link:https://aws.amazon.com/lambda/pricing/[Learn more about the costs related to using AWS Lambda^]
-link:https://www.oracle.com/cloud/cloud-native/functions/[Learn more about the costs related to using Oracle Cloud Infrastructure Functions^]
+* link:https://aws.amazon.com/lambda/pricing/[Learn more about the costs related to using AWS * Lambda^]
+* link:https://www.oracle.com/cloud/cloud-native/functions/[Learn more about the costs related to using Oracle Cloud Infrastructure Functions^]
 
 == When a link is required
 
@@ -62,4 +62,4 @@ The features that require a link include:
 Learn how to create and associate links for:
 
 * link:fsx-storage/create-link-fsx.adoc[Amazon FSx for NetApp ONTAP]
-* link:ocsn/create-link-ocsn.adoc[OCI NetApp Storage Service]
+* link:oci/create-link-oci.adoc[OCI NetApp Storage Service]
