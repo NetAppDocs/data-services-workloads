@@ -300,12 +300,12 @@ sidebar:
     - title: Google Cloud NetApp Volumes
       entries: 
         - title: Learn about Google Cloud NetApp Volumes
-          url: /gcnv/learn-about-gcnv.html
+          url: /gcnv/learn-netapp-volumes-gcnv.html
         - title: Quick start for Google Cloud NetApp Volumes
           url: /gcnv/quick-start-gcnv.html
         - title: Add Google Cloud NetApp Volumes credentials
           url: /gcnv/add-credentials-gcnv.html
-        - title: Configuration analysis for NetApp Volumes
+        - title: Configuration analysis for Google Cloud NetApp Volumes
           url: /gcnv/configuration-analysis-gcnv.html
         - title: Improve storage pool configurations
           url: /gcnv/improve-configurations.html

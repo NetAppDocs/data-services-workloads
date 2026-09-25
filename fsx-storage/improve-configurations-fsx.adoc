@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: fsx-storage/improve-configurations.html
+permalink: fsx-storage/improve-configurations-fsx.html
 keywords: implement best practices, well-architected file system, Amazon FSx for NetApp ONTAP, FSx for ONTAP
 summary: "Workload Factory scans Amazon FSx for NetApp ONTAP configurations providing insights and recommendations to help you achieve operational excellence." 
 ---
