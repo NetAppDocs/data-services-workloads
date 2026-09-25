@@ -191,7 +191,6 @@ After you create a link, associate it with one or more OCI NetApp Storage Servic
 
 Workload Factory associates the link with the OCI NetApp Storage Service system. You can perform advanced ONTAP operations.
 
-== 
 
 .Related information
 
