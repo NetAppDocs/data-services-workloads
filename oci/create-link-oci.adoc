@@ -92,7 +92,7 @@ You can either create secrets in alignment with the default regex or update the 
 .. *Tags*: Optionally, add up to 50 tags to associate with this link so you can more easily categorize your resources. For example, you could add a tag that identifies this link as being used by OCSN storage systems.
 .. *Link registration*: Follow the instructions in the Workload Factory console to register the link. Link registration happens from your OCI Terraform environment. Select OCI Terraform from the Codebox for the instructions.
 ..  *Link association*: Select the OCSN system to associate with this link, and enter the user name and password.
-.. *Link permissions*: Specify the permissions to create the link. 
+.. *Link permissions*: Specify the required permissions for the user group to create the link. 
 +
 .Required permissions for the link
 [source,text]
