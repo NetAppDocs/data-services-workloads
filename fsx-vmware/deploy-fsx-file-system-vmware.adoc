@@ -74,7 +74,7 @@ You should select the same availability zone as where your VMware SDDC is deploy
 +
 Optionally, in the Codebox window you can select *Redirect to CloudFormation* to create the file system using a CloudFormation stack.
 +
-In either case, you can you can monitor the creation progress in CloudFormation.
+In either case, you can monitor the creation progress in CloudFormation.
 
 .Result
 
