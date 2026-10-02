@@ -60,7 +60,7 @@ With Advanced create, you set all of the configuration options, including availa
 . From the NetApp Console menu, select *Storage* and then *Management*. 
 . Select *Add system* from the Systems page. 
 . Select *Amazon Web Services* as the location, and then select *Add new* for Amazon FSx for NetApp ONTAP. 
-include::_include/create-file-system-advanced-create.adoc[]
+include::_include/create-file-system-advanced.adoc[]
 //include comes from workload-fsx-ontap-internal repo
 .Result
 
