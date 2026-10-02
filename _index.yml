@@ -23,9 +23,11 @@ indexpage:
     - title: Use Workload Factory for your cloud provider
       links:
         - title: Amazon FSx for NetApp ONTAP
-          url: /fsx-storage/learn-fsx-ontap-fsx.html
+          url: /fsx-storage/learn-fsx-ontap-fsx.html
+
         - title: Google Cloud NetApp Volumes
-          url: /gcnv/learn-netapp-volumes-gcnv.html
+          url: /gcnv/learn-netapp-volumes-gcnv.html
+
         - title: OCI NetApp Storage Service
           url: /oci/learn-about-oci.html
     - title: Administer Workload Factory
@@ -39,7 +41,7 @@ indexpage:
     - title: Well-architected workloads
       links:
         - title: Learn about well-architected workloads
-          url: /admin/learn-well-architected-workloads.html
+          url: /fsx-storage/improve-configurations-fsx.html
         - title: Implement well-architected FSx for ONTAP workloads
           url: /fsx/improve-configurations-fsx.html
         - title: Implement well-architected Google Cloud NetApp Volumes workloads
