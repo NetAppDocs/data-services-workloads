@@ -67,7 +67,7 @@ You can edit the settings of a project at any time.
 . Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *EDA*. 
 . Select *CI/CD*.
 . Select *Go to Projects page*. 
-. On the Projects page, select image:icon-action.png[the option button] for the project you want to edit.
+. On the Projects page, select image:icon-action.png[the option button] for the project you want to edit, and then select *Edit*.
 . Make any needed changes to the project configuration.
 . Select *Save*.
 
