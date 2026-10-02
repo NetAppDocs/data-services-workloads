@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: oci/quick-start-oci.html
-keywords: Oracle Cloud Infrastructure NetApp Storage Service, oci, netapp, quick, get started, install, deploy, setup, launch, requirements, prerequisites, credentials, permissions, policy 
+keywords: Oracle Cloud Infrastructure NetApp Storage Service, oci nss, netapp, quick, get started, install, deploy, setup, launch, requirements, prerequisites, credentials, permissions, policy 
 summary: "You can get started with Oracle Cloud Infrastructure NetApp Storage Service in NetApp Workload Factory in just a few steps." 
 ---
 = Quick start for Oracle Cloud Infrastructure NetApp Storage Service in NetApp Workload Factory
@@ -36,7 +36,7 @@ This step is optional. To perform some management tasks from the NetApp Console,
 
 [role="quick-margin-para"]
 
-You'll discover a storage pool to begin managing your OCI NetApp Storage Service resources in Workload Factory. In the link:https://console.netapp.com[NetApp Console^], select *Storage*, then *Management*, and then *Discoverable systems*. link:oci/create-discover-systems-oci.html[Learn how to discover a storage system]. 
+You'll discover a storage pool to begin managing your OCI NSS resources in Workload Factory. In the link:https://console.netapp.com[NetApp Console^], select *Storage*, then *Management*, and then *Discoverable systems*. link:oci/create-discover-systems-oci.html[Learn how to discover a storage system]. 
 
 .What's next
 With a storage pool in your Storage inventory, you can begin managing your Oracle Cloud Infrastructure (OCI) NetApp Storage Service resources.

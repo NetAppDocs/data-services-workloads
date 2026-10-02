@@ -1,8 +1,9 @@
 ---
 sidebar: sidebar
 permalink: oci/learn-about-oci.html
-keywords: OCI NetApp Storage Service, Oracle Cloud storage, storage, ocsn
-summary: "OCI NetApp Storage Service  is a fully managed service allowing customers to create and manage storage pools as the storage backend for your workloads within Workload Factory." 
+keywords: Oracle Cloud Infrastructure NetApp Storage Service
+Oracle Cloud Infrastructure NetApp Storage Service, OCI NetApp Storage Service, Oracle Cloud storage, storage, oci nss
+summary: "OCI NetApp Storage Service is a fully managed service allowing customers to create and manage storage pools as the storage backend for your workloads within Workload Factory." 
 ---
 = Learn about OCI NetApp Storage Service in NetApp Workload Factory
 :icons: font
@@ -42,13 +43,6 @@ You can use NetApp Workload Factory with the following tools:
 * *REST API*: Use the Workload Factory REST APIs to deploy and manage your OCI NetApp Storage Service systems and other OCI NetApp Storage Service resources.
 * *Oracle Cloud Infrastructure (OCI) Resource Manager*: Use OCI Resource Manager to perform the actions you defined in the Workload Factory console to model, provision, and manage OCI and third-party resources from the Resource Manager stack in your OCI account.
 * *NetApp Terraform provider*: Use Terraform to build and manage infrastructure workflows generated in the Workload Factory console.
-
-== Regions
-Workload Factory is supported in all commercial regions where OCI NetApp Storage Service is supported. link:https://www.oracle.com/cloud/public-cloud-regions/[View supported Oracle public cloud regions.^]
- 
-The following Oracle regions aren't supported:
- 
-??
 
 == Getting help
 For general questions about Workload Factory or Workload Factory applications and services, refer to link:get-help.html[Get help for OCI NetApp Storage Service for Workload Factory].

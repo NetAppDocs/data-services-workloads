@@ -1,10 +1,11 @@
 ---
 sidebar: sidebar
 permalink: oci/create-link-oci.html
-keywords: connect, connection, link, associate link, create link, authenticate link
-summary: "You can create and associate links to provide a trust relationship and connectivity between a NetApp Workload Factory account and an OCI NetApp Storage Service storage system."
+keywords: connect, connection, link, associate link, create link, authenticate link, oci nss
+summary: "You can create and associate links to provide a trust relationship and connectivity between a NetApp Workload Factory account and an Oracle Cloud Infrastructure NetApp Storage Service
+ storage system."
 ---
-= Connect to an OCI NetApp Storage Service storage system with a link
+= Connect to an Oracle Cloud Infrastructure NetApp Storage Service storage system with a link
 :icons: font
 :imagesdir: ../media/
 
@@ -45,7 +46,7 @@ NOTE: OCI Vault isn't supported when using a Console agent.
 * Networking:
 ** A **private subnet** in the VCN that can reach the ONTAP management LIF
 ** A **service gateway** with a route to All \<Region\> Services in Oracle Services Network (needed to pull the function image)
-* Create an IAM policy for the group that will deploy the stack. Learn more about link:oci/permissions-oci.html[OCI NetApp Storage Service permissions].
+* Create an IAM policy for the group that will deploy the stack. Learn more about link:oci/permissions-oci.html[OCI NSS permissions].
 +
 Grant the group permission to create the stack and function. Replace `<deploy-group>` and `<compartment-name>` with your values. Use a named group, not `any-user`.
 +
