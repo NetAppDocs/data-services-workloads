@@ -23,7 +23,7 @@ Next, select the *Quick start* link for your cloud provider to get started.
 link:fsx-storage/quick-start-fsx.html[Quick start for Amazon FSx for NetApp ONTAP]
 
 == Get started with OCI NetApp Storage Service
-link:ocsn/quick-start-ocsn.html[Quick start for OCI NetApp Storage Service]
+link:oci/quick-start-oci.html[Quick start for OCI NetApp Storage Service]
 
 == Get started with Google Cloud NetApp Volumes
 link:gcnv/quick-start-gcnv.html[Quick start for Google Cloud NetApp Volumes]
