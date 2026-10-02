@@ -16,7 +16,7 @@ Create or discover cloud storage systems to add and manage volumes and additiona
 
 == Create a storage system
 
-The first step is to create a storage system. If you already created a storage system in the your cloud provider's console, you can <<Discover an existing cloud storage system,discover it using the NetApp Console>>.
+The first step is to create a storage system. If you already created a storage system in your cloud provider's console, you can <<Discover an existing cloud storage system,discover it using the NetApp Console>>.
 
 .About this task
 A storage VM is created when you create a file system. 
