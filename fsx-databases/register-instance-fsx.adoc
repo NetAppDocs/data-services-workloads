@@ -1,0 +1,112 @@
+---
+sidebar: sidebar
+permalink: fsx-databases/register-instance-fsx.html
+keywords: manage, register, Microsoft SQL Server instance, Oracle database, manage database, manage instance
+summary: "Register resources so that you can monitor resource status, resource utilization, protection, and storage performance in NetApp Workload Factory for Databases."
+---
+= Register resources in NetApp Workload Factory for Databases
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Register instances for Microsoft SQL Server and databases for Oracle so that you can manage your resources, create databases and sandbox clones, run error log analysis, and optimize configurations in NetApp Workload Factory for Databases.
+
+You can register your resources only if they run on FSx for ONTAP file system storage.
+
+== About the task
+Registering an instance (SQL Server) or database (Oracle) involves two steps: instance or database authentication and preparation. Authentication is the process of verifying the credentials for the instance or database. Preparation includes installing AWS, NetApp, and PowerShell modules on the instance or database, to meet the minimum requirements for Workload Factory for Databases features like link:fsx-databases/create-sql-database-fsx.html[creating a database], link:fsx-databases/create-sandbox-clone-fsx.html[creating a sandbox], link:fsx-databases/analyze-error-logs-fsx.html[error log analysis] or link:fsx-databases/optimize-configurations-fsx.html[the well-architected assessment].
+
+Workload Factory supports only Microsoft SQL Server instance and Oracle database registration and management. Depending on the AWS account credentials you select in Workload Factory, PostgreSQL hosts appear in the Inventory. Currently, Workload Factory supports unregistered PostgreSQL instances running only on Amazon Linux operating systems.
+
+== Before you begin
+You must do the following before you register an instance or database:
+
+* Make sure the hosts of the resources that you want to register appear in the inventory. link:fsx-storage/add-credentials-fsx.html[Grant _operations and remediation_ permissions^] in your AWS account. 
+* Associate a link with the FSx for ONTAP file system that hosts the resources you want to register. link:fsx-storage/create-link-fsx.html[Learn how to associate an existing link or to create and associate a new link.^] After the link associates, return to this operation.
+
+=== Registering an instance in a private network
+To register an instance or database in a private network without external connectivity, make the required endpoints available in the VPC and associate them with the relevant subnets. Allow port 443 in the Security Group for interface endpoints.
+
+* `S3 Gateway/endpoint`
+* `ssm`
+* `ssmmessages`
+* `fsx` 
++
+If you use a proxy server for outbound EC2 connections, allow access to these domains for management operations:
+ 
+* ``.microsoft.com`` (SQL Server)
+* ``.powershellgallery.com`` (SQL Server)
+* ``.aws.amazon.com``
+* ``.amazonaws.com``
+
+== Register a Microsoft SQL Server instance
+Registering an instance has two steps - instance authentication and preparation. You can register a single instance or multiple instances.
+
+Workload Factory supports registration for Failover Cluster Instance (FCI) and Standalone deployment for SQL Server. 
+
+.Steps
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Databases*. 
+. From the Databases menu, select *Inventory*. 
+. In the Inventory, select *Microsoft SQL Server* as the engine type.
+. Select the *Instances* tab. 
+. Select to register a single instance or multiple instances. 
+. To Authenticate instances (step 1), do the following and then select *Next*: 
+.. Select to *Use the same credentials for all instances* or *Manage credentials manually*. 
+.. Authenticate SQL Server and Windows by providing user name and password information.
++
+If instances are authenticated, select *Next*.
+. To Prepare (step 2), make sure the instance(s) meets the minimum requirements. 
++
+To meet the minimum requirements, the instance must have AWS and NetApp PowerShell modules and PowerShell 7 modules installed, and you must complete the prerequisites for at least one of the capabilities listed under Prerequisite check.
++
+.. Review the prerequisites in the *Prerequisite check view*. 
++
+You must complete all prerequisites for a single capability like *Review well-architected issues and recommendations* to register the instance.
+.. Select *Setup details* for each capability to learn about the capability prerequisites and follow the on-screen instructions to complete any missing prerequisites for a capability. 
++
+To enable Workload Factory to link:fsx-databases/optimize-configurations-fsx.html[review and fix well-architected issues], complete all prerequisites under *Review well-architected issues and recommendations* and *Fix well-architected issues*.
+
+. After you complete all prerequisites, *Register* the instance(s).
+
+.Result
+Instance registration initiates. Select the *Job monitoring* tab to track progress.
+
+== Register an Oracle database
+Registering an instance has two steps - database authentication and preparation. You can register a single instance or multiple databases.
+
+.Steps
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Databases*. 
+. From the Databases menu, select *Inventory*. 
+. In the Inventory, select *Oracle* as the engine type.
+. Select the *Databases* tab.
+. Select to register a single database or multiple databases. 
+. To Authenticate databases (step 1), do the following and then select *Next*: 
+.. Select to *Use the same credentials for all instances* or *Manage credentials manually*. 
+.. Authenticate Oracle user and Automatic Storage Management (ASM) grid user (if applicable) by providing user name and password information.
++
+If databases are authenticated, select *Next*.
+
+. To Prepare (step 2), make sure the database(s) meets required prerequisites.
+If all required modules are installed and prerequisites are met, select *Next* to register the database. Otherwise, follow these steps.  
+.. Review the prerequisites in the *Prerequisite check view*. 
++
+You must complete all prerequisites for a single capability like *Review well-architected issues and recommendations* to register the database. 
+.. Select *Setup details* for each capability to learn about the capability prerequisites and follow the on-screen instructions to complete any missing prerequisites for a capability. 
++
+To have Workload Factory link:fsx-databases/optimize-configurations-fsx.html[review and fix well-architected issues] for your databases, complete all prerequisites listed under *Review well-architected issues and recommendations* and *Fix well-architected issues* capabilities.
+
+. After you complete the prerequisites, *Register* the database(s).
+
+.Result
+Database registration initiates. Select the *Job monitoring* tab to track progress. 
+
+.What's next
+
+After registration, you can perform these tasks.
+
+* View databases from the inventory
+* link:fsx-databases/create-sql-database-fsx.html[Create a database]
+* link:fsx-databases/create-sandbox-clone-fsx.html[Create a database clone (sandbox)]
+* link:fsx-databases/optimize-configurations-fsx.html[Get a comprehensive well-architected assessment of database configurations]

@@ -1,0 +1,117 @@
+---
+sidebar: sidebar
+permalink: fsx-eda/task-configure-latency-monitoring-eda.html
+keywords: latency analysis, configure thresholds, CloudWatch alarms, latency monitoring, FSx for ONTAP, warning events, critical events, latency notifications, email notifications, SNS notifications, latency configuration
+summary: Configure latency monitoring thresholds and notification settings to detect and respond to performance issues with FSx for ONTAP volumes.
+---
+= Configure latency monitoring in Workload Factory for EDA
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Set warning and critical limits for read and write latency to track FSx for ONTAP volume performance. You can also enable email or Amazon SNS alerts to get real-time notifications when latency issues occur.
+
+== Before you begin
+
+Ensure you meet the following requirements before configuring latency monitoring.
+
+=== AWS credentials and permissions
+
+You must add AWS credentials to Workload Factory with read/write permissions. The latency monitoring feature requires access to CloudWatch metrics for all FSx for ONTAP volumes associated with your AWS credentials.
+
+_View, planning, and analysis_ permissions are not supported for latency monitoring.
+
+If you haven't configured AWS credentials, refer to link:fsx-storage/add-credentials-fsx.html[Add AWS credentials^].
+
+=== FSx for ONTAP file system
+
+You need at least one FSx for ONTAP file system with volumes deployed in your AWS environment. 
+
+=== Link to FSx for ONTAP
+
+To view component breakdown in basic analysis, you must associate a link with the FSx for ONTAP file system. Without a link, you can still view latency, IOPS, and throughput graphs. If no link is already associated, select *Associate link* in EDA, choose whether to create a new link or associate an existing link, and then select *Continue* to automatically go to the link creation page in Storage workloads.
+
+For instructions on creating and associating links, refer to link:fsx-storage/create-link-fsx.html[Create a link^].
+
+=== Turn on AI settings
+
+If your account admin has turned off AI features, you'll see a message and won't be able to use AI analysis. Contact your administrator or refer to link:admin/manage-genai-features.html[learn about AI administration^].
+
+=== Notification configuration (optional)
+
+To receive email or Amazon SNS notifications when latency events are detected, configure notification preferences in Workload Factory settings. See <<Configure latency notifications>> for details.
+
+== Configure latency thresholds
+
+Set warning and critical limits for reading and writing. The system checks these limits continuously and sends an alert when they are reached.
+
+NOTE: Set the critical event threshold higher than the warning threshold. Otherwise, you cannot save the configuration.
+
+NOTE: Latency thresholds you set in EDA apply to your whole account by default. You can also set individual volume latency thresholds in General Storage workloads and those volume settings take priority for that volume. Updating account-level thresholds in EDA won't change any volume-level settings.
+
+.Steps
+
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *EDA*. 
+. Select the *Latency* tab.
+. In the EDA latency configuration page, configure the thresholds for:
+* Read latency (warning and critical)
+* Write latency (warning and critical)
+* IOPS thresholds for each
+* Time ranges for evaluation
+. Select *Apply* to save your configuration.
+
+.Result
+
+Workload Factory collects latency metrics for all FSx for ONTAP volumes linked to your AWS credentials. Volumes that exceed your set thresholds appear in the latency events table.
+
+== Configure latency notifications
+
+Set up email or Amazon SNS notifications to get alerts when high latency is detected. You can control notification frequency with two options:
+
+* *Remind me every day (Recommended)*: Get notified when a new breach occurs in any file system. After sending a notification for a file system, wait 24 hours before sending another notification for the same file system.
+* *Notify on any latency breach (every 20 minutes)*: Get notified when a breach is detected, at most once every 20 minutes.
+
+Latency notifications are sent on a per-file-system basis. When one or more volumes in a file system breach latency thresholds, you receive a single notification listing all affected volumes.
+
+NOTE: If more than 10 volumes are affected, the email displays the first 10 volumes and shows how many additional volumes are affected. You can view all affected volumes in the Workload Factory console.
+
+Notification channels:
+
+* *Email*: Sent to configured email addresses in your Workload Factory notification settings
+* *Amazon SNS*: Published to your configured SNS topic for integration with other systems
+
+To enable notifications, refer to link:admin/configure-notifications.html#wf-console-email-notifications[Configure notification settings].
+
+== Manage latency configuration
+
+After setup, you can change your thresholds anytime.
+
+.Steps
+
+. In the *Latency* page, select *Edit*.
+. Modify any of the threshold values as needed.
++
+NOTE: Set the critical threshold higher than the warning threshold. If you set the critical threshold lower, the system shows an error.
+
+. Select *Apply* to save your changes.
+
+== Best practices
+
+Consider these recommendations when configuring latency monitoring:
+
+* *Set realistic thresholds*: Set thresholds to match your workload. The default values are a starting point, but you might need to adjust them for your environment.
+
+* *Start with warning thresholds*: Review warning alerts first to understand normal performance, then set the critical limits.
+
+* *Consider time ranges carefully*: Short time ranges (5-10 minutes) catch problems faster but may trigger more alerts. Longer ranges (15-20 minutes) reduce false alarms but may detect problems later.
+
+* *Coordinate IOPS and latency thresholds*: Both conditions must be met. If the IOPS limit is set too high, the system may not send an alert even when latency is high.
+
+* *Review dismissed events*: Regularly review why events were dismissed to see if thresholds should be adjusted or systems improved.
+
+== Related information
+
+* link:fsx-eda/learn-latency-monitoring-eda.html[Learn about latency monitoring]
+* link:fsx-eda/task-analyze-latency-issues-eda.html[Analyze latency issues]
+* link:fsx-eda/task-analyze-latency-trends-eda.html[Analyze latency trends]

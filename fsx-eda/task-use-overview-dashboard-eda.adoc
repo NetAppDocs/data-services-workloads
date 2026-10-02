@@ -1,0 +1,214 @@
+---
+sidebar: sidebar
+permalink: fsx-eda/task-use-overview-dashboard-eda.html
+keywords: cluster overview, filter dashboard, cluster health, capacity recommendations, SSD management, throughput management, bulk edit, decision points, clusters table, ONTAP events, latency events
+summary: Use the Overview dashboard to monitor cluster health, view capacity recommendations, manage SSD and throughput settings, and analyze performance trends across your FSx for ONTAP file systems.
+---
+= Use the Overview dashboard in Workload Factory for EDA
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Use the Overview dashboard to check the health and capacity of your FSx for ONTAP file systems. You can filter the data, see capacity recommendations, adjust SSD and throughput settings, and review performance trends to help decide where to place volumes and when to scale capacity.
+
+== Before you begin
+
+You must have link:fsx-eda/task-activate-overview-dashboard-eda.html[activated the Overview dashboard] before you can use it to monitor your file systems.
+
+== Filter the dashboard
+
+Use the filters at the top of the dashboard to view specific file systems. The filters apply to the latency, utilization, ONTAP events sections, and the clusters table.
+
+.Steps
+
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *EDA*. 
+. Select the *Overview* tab.
+. Use the available filters to narrow your view:
+* *AWS accounts*: Filter by one or more AWS accounts associated with your configured credentials
+* *Credentials*: Filter by specific AWS credentials if you have multiple configured
+* *Regions*: Filter by one or more AWS regions
+. When you update the filter selections, all information is refreshed to show only the matching file systems.
+
+== View cluster health status
+
+At the top of the dashboard, you see a summary of health and activity for the file systems you selected. This appears only when at least one FSx for ONTAP link is connected to your file systems.
+
+.About this task
+
+The cluster health status includes the following key areas:
+
+* *Latency*: Number of latency events detected
+* *File system elasticity*:
+** *SSD capacity*: Shows how many file systems use Automate, Recommend, or None to manage SSD capacity.
+** *Throughput*: Shows how many file systems use Automate, Recommend, or None to manage throughput.
+* *ONTAP events*: Number of EMS events by category (Capacity, Availability & protection, Security & other)
+
+.Steps
+
+. Review the cluster health status at the top of the dashboard.
+. To view latency events:
+* Select *Review* to navigate to the *Latency* tab
+* If latency monitoring is not configured, select *Configure* to set up latency thresholds
++
+For details on latency monitoring, see link:fsx-eda/task-configure-latency-monitoring-eda.html[Configure latency monitoring^].
+. To view ONTAP events for your FSx for ONTAP file systems, select *Review*.
++
+The ONTAP events view card displays the number of EMS events by category (Capacity, Availability & protection, and Security & other). For a full list of EMS events monitored, see link:https://docs.netapp.com/us-en/ontap-cli-9171/index.html[ONTAP CLI documentation^].
+
+== View and apply capacity or throughput recommendations
+
+Workload Factory automatically runs recommendations for each FSx for ONTAP file system. You can find file systems with recommendations by filtering the Clusters table.
+
+.Steps
+
+. In the *Clusters* table, filter by the relevant time or details columns.
++
+File systems with capacity or throughput recommendations appear at the top of the table.
+. Select a file system name in the table to open cluster details.
+. Review the recommendation and graph.
++
+The recommendation explains the suggested change and the reasoning behind it. For example: _We recommend increasing the SSD size based on your file system SSD usage pattern._
++
+The graph presents current usage alongside historical trends.
+. On the top right of the graph, select the time range to change the period displayed.
++
+The graph also displays recommendation decision points and automation decision points (if automation mode is enabled). Hover over any decision point to see details about the capacity recommendation or automation action at that moment.
+. To apply the recommendation, follow the guidance provided in the recommendation message.
+
+== Change SSD management mode
+
+For each file system, choose how SSD capacity is managed: receive manual recommendations or allow automatic scaling.
+
+.Steps
+
+. In the Clusters table find the file system name. Next to it, open image:icon-action.png[the action menu icon] and select *Change SSD capacity management*.
+. Select *Enable SSD capacity management* and then select *Apply*.
+. Choose your preferred mode:
+* *Notify only (Recommend mode)*
+* *Automate*
+. Configure the SSD capacity management parameters:
++
+
+* *Threshold (%)*: SSD usage percentage that triggers a recommendation
+* *Lookback (%)*: Historical usage data period for analysis
+* *Lookahead (%)*: Projected usage for future capacity planning
+. Select *Apply*.
+
+.Result
+
+The file system switches to the new mode right away. If you choose Recommend or Automate, the system uses the set settings to analyze storage capacity and make decisions.
+
+== Change throughput management mode
+
+For each file system, choose how throughput increase is managed.
+
+.Steps
+
+. In the *Overview* tab, select one or more file systems in the Clusters table.
+. Select *Change throughput management*.
+. Select *Enable throughput management* and then select *Apply*.
+. Choose your preferred mode:
+* *Notify only (Recommend mode)*
+* *Automate*
+. In the dialog, configure the throughput management parameters:
++
+
+* *Evaluation window (hours)*: Time period for analyzing throughput patterns
+* *Breached metrics (%)*: Percentage threshold for determining breach
+* *Consecutive breached window (hours)*: Duration of consecutive breaches before action
+* *Minimum latency (ms)*: Latency threshold used to determine throughput increase
+* *Maximum throughput (SKUs)*: Maximum throughput SKU allowed
+
+. Select *Apply*.
+
+.Result
+
+The selected file systems switch to the new throughput mode immediately.
+
+== Bulk edit management parameters
+
+Change settings for several file systems at once so the same settings apply across your clusters.
+
+.Steps
+
+. From the *Overview* tab, select the file systems you want to edit in the table.
++
+TIP: You can select individual file systems or use the header checkbox to select all visible file systems.
+
+. Select *Change SSD capacity management* or *Change throughput management* above the table.
+. Choose your preferred mode.
+. In the edit dialog, adjust the parameters as needed.
++
+Each parameter field includes a tooltip describing its purpose and valid range. The dialog indicates the current values or defaults based on your selection.
+. Select *Apply* to apply the changes to all selected file systems.
+
+.Result
+
+The parameters are updated for all selected file systems. File systems in Recommend or Automate mode use the new parameters immediately for analysis and decision-making.
+
+== Analyze capacity trends and decision points
+
+Use the SSD usage graph to see how storage use changes over time and spot patterns.
+
+.About this task
+
+Decision points on the graph indicate when:
+
+* *Recommendation decision points*: The capacity recommendation algorithm identified that additional SSD capacity is needed.
+* *Automation decision points*: The automation system tried to increase SSD capacity. These points show whether the action succeeded or failed.
+
+.Steps
+
+. From the *Overview* tab, select a file system name in the table.
+. Review the SSD usage graph showing historical capacity trends.
+. Select different time ranges to view capacity behavior over various periods.
+. Hover over decision points on the graph to view details about recommendations or automation actions at specific moments.
+. Use the insights from the graph to:
+* Understand how frequently capacity adjustments are needed
+* Evaluate whether automation or recommendation mode better fits your workload patterns
+* Identify recurring capacity constraints
+* Plan for future capacity needs based on growth trends
+* Troubleshoot failed automation attempts
++
+Common failure reasons include: insufficient AWS permissions, file system update already in progress, storage modified within the last 6 hours, maximum SSD capacity reached, or CloudWatch metrics unavailable.
+
+== Use the clusters table
+
+The clusters table gives a detailed view of each FSx for ONTAP file system with performance and usage metrics.
+
+.Steps
+
+. From the *Overview* tab, review the clusters table.
+. Use the search box to find specific file systems by name.
+. Select column headers to sort the data.
+. Use *SSD usage* to identify file systems approaching capacity limits.
+. Use *Throughput usage (P99)* to compare throughput demand to the provisioned throughput SKU.
++
+Hover over throughput column headers for calculation details.
+. To customize columns, select the column settings icon and choose which columns to display.
+. To export data, select the export icon to download a CSV file.
+
+== Best practices
+
+Consider these recommendations when using the Overview dashboard:
+
+* *Regular monitoring*: Check the dashboard often to spot trends before they become problems.
+
+* **Set clear thresholds**: Choose SSD usage thresholds and throughput parameters that fit your workload and capacity plans.
+
+* **Use filters**: Apply region and account filters to focus on the parts of your infrastructure you want to review.
+
+* **Review recommendations quickly**: Filter the Clusters table to find file systems with capacity or throughput recommendations. Check and act on them to avoid running out of space.
+
+* **Pick the right mode**: Use **Recommend** mode if you want to approve capacity or throughput changes yourself. Use **Automate** mode if you want the system to manage capacity or throughput automatically.
+
+* **Watch decision points**: Check decision points on capacity graphs to see how the system is making decisions and confirm the settings work for your needs.
+
+* **Edit in bulk**: When managing many file systems, use bulk editing to keep settings consistent.
+
+== Related information
+
+* link:fsx-eda/learn-overview-dashboard-eda.html[Learn about the Overview dashboard]
+* link:fsx-eda/task-activate-overview-dashboard-eda.html[Activate the Overview dashboard]
+* link:fsx-eda/task-configure-latency-monitoring-eda.html[Configure latency monitoring]

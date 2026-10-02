@@ -1,0 +1,146 @@
+---
+sidebar: sidebar
+permalink: setup/learn-about-workload-factory.html
+keywords: overview, concepts, features, use case, workloads, how Workload Factory works, Amazon FSx for NetApp ONTAP, Google Cloud NetApp Volumes, Oracle Cloud Infrastructure NetApp Storage Service
+summary: "NetApp Workload Factory is a powerful life-cycle management platform designed to help you optimize your workloads using Amazon FSx for NetApp ONTAP, Google Cloud NetApp Volumes, and Oracle Cloud Infrastructure NetApp Storage Service."
+---
+= Learn about NetApp Workload Factory
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+NetApp Workload Factory is a powerful life-cycle management platform designed to help you optimize your workloads using Amazon FSx for NetApp ONTAP, Google Cloud NetApp Volumes, and Oracle Cloud Infrastructure NetApp Storage Service. 
+
+A _workload_ encompasses a combination of resources, code, and services or applications, designed to serve a business goal. This could be anything from a customer-facing application to a backend process. Workloads may involve a subset of resources within a single AWS account or span across multiple accounts.
+
+== Features
+
+The Workload Factory platform provides the following major capabilities.
+
+Flexible and low cost storage:: 
+Discover, deploy, and manage storage systems in the cloud. Your cloud storage provider brings the full capabilities of ONTAP to a native managed service delivering a consistent hybrid cloud experience.
+
+Migrate on-premises vSphere environments to VMware Cloud on AWS::
+The VMware Cloud on AWS migration advisor enables you to analyze your current virtual machine configurations in on-premises vSphere environments, generate a plan to deploy recommended VM layouts to VMware Cloud on AWS, and use customized Amazon FSx for NetApp ONTAP file systems as external datastores.
+
+Database lifecycle management::
+Discover database workloads and analyze costs savings with Amazon FSx for NetApp ONTAP; leverage storage and application benefits when migrating SQL server databases to FSx for ONTAP storage; deploy SQL servers, databases, and database clones that implement vendor best practices; use an Infrastructure as Code co-pilot to automate operations; and continuously monitor and optimize SQL server estates to improve performance, availability, protection, and cost-efficiency.
+
+//Savings calculators to save costs::
+//Analyze your current deployments that use Amazon Elastic Block Store (EBS) or Elastic File System (EFS) storage, or Amazon FSx for Windows File Server, to see how much money you can save by moving to Amazon FSx for NetApp ONTAP. You can also use the calculator to perform a "what if" scenario for a future deployment that you're planning.
+
+Service accounts to promote automation::
+Use service accounts to automate NetApp Workload Factory operations securely and reliably. Service accounts provide reliable, long-lasting automation without any user management restrictions and are more secure because they only provide API access.
+
+Ask Me AI assistant::
+Ask the AI assistant questions about managing and operating FSx for ONTAP file systems. Using the Model Context Protocol (MCP), Ask Me securely interfaces with external environments and queries API tools to deliver responses tailored to your specific storage environment.
+
+NOTE: Account administrators can turn AI features on or off. If an administrator turns them off, the Ask Me AI assistant will not be available. link:admin/manage-genai-features.html[Learn about managing AI features].
+
+
+== Supported cloud providers
+
+Workload Factory enables you to manage cloud storage and use workload capabilities in Amazon Web Services, Google Cloud NetApp Volumes, and Oracle Cloud Infrastructure NetApp Storage Service.
+
+== Security
+
+Security for NetApp Workload Factory is a top priority for NetApp. NetApp Workload Factory has received link:https://trust.netapp.com/[SOC2 Type 1 compliance, SOC2 Type 2 compliance, and HIPAA compliance^].  
+
+== Cost
+
+Workload Factory is free to use. The cost that you pay to your cloud provider depends on the storage and workload services that you plan to deploy. This includes the cost of storage systems, infrastructure, services, and more.
+
+== How Workload Factory works
+
+Workload Factory includes a web-based console that's provided through the SaaS layer, an account, permission policies that control access to your cloud estate, connectivity between Workload Factory and your cloud accounts, and more.
+
+=== Software-as-a-service
+
+Workload Factory is accessible through the link:https://console.netapp.com[NetApp Console^]. This SaaS experience enables you to automatically access the latest features as they're released and to easily switch between your Workload Factory accounts and links.
+
+=== Accounts
+
+When you log in to Workload Factory for the first time, you're prompted to create an account. This account enables you to organize your resources, workloads, and workload access for your organization using credentials.
+
+image:screenshot-account-selection.png[A screenshot of the Workload Factory setup wizard that prompts you for the Workload Factory account.]
+
+When you create an account, you are the single _account admin_ user for that account.
+
+If your organization requires additional account or user management, reach out to us by using the in-product chat.
+
+TIP: If you use the NetApp Console, then you'll already belong to an account because Workload Factory leverages NetApp accounts.
+
+//==== Service accounts
+
+//A service account acts as a "user" that can make authorized API calls to NetApp Workload Factory for automation purposes. This makes it easier to manage automation because you don't need to build automation scripts based on a real person's user account who can leave the company at any time. All account holders in Workload Factory are considered account admins. Account admins can create and delete multiple service accounts. 
+
+//link:manage-service-accounts.html[Learn how to manage service accounts]
+
+=== Permissions
+
+Workload Factory provides flexible permission policies that enables you to carefully control access to your cloud estate, and assign incremental trust to Workload Factory based on your IT policies.
+
+link:setup/learn-about-permissions.html[Learn more about Workload Factory permission policies]
+
+//=== Connectivity links
+
+//A Workload Factory link creates a trust relationship and connectivity between Workload Factory and one or more FSx for ONTAP file systems. This enables you to monitor and manage certain file system features directly from the ONTAP REST API calls that are not available through the Amazon FSx for ONTAP API.
+
+//You don't need a link to get started with Workload Factory, but in some cases you'll need to create a link to unlock all Workload Factory features and workload capabilities.
+
+//Links currently leverage AWS Lambda.
+
+//link:fsx-storage/links-overview-fsx.html[Learn more about links^]
+
+=== Codebox automation
+
+Codebox is an Infrastructure as Code (IaC) co-pilot that helps developers and DevOps engineers generate the code needed to execute any operation supported by Workload Factory. Code formats include Workload Factory REST API, cloud provider CLIs, Terraform, and more.
+
+Codebox sets a clear path for execution readiness as well as an automation catalog for quick future reuse. 
+
+The Codebox pane shows the IaC that is generated by a specific job flow operation, and is matched by a graphical wizard or conversational chat interface. While Codebox supports color coding and search for easy navigation and analysis, it does not allow editing. You can only copy or save to the Automation Catalog. 
+
+link:admin/codebox-automation.html[Learn more about Codebox]
+
+//=== Savings calculators
+
+//Workload Factory provides savings calculators so you can compare the costs of your storage environments, database, or VMware workloads on FSx for ONTAP file systems against other Amazon services. Depending on your storage requirements, you might find that FSx for ONTAP file systems are the most cost effective option for you.
+
+//* link:fsx-storage/explore-savings-fsx.html[Learn how to explore savings for your storage environments^]
+//* link:fsx-databases/explore-savings-databases.html[Learn how to explore savings for your database workloads^]
+//* link:fsx-vmware/calculate-evs-savings-vmware.html[Learn how to explore savings for your VMware workloads^]
+
+=== Well-architected workloads
+
+Workload Factory helps you maintain and operate reliable, secure, efficient, and cost-effective storage and database configurations that align with the AWS Well-Architected Framework. Workload Factory scans FSx for ONTAP file systems, SQL Server, and Oracle database deployments daily to provide insights into potential misconfigurations and recommends either manual or automated actions for fixing issues. 
+
+link:admin/learn-well-architected-workloads.html[Learn more about well-architected workloads]
+
+//Cross-repo include for Tools section
+include::https://raw.githubusercontent.com/NetAppDocs/workload-family/main/_include/learn-about-tools.adoc[]
+
+=== REST APIs
+
+Workload Factory enables you to optimize, automate, and operate your cloud storage systems for specific workloads. Each workload exposes an associated REST API. Collectively, these workloads and APIs form a flexible and extensible development platform you can use to administer your storage systems. 
+
+There are several benefits when using the Workload Factory REST APIs:
+
+* The APIs have been designed based on REST technology and current best practices. The core technologies include HTTP and JSON.
+
+* Workload Factory authentication is based on the OAuth2 standard. NetApp relies on the Auth0 service implementation.
+
+* The Workload Factory web-based console uses the same core REST APIs so there is consistency between the two access paths.
+
+https://console.workloads.netapp.com/api-doc[View the Workload Factory REST API documentation^]
+
+== Region support
+
+=== AWS regions
+
+The following AWS regions are not supported:
+
+* China regions
+* Secret Cloud
+* Top Secret Cloud
+
+

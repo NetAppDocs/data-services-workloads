@@ -1,0 +1,57 @@
+---
+sidebar: sidebar
+permalink: fsx-vmware/quick-start-native-vmware.html
+keywords: quick start
+summary: Get started with the VMware migration advisor to move your current infrastructure to Amazon EC2 using Amazon FSx for ONTAP as external NFS datastores.
+---
+= Quick start for migrating to Amazon EC2 using the VMware workloads migration advisor
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Get started with the VMware migration advisor to move your current infrastructure to Amazon EC2 using Amazon FSx for ONTAP as external NFS datastores.
+
+Before you get started, you should have an understanding of the link:fsx-storage/permissions-fsx.html[FSx for ONTAP permissions for NetApp Workload Factory^].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Log in to Workload Factory
+
+[role="quick-margin-para"]
+You'll need to link:setup/sign-up-and-log-in.html[set up an account with Workload Factory^] and log in to the NetApp Console.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Add credentials and permissions
+
+[role="quick-margin-para"]
+Choose the link:fsx-storage/permissions-fsx.html[permission policies] to meet your needs.
+
+[role="quick-margin-para"]
+If you choose not to grant permissions, you can start using Workload Factory for VMware to copy partially completed code samples.
+
+[role="quick-margin-para"]
+If you choose to grant permissions, you'll need to link:fsx-storage/add-credentials-fsx.html[add credentials to an account manually] that includes selecting the VMware workload capability and creating the IAM policies for the required permissions.
+
+[role="quick-margin-para"]
+link:fsx-storage/add-credentials-fsx.html[Learn how to add credentials and permissions^].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Upload VM inventory data
+
+[role="quick-margin-para"]
+You can use the planning center to upload inventory details about your current VM environment. Use the data collector script, RVTools, or NetApp Data Infrastructure Insights to capture your current VM configuration and upload the data to the planning center.
+
+[role="quick-margin-para"]
+link:fsx-vmware/upload-vm-inventory-vmware.html[Learn how to upload VM inventory data^].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four] Create a deployment plan using the VMware migration advisor 
+
+[role="quick-margin-para"]
+Launch the VMware migration advisor and select the VMs that you want to migrate to Amazon EC2 infrastructure using an Amazon FSx for ONTAP file system as external NFS datastores. You can make some modifications before you save the plan.
+
+[role="quick-margin-para"]
+link:fsx-vmware/launch-onboarding-advisor-native-vmware.html[Learn how to use the VMware migration advisor to create a deployment plan].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five] Deploy the recommended FSx for ONTAP file system
+
+[role="quick-margin-para"]
+Deploy the new FSx for ONTAP file system that will provide the datastores for your VMs in your Amazon EC2 infrastructure.
+
+[role="quick-margin-para"]
+link:fsx-vmware/deploy-fsx-file-system-native-vmware.html[Learn how to deploy your new FSx for ONTAP file system].
