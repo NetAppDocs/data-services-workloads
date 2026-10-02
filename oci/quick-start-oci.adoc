@@ -29,7 +29,7 @@ This step is optional. To perform some management tasks from the NetApp Console,
 
 [role="quick-margin-list"]
 * link:setup/links-overview.html[Learn when a Console agent or link is required for OCI NetApp Storage Service management]
-* link:oci/create-link.html[Learn how to create a link^]
+* link:oci/create-link-oci.html[Learn how to create a link^]
 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Discover or add an OCI NetApp Storage Service system
