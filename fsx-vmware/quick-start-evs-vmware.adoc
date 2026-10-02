@@ -44,7 +44,7 @@ link:fsx-vmware/upload-vm-inventory-vmware.html[Learn how to upload VM inventory
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four] Create a deployment plan using the VMware migration advisor 
 
 [role="quick-margin-para"]
-Launch the VMware migration advisor and manually configure the VM environment you want to create on Amazon Elastic VMWare Service infrastructure using an Amazon FSx for ONTAP file system as external NFS datastores.
+Launch the VMware migration advisor and manually configure the VM environment you want to create on Amazon Elastic VMware Service infrastructure using an Amazon FSx for ONTAP file system as external NFS datastores.
 
 [role="quick-margin-para"]
 link:fsx-vmware/launch-migration-advisor-evs-vmware.html[Learn how to use the VMware migration advisor to create a deployment plan].
