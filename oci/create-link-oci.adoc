@@ -90,9 +90,9 @@ Use the OCI CLI or OCI Terraform to create and register the link within Workload
 The link deployment stack adds the following default OCI Vault secret OCID regex to the OCI Functions permission policy: `ocid1.vaultsecret.oc1.iad.<unique_id>.ONTAPSecret*`.
 +
 You can either create secrets in alignment with the default regex or update the regex in the Terraform configuration file to match your secret OCID.
-.. *Tags*: Optionally, add up to 50 tags to associate with this link so you can more easily categorize your resources. For example, you could add a tag that identifies this link as being used by OCSN storage systems.
+.. *Tags*: Optionally, add up to 50 tags to associate with this link so you can more easily categorize your resources. For example, you could add a tag that identifies this link as being used by OCI NSS storage systems.
 .. *Link registration*: Follow the instructions in the Workload Factory console to register the link. Link registration happens from your OCI Terraform environment. Select OCI Terraform from the Codebox for the instructions.
-..  *Link association*: Select the OCSN system to associate with this link, and enter the user name and password.
+..  *Link association*: Select the OCI NSS storage system to associate with this link, and enter the user name and password.
 .. *Link permissions*: Specify the required permissions for the user group to create the link. 
 +
 .Required permissions for the link
@@ -114,11 +114,11 @@ Allow group to use virtual-network-family in compartment id
 .. *Subnet*: Select the subnet. 
 .. *Network security group*: Enter the security group.
 +
-Workload Factory automatically retrieves the OCI account, location, and security group based on the selected OCSN system.
+Workload Factory automatically retrieves the OCI account, location, and security group based on the selected OCI NSS system.
 . Select *Add*. 
 +
 You can monitor the link creation status on the Events page. This should take no more than five minutes.
-. Return to the Workload Factory interface and you'll see that the link is associated with the OCSN storage system.
+. Return to the Workload Factory interface and you'll see that the link is associated with the OCI NSS storage system.
 
 == Deploy the Terraform stack in OCI Resource Manager
 
