@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: fsx-eda/manage-projects-eda.html
-keywords: Microsoft SQL Server instance, server instance, manage host, view host, database host, database instance, manage, unmanage
-summary: Manage Microsoft SQL Server instances in Workload Factory for Databases. 
+keywords: EDA, electronic design automation, project, projects, manage project, create project, edit project, delete project
+summary: Manage EDA projects in NetApp Workload Factory for EDA.
 ---
 = Manage EDA projects in Workload Factory for EDA
 :icons: font
