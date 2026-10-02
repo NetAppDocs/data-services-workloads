@@ -47,5 +47,5 @@ Optionally, you can use the Journal table feature with S3 access points in Workl
 
 Other related topics: 
 
-* link:fsx-storage/edit-s3-access-points-fsx.html[Edit S3 access points for a volume in NetApp Workload Factory]
-* link:fsx-storage/delete-s3-access-points-fsx.html[Delete S3 access points for a volume in NetApp Workload Factory]
+* link:fsx-storage/manage-s3-access-points-fsx.html[Edit S3 access points for a volume in NetApp Workload Factory]
+* link:fsx-storage/manage-s3-access-points-fsx.html[Delete S3 access points for a volume in NetApp Workload Factory]
