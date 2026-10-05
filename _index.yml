@@ -41,7 +41,7 @@ indexpage:
         - title: Learn about well-architected workloads
           url: /admin/learn-well-architected-workloads.html
         - title: Implement well-architected FSx for ONTAP workloads
-          url: /fsx/improve-configurations-fsx.html
+          url: /fsx-storage/improve-configurations-fsx.html
         - title: Implement well-architected Google Cloud NetApp Volumes workloads
           url: /gcnv/improve-configurations-gcnv.html
     - title: Knowledge and support
