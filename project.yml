@@ -22,7 +22,7 @@ sidebar:
     - title: Get started
       entries:
         - title: Learn about Workload Factory in NetApp Console
-          url: /setup/learn-workload-factory.html
+          url: /setup/learn-about-workload-factory.html
         - title: Quick start
           url: /setup/quick-start.html
         - title: Sign up and log in to Workload Factory

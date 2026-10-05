@@ -40,9 +40,9 @@ GenAI features off:: Turns off all AI features. Users can no longer use Ask Me, 
 
 .Steps
 
-. Log in using one of the link:console-experiences.html[console experiences^].
+. Log in to the link:https://console.netapp.com[NetApp Console^].
 
-. From the menu, select *Administration* and then *AI settings*.
+. From the NetApp Console menu, select *Workloads* > *Administration* > *AI settings*.
 
 . On the *AI settings* page, select your preferred configuration:
 

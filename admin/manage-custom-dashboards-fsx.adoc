@@ -25,8 +25,8 @@ You must have at least one custom dashboard in your Workload Factory account.
 
 .Steps
 
-. Log in using one of the link:console-experiences.html[console experiences^].
-. From the menu, select *Workloads Overview* and then *Custom dashboards*.
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. From the NetApp Console menu, select *Workloads* > *Workloads Overview* > *Custom dashboards*.
 +
 The dashboard catalog shows all custom dashboards in your Workload Factory account.
 

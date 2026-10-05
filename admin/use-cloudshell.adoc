@@ -85,8 +85,8 @@ You can deploy CloudShell from anywhere in the NetApp Workload Factory console. 
 .Deploy from Workload Factory console
 --
 .Steps
-. Log in to the https://console.workloads.netapp.com[Workload Factory console^].
-. From the menu, select *Administration* and then *CloudShell*.
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. From the NetApp Console menu, select *Workloads* > *Administration* > *CloudShell*.
 . In the CloudShell window, select credentials and region for the CloudShell session and then select the arrow to continue.
 +
 image:screenshot-deploy-cloudshell-session.png["Screenshot that shows a new CloudShell session."]
@@ -102,8 +102,7 @@ If an error occurs after issuing an ONTAP CLI command, select the light bulb ico
 --
 .Steps
 . Log in to the link:https://console.netapp.com[NetApp Console^].
-. From the menu, select *Workloads* and then *Administration*.
-. From the Administration menu, select *CloudShell*.
+. From the NetApp Console menu, select *Workloads* > *Administration* > *CloudShell*.
 . In the CloudShell window, select credentials and region for the CloudShell session and then select the arrow to continue.
 +
 image:screenshot-deploy-cloudshell-session.png["Screenshot that shows a new CloudShell session."]
