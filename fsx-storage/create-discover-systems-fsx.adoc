@@ -49,7 +49,7 @@ include::_include/create-file-system-quick.adoc[]
 .Result
 If you created the file system, the new FSx for ONTAP configuration appears on the Systems page. 
 
-You can manage your FSx for ONTAP file systems in several ways, such as from Workloads in the NetApp Console, using ONTAP System Manager, and using AWS CloudFormation. Learn how to link:fsx-storage/manage-file-system-settings-fsx.html[manage FSx for ONTAP file system settings].
+You can manage your FSx for ONTAP file systems in several ways, such as from Workloads in the NetApp Console, using ONTAP System Manager, and using AWS CloudFormation. Learn how to link:task-manage-fsx-systems.html[manage an FSx for ONTAP file system].
 --
 
 .Advanced create
