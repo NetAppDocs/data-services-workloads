@@ -12,13 +12,13 @@ summary: "Create or discover cloud storage systems to add and manage volumes and
 :imagesdir: ../media/
 
 [.lead]
-Discover Oracle Cloud Infrastructure NetApp Storage Service systems and manage volumes and additional data services from the NetApp Console.
+Discover Oracle Cloud Infrastructure NetApp Storage Service (OCI NSS) systems and manage volumes and additional data services from the NetApp Console.
 
 == Discover an existing cloud storage system 
 Discover your storage systems from the Discoverable systems page. 
 
 .Before you begin
-Provide your credentials for your Oracle Cloud Infrastructure NetApp Storage Service environment in Workload Factory. 
+Provide your credentials for your OCI NSS environment in Workload Factory. 
 
 .About this task
 You can discover a cloud storage system only once within an account and attach it to one workspace. The storage system can later be removed and re-associated to a different workspace.
@@ -37,7 +37,6 @@ You can discover a cloud storage system only once within an account and attach i
 
 * If you select a storage system that doesn't have the credentials required to manage it from the Console, you'll receive a prompt to select credentials with the required permissions. 
 
-* The following regions aren't supported for discovery: China regions, GovCloud (US) regions, Secret Cloud, and Top Secret Cloud.
 ===============================
 
 .Result

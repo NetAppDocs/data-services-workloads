@@ -2,23 +2,22 @@
 sidebar: sidebar
 permalink: oci/create-link-oci.html
 keywords: connect, connection, link, associate link, create link, authenticate link, oci nss
-summary: "You can create and associate links to provide a trust relationship and connectivity between a NetApp Workload Factory account and an Oracle Cloud Infrastructure NetApp Storage Service
- storage system."
+summary: "You can create and associate links to provide a trust relationship and connectivity between a NetApp Workload Factory account and an Oracle Cloud Infrastructure NetApp Storage Service storage system."
 ---
 = Connect to an Oracle Cloud Infrastructure NetApp Storage Service storage system with a link
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-To perform advanced storage management operations, set up a connection between your NetApp Workload Factory account and an Oracle Cloud Infrastructure (OCI) NetApp Storage Service system. This process involves creating and associating a link with your storage system. Link association lets you monitor and manage certain features directly from the OCI NetApp Storage Service system that are unavailable through OCI APIs. 
+To perform advanced storage management operations, set up a connection between your NetApp Workload Factory account and an Oracle Cloud Infrastructure NetApp Storage Service (OCI NSS) system. This process involves creating and associating a link with your storage system. Link association lets you monitor and manage certain features directly from the OCI NSS system that are unavailable through OCI APIs. 
 
-link:setup/links-overview.html[Learn more about links].
+link:links-overview.html[Learn more about links].
 
 == About this task
 
-A _link_ in Workload Factory is an OCI Functions application in your tenancy. Workload Factory uses it to talk to the ONTAP system on an Oracle Cloud Infrastructure (OCI) NetApp Storage Service storage pool (HTTPS 443 and SSH 22).
+A _link_ in Workload Factory is an OCI Functions application in your tenancy. Workload Factory uses it to talk to the ONTAP system on an OCI NSS storage pool (HTTPS 443 and SSH 22).
 
-Links use Oracle Cloud Infrastructure (OCI) Functions to execute code in response to events and automatically manage the computing resources required by that code. The links that you create are part of your NetApp account and they are associated with an Oracle Cloud Infrastructure account.
+Links use OCI Functions to execute code in response to events and automatically manage the computing resources required by that code. The links that you create are part of your NetApp account and they are associated with an Oracle Cloud Infrastructure account.
 
 You deploy the link, or function, with Terraform, then register the function OCID in Workload Factory.
 
@@ -34,9 +33,9 @@ This stack runs in your tenancy with your OCI user. It is not the cross-tenancy 
 | Dynamic group + vault-read policy | Only if you enable **Local OCI Vault Authentication** (`netapp-functions-dg`, shared in the tenancy) |
 
 == Create a new link
-You can create a link in your account when defining an OCI NetApp Storage Service system. You use the link for that storage system, and you can use it for other OCI NetApp Storage Service systems. You can also associate a link for a storage system later. 
+You can create a link in your account when defining an OCI NSS system. You use the link for that storage system, and you can use it for other OCI NSS systems. You can also associate a link for a storage system later. 
 
-Links require authentication. You can authenticate links using credentials stored in the Workload Factory credentials service or with your credentials stored in Oracle Cloud Infrastructure (OCI) Vault. Only one authentication method is supported per link. For example, if you select link authentication with OCI Vault, you can't change the authentication method later.
+Links require authentication. You can authenticate links using credentials stored in the Workload Factory credentials service or with your credentials stored in OCI Vault. Only one authentication method is supported per link. For example, if you select link authentication with OCI Vault, you can't change the authentication method later.
 
 NOTE: OCI Vault isn't supported when using a Console agent.
 
@@ -129,7 +128,7 @@ You can monitor the link creation status on the Events page. This should take no
 . In the dialog, select *Continue*.
 . Sign in to the OCI tenancy that contains the storage pool.
 . Review compartment, region, and variables (pre-filled from Workload Factory).
-. Select *Create*.Wait until the apply job succeeds.
+. Select *Create*. Wait until the apply job succeeds.
 . Open Job *Output* and copy `function_ocid`.
 
 == Register the function in Workload Factory
@@ -160,7 +159,7 @@ terraform apply
 
 **OCI CLI**
 
-Use the **OCI CLI** tab in the Codebox to download the zip, create the Resource Manager stack, then run plan and apply jobs.
+Use the **OCI CLI** tab in the Codebox to download the zip file, create the Resource Manager stack, then run plan, and apply jobs.
 
 .Result 
 The link appears in your *Links* list.
@@ -190,10 +189,10 @@ After you create a link, associate it with one or more OCI NetApp Storage Servic
 
 .Result
 
-Workload Factory associates the link with the OCI NetApp Storage Service system. You can perform advanced ONTAP operations.
+Workload Factory associates the link with the OCI NSS system. You can perform advanced ONTAP operations.
 
 
 .Related information
 
-link:setup/links-overview.html#when-a-link-is-required[Learn more about links].
+link:links-overview.html#when-a-link-is-required[Learn more about links].
 
