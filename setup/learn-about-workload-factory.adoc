@@ -131,7 +131,7 @@ There are several benefits when using the Workload Factory REST APIs:
 
 * The Workload Factory web-based console uses the same core REST APIs so there is consistency between the two access paths.
 
-https://console.workloads.netapp.com/api-doc[View the Workload Factory REST API documentation^]
+link:https://console.workloads.netapp.com/api-doc[View the Workload Factory REST API documentation^]
 
 
 

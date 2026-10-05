@@ -50,7 +50,7 @@ If you decide to rollback your Domain Name System (DNS) resources, the resource 
 Ensure you have the following prerequisites before you create a new database host. 
 
 .Credentials and permissions 
-You must link:fsx-storage/add-credentials-fsx.html[grant _database host creation_ permissions^] in your AWS account to create a new database host in Workload Factory. 
+You must link:add-credentials-fsx.html[grant _database host creation_ permissions^] in your AWS account to create a new database host in Workload Factory. 
 
 .Active Directory 
 When connecting to Active Directory, you must have administrative access with permissions to do the following: 
@@ -63,9 +63,9 @@ When connecting to Active Directory, you must have administrative access with pe
 * Create a Microsoft SQL Server service user in the AD, if it doesn't exist already 
 
 == Step 1: Create a database server
-You can use _Quick create_ or _Advanced create_ deployment modes to complete this task in Workload Factory with _Automate_ mode permissions. You can also use the following tools available in the Codebox: REST API, AWS CLI, AWS CloudFormation, and Terraform. link:admin/use-codebox.html#how-to-use-codebox[Learn how to use Codebox for automation^]. 
+You can use _Quick create_ or _Advanced create_ deployment modes to complete this task in Workload Factory with _Automate_ mode permissions. You can also use the following tools available in the Codebox: REST API, AWS CLI, AWS CloudFormation, and Terraform. link:use-codebox.html#how-to-use-codebox[Learn how to use Codebox for automation^]. 
 
-NOTE: When using Terraform from Codebox, the code you copy or download hides `fsxadmin` and `vsadmin` passwords. You'll need to re-enter the passwords when you run the code. You'll need to include the following permissions for the user account in addition to _Automate_ mode permissions: `iam:TagRole` and `iam:TagInstanceProfile`. link:admin/use-codebox.html#use-terraform-from-codebox[Learn how to use Terraform from Codebox^].
+NOTE: When using Terraform from Codebox, the code you copy or download hides `fsxadmin` and `vsadmin` passwords. You'll need to re-enter the passwords when you run the code. You'll need to include the following permissions for the user account in addition to _Automate_ mode permissions: `iam:TagRole` and `iam:TagInstanceProfile`. link:use-codebox.html#use-terraform-from-codebox[Learn how to use Terraform from Codebox^].
 
 During deployment, Workload Factory enables CredSSP for credential delegation to scripts for provisioning SQL. When the CredSSP delegation is blocked for all domain computers with the group policy, deployment fails. Post-deployment, Workload Factory disables CredSSP.
 
@@ -290,4 +290,4 @@ After the server deploys, Workload Factory does not enable remote connection on 
 . Allow the required client IP or subnet in the security group. 
 
 .What's next
-Now you can link:fsx-databases/create-sql-database-fsx.html[create a database in Workload Factory for Databases]. 
+Now you can link:create-sql-database-fsx.html[create a database in Workload Factory for Databases]. 

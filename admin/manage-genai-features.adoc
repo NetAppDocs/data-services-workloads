@@ -4,7 +4,7 @@ permalink: admin/manage-genai-features.html
 keywords: gen ai, generative ai, bedrock, ask me, custom dashboards, rules builder, cloudshell ai, ems analyzer, db log analyzer, latency analyzer, byom, bring your own model, administration
 summary: "Control access to Bedrock-based AI features in Workload Factory. You can turn off AI capabilities or use NetApp-managed AWS Bedrock."
 ---
-= Manage AI features in NetApp Workload Factory
+= Manage AI features for FSx for ONTAP in NetApp Workload Factory
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -12,7 +12,7 @@ summary: "Control access to Bedrock-based AI features in Workload Factory. You c
 :imagesdir: ../media/
 
 [.lead]
-Control access to AI features in Workload Factory. You can turn off AI features or use AWS Bedrock managed by NetApp. 
+Control access to AI features for FSx for ONTAP in Workload Factory. You can turn off AI features or use AWS Bedrock managed by NetApp. 
 
 == About AI features
 
@@ -83,13 +83,11 @@ If you need more AI credits, contact your NetApp representative. They can adjust
 To contact your NetApp representative about credit limits, use the in-product chat or visit the link:get-help.html[Get help] page.
 ====
 
-== GovCloud considerations
+== AWS GovCloud considerations
 
 If you create a Workload Factory account in AWS GovCloud (US), note that AI features use AWS Bedrock services in public AWS Regions by default.
 
 If your security requirements do not allow connections to public AWS Region services, you can disable AI features.
-
-link:sign-up-saas.html[Learn about creating GovCloud accounts].
 
 == Impact on existing sessions
 

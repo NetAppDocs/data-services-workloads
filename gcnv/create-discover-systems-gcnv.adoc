@@ -36,8 +36,6 @@ You can discover a cloud storage system only once within an account and attach i
 * If you select an un-named storage system, you will receive a prompt to enter a name for the system.
 
 * If you select a storage system that doesn't have the credentials required to manage it from the Console, you'll receive a prompt to select credentials with the required permissions. 
-
-* The following regions aren't supported for discovery: China regions, GovCloud (US) regions, Secret Cloud, and Top Secret Cloud.
 ===============================
 
 .Result

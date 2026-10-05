@@ -24,12 +24,12 @@ FSx for ONTAP file systems have two PostgreSQL server deployment models: _High A
 * *Single instance deployment*: A Single Availability Zone FSx for ONTAP file system is created when a new PostgreSQL server is created. In addition, separate volumes and LUNs are created for data, log, and tempdb files.
 
 == Before you begin
-You must have link:fsx-ontap/add-credentials-fsx.html[grant _database host creation_ permissions^] in your AWS account to create a new database host in workload factory. 
+You must have link:add-credentials-fsx.html[grant _database host creation_ permissions^] in your AWS account to create a new database host in workload factory. 
 
 == Create a PostgreSQL server
-You can use _Quick create_ or _Advanced create_ deployment modes to complete this task in workload factory with _Automate_ mode permissions. You can also use the following tools available in the Codebox: REST API, AWS CLI, AWS CloudFormation, and Terraform. link:admin/use-codebox.html#how-to-use-codebox[Learn how to use Codebox for automation^]. 
+You can use _Quick create_ or _Advanced create_ deployment modes to complete this task in workload factory with _Automate_ mode permissions. You can also use the following tools available in the Codebox: REST API, AWS CLI, AWS CloudFormation, and Terraform. link:use-codebox.html#how-to-use-codebox[Learn how to use Codebox for automation^]. 
 
-NOTE: When using Terraform from Codebox, the code you copy or download hides `fsxadmin` and `vsadmin` passwords. You'll need to re-enter the passwords when you run the code. You'll need to include the following permissions for the user account in addition to _Automate_ mode permissions: `iam:TagRole` and `iam:TagInstanceProfile`. link:admin/use-codebox.html#use-terraform-from-codebox[Learn how to use Terraform from Codebox^].
+NOTE: When using Terraform from Codebox, the code you copy or download hides `fsxadmin` and `vsadmin` passwords. You'll need to re-enter the passwords when you run the code. You'll need to include the following permissions for the user account in addition to _Automate_ mode permissions: `iam:TagRole` and `iam:TagInstanceProfile`. link:use-codebox.html#use-terraform-from-codebox[Learn how to use Terraform from Codebox^].
 
 [role="tabbed-block"]
 ====

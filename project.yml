@@ -305,6 +305,10 @@ sidebar:
           url: /gcnv/learn-netapp-volumes-gcnv.html
         - title: Quick start for Google Cloud NetApp Volumes
           url: /gcnv/quick-start-gcnv.html
+        - title: Set up Google Cloud NetApp Volumes
+          url: /gcnv/set-up-gcnv.html
+        - title: Assign Google Cloud NetApp Volumes roles
+          url: /gcnv/add-roles-gcnv.html
         - title: Add Google Cloud NetApp Volumes credentials
           url: /gcnv/add-credentials-gcnv.html
         - title: Configuration analysis for Google Cloud NetApp Volumes
@@ -327,8 +331,6 @@ sidebar:
           url: /oci/permissions-oci.html
     - title: Administer Workload Factory
       entries:
-        - title: Manage service accounts
-          url: /admin/manage-service-accounts.html
         - title: Build and operate well-architected workloads
           url: /admin/well-architected-workloads.html  
         - title: Configure notifications
@@ -337,7 +339,7 @@ sidebar:
           url: /admin/monitor-operations.html
         - title: Manage links
           url: /admin/manage-links.html     
-        - title: Manage AI features
+        - title: Manage AI features for FSx for ONTAP
           url: /admin/manage-genai-features.html
         - title: Custom dashboards for FSx for ONTAP
           entries:

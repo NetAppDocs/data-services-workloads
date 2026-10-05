@@ -21,11 +21,11 @@ Key capabilities include:
 == Analysis requirements
 For a complete storage pool analysis, you must do the following: 
 
-* link:https://docs.netapp.com/us-en/storage-management-google-cloud-netapp-volumes/task-create-system.html[Add your Google Cloud NetApp Volumes system to NetApp Console^].
+* link:create-discover-systems-gcnv.html[Add your Google Cloud NetApp Volumes system to NetApp Console^].
 
 * Grant _view, planning, and analysis_ permissions in your Google Cloud account. 
 +
-link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html[Learn how to grant permissions to a Google Cloud account^]
+link:add-credentials-gcnv.html[Learn how to grant permissions to a Google Cloud account^]
 
 == Best practices and recommendations for storage workloads
 

@@ -59,7 +59,7 @@ Explore savings via customization: You provide the configuration settings for Mi
 
 Explore savings for detected hosts: Workload Factory links to your existing Microsoft SQL servers and pulls in the details to the calculator for automatic comparison. You'll need to grant _view, planning, and analysis_ permissions to use this calculator option. You can change the use case, but all other details are automatically determined in the calculation.
 
-Additionally, you can link:fsx-storage/add-credentials-fsx.html[add AWS credentials^] to improve the accuracy of the calculator analysis. Select *Calculate savings based on existing resources*. You'll be redirected to the Add credentials page. After you add credentials, select the existing resources to compare with FSx for ONTAP, and select *Explore savings*.
+Additionally, you can link:add-credentials-fsx.html[add AWS credentials^] to improve the accuracy of the calculator analysis. Select *Calculate savings based on existing resources*. You'll be redirected to the Add credentials page. After you add credentials, select the existing resources to compare with FSx for ONTAP, and select *Explore savings*.
 
 === Explore savings via customization
 Customize the fields in the calculator to get the most accurate savings estimate. 
@@ -173,7 +173,7 @@ Workload Factory enters the detected host characteristics so that you can explor
 .Before you begin
 Complete the following prerequisites before you begin: 
 
-* link:fsx-storage/add-credentials-fsx.html[Grant _view, planning, and analysis_ permissions^] in your AWS account to detect Elastic Block Store (EBS) and FSx for Windows systems under the *Explore savings* tab and to show the savings calculation in the savings calculator. 
+* link:add-credentials-fsx.html[Grant _view, planning, and analysis_ permissions^] in your AWS account to detect Elastic Block Store (EBS) and FSx for Windows systems under the *Explore savings* tab and to show the savings calculation in the savings calculator. 
 * To get instance type recommendations and improve cost accuracy, do the following: 
 . Grant Amazon CloudWatch and AWS Compute Optimizer permissions.
 .. Sign in to the AWS Management Console and open the IAM service.
@@ -388,4 +388,4 @@ Without permissions, you can copy the content from the Codebox window and deploy
 
 .Related information
 
-link:fsx-storage/permissions-fsx.html[Workload Factory FSx for ONTAP permissions reference^]
+link:permissions-fsx.html[Workload Factory FSx for ONTAP permissions reference^]

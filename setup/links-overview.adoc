@@ -61,5 +61,5 @@ The features that require a link include:
 == Related information
 Learn how to create and associate links for:
 
-* link:fsx-storage/create-link-fsx.html[Amazon FSx for NetApp ONTAP]
-* link:oci/create-link-oci.html[OCI NetApp Storage Service]
+* link:create-link-fsx.html[Amazon FSx for NetApp ONTAP]
+* link:create-link-oci.html[OCI NetApp Storage Service]
