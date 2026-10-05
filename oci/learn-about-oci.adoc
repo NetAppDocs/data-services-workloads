@@ -1,8 +1,7 @@
 ---
 sidebar: sidebar
 permalink: oci/learn-about-oci.html
-keywords: Oracle Cloud Infrastructure NetApp Storage Service
-Oracle Cloud Infrastructure NetApp Storage Service, OCI NetApp Storage Service, Oracle Cloud storage, storage, oci nss
+keywords: Oracle Cloud Infrastructure NetApp Storage Service, OCI NetApp Storage Service, Oracle Cloud storage, storage, oci nss
 summary: "OCI NetApp Storage Service is a fully managed service allowing customers to create and manage storage pools as the storage backend for your workloads within Workload Factory." 
 ---
 = Learn about OCI NetApp Storage Service in NetApp Workload Factory
