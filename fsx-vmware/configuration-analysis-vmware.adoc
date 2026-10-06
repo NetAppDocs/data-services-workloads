@@ -55,4 +55,4 @@ Ensure that your EVS cluster nodes have appropriate EC2 stop and termination pro
 
 .What's next
 
-link:view-evs-well-architected-vmware.html[Implement well-architected configurations]
+link:view-evs-well-architected.html[Implement well-architected configurations]

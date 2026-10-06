@@ -23,7 +23,7 @@ Edit the S3 access points for a volume in NetApp Workload Factory.
 . From the *Manage S3 access points* screen, select the actions menu and then select *Edit access point*.
 . Make updates and then select *Apply*. 
 +
-To set up the infrastructure for the journal table feature, you must select *Internet* as the network configuration for the S3 access point. link:setup-journal-table-fsx.html[Learn how to set up the Journal table infrastructure for NetApp Workload Factory].
+To set up the infrastructure for the journal table feature, you must select *Internet* as the network configuration for the S3 access point. link:setup-journal-table.html[Learn how to set up the Journal table infrastructure for NetApp Workload Factory].
 
 == View S3 access point details for a volume
 View S3 access point details like the alias, ARN, and S3 URI. With inventory and journal tables enabled, you can view metadata and audit logs of user access events and object operations across S3 access points.
@@ -59,4 +59,4 @@ Workload Factory doesn't delete the inventory or journal table, but you can remo
 
 .Related information
 
-* link:setup-journal-table-fsx.html[Set up the journal table infrastructure] 
+* link:setup-journal-table.html[Set up the journal table infrastructure] 

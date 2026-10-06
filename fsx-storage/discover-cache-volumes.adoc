@@ -21,7 +21,7 @@ A cache relationship can exist between volumes on two ONTAP systems such as one 
 .Before you begin
 Consider the following before you begin. 
 
-* You must associate a link to discover cache relationships on a file system. link:create-link-fsx.html[Learn how to associate an existing link or to create and associate a new link^]. After the link associates, return to this operation.
+* You must associate a link to discover cache relationships on a file system. link:create-link.html[Learn how to associate an existing link or to create and associate a new link^]. After the link associates, return to this operation.
 * You must have an existing cache relationship.
 
 .Steps
@@ -44,4 +44,4 @@ Consider the following before you begin.
 
 .Related information
 
-link:manage-cache-volumes-fsx.html[Manage cache volumes^]
+link:manage-cache-volumes.html[Manage cache volumes^]

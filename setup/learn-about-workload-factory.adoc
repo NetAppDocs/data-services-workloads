@@ -102,7 +102,7 @@ link:../admin/codebox-automation.html[Learn more about Codebox]
 
 //* link:../fsx-storage/explore-savings.html[Learn how to explore savings for your storage environments^]
 //* link:../fsx-databases/explore-savings-databases.html[Learn how to explore savings for your database workloads^]
-//* link:../fsx-vmware/calculate-evs-savings-vmware.html[Learn how to explore savings for your VMware workloads^]
+//* link:../fsx-vmware/calculate-evs-savings.html[Learn how to explore savings for your VMware workloads^]
 
 === Well-architected workloads
 

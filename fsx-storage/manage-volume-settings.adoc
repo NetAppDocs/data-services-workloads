@@ -44,7 +44,7 @@ Volumes use thin provisioning whether you enable or disable storage efficiency.
 == Manage immutable files for a volume in NetApp Workload Factory
 You can update certain immutable files settings for a volume when the feature is enabled, such as the retention policy and periods, the autocommit period, and volume append mode.
 
-Note that enabling immutable files is only possible during link:create-volume-fsx.html[volume creation].
+Note that enabling immutable files is only possible during link:create-volume.html[volume creation].
 
 .Steps
 . Log in to the link:https://console.netapp.com[NetApp Console^].
@@ -64,7 +64,7 @@ Note that enabling immutable files is only possible during link:create-volume-fs
 . Click *Apply*. 
 
 == Related information
-* link:create-volume-fsx.html[Create a volume in Workload Factory]
-* link:manage-volume-capacity-fsx.html[Manage volume capacity in Workload Factory]
-* link:change-tiering-policy-fsx.html[Change volume tiering policy in Workload Factory]
-* link:manage-s3-access-points-fsx.html[Manage S3 access points in Workload Factory]
+* link:create-volume.html[Create a volume in Workload Factory]
+* link:manage-volume-capacity.html[Manage volume capacity in Workload Factory]
+* link:change-tiering-policy.html[Change volume tiering policy in Workload Factory]
+* link:manage-s3-access-points.html[Manage S3 access points in Workload Factory]

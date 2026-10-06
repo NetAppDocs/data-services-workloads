@@ -197,8 +197,6 @@ sidebar:
                       url: /fsx-databases/optimize-overview.html  
                     - title: Implement well-architected database configurations   
                       url: /fsx-databases/optimize-configurations.html  
-                - title: Monitor database jobs
-                  url: /fsx-databases/monitor-databases-fsx.html                          
                 - title: Protect SQL Server database resources
                   url: /fsx-databases/protect-sql-server.html
         - title: Use FSx for ONTAP for EDA workloads
@@ -208,7 +206,7 @@ sidebar:
              - title: Quick start
                url: /fsx-eda/quick-start-eda.html
              - title: Requirements
-               url: /fsx-eda/requirements-eda.html
+               url: /fsx-eda/requirements.html
              - title: EDA storage overview
                entries:
                  - title: Learn about the Overview dashboard
@@ -288,7 +286,7 @@ sidebar:
                 - title: Optimize VMware workloads on FSx for ONTAP
                   entries:
                     - title: Configuration analysis for EVS configurations
-                      url: /fsx-vmware/configuration-analysis.html
+                      url: /fsx-vmware/configuration-analysis-vmware.html
                     - title: Implement well-architected EVS configurations
                       url: /fsx-vmware/view-evs-well-architected.html
         - title: Reference

@@ -17,7 +17,7 @@ Turn on volume autogrow to let Workload Factory manage volume capacity for you. 
 NOTE: Volume autogrow isn't supported for iSCSI volumes. 
 
 .Before you begin
-To enable volume autogrow, you must associate a link. link:create-link-fsx.html[Learn how to associate an existing link or to create and associate a new link^]. After the link associates, return to this operation. 
+To enable volume autogrow, you must associate a link. link:create-link.html[Learn how to associate an existing link or to create and associate a new link^]. After the link associates, return to this operation. 
 
 .Steps
 . Log in to the link:https://console.netapp.com[NetApp Console^].
@@ -51,7 +51,7 @@ For an iSCSI LUN, increasing the size of the volume also increases the size of t
 Decreasing volume size is supported only for NFS and SMB/CIFS volumes. 
 
 .Before you begin
-To adjust volume capacity, you must associate a link. link:create-link-fsx.html[Learn how to associate an existing link or to create and associate a new link^]. After the link associates, return to this operation.
+To adjust volume capacity, you must associate a link. link:create-link.html[Learn how to associate an existing link or to create and associate a new link^]. After the link associates, return to this operation.
 
 .Steps
 . Log in to the link:https://console.netapp.com[NetApp Console^].
@@ -87,7 +87,7 @@ Check the balance of FlexVol or FlexGroup volumes in an FSx for ONTAP file syste
 
 .Before you begin
 * FlexGroup volume balance is available only for FSx for ONTAP file systems using a scale-out deployment with at least two HA pairs.
-* To check the balance of a volume, you must link:create-link-fsx.html[create and associate a link or associate an existing link to the file system^]. After the link associates, return to this operation.  
+* To check the balance of a volume, you must link:create-link.html[create and associate a link or associate an existing link to the file system^]. After the link associates, return to this operation.  
 
 .Steps
 . Log in to the link:https://console.netapp.com[NetApp Console^].
@@ -109,7 +109,7 @@ NOTE: A Workload Factory admin can <<Stop a volume rebalance operation,stop reba
 
 .Before you begin
 * <<Check the balance of your volumes,Check the balance of a volume>> before rebalancing volumes.
-* To rebalance a volume, you must link:create-link-fsx.html[create and associate a link or associate an existing link to the file system^]. After the link associates, return to this operation.
+* To rebalance a volume, you must link:create-link.html[create and associate a link or associate an existing link to the file system^]. After the link associates, return to this operation.
 * Note that existing snapshots on volumes you rebalance become partial and cannot be used to restore volume data, but new snapshots taken after rebalancing can be used to restore volume data. 
 * FlexVol volumes are best rebalanced altogether to balance all volume resources evenly. Deselected volumes don't actively participate in the balancing procedure.
 

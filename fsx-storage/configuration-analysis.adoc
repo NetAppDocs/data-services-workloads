@@ -27,7 +27,7 @@ After the daily analysis completes, configurations appear as "optimized" or "not
 
 You can dismiss the analysis of configurations that do not apply to your environments. This avoids unnecessary alerts and inaccurate optimization results. 
 
-You can also create custom rules in plain language to validate your environments against your organization's standards and NetApp best practices. Test rules with a dry run, then schedule them to run across your environments. link:learn-custom-rules-fsx.html[Learn more about custom rules^].
+You can also create custom rules in plain language to validate your environments against your organization's standards and NetApp best practices. Test rules with a dry run, then schedule them to run across your environments. link:learn-custom-rules.html[Learn more about custom rules^].
 
 == Why it matters
 
@@ -38,10 +38,10 @@ For a complete file system analysis, you must do the following:
 
 * Associate a link. Link connectivity lets Workload Factory analyze all file system configurations like data protection and performance.
 +
-link:create-link-fsx.html[Learn how to associate an existing link or to create and associate a new link^]. 
+link:create-link.html[Learn how to associate an existing link or to create and associate a new link^]. 
 * Grant _view, planning, and analysis_ permissions in your AWS account. 
 +
-link:add-credentials-fsx.html[Learn how to grant permissions to an AWS account^].
+link:add-credentials.html[Learn how to grant permissions to an AWS account^].
 
 == Best practices and recommendations for storage workloads
 
@@ -170,4 +170,4 @@ Rebalance your FlexVol volumes to improve efficiency. After scaling out, capacit
 
 .What's next
 
-link:improve-configurations-fsx.html[Implement well-architected file system configurations]
+link:improve-configurations.html[Implement well-architected file system configurations]

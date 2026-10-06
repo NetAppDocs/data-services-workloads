@@ -66,6 +66,6 @@ Workload Factory determines if you have enough capacity for the restore and can 
 +
 When file system capacity is limited, the following might occur: 
 
-* The restore can push used capacity over the threshold you specified. You can complete the restore operation. Consider link:adjust-file-system-capacity-fsx.html[manually adding SSD storage tier capacity] or selecting for Workload Factory to automatically add SSD storage tier capacity.
+* The restore can push used capacity over the threshold you specified. You can complete the restore operation. Consider link:adjust-file-system-capacity.html[manually adding SSD storage tier capacity] or selecting for Workload Factory to automatically add SSD storage tier capacity.
 * The restore requires additional SSD capacity. You must select for Workload Factory to automatically add SSD storage tier capacity to proceed.
 . Select *Restore*. 

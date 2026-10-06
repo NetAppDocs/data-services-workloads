@@ -56,9 +56,9 @@ The {uuid} is a random 8-character identifier generated when the template is cre
 == Before you begin
 To enable the Journal table feature, complete these steps: 
 
-* Have an existing volume with an S3 access point. link:create-volume-fsx.html[Create a volume with an S3 access point]
-* Set network configuration to *Internet* for the S3 access point. link:manage-s3-access-points-fsx.html[Edit network configuration for the S3 access point].
-* link:add-credentials-fsx.html[Grant the _operations and remediation_ permissions^] to your Workload Factory credentials.
+* Have an existing volume with an S3 access point. link:create-volume.html[Create a volume with an S3 access point]
+* Set network configuration to *Internet* for the S3 access point. link:manage-s3-access-points.html[Edit network configuration for the S3 access point].
+* link:add-credentials.html[Grant the _operations and remediation_ permissions^] to your Workload Factory credentials.
 * Add the following IAM policy permissions to the AWS account you use to run the CloudFormation deployment to set up the Journal table.
 +
 .IAM policy permissions for Journal table setup

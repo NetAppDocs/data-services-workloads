@@ -26,7 +26,7 @@ Latency monitoring uses the following default parameters:
 
 An alert is generated when the latency threshold is exceeded and the IOPS threshold is met over the specified time range.
 
-NOTE: You can view latency events and receive alerts without a link connection. However, to analyze events and receive AI-powered insights and recommendations, you must link:create-link-fsx.html[connect to the file system using a link^].
+NOTE: You can view latency events and receive alerts without a link connection. However, to analyze events and receive AI-powered insights and recommendations, you must link:create-link.html[connect to the file system using a link^].
 
 .Steps
 . Log in to the link:https://console.netapp.com[NetApp Console^].
@@ -39,9 +39,9 @@ NOTE: You can view latency events and receive alerts without a link connection. 
 . Select *Save* to apply the latency thresholds.
 
 .Result
-Workload Factory monitors the volume and generates alerts when read or write latency exceeds the configured thresholds. You can view latency events from the link:analyze-events-fsx.html[Analysis screen].
+Workload Factory monitors the volume and generates alerts when read or write latency exceeds the configured thresholds. You can view latency events from the link:analyze-events.html[Analysis screen].
 
 .Related information
 
-* link:analyze-events-fsx.html[Analyze FSx for ONTAP events in NetApp Workload Factory]
-* link:manage-volume-capacity-fsx.html[Adjust volume capacity in Workload Factory]
+* link:analyze-events.html[Analyze FSx for ONTAP events in NetApp Workload Factory]
+* link:manage-volume-capacity.html[Adjust volume capacity in Workload Factory]

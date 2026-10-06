@@ -30,7 +30,7 @@ The costs shown in the Workload Factory console in the Cost dashboard are based 
 .Before you begin
 Ensure that you meet the following requirements: 
 
-* You must link:add-credentials-fsx.html[grant credentials with the _view, planning, and analysis_ permission policy^] in Workload Factory to track FSx for ONTAP costs.
+* You must link:add-credentials.html[grant credentials with the _view, planning, and analysis_ permission policy^] in Workload Factory to track FSx for ONTAP costs.
 * To filter by AWS allocation tags, ensure that your FSx for ONTAP file systems have tags assigned to them.
 
 .Steps
