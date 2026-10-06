@@ -314,7 +314,7 @@ sidebar:
     - title: OCI NetApp Storage Service
       entries:
         - title: Learn about OCI NetApp Storage Service
-          url: /oci/learn-about.html
+          url: /oci/learn-about-oci.html
         - title: Quick start for OCI NetApp Storage Service
           url: /oci/quick-start-oci.html  
         - title: Add OCI credentials
@@ -324,7 +324,7 @@ sidebar:
         - title: Connect to an OCI Storage system 
           url: /oci/create-link.html
         - title: Permissions reference for OCI NetApp Storage Service
-          url: /oci/permissions.html
+          url: /oci/permissions-oci.html
     - title: Administer Workload Factory
       entries:
         - title: Build and operate well-architected workloads
