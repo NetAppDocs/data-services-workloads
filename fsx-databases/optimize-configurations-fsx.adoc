@@ -24,7 +24,7 @@ You can review and fix issues from the Databases inventory or the Well-architect
 
 Optionally, you can perform a one-time assessment to review best practices for your database configurations without storing credentials or registering resources. 
 
-You can also create custom rules in plain language to validate your environments against your organization's standards and NetApp best practices. Test rules with a dry run, then schedule them to run across your environments. link:../admin/learn-custom-rules-fsx.html[Learn more about custom rules.^]
+You can also create custom rules in plain language to validate your environments against your organization's standards and NetApp best practices. Test rules with a dry run, then schedule them to run across your environments. link:../fsx-storage/learn-custom-rules-fsx.html[Learn more about custom rules.^]
 
 .What is analyzed
 Workload Factory analyzes the well-architected status of the following configurations: 
@@ -176,4 +176,4 @@ Workload Factory reactivates the configuration analysis and runs it every day fr
 
 * link:optimize-overview-fsx.html[Learn about the configuration analysis for database resources and well-architected status in Workload Factory]
 * link:../fsx-storage/create-link-fsx.html[Connect to an FSx for ONTAP file system using a link^]
-* link:../admin/learn-custom-rules-fsx.html[Learn about custom rules^]
+* link:../fsx-storage/learn-custom-rules-fsx.html[Learn about custom rules^]

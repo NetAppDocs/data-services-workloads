@@ -102,11 +102,11 @@ sidebar:
                 - title: Custom rules
                   entries: 
                     - title: Learn about custom rules
-                      url: /fsx-storage/learn-custom-rules.html
+                      url: /fsx-storage/learn-custom-rules-fsx.html
                     - title: Create a custom rule
-                      url: /fsx-storage/create-custom-rule.html
+                      url: /fsx-storage/create-custom-rule-fsx.html
                     - title: Manage custom rules
-                      url: /fsx-storage/manage-custom-rules.html                  
+                      url: /fsx-storage/manage-custom-rules-fsx.html                  
             - title: Track and analyze FSx for ONTAP costs
               url: /fsx-storage/track-costs-fsx.html           
             - title: Manage volumes
@@ -174,19 +174,19 @@ sidebar:
                 - title: Create PostgreSQL server
                   url: /fsx-databases/create-postgresql-server-fsx.html  
                 - title: Create a database
-                  url: /fsx-databases/create-sql-database.html 
+                  url: /fsx-databases/create-sql-database-fsx.html 
                 - title: Create a sandbox clone 
-                  url: /fsx-databases/create-sandbox-clone.html                   
+                  url: /fsx-databases/create-sandbox-clone-fsx.html                   
             - title: Manage resources
               entries: 
                 - title: Resource management
                   url: /fsx-databases/manage-resources-fsx.html
                 - title: Register resources
-                  url: /fsx-databases/register-instance.html
+                  url: /fsx-databases/register-instance-fsx.html
                 - title: Manage database clones
                   url: /fsx-databases/manage-clones-fsx.html                               
                 - title: Deregister resources
-                  url: /fsx-databases/deregister-instance.html                                               
+                  url: /fsx-databases/deregister-instance-fsx.html                                               
             - title: Protect, monitor, and optimize database resources
               entries:
                 - title: Analyze error logs
@@ -194,11 +194,11 @@ sidebar:
                 - title: Implement configuration best practices
                   entries: 
                     - title: Configuration analysis for Databases
-                      url: /fsx-databases/optimize-overview.html  
+                      url: /fsx-databases/optimize-overview-fsx.html  
                     - title: Implement well-architected database configurations   
-                      url: /fsx-databases/optimize-configurations.html  
+                      url: /fsx-databases/optimize-configurations-fsx.html  
                 - title: Monitor database jobs
-                  url: /fsx-databases/monitor-databases.html                          
+                  url: /fsx-databases/monitor-databases-fsx.html                          
                 - title: Protect SQL Server database resources
                   url: /fsx-databases/protect-sql-server-fsx.html
         - title: Use FSx for ONTAP for EDA workloads
