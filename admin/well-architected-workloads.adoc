@@ -71,4 +71,4 @@ Implement well-architected workloads on FSx for ONTAP:
 
 Implement well-architected workloads on Google Cloud NetApp Volumes: 
 
-link:../gcnv/improve-configurations-gcnv.html[Implement well-architected NetApp Volumes configurations]
+link:../gcnv/improve-configurations.html[Implement well-architected NetApp Volumes configurations]

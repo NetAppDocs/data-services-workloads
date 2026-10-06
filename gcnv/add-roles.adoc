@@ -37,4 +37,4 @@ OR
 
 .What's next?
 
-link:create-discover-systems-gcnv.html[Add a Google Cloud NetApp Volumes system].
+link:create-discover-systems.html[Add a Google Cloud NetApp Volumes system].

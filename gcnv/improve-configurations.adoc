@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: gcnv/improve-configurations-gcnv.html
+permalink: gcnv/improve-configurations.html
 keywords: improve configurations, optimize configurations, implement best practices, well-architected storage pool, Google Cloud NetApp Volumes, GCNV
 summary: "Workload factory scans Google Cloud NetApp Volumes configurations providing insights and recommendations to help you achieve operational excellence." 
 ---
@@ -11,7 +11,7 @@ summary: "Workload factory scans Google Cloud NetApp Volumes configurations prov
 [.lead]
 Using configuration analysis insights and recommendations, leverage NetApp to implement best practices for your Google Cloud NetApp Volumes storage pools running on Google Cloud storage. You can easily review the well-architected status, learn about issues with your configurations, and get recommendations to improve the architecture of any storage pools that aren't optimized for reliability, security, performance, and cost.
 
-link:configuration-analysis-gcnv.html[Learn about the configuration analysis and well-architected status.]
+link:configuration-analysis.html[Learn about the configuration analysis and well-architected status.]
 
 == About this task
 NetApp analyzes Google Cloud NetApp Volumes storage pool deployments in Google Cloud daily. The daily analysis provides the well-architected status, and insights and recommendations to help you understand configuration issues so that your storage pools meet best practices. 

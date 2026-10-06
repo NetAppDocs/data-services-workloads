@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: gcnv/configuration-analysis-gcnv.html
+permalink: gcnv/configuration-analysis.html
 keywords: configuration issues, issues, improve, analyze, storage configuration, recommendation, recommendations
 summary: "NetApp Console analyzes storage system configurations regularly to determine if there are any configuration issues."  
 ---
@@ -21,11 +21,11 @@ Key capabilities include:
 == Analysis requirements
 For a complete storage pool analysis, you must do the following: 
 
-* link:create-discover-systems-gcnv.html[Add your Google Cloud NetApp Volumes system to NetApp Console^].
+* link:create-discover-systems.html[Add your Google Cloud NetApp Volumes system to NetApp Console^].
 
 * Grant _view, planning, and analysis_ permissions in your Google Cloud account. 
 +
-link:add-credentials-gcnv.html[Learn how to grant permissions to a Google Cloud account^]
+link:add-credentials.html[Learn how to grant permissions to a Google Cloud account^]
 
 == Best practices and recommendations for storage workloads
 
@@ -53,4 +53,4 @@ Workload Factory recommends keeping volume usage under 80% to reduce the risk of
 
 .What's next
 
-link:improve-configurations-gcnv.html[Implement well-architected Google Cloud NetApp Volumes configurations]
+link:improve-configurations.html[Implement well-architected Google Cloud NetApp Volumes configurations]

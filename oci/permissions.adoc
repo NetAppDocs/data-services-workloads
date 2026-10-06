@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: oci/permissions-oci.html
+permalink: oci/permissions.html
 keywords: Oracle Cloud Infrastructure NetApp Storage Service,oci nss, permissions, actions
 summary: "To use NetApp Workload Factory features and services, you'll need to provide permissions so that Workload Factory can perform operations in your cloud environment." 
 ---

@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar
-permalink: gcnv/create-discover-systems-gcnv.html
-keywords: Google Cloud NetApp Volumes, gcnv, volumes, create system, delete system, access key, secret key, region, availability zones, discover, storage capacity, iops, throughput, security group, security, NetApp Console
+permalink: oci/create-discover-systems.html
+keywords: Amazon FSx for NetApp ONTAP, fsx, volumes, create system, delete system, access key, secret key, region, availability zones, discover, storage capacity, iops, throughput, security group, security, NetApp Console, Oracle Cloud Infrastructure NetApp Storage Service
 summary: "Create or discover cloud storage systems to add and manage volumes and additional data services from the NetApp Console."
 ---
-= Create or discover Google Cloud NetApp Volumes systems in NetApp Console
+= Create or discover Oracle Cloud Infrastructure NetApp Storage Service systems in NetApp Console
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -12,13 +12,13 @@ summary: "Create or discover cloud storage systems to add and manage volumes and
 :imagesdir: ../media/
 
 [.lead]
-Discover Google Cloud NetApp Volumes systems and manage volumes and additional data services from the NetApp Console.
+Discover Oracle Cloud Infrastructure NetApp Storage Service (OCI NSS) systems and manage volumes and additional data services from the NetApp Console.
 
 == Discover an existing cloud storage system 
 Discover your storage systems from the Discoverable systems page. 
 
 .Before you begin
-Provide your credentials for your Google Cloud NetApp Volumes in Workload Factory. 
+Provide your credentials for your OCI NSS environment in Workload Factory. 
 
 .About this task
 You can discover a cloud storage system only once within an account and attach it to one workspace. The storage system can later be removed and re-associated to a different workspace.
@@ -36,6 +36,7 @@ You can discover a cloud storage system only once within an account and attach i
 * If you select an un-named storage system, you will receive a prompt to enter a name for the system.
 
 * If you select a storage system that doesn't have the credentials required to manage it from the Console, you'll receive a prompt to select credentials with the required permissions. 
+
 ===============================
 
 .Result

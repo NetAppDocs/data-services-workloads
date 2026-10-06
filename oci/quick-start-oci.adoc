@@ -16,11 +16,11 @@ Follow these steps to get started.
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Add credentials and permissions
 
 [role="quick-margin-para"]
-link:add-credentials-oci.html[Add credentials to an account]. This includes selecting workload capabilities and creating the IAM policies for the required permissions.
+link:add-credentials.html[Add credentials to an account]. This includes selecting workload capabilities and creating the IAM policies for the required permissions.
 
 [role="quick-margin-para"]
 
-Select the default link:permissions-oci.html[view, planning, and analysis] permission policy. 
+Select the default link:permissions.html[view, planning, and analysis] permission policy. 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Create a link
 
@@ -29,14 +29,14 @@ This step is optional. To perform some management tasks from the NetApp Console,
 
 [role="quick-margin-list"]
 * link:../setup/links-overview.html[Learn when a Console agent or link is required for OCI NSS management]
-* link:create-link-oci.html[Learn how to create a link^]
+* link:create-link.html[Learn how to create a link^]
 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Discover or add an OCI NetApp Storage Service system
 
 [role="quick-margin-para"]
 
-You'll discover a storage pool to begin managing your OCI NSS resources in Workload Factory. In the link:https://console.netapp.com[NetApp Console^], select *Storage*, then *Management*, and then *Discoverable systems*. link:create-discover-systems-oci.html[Learn how to discover an OCI NSS storage system]. 
+You'll discover a storage pool to begin managing your OCI NSS resources in Workload Factory. In the link:https://console.netapp.com[NetApp Console^], select *Storage*, then *Management*, and then *Discoverable systems*. link:create-discover-systems.html[Learn how to discover an OCI NSS storage system]. 
 
 .What's next
 With a storage pool in your Storage inventory, you can begin managing your OCI NSS resources.

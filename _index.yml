@@ -19,7 +19,7 @@ indexpage:
         - title: Permissions for Amazon FSx for NetApp ONTAP
           url: /fsx-storage/permissions.html  
         - title: Permissions for OCI NetApp Storage Service
-          url: /oci/permissions-oci.html  
+          url: /oci/permissions.html  
     - title: Use Workload Factory for your cloud provider
       links:
         - title: Amazon FSx for NetApp ONTAP
@@ -27,7 +27,7 @@ indexpage:
         - title: Google Cloud NetApp Volumes
           url: /gcnv/learn-netapp-volumes.html
         - title: OCI NetApp Storage Service
-          url: /oci/learn-about-oci.html
+          url: /oci/learn-about.html
     - title: Administer Workload Factory
       links:
         - title: Configure notifications
@@ -43,7 +43,7 @@ indexpage:
         - title: Implement well-architected FSx for ONTAP workloads
           url: /fsx-storage/improve-configurations.html
         - title: Implement well-architected Google Cloud NetApp Volumes workloads
-          url: /gcnv/improve-configurations-gcnv.html
+          url: /gcnv/improve-configurations.html
     - title: Knowledge and support
       links:
         - title: Register for support
