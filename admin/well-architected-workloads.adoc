@@ -17,7 +17,7 @@ include::_include/well-architected-workloads.adoc[]
 
 To get started with Workload Factory, sign up, add credentials, and establish connectivity to manage AWS resources and optimize workloads using Amazon FSx for NetApp ONTAP.
 
-link:fsx-storage/quick-start-fsx.html[Quick start]
+link:../fsx-storage/quick-start-fsx.html[Quick start]
 ////
 
 == Use custom rules to enforce your architecture standards 
@@ -65,10 +65,10 @@ link:https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/task-i
 
 Implement well-architected workloads on FSx for ONTAP:
 
-* link:improve-configurations-fsx.html[Implement well-architected FSx for ONTAP file systems] 
-* link:optimize-configurations-fsx.html[Implement well-architected database workloads]
-* link:view-evs-well-architected-vmware.html[Implement well-architected EVS configurations]
+* link:../fsx-storage/improve-configurations-fsx.html[Implement well-architected FSx for ONTAP file systems] 
+* link:../fsx-databases/optimize-configurations-fsx.html[Implement well-architected database workloads]
+* link:../fsx-vmware/view-evs-well-architected-vmware.html[Implement well-architected EVS configurations]
 
 Implement well-architected workloads on Google Cloud NetApp Volumes: 
 
-link:improve-configurations-gcnv.html[Implement well-architected NetApp Volumes configurations]
+link:../gcnv/improve-configurations-gcnv.html[Implement well-architected NetApp Volumes configurations]
