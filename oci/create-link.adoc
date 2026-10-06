@@ -25,12 +25,22 @@ This stack runs in your tenancy with your OCI user. It is not the cross-tenancy 
 
 === What Terraform creates
 
-| Resource | Example name |
-| --- | --- |
-| Functions application | `netapp-wf-app-<suffix>` |
-| Function | `netapp-wf-function-<suffix>` |
-| Log group + Functions invoke log | `netapp-wf-link-logs-<suffix>` |
-| Dynamic group + vault-read policy | Only if you enable **Local OCI Vault Authentication** (`netapp-functions-dg`, shared in the tenancy) |
+[cols="1,1",options="header"]
+|===
+| Resource | Example name
+
+| Functions application
+| `netapp-wf-app-<suffix>`
+
+| Function
+| `netapp-wf-function-<suffix>`
+
+| Log group + Functions invoke log
+| `netapp-wf-link-logs-<suffix>`
+
+| Dynamic group + vault-read policy
+| Only if you enable *Local OCI Vault Authentication* (`netapp-functions-dg`, shared in the tenancy)
+|===
 
 == Create a new link
 You can create a link in your account when defining an OCI NSS system. You use the link for that storage system, and you can use it for other OCI NSS systems. You can also associate a link for a storage system later. 
