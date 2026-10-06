@@ -11,7 +11,7 @@ summary: "You can view links associated with your account, update passwords for 
 [.lead]
 Manage links that you've associated with your Workload Factory account. You can view links that are associated with an FSx for ONTAP file system or an OCI NetApp Storage Service (OCI NSS) system, provide passwords used for link authentication, and remove links from NetApp Console.
 
-link:links-overview.html[Learn more about links.]
+link:setup/links-overview.html[Learn more about links.]
 
 == View the links associated with your account
 You can view the links that are currently associated with your account.
@@ -107,7 +107,7 @@ When the administrative password is invalid, update the password to connect the 
 ====
 
 .Result
-The password is updated, and the link is now connected to the FSx for ONTAP file system.
+The password is updated, and the link is now connected to the storage system.
 
 == Remove a link
 You can remove a link that you're no longer using in your environment. Any storage systems or other resources that were using the link will be unable to use certain functionality after the link is removed.
@@ -128,8 +128,6 @@ Note that the link is only deleted from Workload Factory - it is not deleted fro
 +
 Existing links appear on the Links page.
 . From the Links page, select the actions menu of the link to remove and then select *Remove*.
-+
-image:screenshot-remove-link.png["A screenshot showing how to remove a link from Workload Factory."]
 . If you are sure, select *Remove* again.
 
 Refer to the AWS documentation to link:https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-awscli.html#with-userapp-walkthrough-custom-events-delete-function[delete the Lambda function].

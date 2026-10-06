@@ -97,7 +97,7 @@ Termination behavior may vary by feature. See the feature-specific documentation
 
 == Related information
 
-* link:workload-factory-overview.html[Learn about Workload Factory features]
-* link:learn-custom-dashboards.html[Learn about Custom dashboards]
-* link:add-credentials.html[Add AWS credentials]
-* link:permissions-reference.html[Permissions reference]
+* link:setup/learn-about-workload-factory.html[Learn about Workload Factory features]
+* link:learn-custom-dashboards-fsx.html[Learn about Custom dashboards]
+* link:fsx-storage/add-credentials-fsx.html[Add AWS credentials]
+* link:fsx-storage/permissions-fsx.html[Permissions reference]

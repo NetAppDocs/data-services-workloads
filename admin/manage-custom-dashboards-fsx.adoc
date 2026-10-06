@@ -97,5 +97,5 @@ The dashboard is permanently removed from your Workload Factory account, and all
 
 == Related information
 
-* link:create-custom-dashboard.html[Create additional custom dashboards]
-* link:troubleshoot-custom-dashboards.html[Troubleshoot custom dashboards]
+* link:create-custom-dashboard-fsx.html[Create additional custom dashboards]
+* link:troubleshoot-custom-dashboards-fsx.html[Troubleshoot custom dashboards]
