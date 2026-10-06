@@ -57,18 +57,12 @@ Disabled:: Rule is paused but not deleted. Can be re-enabled.
 Deleted:: Rule is permanently removed.
 ////
 
-== Related information
+.Related information
 
-Implement well-architected workloads on Cloud Volumes ONTAP in Microsoft Azure: 
-
-link:https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/task-improve-configurations-cvo.html[Implement well-architected Cloud Volumes ONTAP configurations^]
-
-Implement well-architected workloads on FSx for ONTAP:
+The following pages provide guidance on implementing well-architected configurations across different NetApp storage solutions:
 
 * link:../fsx-storage/improve-configurations.html[Implement well-architected FSx for ONTAP file systems] 
-* link:../fsx-databases/optimize-configurations.html[Implement well-architected database workloads]
+* link:../fsx-databases/optimize-configurations.html[Implement well-architected database configurations]
 * link:../fsx-vmware/view-evs-well-architected.html[Implement well-architected EVS configurations]
-
-Implement well-architected workloads on Google Cloud NetApp Volumes: 
-
-link:../gcnv/improve-configurations.html[Implement well-architected NetApp Volumes configurations]
+* link:../gcnv/improve-configurations.html[Implement well-architected NetApp Volumes configurations]
+* link:https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/task-improve-configurations-cvo.html[Implement well-architected Cloud Volumes ONTAP system configurations in Microsoft Azure^]
