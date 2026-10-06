@@ -314,7 +314,7 @@ sidebar:
     - title: OCI NetApp Storage Service
       entries:
         - title: Learn about OCI NetApp Storage Service
-          url: /oci/learn-about.html
+          url: /oci/learn-about-oci.html
         - title: Quick start for OCI NetApp Storage Service
           url: /oci/quick-start-oci.html  
         - title: Add OCI credentials
