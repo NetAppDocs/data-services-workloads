@@ -46,7 +46,7 @@ NOTE: On-demand execution of well-architected scans is not currently supported. 
 
 == Before you begin
 
-* You must have link:../fsx-storage/add-credentials-fsx.html[added AWS credentials^] with _View, planning, and analysis_ permissions for VMware workloads.
+* You must have link:../fsx-storage/add-credentials.html[added AWS credentials^] with _View, planning, and analysis_ permissions for VMware workloads.
 * You must have at least one discovered Amazon Elastic VMware Service environment in your AWS account.
 
 == Access the well-architected status tab

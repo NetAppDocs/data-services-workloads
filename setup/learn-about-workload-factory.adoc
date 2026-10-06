@@ -100,7 +100,7 @@ link:../admin/codebox-automation.html[Learn more about Codebox]
 
 //Workload Factory provides savings calculators so you can compare the costs of your storage environments, database, or VMware workloads on FSx for ONTAP file systems against other Amazon services. Depending on your storage requirements, you might find that FSx for ONTAP file systems are the most cost effective option for you.
 
-//* link:../fsx-storage/explore-savings-fsx.html[Learn how to explore savings for your storage environments^]
+//* link:../fsx-storage/explore-savings.html[Learn how to explore savings for your storage environments^]
 //* link:../fsx-databases/explore-savings-databases.html[Learn how to explore savings for your database workloads^]
 //* link:../fsx-vmware/calculate-evs-savings-vmware.html[Learn how to explore savings for your VMware workloads^]
 

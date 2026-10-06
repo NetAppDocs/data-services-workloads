@@ -65,7 +65,7 @@ link:https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/task-i
 
 Implement well-architected workloads on FSx for ONTAP:
 
-* link:../fsx-storage/improve-configurations-fsx.html[Implement well-architected FSx for ONTAP file systems] 
+* link:../fsx-storage/improve-configurations.html[Implement well-architected FSx for ONTAP file systems] 
 * link:../fsx-databases/optimize-configurations.html[Implement well-architected database workloads]
 * link:../fsx-vmware/view-evs-well-architected-vmware.html[Implement well-architected EVS configurations]
 

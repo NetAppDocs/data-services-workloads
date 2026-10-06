@@ -55,13 +55,13 @@ To create or view custom dashboards, you need the correct AWS IAM permissions fo
 
 To build dashboards, Workload Factory uses read-only AWS credentials. These credentials allow only read actions, such as `fsx:DescribeVolumes` and `fsx:DescribeFileSystems`, for the following services: EC2, FSx, CloudWatch, Resource Groups Tagging API, Backup, CloudWatch Logs, KMS, and EFS.
 
-link:../fsx-storage/add-credentials-fsx.html[Learn how to add AWS credentials and set up IAM permissions^].
+link:../fsx-storage/add-credentials.html[Learn how to add AWS credentials and set up IAM permissions^].
 
 === Link to FSx for ONTAP
 
 Workload Factory requires a link to connect to FSx for ONTAP file systems. A link creates a trust relationship and connectivity between Workload Factory and one or more FSx for ONTAP file systems. This enables you to monitor and manage certain file system features directly from the ONTAP REST API calls that are not available through the Amazon FSx for ONTAP API.
 
-link:../fsx-storage/create-link-fsx.html[Learn how to create a link^].
+link:../fsx-storage/create-link.html[Learn how to create a link^].
 
 === Read-only design
 

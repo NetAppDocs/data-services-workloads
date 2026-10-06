@@ -21,7 +21,7 @@ _Basic_ mode and _Read-only_ mode permissions are not supported at this time.
 
 NOTE: AWS credentials are also required to use the latency monitoring feature, which collects CloudWatch metrics for volume performance analysis. To receive notifications for latency events, configure notification preferences in Workload Factory settings. Optional AI analysis for complex latency scenarios is available when NetApp-managed AI analysis is enabled. link:learn-latency-monitoring-eda.html[Learn about latency monitoring].
 
-link:../fsx-storage/add-credentials-fsx.html[Learn how to add AWS credentials to Workload Factory.]
+link:../fsx-storage/add-credentials.html[Learn how to add AWS credentials to Workload Factory.]
 
 FSx for ONTAP file system::
 You need a minimum of one FSx for ONTAP file system:
@@ -38,5 +38,5 @@ This FSx for ONTAP file system must use FlexVol volumes. FlexGroup volumes are n
 
 * You'll need to consider the tag key/value pairs that you want to apply to the AWS resources that are part of this deployment (optional).
 +
-link:../fsx-storage/create-discover-systems-fsx.html[Learn how to discover or create FSx for ONTAP file systems.]
+link:../fsx-storage/create-discover-systems.html[Learn how to discover or create FSx for ONTAP file systems.]
 

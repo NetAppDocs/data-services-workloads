@@ -20,7 +20,7 @@ Depending on the policy and permissions that you added to your Workload Factory 
 * You must have the necessary permissions to create an FSx for ONTAP file system in your AWS account.
 
 == Considerations
-* You can use the Quick create or Advanced create option. Advanced create offers a few additional storage parameters that you can customize. link:../fsx-storage/create-discover-systems-fsx.html[Learn what these two options offer]. 
+* You can use the Quick create or Advanced create option. Advanced create offers a few additional storage parameters that you can customize. link:../fsx-storage/create-discover-systems.html[Learn what these two options offer]. 
 
 * In the "Amazon Elastic VMware Service preferences" section, you can choose the EVS virtualization environment to connect to the external datastores. This auto-populates some of the fields with the best-practice options for the deployment. You can change these options as required.
 

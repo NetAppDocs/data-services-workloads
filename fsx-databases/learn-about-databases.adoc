@@ -50,7 +50,7 @@ Workload Factory for Databases offers the following features:
 * *Performance and scalability*: FSx for ONTAP offers performance optimization with high throughput, low latency, high-speed network connections, and scalability with multiple file systems for scaling aggregate performance required for a workload.
 * *Data management and efficiency*: FSx for ONTAP offers multiple features that enhance data management and efficiency, such as space efficient thin clones, thin provisioning, compression and deduplication, and tiering infrequently accessed data to the capacity pool. 
 
-link:../fsx-storage/learn-fsx-ontap-fsx.html[Learn about FSx for ONTAP for Workload Factory^]. 
+link:../fsx-storage/learn-fsx-ontap.html[Learn about FSx for ONTAP for Workload Factory^]. 
 
 //Cross-repo include for Tools section
 include::https://raw.githubusercontent.com/NetAppDocs/workload-family/main/_include/learn-about-tools.adoc[]
