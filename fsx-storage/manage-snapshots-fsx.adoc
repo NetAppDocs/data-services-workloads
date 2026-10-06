@@ -68,6 +68,6 @@ Immutable snapshots cannot be deleted until the retention period ends.
 
 .Related information
 
-* link:fsx-storage/use-snapshots-fsx.html[Create a snapshot] 
-* link:fsx-storage/use-snapshots-fsx.html[Create a snapshot policy]
-* link:fsx-storage/use-snapshots-fsx.html[Restore a volume from a snapshot]
+* link:use-snapshots-fsx.html[Create a snapshot] 
+* link:use-snapshots-fsx.html[Create a snapshot policy]
+* link:use-snapshots-fsx.html[Restore a volume from a snapshot]

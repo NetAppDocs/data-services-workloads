@@ -146,8 +146,8 @@ Workload Factory gathers information from Data Infrastructure Insights.
 
 Manage your uploaded VM inventory data from the planning center, or create a deployment plan.
 
-* link:fsx-vmware/explore-planning-center-vmware.html[Explore the VMware workloads planning center]
-* link:fsx-vmware/launch-onboarding-advisor-vmware.html[Create an Amazon VMware Cloud deployment plan]
-* link:fsx-vmware/launch-migration-advisor-evs-vmware.html[Create an Amazon Elastic VMware Service deployment plan]
-* link:fsx-vmware/launch-onboarding-advisor-native-vmware.html[Create an Amazon EC2 deployment plan]
-* link:fsx-vmware/launch-migration-advisor-gcve-vmware.html[Create a Google Cloud VMware Engine deployment plan]
+* link:explore-planning-center-vmware.html[Explore the VMware workloads planning center]
+* link:launch-onboarding-advisor-vmware.html[Create an Amazon VMware Cloud deployment plan]
+* link:launch-migration-advisor-evs-vmware.html[Create an Amazon Elastic VMware Service deployment plan]
+* link:launch-onboarding-advisor-native-vmware.html[Create an Amazon EC2 deployment plan]
+* link:launch-migration-advisor-gcve-vmware.html[Create a Google Cloud VMware Engine deployment plan]

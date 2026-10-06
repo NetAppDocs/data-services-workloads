@@ -118,4 +118,4 @@ If a rule keeps failing or only partly succeeds, check that:
 
 == What to do next
 
-link:fsx-storage/learn-custom-rules.html[Learn more about custom rules]
+link:learn-custom-rules-fsx.html[Learn more about custom rules]

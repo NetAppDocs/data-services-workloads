@@ -52,5 +52,5 @@ When you apply these tags, Workload Factory starts collecting and showing the re
 
 == Related information
 
-* link:fsx-eda/learn-project-dashboard-eda.html[Learn about the Projects dashboard]
-* link:fsx-eda/task-use-project-dashboard-eda.html[Use the Projects dashboard]
+* link:learn-project-dashboard-eda.html[Learn about the Projects dashboard]
+* link:task-use-project-dashboard-eda.html[Use the Projects dashboard]

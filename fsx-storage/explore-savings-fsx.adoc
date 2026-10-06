@@ -22,7 +22,7 @@ Explore savings via customization: You provide the configuration settings for a 
 
 Explore savings for detected storage environments: Workload Factory links to your existing AWS storage environments and pulls in the details to the calculator for automatic comparison. You'll need to grant automate permissions to use automatic mode. You can change the use case, but all other details are automatically determined in the calculation. 
 
-Additionally, you can link:fsx-storage/add-credentials-fsx.html[add AWS credentials^] to improve the accuracy of the calculator analysis. Select *Calculate savings based on existing resources*. You'll be redirected to the Add credentials page. After you add credentials, select the existing resources to compare with FSx for ONTAP, and select *Explore savings*. 
+Additionally, you can link:add-credentials-fsx.html[add AWS credentials^] to improve the accuracy of the calculator analysis. Select *Calculate savings based on existing resources*. You'll be redirected to the Add credentials page. After you add credentials, select the existing resources to compare with FSx for ONTAP, and select *Explore savings*. 
 
 == Explore savings via customization
 Follow the steps under the tab for your storage selection. 
@@ -98,7 +98,7 @@ To switch to FSx for ONTAP, follow the instructions to <<Deploy FSx for ONTAP fi
 == Explore savings for detected storage environments
 
 .Before you begin
-For Workload Factory to detect Amazon Elastic Block Store (EBS), Elastic File System (EFS), and FSx for Windows File Server storage environments in your AWS account, make sure you link:fsx-storage/add-credentials-fsx.html[grant _view, planning, and analysis_ permissions^] in your AWS account.
+For Workload Factory to detect Amazon Elastic Block Store (EBS), Elastic File System (EFS), and FSx for Windows File Server storage environments in your AWS account, make sure you link:add-credentials-fsx.html[grant _view, planning, and analysis_ permissions^] in your AWS account.
 
 NOTE: This calculator option doesn't support calculations for EBS snapshots and FSx for Windows File Server shadow copies. When exploring savings via customization, you can provide EBS and FSx for Windows File Server snapshot details. 
 

@@ -13,7 +13,7 @@ Log in to the NetApp Workload Factory to access the VMware migration advisor. Yo
 
 When migrating to VMware Cloud, you can use the migration advisor to to migrate your current on-premises vSphere environment to VMWare cloud.
 
-Note that you must have a user name and password to access Workload Factory. If you don't have access, create an account now. Review the instructions link:fsx-vmware/quick-start-vmware.html[here].
+Note that you must have a user name and password to access Workload Factory. If you don't have access, create an account now. Review the instructions link:quick-start-vmware.html[here].
 
 == Create a deployment plan based on an on-premises vSphere environment
 

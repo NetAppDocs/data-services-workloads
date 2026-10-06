@@ -84,7 +84,7 @@ link:learn-about-permissions.html[Learn more about Workload Factory permission p
 
 //Links currently leverage AWS Lambda.
 
-//link:fsx-storage/links-overview-fsx.html[Learn more about links^]
+//link:links-overview.html[Learn more about links^]
 
 === Codebox automation
 

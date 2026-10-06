@@ -14,19 +14,12 @@ Get started with Workload Factory for EDA by setting up your environment, enabli
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Log in to Workload Factory
 
 [role="quick-margin-para"]
-You'll need to https://docs.netapp.com/us-en/workload-setup-admin/sign-up-and-log-in.html[set up an account with Workload Factory^] and log in to the NetApp Console.
+You'll need to link:sign-up-and-log-in.html[sign up and log in] to the NetApp Console.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Add credentials and permissions
-
-[role="quick-margin-para"]
-Choose the permission policies to meet your needs.
-[role="quick-margin-para"]
-If you choose not to grant permissions, you can start using Workload Factory for EDA to copy partially completed code samples.
-[role="quick-margin-para"]
-If you choose to grant permissions, you'll need to add credentials to an account manually that includes selecting workload capabilities, such as EDA and AI, and creating the IAM policies for the required permissions.
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Add credentials and permissions for the EDA workload
 
 [role="quick-margin-para"]
-link:fsx-storage/add-credentials-fsx.html[Learn how to add credentials and permissions^].
+link:add-credentials-fsx.html[Add credentials to an account manually] that includes selecting the EDA workload capability, and link:permissions-fsx.html[create the IAM policies for the required permissions].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Set up your environment to meet EDA requirements
 
@@ -34,7 +27,7 @@ link:fsx-storage/add-credentials-fsx.html[Learn how to add credentials and permi
 You'll need a deployed and discovered FSx for ONTAP file system that contains at least one volume that has been configured as an NFS share.
 
 [role="quick-margin-para"]
-link:fsx-eda/requirements-eda.html[Learn more about EDA requirements^].
+link:requirements-eda.html[Learn more about EDA requirements^].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four] Enable the Overview dashboard
 
@@ -42,7 +35,7 @@ link:fsx-eda/requirements-eda.html[Learn more about EDA requirements^].
 Enable the Overview dashboard to monitor the health, capacity, and throughput of your FSx for ONTAP clusters. Accept the consent prompt to allow Workload Factory to begin collecting CloudWatch metrics.
 
 [role="quick-margin-para"]
-link:fsx-eda/task-activate-overview-dashboard-eda.html[Learn how to activate the Overview dashboard^].
+link:task-activate-overview-dashboard-eda.html[Learn how to activate the Overview dashboard^].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five] Configure the Projects dashboard
 
@@ -50,7 +43,7 @@ link:fsx-eda/task-activate-overview-dashboard-eda.html[Learn how to activate the
 Configure the Projects dashboard to monitor system health, performance, and storage usage, enabling you to optimize your EDA environment effectively.
 
 [role="quick-margin-para"]
-link:fsx-eda/task-configure-project-dashboard-eda.html[Learn how to configure the Projects dashboard^].
+link:task-configure-project-dashboard-eda.html[Learn how to configure the Projects dashboard^].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png[Six] Configure FSx for ONTAP latency analysis
 
@@ -58,7 +51,7 @@ link:fsx-eda/task-configure-project-dashboard-eda.html[Learn how to configure th
 Set up latency thresholds to proactively identify and resolve performance issues before they impact simulation run time. Configure warning and critical alerts, set up email or SNS notifications to receive real-time alerts, leverage automated basic analysis, and optionally use AI analysis for complex scenarios.
 
 [role="quick-margin-para"]
-link:fsx-eda/task-configure-latency-monitoring-eda.html[Learn how to configure latency monitoring^]. After events are detected, you can link:fsx-eda/task-analyze-latency-trends-eda.html[analyze latency trends^] using the interactive graph.
+link:task-configure-latency-monitoring-eda.html[Learn how to configure latency monitoring^]. After events are detected, you can link:task-analyze-latency-trends-eda.html[analyze latency trends^] using the interactive graph.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-7.png[Seven] Integrate with other services
 
@@ -66,11 +59,11 @@ link:fsx-eda/task-configure-latency-monitoring-eda.html[Learn how to configure l
 Integrate EDA with other services such as a service portal or Perforce Helix Core using the Workload Factory REST API.
 
 [role="quick-margin-para"]
-link:fsx-eda/integrate-perforce-eda.html[Learn how to integrate EDA with Perforce^].
+link:integrate-perforce-eda.html[Learn how to integrate EDA with Perforce^].
 
 == What's next?
 
-* link:fsx-eda/task-configure-latency-monitoring-eda.html[Configure latency monitoring for FSx for ONTAP]
-* link:fsx-eda/task-configure-project-dashboard-eda.html[Configure the Projects dashboard]
-* link:fsx-eda/learn-eda-workloads-eda.html[Learn about EDA workloads]
-* link:fsx-eda/get-help-eda.html[Get help with EDA]
+* link:task-configure-latency-monitoring-eda.html[Configure latency monitoring for FSx for ONTAP]
+* link:task-configure-project-dashboard-eda.html[Configure the Projects dashboard]
+* link:learn-eda-workloads-eda.html[Learn about EDA workloads]
+* link:get-help.html[Get help with EDA]

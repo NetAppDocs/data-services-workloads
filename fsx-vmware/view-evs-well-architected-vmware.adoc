@@ -46,7 +46,7 @@ NOTE: On-demand execution of well-architected scans is not currently supported. 
 
 == Before you begin
 
-* You must have link:fsx-storage/add-credentials-fsx.html[added AWS credentials^] with _View, planning, and analysis_ permissions for VMware workloads.
+* You must have link:add-credentials-fsx.html[added AWS credentials^] with _View, planning, and analysis_ permissions for VMware workloads.
 * You must have at least one discovered Amazon Elastic VMware Service environment in your AWS account.
 
 == Access the well-architected status tab
@@ -166,6 +166,6 @@ After reviewing your well-architected insights and implementing recommended chan
 
 .Related links
 
-* link:fsx-vmware/launch-migration-advisor-evs-vmware.html[Create a deployment plan for Amazon EVS using the migration advisor]
-* link:fsx-vmware/deploy-fsx-file-system-evs-vmware.html[Deploy the recommended FSx for ONTAP file system]
+* link:launch-migration-advisor-evs-vmware.html[Create a deployment plan for Amazon EVS using the migration advisor]
+* link:deploy-fsx-file-system-evs-vmware.html[Deploy the recommended FSx for ONTAP file system]
 * link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html[AWS placement groups documentation^]

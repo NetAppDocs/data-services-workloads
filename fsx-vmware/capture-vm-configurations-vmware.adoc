@@ -108,4 +108,4 @@ The xlsx or xls file that contains your results is saved to your working directo
 
 .What's next?
 
-link:fsx-vmware/launch-onboarding-advisor-vmware.html[Create a VMware Cloud on AWS deployment plan using the migration advisor].
+link:launch-onboarding-advisor-vmware.html[Create a VMware Cloud on AWS deployment plan using the migration advisor].

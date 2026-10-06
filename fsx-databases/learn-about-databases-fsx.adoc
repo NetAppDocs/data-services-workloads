@@ -14,7 +14,7 @@ NetApp Workload Factory for Databases is an end-to-end database deployment and m
 == What is NetApp Workload Factory for Databases?
 NetApp Workload Factory for Databases discovers, assesses, plans, provisions, and moves Microsoft SQL Server, PostgreSQL, and Oracle data to Amazon FSx for NetApp ONTAP (FSx for ONTAP) deployments optimized to meet your performance and cost expectations while adhering to industry best practices. NetApp Workload Factory for Databases continuously optimizes and manages databases on FSx for ONTAP.
 
-link:setup/learn-about-workload-factory.html[Learn more about Workload Factory].
+link:learn-about-workload-factory.html[Learn more about Workload Factory].
 
 == Workload Factory benefits for self-managed databases
 Workload Factory provides best practices and automation for self-managed databases.
@@ -50,7 +50,7 @@ Workload Factory for Databases offers the following features:
 * *Performance and scalability*: FSx for ONTAP offers performance optimization with high throughput, low latency, high-speed network connections, and scalability with multiple file systems for scaling aggregate performance required for a workload.
 * *Data management and efficiency*: FSx for ONTAP offers multiple features that enhance data management and efficiency, such as space efficient thin clones, thin provisioning, compression and deduplication, and tiering infrequently accessed data to the capacity pool. 
 
-link:fsx-storage/learn-fsx-ontap-fsx.html[Learn about FSx for ONTAP for Workload Factory^]. 
+link:learn-fsx-ontap-fsx.html[Learn about FSx for ONTAP for Workload Factory^]. 
 
 //Cross-repo include for Tools section
 include::https://raw.githubusercontent.com/NetAppDocs/workload-family/main/_include/learn-about-tools.adoc[]

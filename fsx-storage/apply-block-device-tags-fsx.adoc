@@ -32,5 +32,5 @@ EC2 tags appear in the block device table within the associated FSx for ONTAP fi
 
 .Related information
 
-* link:fsx-storage/create-igroup-fsx.html[Create initiator groups (igroups) for a file system in NetApp Workload Factory]
-* link:fsx-storage/manage-block-storage-fsx.html[Manage block storage for a file system in NetApp Workload Factory]
+* link:create-igroup-fsx.html[Create initiator groups (igroups) for a file system in NetApp Workload Factory]
+* link:manage-block-storage-fsx.html[Manage block storage for a file system in NetApp Workload Factory]

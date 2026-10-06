@@ -50,7 +50,7 @@ Turning on ARP/AI for a file system automatically protects all current and new N
 If ARP/AI detects a real attack after it is enabled, Workload Factory automatically creates a snapshot policy. This policy can create up to six snapshots every four hours. Each snapshot is locked for 2-5 days.
 
 .Before you begin
-To enable ARP/AI for a file system or a volume, you must associate a link. link:fsx-storage/create-link-fsx.html[Learn how to associate an existing link or to create and associate a new link^]. After the link associates, return to this operation.
+To enable ARP/AI for a file system or a volume, you must associate a link. link:create-link-fsx.html[Learn how to associate an existing link or to create and associate a new link^]. After the link associates, return to this operation.
 
 [role="tabbed-block"]
 ====
@@ -59,10 +59,9 @@ To enable ARP/AI for a file system or a volume, you must associate a link. link:
 --
 .Steps
 
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Storage*.
-. From the Storage menu, select *FSx for ONTAP*. 
-. From *FSx for ONTAP*, select the actions menu of the file system to enable ARP/AI and then select *Manage*. 
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Storage* > *FSx for ONTAP*. 
+. From the *FSx for ONTAP* menu, select *Inventory* and then select the actions menu of the file system to enable ARP/AI and then select *Manage*. 
 . Under Information, select the pencil icon next to *Autonomous Ransomware Protection*. The pencil icon appears next to the arrow when the mouse hovers over the *Autonomous Ransomware Protection* row. 
 . From the NetApp Autonomous Ransomware Protection with AI (ARP/AI) page, do the following: 
 .. Enable or disable the feature. 
@@ -78,9 +77,8 @@ To enable ARP/AI for a file system or a volume, you must associate a link. link:
 --
 .Steps
 
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Storage*.
-. From the Storage menu, select *Volumes explorer*. 
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Volumes explorer*. 
 . Select the actions menu of the volume to enable ARP/AI, then *Data protection actions*, and then *Manage ARP/AI*.
 . In the Manage ARP/AI dialog, do the following: 
 .. Enable or disable the feature. 
@@ -95,10 +93,9 @@ To enable ARP/AI for a file system or a volume, you must associate a link. link:
 Determine if an attack is a false alarm or a genuine ransomware incident.
 
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Storage*.
-. From the Storage menu, select *FSx for ONTAP*. 
-. From *FSx for ONTAP*, select the file system to validate ransomware attacks for. 
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Storage* > *FSx for ONTAP*. 
+. From the *FSx for ONTAP* menu, select *Inventory* and then select the file system to validate ransomware attacks for. 
 . From the file system overview, select the *Volumes* tab. 
 . Select *Analyze attacks* from the Autonomous Ransomware Protection tile.
 . Download the attack events report to review if any files or folders were compromised and then decide if an attack has occurred. 
@@ -116,10 +113,9 @@ Locked snapshots cannot be deleted until the retention period expires. If the at
 Because the system identifies the affected files and the time of the attack, you can recover only the affected files from available snapshots instead of restoring the entire volume. 
 
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Storage*.
-. From the Storage menu, select *FSx for ONTAP*. 
-. From *FSx for ONTAP*, select the file system to recover data for.
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Storage* > *FSx for ONTAP*. 
+. From the *FSx for ONTAP* menu, select *Inventory* and then select the file system to recover data for.
 . From the file system overview, select the *Volumes* tab. 
 . Select *Analyze attacks* from the Autonomous Ransomware Protection tile.
 . If an attack has occurred, select *Real attack* for the volume in the table. 

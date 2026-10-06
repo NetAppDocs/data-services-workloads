@@ -23,8 +23,8 @@ You can attach multiple S3 access points to a single FSx for ONTAP volume, each 
 .Before you begin
 Complete the following requirements before you begin. 
 
-* You must have an existing volume with an S3 access point. link:fsx-storage/create-volume-fsx.html[Create a volume with an S3 access point]
-* You must link:fsx-storage/add-credentials-fsx.html[grant credentials with the _operations and remediation_ permission policy^] in Workload Factory to complete this task.
+* You must have an existing volume with an S3 access point. link:create-volume-fsx.html[Create a volume with an S3 access point]
+* You must link:add-credentials-fsx.html[grant credentials with the _operations and remediation_ permission policy^] in Workload Factory to complete this task.
 
 .Steps
 . Log in to the link:https://console.netapp.com[NetApp Console^].
@@ -43,9 +43,8 @@ Complete the following requirements before you begin.
 
 .Related information
 
-Optionally, you can use the Journal table feature with S3 access points in Workload Factory. The Journal table infrastructure captures and stores audit logs of user access events and object operations across Amazon FSx for ONTAP volume access points. To enable the Journal table feature, you must set up the necessary AWS infrastructure, including AWS CloudTrail, AWS CloudWatch, AWS S3 Buckets, AWS CloudWatch log groups, and AWS Identity and Access Management (IAM) roles and policies. link:fsx-storage/setup-journal-table-fsx.html[Set up the journal table infrastructure for NetApp Workload Factory^].
+Optionally, you can use the Journal table feature with S3 access points in Workload Factory. The Journal table infrastructure captures and stores audit logs of user access events and object operations across Amazon FSx for ONTAP volume access points. To enable the Journal table feature, you must set up the necessary AWS infrastructure, including AWS CloudTrail, AWS CloudWatch, AWS S3 Buckets, AWS CloudWatch log groups, and AWS Identity and Access Management (IAM) roles and policies. link:setup-journal-table-fsx.html[Set up the journal table infrastructure for NetApp Workload Factory^].
 
 Other related topics: 
 
-* link:fsx-storage/edit-s3-access-points-fsx.html[Edit S3 access points for a volume in NetApp Workload Factory]
-* link:fsx-storage/delete-s3-access-points-fsx.html[Delete S3 access points for a volume in NetApp Workload Factory]
+link:manage-s3-access-points-fsx.html[Edit or delete S3 access points for a volume in NetApp Workload Factory]

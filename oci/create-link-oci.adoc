@@ -45,7 +45,7 @@ NOTE: OCI Vault isn't supported when using a Console agent.
 * Networking:
 ** A **private subnet** in the VCN that can reach the ONTAP management LIF
 ** A **service gateway** with a route to All \<Region\> Services in Oracle Services Network (needed to pull the function image)
-* Create an IAM policy for the group that will deploy the stack. Learn more about link:oci/permissions-oci.html[OCI NSS permissions].
+* Create an IAM policy for the group that will deploy the stack. Learn more about link:permissions-oci.html[OCI NSS permissions].
 +
 Grant the group permission to create the stack and function. Replace `<deploy-group>` and `<compartment-name>` with your values. Use a named group, not `any-user`.
 +

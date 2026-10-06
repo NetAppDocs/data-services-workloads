@@ -22,7 +22,7 @@ Check the block storage diagram to check for the following:
 * Potential incorrect client connections
 
 .Before you begin
-* You must associate a link to manage igroups. link:fsx-storage/create-link-fsx.html[Learn how to associate an existing link or to create and associate a new link^]. After you associate the link, return to this operation.
+* You must associate a link to manage igroups. link:create-link-fsx.html[Learn how to associate an existing link or to create and associate a new link^]. After you associate the link, return to this operation.
 * You must have an existing igroup or block device to view and manage.
 
 == Manage igroups
@@ -150,5 +150,5 @@ Block devices that are not mapped to a client or are unused for seven days are i
 
 == Related information
 
-* link:fsx-storage/create-igroup-fsx.html[Create an igroup for an FSx for ONTAP file system]
-* link:fsx-storage/create-block-device-fsx.html[Create a block device for an FSx for ONTAP file system]
+* link:create-igroup-fsx.html[Create an igroup for an FSx for ONTAP file system]
+* link:create-block-device-fsx.html[Create a block device for an FSx for ONTAP file system]

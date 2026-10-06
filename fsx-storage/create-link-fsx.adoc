@@ -11,7 +11,7 @@ summary: "You can create and manage links to provide a trust relationship and co
 [.lead]
 To perform advanced ONTAP management operations, set up a connection between your Workload Factory account and one or more FSx for ONTAP file systems. This involves associating new and existing Lambda links, and authenticating the links. Link association lets you monitor and manage certain features directly from the FSx for ONTAP file system that are unavailable through the Amazon FSx for ONTAP API. 
 
-link:setup/links-overview.html[Learn more about links].
+link:links-overview.html[Learn more about links].
 
 .About this task
 
@@ -35,7 +35,7 @@ You have two options for creating links in this workflow - automatically or manu
 
 .Before you begin
 * You should consider which link creation option you'll use. 
-* You need to have at least one FSx for ONTAP file system in Workload Factory. To discover FSx for ONTAP file systems, you must have an AWS account with permissions for FSx for ONTAP instances and link:fsx-storage/add-credentials-fsx.html#overview[add credentials in Workload Factory^] with _view, planning, and analysis_ permissions for Storage management. 
+* You need to have at least one FSx for ONTAP file system in Workload Factory. To discover FSx for ONTAP file systems, you must have an AWS account with permissions for FSx for ONTAP instances and link:add-credentials-fsx.html#overview[add credentials in Workload Factory^] with _view, planning, and analysis_ permissions for Storage management. 
 * The following ports must be open in the security group associated with the FSx for ONTAP file system for link connectivity. 
 ** For the Workload Factory console: port 443 (HTTPS)
 ** For CloudShell and FSx for ONTAP Emergency Management System (EMS) events analysis: port 22 (SSH)
@@ -222,7 +222,7 @@ The link is associated with the FSx for ONTAP file system. You can perform advan
 
 .Related information
 
-link:setup/links-overview.html#when-a-link-is-required[Learn more about links].
+link:links-overview.html#when-a-link-is-required[Learn more about links].
 
 
 == Troubleshoot issues with AWS Secrets Manager link authentication

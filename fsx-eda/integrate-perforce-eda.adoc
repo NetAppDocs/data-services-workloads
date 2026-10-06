@@ -28,5 +28,5 @@ The NetApp Workload Factory for EDA web UI appears as an HTML tab within the P4V
 
 .What's next?
 
-link:fsx-eda/manage-projects-eda.html[Create and manage EDA projects].
+link:manage-projects-eda.html[Create and manage EDA projects].
 

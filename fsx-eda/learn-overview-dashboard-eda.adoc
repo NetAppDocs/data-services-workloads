@@ -153,5 +153,5 @@ Use the SSD usage history graph to:
 
 == Related information
 
-* link:fsx-eda/task-activate-overview-dashboard-eda.html[Activate the Overview dashboard]
-* link:fsx-eda/task-use-overview-dashboard-eda.html[Use the Overview dashboard]
+* link:task-activate-overview-dashboard-eda.html[Activate the Overview dashboard]
+* link:task-use-overview-dashboard-eda.html[Use the Overview dashboard]

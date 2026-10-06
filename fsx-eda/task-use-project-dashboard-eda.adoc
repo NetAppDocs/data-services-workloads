@@ -13,7 +13,7 @@ Use the Projects dashboard to track storage use across your FSx for ONTAP file s
 
 == Before you begin
 
-You should have link:fsx-eda/task-configure-project-dashboard-eda.html[configured custom filters] for the Projects dashboard. If you haven't configured custom filters, you can still use the default filters (file system, volume type, and time range).
+You should have link:task-configure-project-dashboard-eda.html[configured custom filters] for the Projects dashboard. If you haven't configured custom filters, you can still use the default filters (file system, volume type, and time range).
 
 == Filter the dashboard
 
@@ -98,6 +98,6 @@ Consider these recommendations when using the Projects dashboard:
 
 == Related information
 
-* link:fsx-eda/learn-project-dashboard-eda.html[Learn about the Projects dashboard]
-* link:fsx-eda/task-configure-project-dashboard-eda.html[Configure the Projects dashboard]
-* link:fsx-eda/learn-latency-monitoring-eda.html[Learn about latency monitoring]
+* link:learn-project-dashboard-eda.html[Learn about the Projects dashboard]
+* link:task-configure-project-dashboard-eda.html[Configure the Projects dashboard]
+* link:learn-latency-monitoring-eda.html[Learn about latency monitoring]

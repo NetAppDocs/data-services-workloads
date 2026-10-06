@@ -36,4 +36,4 @@ Notifications come in an email and include:
 
 .Related information
 
-link:fsx-storage/manage-replication-fsx.html[Manage replication relationships^]
+link:manage-replication-fsx.html[Manage replication relationships^]

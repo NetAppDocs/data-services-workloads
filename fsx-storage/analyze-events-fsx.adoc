@@ -33,7 +33,7 @@ To allow Workload Factory to analyze events, you must activate Amazon Bedrock, s
 
 link:https://aws.amazon.com/bedrock/pricing/[Amazon Bedrock pricing^]
 
-NOTE: If your account admin has turned off AI features, you'll see a message and won't be able to use AI analysis. Contact your administrator or link:admin/manage-genai-features.html[learn about AI administration^].
+NOTE: If your account admin has turned off AI features, you'll see a message and won't be able to use AI analysis. Contact your administrator or link:manage-genai-features.html[learn about AI administration^].
 
 === Data privacy and security
 Your data privacy and security are protected through: 
@@ -48,14 +48,14 @@ For more details, refer to the link:https://docs.aws.amazon.com/bedrock/latest/u
 
 To view latency events you must do the following: 
 
-* link:fsx-storage/add-credentials-fsx.html[grant _view, planning, and analysis_ permissions^] in your AWS account.
+* link:add-credentials-fsx.html[grant _view, planning, and analysis_ permissions^] in your AWS account.
 
-* link:fsx-storage/create-link-fsx.html[Connect to the file system using a link^].
+* link:create-link-fsx.html[Connect to the file system using a link^].
 
 To analyze EMS and latency events and receive AI-powered insights and recommendations, ensure the following:
 
-* You have link:fsx-storage/add-credentials-fsx.html[_operations and remediation_ permissions^] in your AWS account. 
-* You have link:fsx-storage/create-link-fsx.html[connected to the file system using a link^].
+* You have link:add-credentials-fsx.html[_operations and remediation_ permissions^] in your AWS account. 
+* You have link:create-link-fsx.html[connected to the file system using a link^].
 * Port 22 (SSH) is open in the security group associated with your FSx for ONTAP file system. 
 
 Additional requirements (the system will prompt you during event analysis):
@@ -70,7 +70,7 @@ Recommended model: `anthropic.claude-sonnet-4-20250514-v1:0`. Provide the Infere
 +
 Create and associate a link with an FSx for ONTAP file system to enable AI-powered events analysis. A link establishes a trust relationship between Workload Factory and one or more FSx for ONTAP file systems and leverages AWS Lambda.
 +
-link:fsx-storage/create-link-fsx.html^[Learn how to associate an existing link or to create and associate a new link]. After the link associates, return to this operation.
+link:create-link-fsx.html^[Learn how to associate an existing link or to create and associate a new link]. After the link associates, return to this operation.
 
 ** *AWS IAM permissions* 
 +
@@ -113,4 +113,4 @@ If needed, complete the AI analysis setup requirements by following the on-scree
 
 .Related information
 
-* link:fsx-storage/set-volume-latency-thresholds-fsx.html[Set volume latency thresholds in Workload Factory]
+* link:set-volume-latency-thresholds-fsx.html[Set volume latency thresholds in Workload Factory]

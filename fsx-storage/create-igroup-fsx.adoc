@@ -17,7 +17,7 @@ Initiator groups, or igroups, connect block devices (LUNs) to the compute resour
 An igroup acts as a permission layer for block storage. When a server connects to the storage system, it identifies itself using its iSCSI qualified (IQN) host initiator. If that IQN belongs to one or more igroups, then the server gains access to all LUNs associated with those igroups. Both an igroup and an iSCSI host connection are required for iSCSI to function properly.
 
 .Before you begin
-You must associate a link to create igroups. link:fsx-storage/create-link-fsx.html[Learn how to associate an existing link or to create and associate a new link^]. After you associate the link, return to this operation.
+You must associate a link to create igroups. link:create-link-fsx.html[Learn how to associate an existing link or to create and associate a new link^]. After you associate the link, return to this operation.
 
 .Steps
 . Log in to the link:https://console.netapp.com[NetApp Console^].
@@ -36,4 +36,4 @@ You must associate a link to create igroups. link:fsx-storage/create-link-fsx.ht
 
 .Related information
 
-link:https://docs.netapp.com/us-en/workload-fsx-ontap/manage-block-storage.html[Manage the block storage for an FSx for ONTAP file system]
+link:manage-block-storage-fsx.html[Manage the block storage for an FSx for ONTAP file system]

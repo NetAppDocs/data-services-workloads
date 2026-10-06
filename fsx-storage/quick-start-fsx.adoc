@@ -16,10 +16,10 @@ Follow these steps to get started.
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Add credentials and permissions
 
 [role="quick-margin-para"]
-link:fsx-storage/add-credentials-fsx.html[Add credentials to an account manually^] that includes selecting workload capabilities, such as Databases and EDA, and creating the IAM policies for the required permissions.
+link:add-credentials-fsx.html[Add credentials to an account manually^] that includes selecting workload capabilities, such as Databases and EDA, and creating the IAM policies for the required permissions.
 
 [role="quick-margin-para"]
-Choose the link:fsx-storage/permissions-fsx.html[permission policies^] to meet your needs.
+Choose the link:permissions-fsx.html[permission policies^] to meet your needs.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Optional: Create a Console agent or a link
 
@@ -37,11 +37,11 @@ To perform some management tasks from the NetApp Console, you either need a Cons
 
 [role="quick-margin-para"]
 
-Create your FSx for ONTAP file system directly from the NetApp Console or discover a file system that you've already created in your AWS environment. link:fsx-storage/create-discover-systems-fsx.html[Learn how to create a file system or discover an existing one.]
+Create your FSx for ONTAP file system directly from the NetApp Console or discover a file system that you've already created in your AWS environment. link:create-discover-systems-fsx.html[Learn how to create a file system or discover an existing one.]
 
 [role="quick-margin-para"]
 
-You can also start with the storage savings calculator to compare the costs of your Amazon Elastic Block Store, Elastic File System, and FSx for Windows File Server storage environments to that of FSx for ONTAP. link:fsx-storage/explore-savings-fsx.html[Explore savings with the storage savings calculator.]
+You can also start with the storage savings calculator to compare the costs of your Amazon Elastic Block Store, Elastic File System, and FSx for Windows File Server storage environments to that of FSx for ONTAP. link:explore-savings-fsx.html[Explore savings with the storage savings calculator.]
 
 .What's next
-With a file system in your Storage inventory, you can link:fsx-storage/create-volume-fsx.html[create volumes], manage your FSx for ONTAP file system, and set up data protection for your resources.
+With a file system in your Storage inventory, you can link:create-volume-fsx.html[create volumes], manage your FSx for ONTAP file system, and set up data protection for your resources.

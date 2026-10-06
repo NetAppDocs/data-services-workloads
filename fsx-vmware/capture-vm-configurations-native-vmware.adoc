@@ -141,4 +141,4 @@ The Create an API Access Token dialog appears.
 
 .What's next?
 
-link:fsx-vmware/launch-onboarding-advisor-native-vmware.html[Create an Amazon EC2 deployment plan using the migration advisor].
+link:launch-onboarding-advisor-native-vmware.html[Create an Amazon EC2 deployment plan using the migration advisor].

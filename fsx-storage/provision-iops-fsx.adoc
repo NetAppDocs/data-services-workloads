@@ -16,7 +16,7 @@ You can enable automatic SSD IOPS provisioning for an FSx file system or manuall
 
 Automatically provisioned IOPS are calculated as three IOPS per GiB. 
 
-If you manually provision IOPS, you might need to increase IOPS before link:fsx-storage/adjust-file-system-capacity-fsx.html[increasing file system capacity]. 
+If you manually provision IOPS, you might need to increase IOPS before link:adjust-file-system-capacity-fsx.html[increasing file system capacity]. 
 
 For information about IOPS limits, refer to link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/limits.html[Quotas^] in AWS FSx for NetApp ONTAP documentation. 
 

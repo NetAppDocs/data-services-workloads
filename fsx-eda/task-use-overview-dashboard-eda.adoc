@@ -13,7 +13,7 @@ Use the Overview dashboard to check the health and capacity of your FSx for ONTA
 
 == Before you begin
 
-You must have link:fsx-eda/task-activate-overview-dashboard-eda.html[activated the Overview dashboard] before you can use it to monitor your file systems.
+You must have link:task-activate-overview-dashboard-eda.html[activated the Overview dashboard] before you can use it to monitor your file systems.
 
 == Filter the dashboard
 
@@ -51,7 +51,7 @@ The cluster health status includes the following key areas:
 * Select *Review* to navigate to the *Latency* tab
 * If latency monitoring is not configured, select *Configure* to set up latency thresholds
 +
-For details on latency monitoring, see link:fsx-eda/task-configure-latency-monitoring-eda.html[Configure latency monitoring^].
+For details on latency monitoring, see link:task-configure-latency-monitoring-eda.html[Configure latency monitoring^].
 . To view ONTAP events for your FSx for ONTAP file systems, select *Review*.
 +
 The ONTAP events view card displays the number of EMS events by category (Capacity, Availability & protection, and Security & other). For a full list of EMS events monitored, see link:https://docs.netapp.com/us-en/ontap-cli-9171/index.html[ONTAP CLI documentation^].
@@ -209,6 +209,6 @@ Consider these recommendations when using the Overview dashboard:
 
 == Related information
 
-* link:fsx-eda/learn-overview-dashboard-eda.html[Learn about the Overview dashboard]
-* link:fsx-eda/task-activate-overview-dashboard-eda.html[Activate the Overview dashboard]
-* link:fsx-eda/task-configure-latency-monitoring-eda.html[Configure latency monitoring]
+* link:learn-overview-dashboard-eda.html[Learn about the Overview dashboard]
+* link:task-activate-overview-dashboard-eda.html[Activate the Overview dashboard]
+* link:task-configure-latency-monitoring-eda.html[Configure latency monitoring]

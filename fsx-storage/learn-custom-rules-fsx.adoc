@@ -20,7 +20,7 @@ The Rule builder lets you create custom best-practice rules using plain language
 
 Custom rules help you enforce your organization's standards, risk limits, and operational requirements—things that generic vendor rules might not fully cover.
 
-NOTE: If your account administrator has turned off AI features, the Rule builder will not be available and you will not be able to create custom rules. link:admin/manage-genai-features.html[Learn about managing AI features^].
+NOTE: If your account administrator has turned off AI features, the Rule builder will not be available and you will not be able to create custom rules. link:manage-genai-features.html[Learn about managing AI features^].
 
 == How custom rules work
 
@@ -81,4 +81,4 @@ This rule validates that file systems adhere to organizational naming convention
 
 == What to do next
 
-link:fsx-storage/create-custom-rule.html[Create a custom rule]
+link:create-custom-rule.html[Create a custom rule]

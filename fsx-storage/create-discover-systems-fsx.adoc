@@ -24,12 +24,12 @@ A storage VM is created when you create a file system.
 .Before you begin
 Before creating your FSx for ONTAP file system, you will need:
 
-* The ARN of an IAM role that gives Workload Factory the permissions needed to create an FSx for ONTAP file system. link:fsx-storage/permissions-fsx.html[Learn how to grant permissions to an AWS account^].
+* The ARN of an IAM role that gives Workload Factory the permissions needed to create an FSx for ONTAP file system. link:permissions-fsx.html[Learn how to grant permissions to an AWS account^].
 
 * The region and VPC information for where you will create the FSx for ONTAP instance.
 
 == Create an FSx for ONTAP file system
-You can create an FSx for ONTAP file system using _Quick create_ or _Advanced create_. You can also use the following tools available in the Codebox: REST API, CloudFormation, and Terraform. link:admin/use-codebox.html#how-to-use-codebox[Learn how to use Codebox for automation^]. 
+You can create an FSx for ONTAP file system using _Quick create_ or _Advanced create_. You can also use the following tools available in the Codebox: REST API, CloudFormation, and Terraform. link:use-codebox.html#how-to-use-codebox[Learn how to use Codebox for automation^]. 
 
 NOTE: When using Terraform from Codebox, the code you copy or download hides `fsxadmin` and `vsadmin` passwords. You'll need to re-enter the passwords when you run the code.  
 
@@ -49,7 +49,7 @@ include::_include/create-file-system-quick.adoc[]
 .Result
 If you created the file system, the new FSx for ONTAP configuration appears on the Systems page. 
 
-You can manage your FSx for ONTAP file systems in several ways, such as from Workloads in the NetApp Console, using ONTAP System Manager, and using AWS CloudFormation. Learn how to link:task-manage-fsx-systems.html[manage an FSx for ONTAP file system].
+You can manage your FSx for ONTAP file systems in several ways, such as from Workloads in the NetApp Console, using ONTAP System Manager, and using AWS CloudFormation.
 --
 
 .Advanced create
@@ -61,7 +61,7 @@ With Advanced create, you set all of the configuration options, including availa
 . Select *Add system* from the Systems page. 
 . Select *Amazon Web Services* as the location, and then select *Add new* for Amazon FSx for NetApp ONTAP. 
 include::_include/create-file-system-advanced.adoc[]
-//include comes from workload-fsx-ontap-internal repo
+
 .Result
 
 If you created the file system, the new FSx for ONTAP configuration appears on the Systems page. 

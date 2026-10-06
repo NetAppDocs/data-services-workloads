@@ -15,7 +15,7 @@ You can create a deployment plan to migrate virtual machines to Amazon Elastic V
 
 == Requirements
 
-* You must have a user name and password to access Workload Factory. If you don't have access, create an account now. Review the instructions link:fsx-vmware/quick-start-vmware.html[here].
+* You must have a user name and password to access Workload Factory. If you don't have access, create an account now. Review the instructions link:quick-start-vmware.html[here].
 * You must have an Amazon Elastic VMware Service subscription.
 
 == Steps
@@ -85,4 +85,4 @@ The migration plan is automatically saved in the list of plans in the planning c
 The .csv file creates a map of all the VMs included in the migration plan, along with their assigned storage volumes.
 . When you are ready to proceed with the plan, select *Provision* to begin deploying the recommended Amazon FSx for NetApp ONTAP file system.
 
-link:fsx-vmware/deploy-fsx-file-system-evs-vmware.html[Deploy the VMware workloads recommended FSx for ONTAP file system].
+link:deploy-fsx-file-system-evs-vmware.html[Deploy the VMware workloads recommended FSx for ONTAP file system].

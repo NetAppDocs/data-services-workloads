@@ -15,7 +15,7 @@ You can manually specify your requirements for virtual machines in Amazon Elasti
 
 == Requirements
 
-* You must have a user name and password to access Workload Factory. If you don't have access, create an account now. Review the instructions link:fsx-vmware/quick-start-vmware.html[here].
+* You must have a user name and password to access Workload Factory. If you don't have access, create an account now. Review the instructions link:quick-start-vmware.html[here].
 * You must have an Amazon Elastic VMware Service subscription.
 
 == Steps
@@ -44,4 +44,4 @@ By default, Workload Factory saves the migration plan to the planning center. Yo
 The .csv file creates a map of all the VMs included in the migration plan, along with their assigned storage volumes.
 . When you are ready to provision the deployment plan, select *Provision*.
 
-link:fsx-vmware/deploy-fsx-file-system-evs-vmware.html[Deploy the VMware workloads recommended FSx for ONTAP file system].
+link:deploy-fsx-file-system-evs-vmware.html[Deploy the VMware workloads recommended FSx for ONTAP file system].

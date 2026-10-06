@@ -19,9 +19,9 @@ With elastic file system capacity, you can dynamically adjust the capacity of yo
 .About this task
 Changing file system capacity impacts IOPS for your FSx for ONTAP file system. 
 
-When you automatically link:fsx-storage/provision-iops.html[provision IOPS] for a file system, IOPS increases or decreases by 3 IOPS with every 1 GiB increase or decrease in SSD capacity. 
+When you automatically link:provision-iops-fsx.html[provision IOPS] for a file system, IOPS increases or decreases by 3 IOPS with every 1 GiB increase or decrease in SSD capacity. 
 
-When you link:fsx-storage/provision-iops.html[provision IOPS] manually, you might need to increase your IOPS allocation to support the increased file system capacity. 
+When you link:provision-iops-fsx.html[provision IOPS] manually, you might need to increase your IOPS allocation to support the increased file system capacity. 
 
 For SSD storage capacity limits, refer to link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/limits.html[Quotas^] in AWS FSx for NetApp ONTAP documentation. 
 
@@ -53,8 +53,8 @@ The maximum amount of SSD storage capacity for all FSx for ONTAP file systems is
 .Before you begin
 Consider the following before you begin: 
 
-* You must link:fsx-storage/add-credentials-fsx.html[grant credentials with the _view, planning, and analysis_ permission policy^] in Workload Factory to complete this task.
-* To make sure volume inodes increase along with storage capacity, you must associate a link. link:fsx-storage/create-link-fsx.html[Learn how to associate an existing link or to create and associate a new link^]. After the link associates, return to this operation. 
+* You must link:add-credentials-fsx.html[grant credentials with the _view, planning, and analysis_ permission policy^] in Workload Factory to complete this task.
+* To make sure volume inodes increase along with storage capacity, you must associate a link. link:create-link-fsx.html[Learn how to associate an existing link or to create and associate a new link^]. After the link associates, return to this operation. 
 * You shouldn't enable this feature during data migration because AWS imposes a minimum six-hour cool down period between SSD capacity increases. This restriction might delay adjustments, so plan accordingly.
 
 .Steps
@@ -101,9 +101,9 @@ NOTE: *Terraform users*: Terraform has a limitation that requires that all opera
 .Before you begin
 Consider the following before you begin:
 
-* To manage volume inodes automatically, you must associate a link. link:fsx-storage/create-link-fsx.html[Learn how to associate an existing link or to create and associate a new link^]. After the link associates, return to this operation.
-* Automatic inode management can be set up with a _warning threshold_ that triggers a notification from the Workload Factory notification service. To use this feature, you must link:admin/configure-notifications.html[enable the Workload Factory notification service^] first.
-* You must link:fsx-storage/add-credentials-fsx.html[grant credentials with the _view, planning, and analysis_ permission policy^] in Workload Factory to complete this task.
+* To manage volume inodes automatically, you must associate a link. link:create-link-fsx.html[Learn how to associate an existing link or to create and associate a new link^]. After the link associates, return to this operation.
+* Automatic inode management can be set up with a _warning threshold_ that triggers a notification from the Workload Factory notification service. To use this feature, you must link:configure-notifications.html[enable the Workload Factory notification service^] first.
+* You must link:add-credentials-fsx.html[grant credentials with the _view, planning, and analysis_ permission policy^] in Workload Factory to complete this task.
 
 .Steps
 . Log in to the link:https://console.netapp.com[NetApp Console^].

@@ -17,7 +17,7 @@ Latency analysis collects CloudWatch metrics for read and write activity on all 
 
 If latency rises, Workload Factory automatically reviews ONTAP QoS delay metrics to identify the main cause of the slowdown. For more complex issues involving data or cluster components, you can run an optional AI analysis that provides the likely root cause, identifies affected clients, and suggests steps to resolve the problem.
 
-NOTE: If your account admin has turned off AI features, you'll see a message and won't be able to use AI analysis. Contact your administrator or link:admin/manage-genai-features.html[learn about AI administration^].
+NOTE: If your account admin has turned off AI features, you'll see a message and won't be able to use AI analysis. Contact your administrator or link:manage-genai-features.html[learn about AI administration^].
 
 === Alert generation
 
@@ -89,6 +89,6 @@ When you run AI analysis, the system provides:
 
 == Related information
 
-* link:fsx-eda/task-configure-latency-monitoring-eda.html[Configure latency monitoring]
-* link:fsx-eda/task-analyze-latency-issues-eda.html[Analyze latency issues]
-* link:fsx-eda/task-analyze-latency-trends-eda.html[Analyze latency trends]
+* link:task-configure-latency-monitoring-eda.html[Configure latency monitoring]
+* link:task-analyze-latency-issues-eda.html[Analyze latency issues]
+* link:task-analyze-latency-trends-eda.html[Analyze latency trends]

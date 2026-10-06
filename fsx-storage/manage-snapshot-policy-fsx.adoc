@@ -13,7 +13,7 @@ Manage snapshot policies for FSx for ONTAP volumes in Workload Factory. A snapsh
 
 Snapshot management operations like assigning, changing, and deleting snapshot policies for volumes in an FSx for ONTAP file system are managed at the storage VM level. Snapshot policies can be shared with a single storage VM or with all storage VMs. 
 
-Some management tasks require you to associate a link with the FSx for ONTAP file system. link:setup/links-overview.html[Learn about Workload Factory links^].
+Some management tasks require you to associate a link with the FSx for ONTAP file system. link:links-overview.html[Learn about Workload Factory links^].
 
 By default, every volume is associated with the file system's `default` snapshot policy. We recommend using this policy for most workloads.
 
@@ -21,7 +21,7 @@ By default, every volume is associated with the file system's `default` snapshot
 You can assign a snapshot policy to a single volume to create scheduled snapshots for the volume. 
 
 .Before you begin
-You must associate a link to assign a snapshot policy. link:fsx-storage/create-link-fsx.html[Learn how to associate an existing link or to create and associate a new link^]. After the link associates, return to this operation. 
+You must associate a link to assign a snapshot policy. link:create-link-fsx.html[Learn how to associate an existing link or to create and associate a new link^]. After the link associates, return to this operation. 
 
 .Steps
 . Log in to the link:https://console.netapp.com[NetApp Console^].
@@ -43,7 +43,7 @@ The snapshot policy is assigned to the volume.
 You can change the snapshot policy name, schedule, and number of copies to retain, and enable or disable immutable snapshots. It isn't possible to enable or disable policy sharing across storage VMs. This option is available only during snapshot policy creation.
 
 .Before you begin
-To display existing snapshot policies, you must associate a link. link:fsx-storage/create-link-fsx.html[Learn how to associate an existing link or to create and associate a new link^]. After the link associates, return to this operation. 
+To display existing snapshot policies, you must associate a link. link:create-link-fsx.html[Learn how to associate an existing link or to create and associate a new link^]. After the link associates, return to this operation. 
 
 .Steps
 . Log in to the link:https://console.netapp.com[NetApp Console^].
@@ -63,7 +63,7 @@ The snapshot policy is updated.
 Lock snapshots to prevent them from being deleted during the retention period.
 
 .Before you begin
-You must associate a link to enable immutable snapshots. link:fsx-storage/create-link-fsx.html[Learn how to associate an existing link or to create and associate a new link^]. After the link associates, return to this operation. 
+You must associate a link to enable immutable snapshots. link:create-link-fsx.html[Learn how to associate an existing link or to create and associate a new link^]. After the link associates, return to this operation. 
 
 .Steps
 . Log in to the link:https://console.netapp.com[NetApp Console^].
@@ -91,10 +91,9 @@ When an on-premises ONTAP cluster is the target for the replication relationship
 NOTE: Editing long-term retention isn't available when replicating storage VM data and configuration settings.
 
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Storage*.
-. From the Storage menu, select *FSx for ONTAP*. 
-. From *FSx for ONTAP*, select the actions menu of the file system to update and then select *Manage*.  
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Storage* > *FSx for ONTAP*. 
+. From the *FSx for ONTAP* menu, select *Inventory* and then select the actions menu of the file system to update and then select *Manage*.  
 . From the file system overview, select the *Replication relationships* tab. 
 . In the Replication relationships tab, select the actions menu of the replication relationship schedule to change. 
 . Select *Edit long-term retention*. 
@@ -112,12 +111,12 @@ NOTE: Editing long-term retention isn't available when replicating storage VM da
 Remove a snapshot policy from a volume because you no longer want snapshots of the volume or because you want to delete a snapshot policy that is assigned to multiple volumes. To <<Delete a snapshot policy,delete a snapshot policy>> that is assigned to more than one volume, you must manually remove it from all volumes. 
 
 .Before you begin
-You must associate a link to remove a snapshot policy. link:fsx-storage/create-link-fsx.html[Learn how to associate an existing link or to create and associate a new link^]. After the link associates, return to this operation.
+You must associate a link to remove a snapshot policy. link:create-link-fsx.html[Learn how to associate an existing link or to create and associate a new link^]. After the link associates, return to this operation.
 
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Storage*.
-. In the *FSx for ONTAP* tab, select the actions menu of the file system that contains the volume to assign a snapshot policy to and then select *Manage*. 
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Storage* > *FSx for ONTAP*. 
+. From the *FSx for ONTAP* menu, select *Inventory* and then select the actions menu of the file system to update and then select *Manage*.
 . In the file system overview, select the *Storage VMs* tab.
 . From the *Storage VMs* tab, select the actions menu for the storage VM containing the volume to protect with scheduled snapshots, then *Advanced actions*, and then *Manage snapshot policies*.
 . On the Snapshot policy management page, select the actions menu of the snapshot policy and then select *Assign policy to volume*.
@@ -133,10 +132,9 @@ Delete a snapshot policy when you no longer need it.
 When a snapshot policy is assigned to more than one volume, you must manually <<Remove a snapshot policy from a volume,remove it>> from all volumes to delete the snapshot policy. Alternatively, you can <<Assign a snapshot policy to a volume,assign a different snapshot policy>> to the volumes. 
 
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Storage*.
-. From the Storage menu, select *FSx for ONTAP*. 
-. From *FSx for ONTAP*, select the actions menu of the file system with the volume and then select *Manage*. 
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Storage* > *FSx for ONTAP*. 
+. From the *FSx for ONTAP* menu, select *Inventory* and then select the actions menu of the file system to update and then select *Manage*.  
 . In the file system overview, select the *Storage VMs* tab.
 . From the *Storage VMs* tab, select the actions menu of the storage VM with the snapshot policy to delete, then *Advanced actions*, and then *Manage snapshot policies*.
 . On the Snapshot policy management page, select the actions menu for the snapshot policy to delete and then select *Delete*.
