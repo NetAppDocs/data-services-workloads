@@ -29,7 +29,7 @@ You can create a new EDA project so that you can leverage the data protection fe
 ... *Region*: Select the region that this FSx for ONTAP file system resides in.
 ... *FSx for ONTAP file system*: Select an FSx for ONTAP file system to use with this project.
 +
-You can only select file systems that are configured with a link. link:links-overview.html[Learn more about links^].
+You can only select file systems that are configured with a link. link:../setup/links-overview.html[Learn more about links^].
 ... *Choose a volume*: Select a volume on which to store the project; EDA uses this volume as a software repository.
 +
 You can only select volumes that are configured as an NFS share.

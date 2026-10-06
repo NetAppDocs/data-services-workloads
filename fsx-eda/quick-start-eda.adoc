@@ -14,12 +14,12 @@ Get started with Workload Factory for EDA by setting up your environment, enabli
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Log in to Workload Factory
 
 [role="quick-margin-para"]
-You'll need to link:sign-up-and-log-in.html[sign up and log in] to the NetApp Console.
+You'll need to link:../setup/sign-up-and-log-in.html[sign up and log in] to the NetApp Console.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Add credentials and permissions for the EDA workload
 
 [role="quick-margin-para"]
-link:add-credentials-fsx.html[Add credentials to an account manually] that includes selecting the EDA workload capability, and link:permissions-fsx.html[create the IAM policies for the required permissions].
+link:../fsx-storage/add-credentials-fsx.html[Add credentials to an account manually] that includes selecting the EDA workload capability, and link:../fsx-storage/permissions-fsx.html[create the IAM policies for the required permissions].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Set up your environment to meet EDA requirements
 
@@ -66,4 +66,4 @@ link:integrate-perforce-eda.html[Learn how to integrate EDA with Perforce^].
 * link:task-configure-latency-monitoring-eda.html[Configure latency monitoring for FSx for ONTAP]
 * link:task-configure-project-dashboard-eda.html[Configure the Projects dashboard]
 * link:learn-eda-workloads-eda.html[Learn about EDA workloads]
-* link:get-help.html[Get help with EDA]
+* link:../get-help.html[Get help with EDA]

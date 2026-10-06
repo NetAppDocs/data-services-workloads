@@ -20,11 +20,11 @@ When you provide permissions, Workload Factory attaches a policy to the instance
 For FSx for ONTAP database workloads for example, when Workload Factory is granted with the required permissions, it scans all EC2 instances in a given account and region, and filters all Windows-based machines. If AWS Systems Manager (SSM) Agent is installed and running on the host and System Manager networking is configured properly, Workload Factory can access the Windows machine and verify whether SQL Server software is installed or not.
 
 == How permissions are used
-Workload Factory uses permissions to perform certain tasks. Permissions are bundled into set permission policies. Permission policies appear in link:codebox-automation.html[the Codebox] and are copiable JSON. Each cloud provider has its own set of permission policies tailored to the specific requirements and capabilities of that cloud environment. This documentation provides permission references for each cloud provider.
+Workload Factory uses permissions to perform certain tasks. Permissions are bundled into set permission policies. Permission policies appear in link:../admin/codebox-automation.html[the Codebox] and are copiable JSON. Each cloud provider has its own set of permission policies tailored to the specific requirements and capabilities of that cloud environment. This documentation provides permission references for each cloud provider.
 
 === Permission references by cloud provider
 Refer to the following pages to learn about permission requirements for your cloud provider:
 
-* link:/permissions-fsx.html[Amazon FSx for NetApp ONTAP]
-* link:permissions-oci.html[OCI NetApp Storage Service]
+* link:../fsx-storage/permissions-fsx.html[Amazon FSx for NetApp ONTAP]
+* link:../oci/permissions-oci.html[OCI NetApp Storage Service]
 

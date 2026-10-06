@@ -50,7 +50,7 @@ Enable snapshot directory access to give users the ability access snapshots auto
 == Restore data from a snapshot
 You have the option to restore data from a snapshot to an existing volume or to a new volume.
 
-link:fsx-storage/use-snapshots-fsx.html[Restore a volume from a snapshot]
+link:use-snapshots-fsx.html[Restore a volume from a snapshot]
 
 == Delete a snapshot
 Delete a snapshot to free up space.

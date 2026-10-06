@@ -102,7 +102,7 @@ NOTE: *Terraform users*: Terraform has a limitation that requires that all opera
 Consider the following before you begin:
 
 * To manage volume inodes automatically, you must associate a link. link:create-link-fsx.html[Learn how to associate an existing link or to create and associate a new link^]. After the link associates, return to this operation.
-* Automatic inode management can be set up with a _warning threshold_ that triggers a notification from the Workload Factory notification service. To use this feature, you must link:configure-notifications.html[enable the Workload Factory notification service^] first.
+* Automatic inode management can be set up with a _warning threshold_ that triggers a notification from the Workload Factory notification service. To use this feature, you must link:../admin/configure-notifications.html[enable the Workload Factory notification service^] first.
 * You must link:add-credentials-fsx.html[grant credentials with the _view, planning, and analysis_ permission policy^] in Workload Factory to complete this task.
 
 .Steps

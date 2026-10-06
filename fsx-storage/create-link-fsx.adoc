@@ -11,7 +11,7 @@ summary: "You can create and manage links to provide a trust relationship and co
 [.lead]
 To perform advanced ONTAP management operations, set up a connection between your Workload Factory account and one or more FSx for ONTAP file systems. This involves associating new and existing Lambda links, and authenticating the links. Link association lets you monitor and manage certain features directly from the FSx for ONTAP file system that are unavailable through the Amazon FSx for ONTAP API. 
 
-link:links-overview.html[Learn more about links].
+link:../setup/links-overview.html[Learn more about links].
 
 .About this task
 
@@ -222,7 +222,7 @@ The link is associated with the FSx for ONTAP file system. You can perform advan
 
 .Related information
 
-link:links-overview.html#when-a-link-is-required[Learn more about links].
+link:../setup/links-overview.html#when-a-link-is-required[Learn more about links].
 
 
 == Troubleshoot issues with AWS Secrets Manager link authentication

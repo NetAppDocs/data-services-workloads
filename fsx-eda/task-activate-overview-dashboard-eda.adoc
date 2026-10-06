@@ -21,7 +21,7 @@ You must configure AWS credentials in Workload Factory with at least read (view)
 
 If you haven't configured credentials with view permissions, you are redirected to the AWS credentials setup page when you open the Overview tab.
 
-If you haven't configured AWS credentials, see link:add-credentials-fsx.html[Add AWS credentials^].
+If you haven't configured AWS credentials, see link:../fsx-storage/add-credentials-fsx.html[Add AWS credentials^].
 
 == Activate the dashboard
 

@@ -19,12 +19,12 @@ Follow these steps to get started.
 
 [role="quick-margin-para"]
 
-You'll need to link:sign-up-and-log-in.html[sign up^] and log in to the NetApp Console.
+You'll need to link:../setup/sign-up-and-log-in.html[sign up^] and log in to the NetApp Console.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Add credentials and permissions for the Databases workload
 
 [role="quick-margin-para"]
-link:add-credentials-fsx.html[Add credentials to an account manually^] that includes selecting the database workload capability and choose the link:permissions-fsx.html[permission policies^] to meet your needs. 
+link:../fsx-storage/add-credentials-fsx.html[Add credentials to an account manually^] that includes selecting the database workload capability and choose the link:../fsx-storage/permissions-fsx.html[permission policies^] to meet your needs. 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Discover or deploy resources
 

@@ -26,10 +26,10 @@ For a complete configuration analysis, you must do the following:
 
 * Associate a link. Link connectivity lets Workload Factory analyze all file system configurations like data protection and performance.
 +
-link:create-link-fsx.html[Learn how to associate an existing link or to create and associate a new link].
+link:../fsx-storage/create-link-fsx.html[Learn how to associate an existing link or to create and associate a new link].
 * Grant _view, planning, and analysis_ permissions for VMware workloads. 
 +
-link:add-credentials-fsx.html[Learn how to grant permissions to an AWS account^]
+link:../fsx-storage/add-credentials-fsx.html[Learn how to grant permissions to an AWS account^]
 
 * You must have at least one discovered Amazon Elastic VMware Service environment in your AWS account.
 

@@ -16,16 +16,16 @@ Upon database creation, two new volumes are created in the FSx for ONTAP file sy
 
 If you want to segregate storage for the database, you can do this by using a _virtual mount point_. The virtual mount point lets you consolidate databases to a few common drives on the host. 
 
-Creating a database in workload factory requires _view, planning, and analysis_ permissions. Alternatively, you can copy or download a partially completed code template to complete the operation outside workload factory. link:permissions-fsx.html[Learn about Workload Factory permissions^] to decide which mode you'd like to use. 
+Creating a database in workload factory requires _view, planning, and analysis_ permissions. Alternatively, you can copy or download a partially completed code template to complete the operation outside workload factory. link:../fsx-storage/permissions-fsx.html[Learn about Workload Factory permissions^] to decide which mode you'd like to use. 
 
 NOTE: Microsoft SQL Servers using SMB protocol don't support database creation. 
 
 .Before you begin
 Complete the following prerequisites before you create a new database. 
 
-* *Credentials and permissions*: You must have link:add-credentials-fsx.html[AWS account credentials and _operations and remediation_ permissions^] to create a new database in Workload Factory. 
+* *Credentials and permissions*: You must have link:../fsx-storage/add-credentials-fsx.html[AWS account credentials and _operations and remediation_ permissions^] to create a new database in Workload Factory. 
 +
-Alternatively, you can use the Codebox to copy a template so that you can deploy a database outside of workload factory using REST API. link:codebox-automation.html[Learn more about Codebox automation^].
+Alternatively, you can use the Codebox to copy a template so that you can deploy a database outside of workload factory using REST API. link:../admin/codebox-automation.html[Learn more about Codebox automation^].
 
 * *Windows host*: You must have enough drive letters available on the Microsoft SQL Server to create new drives for the new database if you use _Quick create_ mode.
 

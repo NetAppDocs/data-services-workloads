@@ -43,4 +43,4 @@ You can use NetApp Workload Factory with the following tools:
 * *NetApp Terraform provider*: Use Terraform to build and manage infrastructure workflows generated in the Workload Factory console.
 
 == Getting help
-For general questions about Workload Factory or Workload Factory applications and services, refer to link:get-help.html[Get help for OCI NSS for Workload Factory].
+For general questions about Workload Factory or Workload Factory applications and services, refer to link:../get-help.html[Get help for OCI NSS for Workload Factory].

@@ -20,11 +20,11 @@ link:sign-up-and-log-in.html[Sign up and log in to Workload Factory from NetApp 
 Next, select the *Quick start* link for your cloud provider to get started.
 
 == Get started with Amazon FSx for NetApp ONTAP
-link:quick-start-fsx.html[Quick start for Amazon FSx for NetApp ONTAP]
+link:../fsx-storage/quick-start-fsx.html[Quick start for Amazon FSx for NetApp ONTAP]
 
 == Get started with OCI NetApp Storage Service
-link:quick-start-oci.html[Quick start for OCI NetApp Storage Service]
+link:../oci/quick-start-oci.html[Quick start for OCI NetApp Storage Service]
 
 == Get started with Google Cloud NetApp Volumes
-link:quick-start-gcnv.html[Quick start for Google Cloud NetApp Volumes]
+link:../gcnv/quick-start-gcnv.html[Quick start for Google Cloud NetApp Volumes]
 

@@ -158,9 +158,7 @@ sidebar:
                 - title: Manage storage VM settings
                   url: /fsx-storage/manage-svm-settings-fsx.html
                 - title: Delete a storage VM 
-                  url: /fsx-storage/delete-svm-fsx.html
-            - title: Monitor operations with Tracker
-              url: /fsx-storage/monitor-operations-fsx.html       
+                  url: /fsx-storage/delete-svm-fsx.html   
         - title: Use FSx for ONTAP for database workloads
           entries:
             - title: Learn about Workload Factory for Databases
@@ -176,7 +174,7 @@ sidebar:
                 - title: Create PostgreSQL server
                   url: /fsx-databases/create-postgresql-server-fsx.html  
                 - title: Create a database
-                  url: /fsx-databases/create-database.html 
+                  url: /fsx-databases/create-sql-database.html 
                 - title: Create a sandbox clone 
                   url: /fsx-databases/create-sandbox-clone.html                   
             - title: Manage resources
@@ -206,93 +204,93 @@ sidebar:
         - title: Use FSx for ONTAP for EDA workloads
           entries:   
              - title: Learn about NetApp Workload Factory for EDA
-               url: /learn-eda.html 
+               url: fsx-eda/learn-eda.html 
              - title: Quick start
-               url: /quick-start-eda.html
+               url: /fsx-eda/quick-start-eda.html
              - title: Requirements
-               url: /requirements-eda.html
+               url: /fsx-eda/requirements-eda.html
              - title: EDA storage overview
                entries:
                  - title: Learn about the Overview dashboard
-                   url: /learn-overview-dashboard.html
+                   url: /fsx-eda/learn-overview-dashboard.html
                  - title: Activate the Overview dashboard
-                   url: /task-activate-overview-dashboard.html
+                   url: /fsx-eda/task-activate-overview-dashboard.html
                  - title: Use the Overview dashboard
-                   url: /task-use-overview-dashboard.html
+                   url: /fsx-eda/task-use-overview-dashboard.html
              - title: Project usage analysis
                entries:
                  - title: Learn about the Projects dashboard
-                   url: /learn-project-dashboard.html
+                   url: /fsx-eda/learn-project-dashboard.html
                  - title: Configure the Projects dashboard
-                   url: /task-configure-project-dashboard.html
+                   url: /fsx-eda/task-configure-project-dashboard.html
                  - title: Use the Projects dashboard
-                   url: /task-use-project-dashboard.html
+                   url: /fsx-eda/task-use-project-dashboard.html
              - title: Use Perforce integration
                entries: 
                   - title: Learn about Perforce integration
-                    url: /learn-eda-workloads.html
+                    url: /fsx-eda/learn-eda-workloads.html
                   - title: Manage projects
-                    url: /manage-projects.html
+                    url: /fsx-eda/manage-projects.html
                   - title: Manage project versions
-                    url: /version-projects.html
+                    url: /fsx-eda/version-projects.html
                   - title: Create a workspace
-                    url: /create-workspaces.html
+                    url: /fsx-eda/create-workspaces.html
                   - title: Integrate with Perforce
-                    url: /integrate-perforce.html
+                    url: /fsx-eda/integrate-perforce.html
         - title: Use FSx for ONTAP for VMware workloads
           entries:                   
             - title: Learn about NetApp Workload Factory for VMware
-              url: /learn-about-vmware-workloads.html
+              url: /fsx-vmware/learn-about-vmware-workloads.html
             - title: Quick start for migrating to Amazon EVS
-              url: /quick-start-evs.html        
+              url: /fsx-vmware/quick-start-evs.html        
             - title: Quick start for migrating to Amazon EC2
-              url: /quick-start-native.html
+              url: /fsx-vmware/quick-start-native.html
             - title: Quick start for migrating to VMware Cloud on AWS
-              url: /quick-start.html
+              url: /fsx-vmware/quick-start.html
             - title: Quick start for migrating to Google Cloud VMware Engine
-              url: /quick-start-gcve.html
+              url: /fsx-vmware/quick-start-gcve.html
             - title: Explore the VMware planning center
-              url: /explore-planning-center.html
+              url: /fsx-vmware/explore-planning-center.html
             - title: Use the VMware planning center
               entries:
                 - title: Upload VM inventory data
-                  url: /upload-vm-inventory.html
+                  url: /fsx-vmware/upload-vm-inventory.html
                 - title: Migrate to Amazon Elastic VMware Service
                   entries:
                     - title: Explore savings
-                      url: /calculate-evs-savings.html
+                      url: /fsx-vmware/calculate-evs-savings.html
                     - title: Manually create a deployment plan
-                      url: /launch-migration-advisor-evs-manual.html
+                      url: /fsx-vmware/launch-migration-advisor-evs-manual.html
                     - title: Create a deployment plan using the migration advisor
-                      url: /launch-migration-advisor-evs.html
+                      url: /fsx-vmware/launch-migration-advisor-evs.html
                     - title: Deploy the recommended FSx for ONTAP file system
-                      url: /deploy-fsx-file-system-evs.html
+                      url: /fsx-vmware/deploy-fsx-file-system-evs.html
                 - title: Migrate to Google Cloud VMware Engine
                   entries:
                     - title: Create a deployment plan using the migration advisor
-                      url: /launch-migration-advisor-gcve.html
+                      url: /fsx-vmware/launch-migration-advisor-gcve.html
                 - title: Migrate to Amazon EC2
                   entries:
                     - title: Create a deployment plan using the migration advisor
-                      url: /launch-onboarding-advisor-native.html
+                      url: /fsx-vmware/launch-onboarding-advisor-native.html
                     - title: Deploy the recommended FSx for ONTAP file system
-                      url: /deploy-fsx-file-system-native.html
+                      url: /fsx-vmware/deploy-fsx-file-system-native.html
                 - title: Migrate to VMware Cloud on AWS
                   entries:
                     - title: Create a deployment plan using the migration advisor
-                      url: /launch-onboarding-advisor.html
+                      url: /fsx-vmware/launch-onboarding-advisor.html
                     - title: Deploy the recommended FSx for ONTAP file system
-                      url: /deploy-fsx-file-system.html
+                      url: /fsx-vmware/deploy-fsx-file-system.html
                     - title: Connect FSx for ONTAP to VMware Cloud on AWS
-                      url: /connect-sddc-to-fsx.html
+                      url: /fsx-vmware/connect-sddc-to-fsx.html
                     - title: Migrate your data to the new infrastructure
-                      url: /migrate-data.html
-                - title: Administer and monitor
+                      url: /fsx-vmware/migrate-data.html
+                - title: Optimize VMware workloads on FSx for ONTAP
                   entries:
                     - title: Configuration analysis for EVS configurations
-                      url: /configuration-analysis.html
+                      url: /fsx-vmware/configuration-analysis.html
                     - title: Implement well-architected EVS configurations
-                      url: /view-evs-well-architected.html
+                      url: /fsx-vmware/view-evs-well-architected.html
         - title: Reference
           entries: 
             - title: Performance for FSx for ONTAP

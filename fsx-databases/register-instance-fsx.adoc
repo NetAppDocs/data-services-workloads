@@ -21,8 +21,8 @@ Workload Factory supports only Microsoft SQL Server instance and Oracle database
 == Before you begin
 You must do the following before you register an instance or database:
 
-* Make sure the hosts of the resources that you want to register appear in the inventory. link:add-credentials-fsx.html[Grant _operations and remediation_ permissions^] in your AWS account. 
-* Associate a link with the FSx for ONTAP file system that hosts the resources you want to register. link:create-link-fsx.html[Learn how to associate an existing link or to create and associate a new link.^] After the link associates, return to this operation.
+* Make sure the hosts of the resources that you want to register appear in the inventory. link:../fsx-storage/add-credentials-fsx.html[Grant _operations and remediation_ permissions^] in your AWS account. 
+* Associate a link with the FSx for ONTAP file system that hosts the resources you want to register. link:../fsx-storage/create-link-fsx.html[Learn how to associate an existing link or to create and associate a new link.^] After the link associates, return to this operation.
 
 === Registering an instance in a private network
 To register an instance or database in a private network without external connectivity, make the required endpoints available in the VPC and associate them with the relevant subnets. Allow port 443 in the Security Group for interface endpoints.

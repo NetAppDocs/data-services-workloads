@@ -95,7 +95,7 @@ When you clone a database, the clone at creation is a _baseline_ clone. The data
 In NetApp Workload Factory for Databases, splitting a database clone from its source database creates a new database which will consume a certain amount of storage capacity. The clone gets deleted when the split is complete and the new database appears in the Inventory. 
 
 .Before you begin
-Consider how much storage capacity is needed for the new database. If needed, link:adjust-file-system-capacity-fsx.html[increase file system capacity^] for the FSx for ONTAP file system before you begin.  
+Consider how much storage capacity is needed for the new database. If needed, link:../fsx-storage/adjust-file-system-capacity-fsx.html[increase file system capacity^] for the FSx for ONTAP file system before you begin.  
 
 .Steps
 . Log in to the link:https://console.netapp.com[NetApp Console^].

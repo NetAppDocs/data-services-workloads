@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task-add-roles.html
+permalink: add-roles-gcnv.html
 keywords: setup, set up, add role, requirements, permissions, google cloud netapp volumes, gcnv, bluexp. netapp console,assign
 summary: "The NetApp Console needs the correct roles assigned to members."
 ---
@@ -9,7 +9,7 @@ summary: "The NetApp Console needs the correct roles assigned to members."
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You must assign the correct roles to members in NetApp Console to start working with Google Cloud NetApp Volumes. For details, see link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html[Learn about NetApp Console access roles for all services^].

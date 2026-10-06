@@ -21,7 +21,7 @@ Replication includes creating and initializing a replication relationship. To se
 
 Replicated volumes in the target file system are data protection (DP) volumes and follow the naming format: `{OriginalVolumeName}_copy`.
 
-If you replicate a source volume with immutable files, the target volume and file system remain locked until the source volume's retention period ends. The immutable files feature is available when you link:create-volume.html[create a volume] for an FSx for ONTAP file system. 
+If you replicate a source volume with immutable files, the target volume and file system remain locked until the source volume's retention period ends. The immutable files feature is available when you link:create-volume-fsx.html[create a volume] for an FSx for ONTAP file system. 
 
 [NOTE]
 ===============================

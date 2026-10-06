@@ -28,7 +28,7 @@ Select the default link:permissions-oci.html[view, planning, and analysis] permi
 This step is optional. To perform some management tasks from the NetApp Console, you need a NetApp Workload Factory link. A _link_ leverages OCI Functions to create a trust relationship and connectivity to your OCI NSS systems.
 
 [role="quick-margin-list"]
-* link:links-overview.html[Learn when a Console agent or link is required for OCI NSS management]
+* link:../setup/links-overview.html[Learn when a Console agent or link is required for OCI NSS management]
 * link:create-link-oci.html[Learn how to create a link^]
 
 

@@ -17,7 +17,7 @@ NetApp Workload Factory for VMware provides a planning center and migration advi
 
 Amazon FSx for NetApp ONTAP is an external NFS datastore built on NetApp's ONTAP file system that can be attached to Amazon EVS or Amazon EC2 instances or VMware Cloud on AWS vSphere clusters. Similarly, Google Cloud NetApp Volumes provides external NFS datastores for Google Cloud VMware Engine environments. There is no need to add more hosts to increase available storage; instead, just use these cloud-native storage volumes as external datastores to complement vSAN datastores. This provides you with a flexible, high-performance, virtualized storage infrastructure that scales independently of compute resources.
 
-For more information about Workload Factory, refer to the link:learn-about-workload-factory.html[Workload Factory overview^].
+For more information about Workload Factory, refer to the link:../setup/learn-about-workload-factory.html[Workload Factory overview^].
 
 == How the VMware migration advisors work
 

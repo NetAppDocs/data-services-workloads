@@ -11,7 +11,7 @@ summary: "You can create and associate links to provide a trust relationship and
 [.lead]
 To perform advanced storage management operations, set up a connection between your NetApp Workload Factory account and an Oracle Cloud Infrastructure NetApp Storage Service (OCI NSS) system. This process involves creating and associating a link with your storage system. Link association lets you monitor and manage certain features directly from the OCI NSS system that are unavailable through OCI APIs. 
 
-link:links-overview.html[Learn more about links].
+link:../setup/links-overview.html[Learn more about links].
 
 == About this task
 
@@ -194,5 +194,5 @@ Workload Factory associates the link with the OCI NSS system. You can perform ad
 
 .Related information
 
-link:links-overview.html#when-a-link-is-required[Learn more about links].
+link:../setup/links-overview.html#when-a-link-is-required[Learn more about links].
 
