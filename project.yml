@@ -286,7 +286,7 @@ sidebar:
                 - title: Optimize VMware workloads on FSx for ONTAP
                   entries:
                     - title: Configuration analysis for EVS configurations
-                      url: /fsx-vmware/configuration-analysis-vmware.html
+                      url: /fsx-vmware/configuration-analysis.html
                     - title: Implement well-architected EVS configurations
                       url: /fsx-vmware/view-evs-well-architected.html
         - title: Reference
@@ -314,7 +314,7 @@ sidebar:
     - title: OCI NetApp Storage Service
       entries:
         - title: Learn about OCI NetApp Storage Service
-          url: /oci/learn-about-oci.html
+          url: /oci/learn-about.html
         - title: Quick start for OCI NetApp Storage Service
           url: /oci/quick-start-oci.html  
         - title: Add OCI credentials
