@@ -166,7 +166,7 @@ sidebar:
             - title: Quick start for Workload Factory for Databases
               url: /fsx-databases/quick-start-databases.html
             - title: Explore savings
-              url: /fsx-databases/explore-savings.html
+              url: /fsx-databases/explore-savings-databases.html
             - title: Create database resources
               entries:
                 - title: Create Microsoft SQL Server    
@@ -202,7 +202,7 @@ sidebar:
         - title: Use FSx for ONTAP for EDA workloads
           entries:   
              - title: Learn about NetApp Workload Factory for EDA
-               url: fsx-eda/learn-eda.html 
+               url: /fsx-eda/learn-eda.html 
              - title: Quick start
                url: /fsx-eda/quick-start-eda.html
              - title: Requirements
@@ -244,7 +244,7 @@ sidebar:
             - title: Quick start for migrating to Amazon EC2
               url: /fsx-vmware/quick-start-native.html
             - title: Quick start for migrating to VMware Cloud on AWS
-              url: /fsx-vmware/quick-start.html
+              url: /fsx-vmware/quick-start-vmware.html
             - title: Quick start for migrating to Google Cloud VMware Engine
               url: /fsx-vmware/quick-start-gcve.html
             - title: Explore the VMware planning center
@@ -310,11 +310,11 @@ sidebar:
         - title: Configuration analysis for Google Cloud NetApp Volumes
           url: /gcnv/configuration-analysis-gcnv.html
         - title: Improve storage pool configurations
-          url: /gcnv/improve-configurations.html
+          url: /gcnv/improve-configurations-gcnv.html
     - title: OCI NetApp Storage Service
       entries:
         - title: Learn about OCI NetApp Storage Service
-          url: /oci/learn-about.html
+          url: /oci/learn-about-oci.html
         - title: Quick start for OCI NetApp Storage Service
           url: /oci/quick-start-oci.html  
         - title: Add OCI credentials
