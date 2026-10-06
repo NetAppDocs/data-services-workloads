@@ -100,4 +100,4 @@ Termination behavior may vary by feature. See the feature-specific documentation
 * link:../setup/learn-about-workload-factory.html[Learn about Workload Factory features]
 * link:learn-custom-dashboards-fsx.html[Learn about Custom dashboards]
 * link:../fsx-storage/add-credentials.html[Add AWS credentials]
-* link:../fsx-storage/permissions.html[Permissions reference]
+* link:../fsx-storage/permissions-reference-fsx.html[Permissions reference]

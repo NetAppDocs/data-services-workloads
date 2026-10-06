@@ -17,7 +17,7 @@ indexpage:
     - title: Permissions
       links:
         - title: Permissions for Amazon FSx for NetApp ONTAP
-          url: /fsx-storage/permissions.html  
+          url: /fsx-storage/permissions-reference-fsx.html  
         - title: Permissions for OCI NetApp Storage Service
           url: /oci/permissions-oci.html  
     - title: Use Workload Factory for your cloud provider

@@ -16,7 +16,7 @@ Upon database creation, two new volumes are created in the FSx for ONTAP file sy
 
 If you want to segregate storage for the database, you can do this by using a _virtual mount point_. The virtual mount point lets you consolidate databases to a few common drives on the host. 
 
-Creating a database in workload factory requires _view, planning, and analysis_ permissions. Alternatively, you can copy or download a partially completed code template to complete the operation outside workload factory. link:../fsx-storage/permissions.html[Learn about Workload Factory permissions^] to decide which mode you'd like to use. 
+Creating a database in workload factory requires _view, planning, and analysis_ permissions. Alternatively, you can copy or download a partially completed code template to complete the operation outside workload factory. link:../fsx-storage/permissions-reference-fsx.html[Learn about Workload Factory permissions^] to decide which mode you'd like to use. 
 
 NOTE: Microsoft SQL Servers using SMB protocol don't support database creation. 
 

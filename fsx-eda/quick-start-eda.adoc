@@ -19,7 +19,7 @@ You'll need to link:../setup/sign-up-and-log-in.html[sign up and log in] to the 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Add credentials and permissions for the EDA workload
 
 [role="quick-margin-para"]
-link:../fsx-storage/add-credentials.html[Add credentials to an account manually] that includes selecting the EDA workload capability, and link:../fsx-storage/permissions.html[create the IAM policies for the required permissions].
+link:../fsx-storage/add-credentials.html[Add credentials to an account manually] that includes selecting the EDA workload capability, and link:../fsx-storage/permissions-reference-fsx.html[create the IAM policies for the required permissions].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Set up your environment to meet EDA requirements
 

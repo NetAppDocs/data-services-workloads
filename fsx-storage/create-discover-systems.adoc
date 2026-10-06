@@ -24,7 +24,7 @@ A storage VM is created when you create a file system.
 .Before you begin
 Before creating your FSx for ONTAP file system, you will need:
 
-* The ARN of an IAM role that gives Workload Factory the permissions needed to create an FSx for ONTAP file system. link:permissions.html[Learn how to grant permissions to an AWS account^].
+* The ARN of an IAM role that gives Workload Factory the permissions needed to create an FSx for ONTAP file system. link:permissions-reference-fsx.html[Learn how to grant permissions to an AWS account^].
 
 * The region and VPC information for where you will create the FSx for ONTAP instance.
 

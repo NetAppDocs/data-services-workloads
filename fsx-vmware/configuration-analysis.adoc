@@ -4,7 +4,6 @@ permalink: fsx-vmware/configuration-analysis.html
 keywords: evs, well-architected, configuration analysis, best practices, recommendations
 summary: Learn how Workload Factory analyzes Amazon Elastic VMware Service configurations to identify issues and provide best practice recommendations.
 ---
-
 = Configuration analysis for EVS configurations
 :icons: font
 :imagesdir: ../media/
