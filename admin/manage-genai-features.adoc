@@ -4,7 +4,7 @@ permalink: admin/manage-genai-features.html
 keywords: gen ai, generative ai, bedrock, ask me, custom dashboards, rules builder, cloudshell ai, ems analyzer, db log analyzer, latency analyzer, byom, bring your own model, administration
 summary: "Control access to Bedrock-based AI features in Workload Factory. You can turn off AI capabilities or use NetApp-managed AWS Bedrock."
 ---
-= Manage AI features in NetApp Workload Factory
+= Manage AI features for FSx for ONTAP in NetApp Workload Factory
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -12,7 +12,7 @@ summary: "Control access to Bedrock-based AI features in Workload Factory. You c
 :imagesdir: ../media/
 
 [.lead]
-Control access to AI features in Workload Factory. You can turn off AI features or use AWS Bedrock managed by NetApp. 
+Control access to AI features for FSx for ONTAP in Workload Factory. You can turn off AI features or use AWS Bedrock managed by NetApp. 
 
 == About AI features
 
@@ -40,9 +40,9 @@ GenAI features off:: Turns off all AI features. Users can no longer use Ask Me, 
 
 .Steps
 
-. Log in using one of the link:console-experiences.html[console experiences^].
+. Log in to the link:https://console.netapp.com[NetApp Console^].
 
-. From the menu, select *Administration* and then *AI settings*.
+. From the NetApp Console menu, select *Workloads* > *Administration* > *AI settings*.
 
 . On the *AI settings* page, select your preferred configuration:
 
@@ -80,16 +80,14 @@ If you need more AI credits, contact your NetApp representative. They can adjust
 
 [TIP]
 ====
-To contact your NetApp representative about credit limits, use the in-product chat or visit the link:get-help.html[Get help] page.
+To contact your NetApp representative about credit limits, use the in-product chat or visit the link:../get-help.html[Get help] page.
 ====
 
-== GovCloud considerations
+== AWS GovCloud considerations
 
 If you create a Workload Factory account in AWS GovCloud (US), note that AI features use AWS Bedrock services in public AWS Regions by default.
 
 If your security requirements do not allow connections to public AWS Region services, you can disable AI features.
-
-link:sign-up-saas.html[Learn about creating GovCloud accounts].
 
 == Impact on existing sessions
 
@@ -99,7 +97,7 @@ Termination behavior may vary by feature. See the feature-specific documentation
 
 == Related information
 
-* link:workload-factory-overview.html[Learn about Workload Factory features]
-* link:learn-custom-dashboards.html[Learn about Custom dashboards]
-* link:add-credentials.html[Add AWS credentials]
-* link:permissions-reference.html[Permissions reference]
+* link:../setup/learn-about-workload-factory.html[Learn about Workload Factory features]
+* link:learn-custom-dashboards-fsx.html[Learn about Custom dashboards]
+* link:../fsx-storage/add-credentials.html[Add AWS credentials]
+* link:../fsx-storage/permissions-reference-fsx.html[Permissions reference]

@@ -9,9 +9,9 @@ summary: "You can view links associated with your account, update passwords for 
 :imagesdir: ../media/
 
 [.lead]
-Manage links that you've associated with your Workload Factory account. You can view links that are associated with an FSx for ONTAP file system or an OCI NetApp Storage Service system, provide passwords used for link authentication, and remove links from NetApp Console.
+Manage links that you've associated with your Workload Factory account. You can view links that are associated with an FSx for ONTAP file system or an OCI NetApp Storage Service (OCI NSS) system, provide passwords used for link authentication, and remove links from NetApp Console.
 
-link:setup/links-overview.html[Learn more about links] or link:fsx-storage/create-link-fsx.html[create and associate a link].
+link:../setup/links-overview.html[Learn more about links.]
 
 == View the links associated with your account
 You can view the links that are currently associated with your account.
@@ -21,12 +21,10 @@ You can view the links that are currently associated with your account.
 +
 Existing links appear on the Links page.
 . To view the storage systems that are associated with a link, select the *View* button in the Associated resources section.
-+
-image:screenshot-view-link-details.png["A screenshot that shows the FSx for ONTAP file systems that are using a specific link."]
 . If you need the Amazon Resource Name (ARN) for the link, you can select the _copy_ icon next to the ARN field. 
 
 == Edit a link
-You can't edit a link from the Workload Factory interface. If you need to make a change to a link, you'll need to create a new link and then associate that link to your storage system.
+You can't edit a link from NetApp Console. If you need to make a change to a link, you'll need to create a new link and then associate that link to your storage system.
 
 NOTE: You can edit the AWS Lambda or Oracle Cloud Functions network configuration (for example VPC, subnets, and security groups) using your cloud provider's console and the changes will be reflected in links or Functions management UI; however, these changes can lead to connectivity issues between AWS Lambda or Oracle CLoud Functions and ONTAP, and are not recommended. 
 
@@ -107,7 +105,7 @@ When the administrative password is invalid, update the password to connect the 
 ====
 
 .Result
-The password is updated, and the link is now connected to the FSx for ONTAP file system.
+The password is updated, and the link is now connected to the storage system.
 
 == Remove a link
 You can remove a link that you're no longer using in your environment. Any storage systems or other resources that were using the link will be unable to use certain functionality after the link is removed.
@@ -128,8 +126,6 @@ Note that the link is only deleted from Workload Factory - it is not deleted fro
 +
 Existing links appear on the Links page.
 . From the Links page, select the actions menu of the link to remove and then select *Remove*.
-+
-image:screenshot-remove-link.png["A screenshot showing how to remove a link from Workload Factory."]
 . If you are sure, select *Remove* again.
 
 Refer to the AWS documentation to link:https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-awscli.html#with-userapp-walkthrough-custom-events-delete-function[delete the Lambda function].
@@ -143,8 +139,6 @@ Refer to the AWS documentation to link:https://docs.aws.amazon.com/lambda/latest
 +
 Existing links appear on the Links page.
 . From the Links page, select the actions menu of the link to remove and then select *Remove*.
-+
-image:screenshot-remove-link.png["A screenshot showing how to remove a link from Workload Factory."]
 . If you are sure, select *Remove* again.
 --
 

@@ -1,0 +1,44 @@
+---
+sidebar: sidebar
+permalink: oci/create-discover-systems.html
+keywords: Amazon FSx for NetApp ONTAP, fsx, volumes, create system, delete system, access key, secret key, region, availability zones, discover, storage capacity, iops, throughput, security group, security, NetApp Console, Oracle Cloud Infrastructure NetApp Storage Service
+summary: "Create or discover cloud storage systems to add and manage volumes and additional data services from the NetApp Console."
+---
+= Create or discover Oracle Cloud Infrastructure NetApp Storage Service systems in NetApp Console
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ../media/
+
+[.lead]
+Discover Oracle Cloud Infrastructure NetApp Storage Service (OCI NSS) systems and manage volumes and additional data services from the NetApp Console.
+
+== Discover an existing cloud storage system 
+Discover your storage systems from the Discoverable systems page. 
+
+.Before you begin
+Provide your credentials for your OCI NSS environment in Workload Factory. 
+
+.About this task
+You can discover a cloud storage system only once within an account and attach it to one workspace. The storage system can later be removed and re-associated to a different workspace.
+
+.Steps
+
+. From the NetApp Console menu, select *Storage*, then *Management*, and then *Discoverable systems*. 
+
+. The count of discovered cloud storage systems displays. Select *Discover*.  
+
+. Select one or more storage systems and select *Discover* to add them to the Systems page. 
+
+[NOTE]
+===============================
+* If you select an un-named storage system, you will receive a prompt to enter a name for the system.
+
+* If you select a storage system that doesn't have the credentials required to manage it from the Console, you'll receive a prompt to select credentials with the required permissions. 
+
+===============================
+
+.Result
+
+The Console displays your discovered system on the Systems page. You can manage your storage systems in several ways, such as from Workloads in the NetApp Console and using ONTAP System Manager or using your cloud provider's storage management tools. 
