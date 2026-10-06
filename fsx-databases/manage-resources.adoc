@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: fsx-databases/manage-resources-fsx.html
+permalink: fsx-databases/manage-resources.html
 keywords: instance, instance management, FSx for ONTAP, instance, manage host, view host, database host, database instance, manage
 summary: "Learn about instance and database management in NetApp Workload Factory for Databases." 
 ---
@@ -11,11 +11,11 @@ summary: "Learn about instance and database management in NetApp Workload Factor
 [.lead]
 Managing resources in NetApp Workload Factory for Databases allows you to use advanced features including database and clone creation, resource utilization and monitoring. Additionally, you can analyze the well-architected status of your database configurations and implement configuration best practices to improve performance and lower operational costs. Resource management is only for Microsoft SQL Server and Oracle environments running on FSx for ONTAP file system storage.
 
-You must link:register-instance-fsx.html[register resources] to do any of the following management tasks.
+You must link:register-instance.html[register resources] to do any of the following management tasks.
 
 Management tasks include:
 
 * Viewing databases from the Inventory
-* link:create-sql-database-fsx.html[Creating a database]
-* link:create-sandbox-clone-fsx.html[Creating a database clone (sandbox)]
-* link:optimize-configurations-fsx.html[Implementing well-architected database configurations]
+* link:create-sql-database.html[Creating a database]
+* link:create-sandbox-clone.html[Creating a database clone (sandbox)]
+* link:optimize-configurations.html[Implementing well-architected database configurations]

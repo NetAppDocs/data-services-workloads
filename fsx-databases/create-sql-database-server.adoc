@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: fsx-databases/create-sql-database-server-fsx.html
+permalink: fsx-databases/create-sql-database-server.html
 keywords: create, server, Microsoft SQL, deploy, host, deploy a database host, database host 
 summary: "Create a new Microsoft SQL Server within NetApp Workload Factory for Databases." 
 ---
@@ -290,4 +290,4 @@ After the server deploys, Workload Factory does not enable remote connection on 
 . Allow the required client IP or subnet in the security group. 
 
 .What's next
-Now you can link:create-sql-database-fsx.html[create a database in Workload Factory for Databases]. 
+Now you can link:create-sql-database.html[create a database in Workload Factory for Databases]. 

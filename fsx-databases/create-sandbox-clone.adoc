@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: fsx-databases/create-sandbox-clone-fsx.html
+permalink: fsx-databases/create-sandbox-clone.html
 keywords: create, clone, sandbox
 summary: "Create a sandbox clone in NetApp Workload Factory for Databases." 
 ---

@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: fsx-databases/register-instance-fsx.html
+permalink: fsx-databases/register-instance.html
 keywords: manage, register, Microsoft SQL Server instance, Oracle database, manage database, manage instance
 summary: "Register resources so that you can monitor resource status, resource utilization, protection, and storage performance in NetApp Workload Factory for Databases."
 ---
@@ -14,7 +14,7 @@ Register instances for Microsoft SQL Server and databases for Oracle so that you
 You can register your resources only if they run on FSx for ONTAP file system storage.
 
 == About the task
-Registering an instance (SQL Server) or database (Oracle) involves two steps: instance or database authentication and preparation. Authentication is the process of verifying the credentials for the instance or database. Preparation includes installing AWS, NetApp, and PowerShell modules on the instance or database, to meet the minimum requirements for Workload Factory for Databases features like link:create-sql-database-fsx.html[creating a database], link:create-sandbox-clone-fsx.html[creating a sandbox], link:analyze-error-logs-fsx.html[error log analysis] or link:optimize-configurations-fsx.html[the well-architected assessment].
+Registering an instance (SQL Server) or database (Oracle) involves two steps: instance or database authentication and preparation. Authentication is the process of verifying the credentials for the instance or database. Preparation includes installing AWS, NetApp, and PowerShell modules on the instance or database, to meet the minimum requirements for Workload Factory for Databases features like link:create-sql-database.html[creating a database], link:create-sandbox-clone.html[creating a sandbox], link:analyze-error-logs.html[error log analysis] or link:optimize-configurations.html[the well-architected assessment].
 
 Workload Factory supports only Microsoft SQL Server instance and Oracle database registration and management. Depending on the AWS account credentials you select in Workload Factory, PostgreSQL hosts appear in the Inventory. Currently, Workload Factory supports unregistered PostgreSQL instances running only on Amazon Linux operating systems.
 
@@ -65,7 +65,7 @@ To meet the minimum requirements, the instance must have AWS and NetApp PowerShe
 You must complete all prerequisites for a single capability like *Review well-architected issues and recommendations* to register the instance.
 .. Select *Setup details* for each capability to learn about the capability prerequisites and follow the on-screen instructions to complete any missing prerequisites for a capability. 
 +
-To enable Workload Factory to link:optimize-configurations-fsx.html[review and fix well-architected issues], complete all prerequisites under *Review well-architected issues and recommendations* and *Fix well-architected issues*.
+To enable Workload Factory to link:optimize-configurations.html[review and fix well-architected issues], complete all prerequisites under *Review well-architected issues and recommendations* and *Fix well-architected issues*.
 
 . After you complete all prerequisites, *Register* the instance(s).
 
@@ -95,7 +95,7 @@ If all required modules are installed and prerequisites are met, select *Next* t
 You must complete all prerequisites for a single capability like *Review well-architected issues and recommendations* to register the database. 
 .. Select *Setup details* for each capability to learn about the capability prerequisites and follow the on-screen instructions to complete any missing prerequisites for a capability. 
 +
-To have Workload Factory link:optimize-configurations-fsx.html[review and fix well-architected issues] for your databases, complete all prerequisites listed under *Review well-architected issues and recommendations* and *Fix well-architected issues* capabilities.
+To have Workload Factory link:optimize-configurations.html[review and fix well-architected issues] for your databases, complete all prerequisites listed under *Review well-architected issues and recommendations* and *Fix well-architected issues* capabilities.
 
 . After you complete the prerequisites, *Register* the database(s).
 
@@ -107,6 +107,6 @@ Database registration initiates. Select the *Job monitoring* tab to track progre
 After registration, you can perform these tasks.
 
 * View databases from the inventory
-* link:create-sql-database-fsx.html[Create a database]
-* link:create-sandbox-clone-fsx.html[Create a database clone (sandbox)]
-* link:optimize-configurations-fsx.html[Get a comprehensive well-architected assessment of database configurations]
+* link:create-sql-database.html[Create a database]
+* link:create-sandbox-clone.html[Create a database clone (sandbox)]
+* link:optimize-configurations.html[Get a comprehensive well-architected assessment of database configurations]

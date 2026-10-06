@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: fsx-databases/deregister-instance-fsx.html
+permalink: fsx-databases/deregister-instance.html
 keywords: Microsoft SQL Server instance, PostgreSQL server instance, Oracle database, deregister instance, unregister instance, remove instance
 summary: "Deregister a resource if you no longer want to deploy or monitor resources from the Workload Factory console." 
 ---

@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: fsx-databases/manage-clones-fsx.html
+permalink: fsx-databases/manage-clones.html
 keywords: manage clones, manage sandboxes, manage sandbox clones, check clone integrity, check data integrity, connect to CICD, delete clone 
 summary: "Manage your sandbox clones in NetApp Workload Factory for Databases to keep your development and testing environments reliable and cost-effective." 
 ---

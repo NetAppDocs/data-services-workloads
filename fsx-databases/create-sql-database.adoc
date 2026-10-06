@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: fsx-databases/create-sql-database-fsx.html
+permalink: fsx-databases/create-sql-database.html
 keywords: create, database, creation, Microsoft SQL
 summary: "Create a Microsoft SQL database with NetApp Workload Factory for Databases." 
 ---

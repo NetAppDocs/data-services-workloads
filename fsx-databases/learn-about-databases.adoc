@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: fsx-databases/learn-about-databases-fsx.html
+permalink: fsx-databases/learn-about-databases.html
 keywords: Databases, FSx for ONTAP, Workload Factory
 summary: "NetApp Workload Factory for Databases is an end-to-end database deployment and maintenance service with built-in best practices for optimization, automatic thin cloning, and monitoring and resolution capabilities." 
 ---

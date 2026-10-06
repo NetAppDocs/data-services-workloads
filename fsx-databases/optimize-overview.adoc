@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: fsx-databases/optimize-overview-fsx.html
+permalink: fsx-databases/optimize-overview.html
 keywords: database configuration issues, issues, analyze, scan, optimize, improve, database configuration, Amazon FSx for NetApp ONTAP, FSx for ONTAP, recommendation, recommendations, storage, compute, application, resiliency, scan, optimization, SQL Server, host, instance
 summary: "Workload Factory for Databases analyzes Microsoft SQL Server and Oracle configurations regularly to determine if any there are any issues."   
 ---
@@ -18,7 +18,7 @@ include::_include/well-architected-workloads.adoc[]
 == Options for analyzing your database environment
 Workload Factory provides the following options for analyzing your database environment:
 
-* *One-time assessment*: Perform a link:optimize-configurations-fsx.html[one-time assessment] to find out the well-architected status of your Microsoft SQL Server instances or Oracle databases without storing credentials or registering resources. 
+* *One-time assessment*: Perform a link:optimize-configurations.html[one-time assessment] to find out the well-architected status of your Microsoft SQL Server instances or Oracle databases without storing credentials or registering resources. 
 +
 For the one-time assessment, you only need to provide credentials once for the Microsoft SQL Server instances or Oracle databases you want to analyze. 
 
@@ -551,4 +551,4 @@ Regularly remove outdated clones to reduce storage cost and operational clutter.
 
 .What's next
 
-link:optimize-configurations-fsx.html[Implement well-architected database configurations]
+link:optimize-configurations.html[Implement well-architected database configurations]

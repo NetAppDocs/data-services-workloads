@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: fsx-databases/protect-sql-server-fsx.html
+permalink: fsx-databases/protect-sql-server.html
 keywords: protect, server, Microsoft SQL Server, SQL Server, protect instance, protect database
 summary: "Protect Microsoft SQL Server instances and databases."
 ---

@@ -162,45 +162,45 @@ sidebar:
         - title: Use FSx for ONTAP for database workloads
           entries:
             - title: Learn about Workload Factory for Databases
-              url: /fsx-databases/learn-about-databases-fsx.html
+              url: /fsx-databases/learn-about-databases.html
             - title: Quick start for Workload Factory for Databases
-              url: /fsx-databases/quick-start-databases-fsx.html
+              url: /fsx-databases/quick-start-databases.html
             - title: Explore savings
               url: /fsx-databases/explore-savings-fsx-databases.html
             - title: Create database resources
               entries:
                 - title: Create Microsoft SQL Server    
-                  url: /fsx-databases/create-sql-database-server-fsx.html
+                  url: /fsx-databases/create-sql-database-server.html
                 - title: Create PostgreSQL server
-                  url: /fsx-databases/create-postgresql-server-fsx.html  
+                  url: /fsx-databases/create-postgresql-server.html  
                 - title: Create a database
-                  url: /fsx-databases/create-sql-database-fsx.html 
+                  url: /fsx-databases/create-sql-database.html 
                 - title: Create a sandbox clone 
-                  url: /fsx-databases/create-sandbox-clone-fsx.html                   
+                  url: /fsx-databases/create-sandbox-clone.html                   
             - title: Manage resources
               entries: 
                 - title: Resource management
-                  url: /fsx-databases/manage-resources-fsx.html
+                  url: /fsx-databases/manage-resources.html
                 - title: Register resources
-                  url: /fsx-databases/register-instance-fsx.html
+                  url: /fsx-databases/register-instance.html
                 - title: Manage database clones
-                  url: /fsx-databases/manage-clones-fsx.html                               
+                  url: /fsx-databases/manage-clones.html                               
                 - title: Deregister resources
-                  url: /fsx-databases/deregister-instance-fsx.html                                               
+                  url: /fsx-databases/deregister-instance.html                                               
             - title: Protect, monitor, and optimize database resources
               entries:
                 - title: Analyze error logs
-                  url: /fsx-databases/analyze-error-logs-fsx.html  
+                  url: /fsx-databases/analyze-error-logs.html  
                 - title: Implement configuration best practices
                   entries: 
                     - title: Configuration analysis for Databases
-                      url: /fsx-databases/optimize-overview-fsx.html  
+                      url: /fsx-databases/optimize-overview.html  
                     - title: Implement well-architected database configurations   
-                      url: /fsx-databases/optimize-configurations-fsx.html  
+                      url: /fsx-databases/optimize-configurations.html  
                 - title: Monitor database jobs
                   url: /fsx-databases/monitor-databases-fsx.html                          
                 - title: Protect SQL Server database resources
-                  url: /fsx-databases/protect-sql-server-fsx.html
+                  url: /fsx-databases/protect-sql-server.html
         - title: Use FSx for ONTAP for EDA workloads
           entries:   
              - title: Learn about NetApp Workload Factory for EDA

@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: fsx-databases/optimize-configurations-fsx.html
+permalink: fsx-databases/optimize-configurations.html
 keywords: optimize, configuration, storage, compute, application, resiliency assessment, scan, optimization, Microsoft SQL Server, host, instance, FSx for ONTAP
 summary: "NetApp Workload Factory for Databases scans Microsoft SQL Server configurations providing insights and recommendations to help you achieve operational excellence." 
 ---
@@ -13,7 +13,7 @@ Using configuration analysis insights and recommendations, leverage NetApp Workl
 
 You can also dismiss the analysis of configurations that don't apply to your environment to avoid extra alerts and inaccurate results.
 
-link:optimize-overview-fsx.html[Learn about the configuration analysis and well-architected status in Workload Factory.]
+link:optimize-overview.html[Learn about the configuration analysis and well-architected status in Workload Factory.]
 
 == About this task
 Workload Factory analyzes database configurations daily. The daily analysis provides well-architected status, insights, and recommendations. 
@@ -174,6 +174,6 @@ Workload Factory reactivates the configuration analysis and runs it every day fr
 
 == Related information
 
-* link:optimize-overview-fsx.html[Learn about the configuration analysis for database resources and well-architected status in Workload Factory]
+* link:optimize-overview.html[Learn about the configuration analysis for database resources and well-architected status in Workload Factory]
 * link:../fsx-storage/create-link-fsx.html[Connect to an FSx for ONTAP file system using a link^]
 * link:../fsx-storage/learn-custom-rules-fsx.html[Learn about custom rules^]

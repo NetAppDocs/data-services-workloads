@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: fsx-databases/create-postgresql-server-fsx.html
+permalink: fsx-databases/create-postgresql-server.html
 keywords: create, server, PostgreSQL, deploy, host, deploy a database host, database host 
 summary: "Create a new PostgreSQL SQL server within NetApp Workload Factory for Databases." 
 ---
