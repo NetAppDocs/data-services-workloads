@@ -298,13 +298,13 @@ sidebar:
     - title: Google Cloud NetApp Volumes
       entries: 
         - title: Learn about Google Cloud NetApp Volumes
-          url: /gcnv/learn-netapp-volumes-gcnv.html
+          url: /gcnv/learn-netapp-volumes.html
         - title: Quick start for Google Cloud NetApp Volumes
           url: /gcnv/quick-start-gcnv.html
         - title: Set up Google Cloud NetApp Volumes
-          url: /gcnv/set-up-gcnv.html
+          url: /gcnv/set-up.html
         - title: Assign Google Cloud NetApp Volumes roles
-          url: /gcnv/add-roles-gcnv.html
+          url: /gcnv/add-roles.html
         - title: Add Google Cloud NetApp Volumes credentials
           url: /gcnv/add-credentials-gcnv.html
         - title: Configuration analysis for Google Cloud NetApp Volumes
@@ -314,7 +314,7 @@ sidebar:
     - title: OCI NetApp Storage Service
       entries:
         - title: Learn about OCI NetApp Storage Service
-          url: /oci/learn-about-oci.html
+          url: /oci/learn-about.html
         - title: Quick start for OCI NetApp Storage Service
           url: /oci/quick-start-oci.html  
         - title: Add OCI credentials

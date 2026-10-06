@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: gcnv/learn-netapp-volumes-gcnv.html
+permalink: gcnv/learn-netapp-volumes.html
 keywords: google cloud netapp volumes, cost, price, features, google cloud netapp volumes features, gcnv, supported regions, google regions, google cloud netapp volumes regions
 summary: Google Cloud NetApp Volumes enables enterprises to migrate and run their performance-intensive and latency-sensitive core, business-critical applications in Google with no need to refactor for the cloud.
 ---

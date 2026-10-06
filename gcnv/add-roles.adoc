@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: add-roles-gcnv.html
+permalink: gcnv/add-roles.html
 keywords: setup, set up, add role, requirements, permissions, google cloud netapp volumes, gcnv, bluexp. netapp console,assign
 summary: "The NetApp Console needs the correct roles assigned to members."
 ---

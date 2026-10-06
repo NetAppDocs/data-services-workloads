@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: gcnv/set-up-gcnv.html
+permalink: gcnv/set-up.html
 keywords: setup, set up, api, service account, requirements, permissions, google cloud netapp volumes, gcnv, bluexp, netapp console
 summary: "The NetApp Console needs access to the Google Cloud NetApp Volumes API and the right permissions through a Google Cloud service account."
 ---
@@ -92,4 +92,4 @@ If you encounter an error, the *iam.disableCrossProjectServiceAccountUsage* poli
 
 .What's next?
 
-link:add-roles-gcnv.html[Assign Google Cloud NetApp Volumes roles].
+link:add-roles.html[Assign Google Cloud NetApp Volumes roles].

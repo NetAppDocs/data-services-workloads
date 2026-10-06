@@ -25,7 +25,7 @@ indexpage:
         - title: Amazon FSx for NetApp ONTAP
           url: /fsx-storage/learn-fsx-ontap.html
         - title: Google Cloud NetApp Volumes
-          url: /gcnv/learn-netapp-volumes-gcnv.html
+          url: /gcnv/learn-netapp-volumes.html
         - title: OCI NetApp Storage Service
           url: /oci/learn-about-oci.html
     - title: Administer Workload Factory
