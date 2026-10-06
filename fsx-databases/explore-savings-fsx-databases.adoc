@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: fsx-databases/explore-savings-fsx-databases.html
+permalink: fsx-databases/explore-savings.html
 keywords: cost, savings, compare costs, EBS, FSx for Windows File Server, SQL Server on-premises, on-premises, FSx for ONTAP
 summary: "Compare the costs of using Amazon Elastic Block Store (EBS), FSx for Windows File Server, and SQL Server on-premises database storage with FSx for ONTAP storage." 
 ---

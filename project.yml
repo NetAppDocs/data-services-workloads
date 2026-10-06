@@ -166,7 +166,7 @@ sidebar:
             - title: Quick start for Workload Factory for Databases
               url: /fsx-databases/quick-start-databases.html
             - title: Explore savings
-              url: /fsx-databases/explore-savings-fsx-databases.html
+              url: /fsx-databases/explore-savings.html
             - title: Create database resources
               entries:
                 - title: Create Microsoft SQL Server    
