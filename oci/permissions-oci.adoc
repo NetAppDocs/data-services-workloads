@@ -1,0 +1,70 @@
+---
+sidebar: sidebar
+permalink: oci/permissions-oci.html
+keywords: Oracle Cloud Infrastructure NetApp Storage Service,oci nss, permissions, actions
+summary: "To use NetApp Workload Factory features and services, you'll need to provide permissions so that Workload Factory can perform operations in your cloud environment." 
+---
+= OCI NetApp Storage Service permissions for NetApp Workload Factory
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ../media/
+
+[.lead]
+Review the permissions required for managing Oracle Cloud Infrastructure NetApp Storage Service (OCI NSS) resources with NetApp Workload Factory.
+
+== How Workload Factory uses OCI NetApp Storage Service permissions
+When you create a cross-tenancy policy that admits the Workload Factory identity into your tenancy, Workload Factory calls OCI APIs as that NetApp identity, and OCI checks each request against the permissions you granted.
+
+You do not share user passwords or API keys. Access exists only while your policy is in place.
+
+== Cross-tenancy trust
+
+NetApp operates the `workload-factory-OCI-SN` group in a NetApp-owned OCI tenancy. You establish a cross-tenancy policy in the tenancy root compartment that grants this group a narrow, explicit set of permissions in your tenancy. Every OCI API call is evaluated against this contract per request; you can audit and revoke it at any time.
+
+=== OCI NetApp Storage Service tenancy
+The default tenancy for OCI NSS is the tenancy root compartment of your OCI tenancy.
+
+Optionally, when you require least privilege, you can replace in tenancy with in compartment <name> on each line.
+
+== IAM policies for OCI NSS
+Workload Factory accesses your Oracle Cloud Infrastructure (OCI) tenancy only after you add a cross-tenancy policy that admits the Workload Factory service. 
+
+Create that policy in the root compartment of your tenancy. The policy lists the exact permissions Workload Factory is allowed to use. Each API request is checked against it. You can review the policy in the OCI Console and revoke it at any time to stop access.
+
+The following permission policy is available.
+
+* *View, plan, and analyze*: View OCI NetApp Storage Service resources, learn about system health, get the well-architected analysis for your systems, and explore savings.
+
+//* *Operations and remediation*: Perform operational tasks like adjust storage system capacity and fix issues for your storage system configurations.
+
+View the required policies:
+
+.Permission policies for OCI NetApp Storage Service
+[%collapsible]
+====
+[role="tabbed-block"]
+=====
+.View, plan, and analyze
+--
+[source, text]
+----
+Define tenancy NetAppWF as ocid1.tenancy.oc1..<>
+Define group NetAppOpsWF as ocid1.group.oc1..<>
+Admit group NetAppOpsWF of tenancy NetAppWF to inspect tenancies in tenancy
+Admit group NetAppOpsWF of tenancy NetAppWF to read compartments in tenancy
+Admit group NetAppOpsWF of tenancy NetAppWF to read instance-family in tenancy
+Admit group NetAppOpsWF of tenancy NetAppWF to read metrics in tenancy
+Admit group NetAppOpsWF of tenancy NetAppWF to read log-content in tenancy
+Admit group NetAppOpsWF of tenancy NetAppWF to use virtual-network-family in tenancy
+Admit group NetAppOpsWF of tenancy NetAppWF to read file-family in tenancy
+Admit group NetAppOpsWF of tenancy NetAppWF to manage functions-family in tenancy
+Admit group NetAppOpsWF of tenancy NetAppWF to read log-groups in tenancy
+Admit group NetAppOpsWF of tenancy NetAppWF to read netapp-storage-pool in tenancy
+Admit group NetAppOpsWF of tenancy NetAppWF to read netapp-svm in tenancy
+Admit group NetAppOpsWF of tenancy NetAppWF to read netapp-work-request in tenancy
+----
+--
+=====
+====

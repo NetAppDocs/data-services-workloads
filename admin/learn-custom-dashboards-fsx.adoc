@@ -1,0 +1,98 @@
+---
+sidebar: sidebar
+permalink: admin/learn-custom-dashboards-fsx.html
+keywords: custom dashboards, dashboards, personalized dashboards, AI dashboards, operational visibility, workload monitoring
+summary: "Create AI-powered dashboards personalized to your workloads and priorities for enhanced operational visibility without being constrained by predefined views."
+---
+= Learn about custom dashboards for FSx for ONTAP in NetApp Workload Factory
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+As a cloud and storage admin, custom dashboards give you a clear view of the systems and workloads you manage. They let you build and personalize views that match your work, priorities, and business goals, instead of being limited to preset layouts.
+
+Custom dashboards use AI to create personalized views of your Workload Factory environment. You simply describe what you want to monitor in plain language, and the system automatically builds visual charts based on your needs.
+
+Everyone in your Workload Factory account can view all custom dashboards. This shared setup helps teams collaborate and see the same operational information across your organization.
+
+NOTE: If your account admin has turned off AI features, you'll see a message and won't be able to create dashboards. Contact your administrator or link:manage-genai-features.html[learn about AI administration].
+
+== Why use custom dashboards
+
+Workload Factory users manage many workloads, environments, and priorities, but standard dashboards only show preset views. Custom dashboards help solve several operational challenges:
+
+* *Answer key questions quickly*: Focus on the most important questions or gaps in your understanding instead of general system statistics.
+* *Monitor what matters now*: Track the metrics that match your current priorities, not a fixed set of health indicators.
+* *Link technical data to business results*: Show how system performance affects operations and business goals.
+* *Avoid switching between tools*: View all relevant information in one place—no need to switch between tools, pages, or exports.
+
+== What you can do with custom dashboards
+
+During setup, the AI-guided dialog helps you define:
+
+* Workloads and resources to monitor  
+* Key metrics that matter for your work  
+* Time ranges and periods to compare  
+* Views by region, workload, or other categories  
+* Rules or requirements you need to track and show
+
+== View and share dashboards
+
+New dashboards are private by default, so only you can see them. You can make a dashboard public at any time to share it with your team.
+
+* *Private dashboards*: Only you can view these dashboards. Use them for personal monitoring, testing, or work in progress.
+* *Public dashboards*: Everyone in your Workload Factory account can view these dashboards. Use them to share monitoring views and keep your team aligned on workloads, priorities, and business goals.
+
+Each dashboard card shows whether the dashboard is private or public, so you can quickly see which dashboards are shared.
+
+link:manage-custom-dashboards-fsx.html#change-dashboard-visibility[Learn how to change dashboard visibility].
+
+== Considerations and limitations
+
+=== AWS credentials and permissions
+
+To create or view custom dashboards, you need the correct AWS IAM permissions for the resources you want to monitor. Make sure the Workload Factory account has read access to the data sources used by the dashboards.
+
+To build dashboards, Workload Factory uses read-only AWS credentials. These credentials allow only read actions, such as `fsx:DescribeVolumes` and `fsx:DescribeFileSystems`, for the following services: EC2, FSx, CloudWatch, Resource Groups Tagging API, Backup, CloudWatch Logs, KMS, and EFS.
+
+link:../fsx-storage/add-credentials.html[Learn how to add AWS credentials and set up IAM permissions^].
+
+=== Link to FSx for ONTAP
+
+Workload Factory requires a link to connect to FSx for ONTAP file systems. A link creates a trust relationship and connectivity between Workload Factory and one or more FSx for ONTAP file systems. This enables you to monitor and manage certain file system features directly from the ONTAP REST API calls that are not available through the Amazon FSx for ONTAP API.
+
+link:../fsx-storage/create-link.html[Learn how to create a link^].
+
+=== Read-only design
+
+Custom dashboards are read-only. They cannot change your storage or workload settings. This lets you monitor your system without accidentally changing anything.
+
+=== Limitations
+
+The following limitations currently apply to custom dashboards:
+
+* You cannot share dashboards outside your Workload Factory account. All dashboard sharing is limited to users within the same Workload Factory account.
+
+=== Demo environment
+
+If you're using a Workload Factory demo account, some prebuilt dashboards are available. They help you see what custom dashboards can do. Each dashboard shows a common monitoring need: disaster recovery status, capacity and costs across regions, and whether storage protection rules are being followed.
+
+=== Sample prompts
+
+The following examples show how to describe your monitoring needs in plain language:
+
+* *Disaster recovery monitoring*: "I am setting up a disaster recovery solution in AWS for my on-premises systems. I want to see a complete list of my on-prem resources and the status of each one at the disaster recovery site in the US East region, including whether it is configured, active, and healthy."
+
+* *Multi-region capacity and cost*: "I manage storage across several cloud regions and applications. I want clear visibility into how much storage I have allocated, how much is being used, and what it costs, with details for each region and each application."
+
+* *Storage protection compliance*: "I am setting up a new storage protection strategy based on my organization's standards. Show me all file systems and whether they meet these requirements:
++
+** Database workloads: 12 daily snapshots per volume and 2 tamper-proof snapshots per week.  
+** NFS and SMB shares: 7 daily snapshots per volume and 1 tamper-proof snapshot per week.  
+** ARP must be enabled on all volumes."
+
+== Next steps
+
+* link:create-custom-dashboard-fsx.html[Create a custom dashboard]
+* link:manage-custom-dashboards-fsx.html[Manage custom dashboards]
+* link:troubleshoot-custom-dashboards-fsx.html[Troubleshoot custom dashboards]

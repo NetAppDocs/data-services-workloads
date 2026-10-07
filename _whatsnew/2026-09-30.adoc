@@ -1,0 +1,5 @@
+=== Initial release of Oracle Cloud Infrastructure NetApp Storage Service for Workload Factory 
+The initial release of OCI NetApp Storage Service (OCI NSS) for Workload Factory offers onboarding, system discovery, credential management, and link creation and association. To request access to OCI NSS, open a support ticket with Oracle.
+
+=== Workload Factory documentation for NetApp Console users
+You can find detailed documentation for Workload Factory in the NetApp Console, including guides for onboarding, system discovery, credential management, and link creation and association.
