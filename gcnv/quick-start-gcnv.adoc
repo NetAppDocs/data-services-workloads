@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task-quick-start.html
+permalink: gcnv/quick-start-gcnv.html
 keywords: set up google cloud netapp volumes, quick start,system
 summary: Get started with Google Cloud NetApp Volumes by assigning NetApp Console roles, adding credentials, and discovering a system.
 ---
@@ -10,7 +10,7 @@ summary: Get started with Google Cloud NetApp Volumes by assigning NetApp Consol
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 Get started with Google Cloud NetApp Volumes by assigning your NetApp Console role, adding credentials, and discovering a system.

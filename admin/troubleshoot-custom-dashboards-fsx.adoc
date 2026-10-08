@@ -1,13 +1,13 @@
 ---
 sidebar: sidebar
-permalink: troubleshoot-custom-dashboards.html
+permalink: admin/troubleshoot-custom-dashboards.html
 keywords: troubleshooting, dashboard errors, dashboard issues, failed creation, failed to load, dashboard not loading
 summary: "Fix common problems with custom dashboards, including setup failures, data loading issues, and access problems."
 ---
 
 = Troubleshoot custom dashboards in NetApp Workload Factory
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 Use this information to resolve common issues you might encounter when creating or using custom dashboards.

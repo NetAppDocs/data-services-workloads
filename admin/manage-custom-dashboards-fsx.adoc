@@ -1,13 +1,13 @@
 ---
 sidebar: sidebar
-permalink: manage-custom-dashboards.html
+permalink: admin/manage-custom-dashboards.html
 keywords: manage dashboards, delete dashboard, refresh dashboard, dashboard catalog
 summary: "Access your dashboard catalog to view, refresh, and delete custom dashboards in Workload Factory."
 ---
 
 = Manage custom dashboards in NetApp Workload Factory
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 Manage your custom dashboards from the dashboard catalog. From there, you can view details, share dashboards, refresh data, or delete dashboards you no longer need.

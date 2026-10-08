@@ -1,13 +1,13 @@
 ---
 sidebar: sidebar
-permalink: learn-agent.html
+permalink: admin/learn-agent.html
 keywords: agent, ai agent, aiops, ask me, explore agent, ai assistant, environment-aware, read-only, read-write, agents settings
 summary: "Learn how AI agents for Workload Factory can analyze your environment, identify risks and ways to improve performance, and take actions for you with your approval."
 ---
 
 = Learn about the AI agents in NetApp Workload Factory
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 Workload Factory AIOps uses AI to analyze your environment and recommend improvements. If you approve, it can also take actions using the credentials and permissions you set up.

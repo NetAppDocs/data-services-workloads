@@ -1,13 +1,13 @@
 ---
 sidebar: sidebar
-permalink: learn-custom-dashboards.html
+permalink: admin/learn-custom-dashboards.html
 keywords: custom dashboards, dashboards, personalized dashboards, AI dashboards, operational visibility, workload monitoring
 summary: "Create AI-powered dashboards personalized to your workloads and priorities for enhanced operational visibility without being constrained by predefined views."
 ---
 
 = Learn about custom dashboards in NetApp Workload Factory
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 As a cloud and storage admin, custom dashboards give you a clear view of the systems and workloads you manage. They let you build and personalize views that match your work, priorities, and business goals, instead of being limited to preset layouts.

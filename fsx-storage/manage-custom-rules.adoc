@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: manage-custom-rules.html
+permalink: fsx-storage/manage-custom-rules.html
 keywords: manage rules, edit rules, disable rules, delete rules, rule catalog, byor
 summary: View, edit, enable, disable, and delete custom architectural rules from the Rules catalog.
 ---
@@ -10,7 +10,7 @@ summary: View, edit, enable, disable, and delete custom architectural rules from
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The Rules catalog is one place to manage all your custom rules. You can review rule details, edit rules, check results, and control whether rules run on a schedule.

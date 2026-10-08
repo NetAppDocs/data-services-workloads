@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: manage-agent-settings.html
+permalink: admin/manage-agent-settings.html
 keywords: agents settings, aiops, agent configuration, ai agent, agent mode, credentials, read-only, read-write, custom prompt, verbose, slack integration
 summary: "Set up AI agents settings such as operating mode, access permissions, custom instructions, and response detail levels to control how agents work in your Workload Factory environment."
 ---
@@ -10,7 +10,7 @@ summary: "Set up AI agents settings such as operating mode, access permissions, 
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 Set up how AI agents work in your Workload Factory environment. You can choose how agents operate, decide which credentials they can use, add custom prompts, and adjust response detail levels.

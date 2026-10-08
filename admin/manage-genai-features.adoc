@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: manage-genai-features.html
+permalink: admin/manage-genai-features.html
 keywords: gen ai, generative ai, bedrock, ask me, custom dashboards, rules builder, cloudshell ai, ems analyzer, db log analyzer, latency analyzer, administration
 summary: "Control access to Bedrock-based AI features in Workload Factory. You can turn off AI capabilities or use NetApp-managed AWS Bedrock."
 ---
@@ -10,7 +10,7 @@ summary: "Control access to Bedrock-based AI features in Workload Factory. You c
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 Control access to AI features in Workload Factory. You can turn off AI features or use AWS Bedrock managed by NetApp. 
