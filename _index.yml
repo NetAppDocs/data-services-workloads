@@ -33,7 +33,7 @@ indexpage:
         - title: Configure notifications
           url: /admin/configure-notifications.html
         - title: AI agents
-          url: /learn-agent.html 
+          url: /admin/learn-agent.html 
         - title: Manage AI features
           url: /admin/manage-genai-features.html
         - title: Automate tasks using Codebox

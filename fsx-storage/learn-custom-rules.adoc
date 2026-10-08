@@ -69,5 +69,5 @@ File system naming standards:: "All file systems must follow the naming conventi
 This rule validates that file systems adhere to organizational naming conventions for easier management and cost allocation.
 
 == What to do next
-link:create-custom-rule.html[Create a custom rule]
-link:manage-custom-rules.html[Manage custom rules]
+link:../fsx-storage/create-custom-rule.html[Create a custom rule]
+link:../fsx-storage/manage-custom-rules.html[Manage custom rules]

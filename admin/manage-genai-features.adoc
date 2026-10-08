@@ -41,7 +41,7 @@ GenAI features off:: Turns off all AI features. Users can no longer use Ask Me, 
 
 .Steps
 
-. Log in using one of the link:console-experiences.html[console experiences^].
+. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
 
 . From the menu, select *Administration* and then *AI settings*.
 
@@ -81,7 +81,7 @@ If you need more AI credits, contact your NetApp representative. They can adjust
 
 [TIP]
 ====
-To contact your NetApp representative about credit limits, use the in-product chat or visit the link:get-help.html[Get help] page.
+To contact your NetApp representative about credit limits, use the in-product chat or visit the link:../get-help.html[Get help] page.
 ====
 
 == GovCloud considerations
@@ -90,7 +90,7 @@ If you create a Workload Factory account in AWS GovCloud (US), note that AI feat
 
 If your security requirements do not allow connections to public AWS Region services, you can disable AI features.
 
-link:sign-up-saas.html[Learn about creating GovCloud accounts].
+link:../setup/sign-up-and-log-in.html[Learn about creating GovCloud accounts].
 
 == Impact on existing sessions
 
@@ -100,7 +100,7 @@ Termination behavior may vary by feature. See the feature-specific documentation
 
 == Related information
 
-* link:workload-factory-overview.html[Learn about Workload Factory features]
-* link:learn-custom-dashboards.html[Learn about Custom dashboards]
-* link:add-credentials.html[Add AWS credentials]
-* link:permissions-reference.html[Permissions reference]
+* link:../setup/learn-about-workload-factory.html[Learn about Workload Factory features]
+* link:../admin/learn-custom-dashboards-fsx.html[Learn about Custom dashboards]
+* link:../fsx-storage/add-credentials.html[Add AWS credentials]
+* link:../fsx-storage/permissions-reference-fsx.html[Permissions reference]

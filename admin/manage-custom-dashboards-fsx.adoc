@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: admin/manage-custom-dashboards.html
+permalink: admin/manage-custom-dashboards-fsx.html
 keywords: manage dashboards, delete dashboard, refresh dashboard, dashboard catalog
 summary: "Access your dashboard catalog to view, refresh, and delete custom dashboards in Workload Factory."
 ---
@@ -26,7 +26,7 @@ You must have at least one custom dashboard in your Workload Factory account.
 
 .Steps
 
-. Log in using one of the link:console-experiences.html[console experiences^].
+. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
 . From the menu, select *Workloads Overview* and then *Custom dashboards*.
 +
 The dashboard catalog shows all custom dashboards in your Workload Factory account.
@@ -97,5 +97,5 @@ The dashboard is permanently removed from your Workload Factory account, and all
 
 == Related information
 
-* link:create-custom-dashboard.html[Create additional custom dashboards]
-* link:troubleshoot-custom-dashboards.html[Troubleshoot custom dashboards]
+* link:../admin/create-custom-dashboard-fsx.html[Create additional custom dashboards]
+* link:../admin/troubleshoot-custom-dashboards.html[Troubleshoot custom dashboards]

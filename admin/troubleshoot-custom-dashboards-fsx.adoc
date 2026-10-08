@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: admin/troubleshoot-custom-dashboards.html
+permalink: admin/troubleshoot-custom-dashboards-fsx.html
 keywords: troubleshooting, dashboard errors, dashboard issues, failed creation, failed to load, dashboard not loading
 summary: "Fix common problems with custom dashboards, including setup failures, data loading issues, and access problems."
 ---
@@ -21,7 +21,7 @@ Use this information to resolve common issues you might encounter when creating 
 **Solution:** Try the following:
 
 - Rewrite your request with clearer details about what you want to monitor.
-- Start with one of the sample prompts in link:create-custom-dashboard.html[Create a custom dashboard].
+- Start with one of the sample prompts in link:../admin/create-custom-dashboard-fsx.html[Create a custom dashboard].
 - Break complex monitoring needs into several simpler dashboards.
 - Specify the workloads, metrics, time ranges, or dimensions you want to track.
 
@@ -33,8 +33,8 @@ Use this information to resolve common issues you might encounter when creating 
 
 **Solution:**
 
-* **Check permissions:** Make sure your Workload Factory account has read access to the workloads and resources used by the dashboard. Review the permissions requirements in link:learn-custom-dashboards.html#aws-credentials-and-permissions[AWS credentials and permissions].
-* **Verify credentials:** Confirm that your AWS credentials are valid and have not expired. See link:add-credentials.html[Add AWS credentials] for details.
+* **Check permissions:** Make sure your Workload Factory account has read access to the workloads and resources used by the dashboard. Review the permissions requirements in link:../admin/learn-custom-dashboards.html#aws-credentials-and-permissions[AWS credentials and permissions].
+* **Verify credentials:** Confirm that your AWS credentials are valid and have not expired. See link:../fsx-storage/add-credentials.html[Add AWS credentials] for details.
 
 == Dashboard not loading or loading slowly
 
@@ -65,4 +65,4 @@ All users in a Workload Factory account can view and delete custom dashboards. C
 
 == Additional help
 
-If you continue to experience issues with custom dashboards, see link:get-help.html[Get help] for information about contacting NetApp support.
+If you continue to experience issues with custom dashboards, see link:../get-help.html[Get help] for information about contacting NetApp support.

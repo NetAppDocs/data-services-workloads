@@ -20,13 +20,13 @@ Set up how AI agents work in your Workload Factory environment. You can choose h
 * We recommend that an account admin set up agents settings.
 * Before you enable read-write mode, make sure you understand the security risks of allowing agents to take actions for you.
 
-NOTE: If your account admin has turned off AI features, the AI agents will not be available. link:manage-genai-features.html[Learn about managing AI features].
+NOTE: If your account admin has turned off AI features, the AI agents will not be available. link:../admin/manage-genai-features.html[Learn about managing AI features].
 
 == Access Agents settings
 
 .Steps
 
-. Log in using one of the link:console-experiences.html[console experiences^].
+. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
 
 . Access Agents settings using one of these methods:
 * From the menu, select *Administration*, *Settings*, and then *Agents*.

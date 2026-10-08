@@ -15,7 +15,7 @@ summary: Get started with Google Cloud NetApp Volumes by assigning NetApp Consol
 [.lead]
 Get started with Google Cloud NetApp Volumes by assigning your NetApp Console role, adding credentials, and discovering a system.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] link:task-add-roles.html[Assign roles]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] link:../gcnv/add-roles.html[Assign roles]
 
 [role="quick-margin-para"]
 From the NetApp Console, assign the correct roles to members.
@@ -26,7 +26,7 @@ From the NetApp Console, assign the correct roles to members.
 [role="quick-margin-para"]
 In the NetApp Console, add Google Cloud NetApp Volumes credentials.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] link:task-create-system.html[Add a system]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] link:../gcnv/create-discover-systems.html[Add a system]
 
 [role="quick-margin-para"]
 In the NetApp Console, discover a system using the credentials, Google Cloud project, and supported region.

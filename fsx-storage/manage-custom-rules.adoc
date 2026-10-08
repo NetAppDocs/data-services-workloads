@@ -113,4 +113,4 @@ Tests are audited and appear in the rule's evaluation history.
 
 == What to do next
 
-link:learn-custom-rules.html[Learn more about custom rules]
+link:../fsx-storage/learn-custom-rules.html[Learn more about custom rules]
