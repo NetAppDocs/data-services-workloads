@@ -5,7 +5,7 @@ keywords: manage rules, edit rules, disable rules, delete rules, rule catalog, b
 summary: View, edit, enable, disable, and delete custom architectural rules from the Rules catalog.
 ---
 
-= Manage custom rules in NetApp Console
+= Manage custom rules for Workload Factory in NetApp Console
 :hardbreaks:
 :nofooter:
 :icons: font

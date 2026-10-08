@@ -5,7 +5,7 @@ keywords: create custom rule, byor, custom rules, fsx, ontap, well architected, 
 summary: Create a custom architectural rule using natural language to enforce your organizational standards for FSx for ONTAP.
 ---
 
-= Create a custom rule in NetApp Console
+= Create a custom rule for Workload Factory in NetApp Console
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,12 +13,12 @@ summary: Create a custom architectural rule using natural language to enforce yo
 :imagesdir: ../media/
 
 [.lead]
-Create custom rules by describing them in plain language. The AI rule builder turns your request into a validated rule that checks your FSx for ONTAP resources.
+Create custom rules to check your FSx for ONTAP resources in Workload Factory. Describe the rules in plain language, and the AI rule builder will turn your request into a validated rule.
 
 .About this task
 The rule setup process guides you through each step: creating the rule, reviewing how the AI understood it, and checking the results before scheduling regular reviews. You stay in control throughout the process. The system suggests a rule based on your prompt, but nothing happens until you approve it.
 
-NOTE: If your account admin has turned off AI features, you'll see a message and won't be able to create or edit custom rules. Contact your administrator or link:https://docs.netapp.com/us-en/workload-setup-admin/manage-genai-features.html[learn about AI administration^].
+NOTE: If your account admin has turned off AI features, you'll see a message and won't be able to create or edit custom rules. Contact your administrator or link:../admin/manage-genai-features.html[learn about AI administration^].
 
 .Before you begin
 * You have configured AWS credentials with read-only access.

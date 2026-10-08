@@ -19,7 +19,7 @@ Custom rules let you set, check, and enforce your own architecture standards, al
 The Rule builder lets you create custom rules using plain language. These rules are checked across all your resources.
 Custom rules help you enforce your organization's standards, risk limits, and operational requirements that default rules might not cover.
 
-NOTE: If your account administrator has turned off AI features, you cannot create new rules or edit existing rules. Any rules that are already scheduled continue to run. link:https://docs.netapp.com/us-en/workload-setup-admin/manage-genai-features.html[Learn about managing AI features^].
+NOTE: If your account administrator has turned off AI features, you cannot create new rules or edit existing rules. Any rules that are already scheduled continue to run.  link:../admin/manage-genai-features.html.[Learn about managing AI features^].
 
 == How custom rules work
 Custom rules use AI to turn plain-language instructions into clear, structured rules. The AI translates your request, suggests a rule, explains how it understood your instructions, and asks for approval before saving or scheduling the rule.
