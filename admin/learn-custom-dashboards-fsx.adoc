@@ -50,7 +50,7 @@ New dashboards are private by default, so only you can see them. You can make a 
 
 Each dashboard card shows whether the dashboard is private or public, so you can quickly see which dashboards are shared.
 
-link:../admin/manage-custom-dashboards.html#change-dashboard-visibility[Learn how to change dashboard visibility].
+link:../admin/manage-custom-dashboards-fsx.html#change-dashboard-visibility[Learn how to change dashboard visibility].
 
 == Considerations and limitations
 

@@ -26,8 +26,7 @@ NOTE: If your account admin has turned off AI features, the AI agents will not b
 
 .Steps
 
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-
+. Log in to the link:https://console.netapp.com[NetApp Console^].
 . Access Agents settings using one of these methods:
 * From the menu, select *Administration*, *Settings*, and then *Agents*.
 * From the agents chat experience, select the link to *Agents settings*.

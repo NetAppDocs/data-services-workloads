@@ -29,8 +29,8 @@ NOTE: If your account admin has turned off AI features, you'll see a message and
 == Create a rule
 
 .Steps
-. Log in using one of the link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html[console experiences^].
-. Select the menu image:../media/workloads-menu-icon.png[The hamburger menu icon] and then select Well-architected.
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon] and then select Well-architected.
 . From the Well-architected menu, select Rule builder.
 +
 When you open the rule builder, it shows sample prompts to help you write your custom rule. You can select *Copy prompt* to copy a sample prompt into the AI dialog text box.
@@ -39,7 +39,7 @@ When you open the rule builder, it shows sample prompts to help you write your c
 * What condition you're validating.
 * What threshold defines compliance.
 * Why this rule matters (optional but recommended).
-. Select image:../media/arrow.png[The menu icon is used to begin generating rules., width=18].
+. Select image:arrow.png[The menu icon is used to begin generating rules., width=18].
 +
 The AI analyzes your prompt and generates a rule definition.
 
