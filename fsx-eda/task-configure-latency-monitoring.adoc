@@ -81,7 +81,7 @@ Notification channels:
 * *Email*: Sent to configured email addresses in your Workload Factory notification settings
 * *Amazon SNS*: Published to your configured SNS topic for integration with other systems
 
-To enable notifications, refer to link:../admin/configure-notifications.html#wf-console-email-notifications[Configure notification settings].
+To enable notifications, refer to link:../admin/configure-notifications.html[Configure notification settings].
 
 == Manage latency configuration
 
