@@ -13,6 +13,8 @@ Manage links that you've associated with your Workload Factory account. You can 
 
 link:../setup/links-overview.html[Learn more about links.]
 
+The user interface automatically notifies you when a newer link version is available and provides upgrade instructions.
+
 == View the links associated with your account
 You can view the links that are currently associated with your account.
 
