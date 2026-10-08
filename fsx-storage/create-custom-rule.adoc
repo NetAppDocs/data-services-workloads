@@ -30,8 +30,7 @@ NOTE: If your account admin has turned off AI features, you'll see a message and
 
 .Steps
 . Log in to the link:https://console.netapp.com[NetApp Console^].
-. Select the menu image:workloads-menu-icon.png[The hamburger menu icon] and then select Well-architected.
-. From the Well-architected menu, select Rule builder.
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon] and then select Workloads > Well-architected > Rule builder.
 +
 When you open the rule builder, it shows sample prompts to help you write your custom rule. You can select *Copy prompt* to copy a sample prompt into the AI dialog text box.
 . In the *Create a rule* field, enter your rule description in natural language. Be as specific as possible about:
