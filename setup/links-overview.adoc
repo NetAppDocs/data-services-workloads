@@ -57,6 +57,7 @@ The features that require a link include:
 * Clone creation and management, for instant, in-place, data cloning
 * Displaying additional metrics directly from your cloud storage system such as the system version
 * Displaying storage VM and cluster LIF details including roles, endpoints, nodes, IP addresses, and status
+* Component breakdown for latency events
 
 == Related information
 Learn how to create and associate links for:
