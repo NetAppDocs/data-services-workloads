@@ -1,10 +1,11 @@
 ---
 sidebar: sidebar
 permalink: admin/manage-genai-features.html
-keywords: gen ai, generative ai, bedrock, ask me, custom dashboards, rules builder, cloudshell ai, ems analyzer, db log analyzer, latency analyzer, byom, bring your own model, administration
+keywords: gen ai, generative ai, bedrock, ask me, custom dashboards, rules builder, cloudshell ai, ems analyzer, db log analyzer, latency analyzer, administration
 summary: "Control access to Bedrock-based AI features in Workload Factory. You can turn off AI capabilities or use NetApp-managed AWS Bedrock."
 ---
-= Manage AI features for FSx for ONTAP in NetApp Workload Factory
+
+= Manage AI features in NetApp Workload Factory
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -12,11 +13,11 @@ summary: "Control access to Bedrock-based AI features in Workload Factory. You c
 :imagesdir: ../media/
 
 [.lead]
-Control access to AI features for FSx for ONTAP in Workload Factory. You can turn off AI features or use AWS Bedrock managed by NetApp. 
+Control access to AI features in Workload Factory. You can turn off AI features or use AWS Bedrock managed by NetApp. 
 
 == About AI features
 
-Workload Factory includes several AI-powered features that enhance your experience such as Ask Me, custom dashboards, and analyzers for EMS, database logs, and latency.
+Workload Factory includes several AI-powered features that enhance your experience such as Ask Me, AI agents, custom dashboards, Rule builder, and analyzers for EMS, database logs, and latency.
 
 As a Workload Factory administrator, you can control how these features use AI on the AI settings page.
 
@@ -30,7 +31,7 @@ NetApp-managed Bedrock (Recommended):: Use a NetApp-managed AWS Bedrock service.
 * Monthly usage credits are shared across your organization
 * No additional AWS setup is required
 
-GenAI features off:: Turns off all AI features. Users can no longer use Ask Me, analyzers, custom dashboards, rules builder, or other AI-powered tools.
+GenAI features off:: Turns off all AI features. Users can no longer use Ask Me, the AI Agent, analyzers, custom dashboards, rules builder, or other AI-powered tools.
 
 == Before you begin
 
@@ -42,7 +43,7 @@ GenAI features off:: Turns off all AI features. Users can no longer use Ask Me, 
 
 . Log in to the link:https://console.netapp.com[NetApp Console^].
 
-. From the NetApp Console menu, select *Workloads* > *Administration* > *AI settings*.
+. From the menu, select *Administration* and then *AI settings*.
 
 . On the *AI settings* page, select your preferred configuration:
 
@@ -98,6 +99,6 @@ Termination behavior may vary by feature. See the feature-specific documentation
 == Related information
 
 * link:../setup/learn-about-workload-factory.html[Learn about Workload Factory features]
-* link:learn-custom-dashboards-fsx.html[Learn about Custom dashboards]
+* link:../admin/learn-custom-dashboards-fsx.html[Learn about Custom dashboards]
 * link:../fsx-storage/add-credentials.html[Add AWS credentials]
 * link:../fsx-storage/permissions-reference-fsx.html[Permissions reference]
