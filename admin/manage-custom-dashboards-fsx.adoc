@@ -1,19 +1,20 @@
 ---
 sidebar: sidebar
-permalink: admin/manage-custom-dashboards-fsx.html
+permalink: manage-custom-dashboards.html
 keywords: manage dashboards, delete dashboard, refresh dashboard, dashboard catalog
 summary: "Access your dashboard catalog to view, refresh, and delete custom dashboards in Workload Factory."
 ---
+
 = Manage custom dashboards in NetApp Workload Factory
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 [.lead]
 Manage your custom dashboards from the dashboard catalog. From there, you can view details, share dashboards, refresh data, or delete dashboards you no longer need.
 
 .About this task
 
-You can view and manage custom dashboards from the dashboard catalog. Private dashboards are only visible to you, while public dashboards are visible to all users in your Workload Factory account. Each dashboard shows basic details such as the creator's name, the creation date, and a visibility label (Private or Public).
+You can view and manage custom dashboards from the dashboard catalog. Private dashboards are only visible to you, while public dashboards are visible to all users in your Workload Factory account. Each dashboard shows basic details such as the creator’s name, the creation date, and a visibility label (Private or Public).
 
 Custom dashboards are read-only. They cannot change your storage or workload settings.
 
@@ -25,8 +26,8 @@ You must have at least one custom dashboard in your Workload Factory account.
 
 .Steps
 
-. Log in to the link:https://console.netapp.com[NetApp Console^].
-. From the NetApp Console menu, select *Workloads* > *Workloads Overview* > *Custom dashboards*.
+. Log in using one of the link:console-experiences.html[console experiences^].
+. From the menu, select *Workloads Overview* and then *Custom dashboards*.
 +
 The dashboard catalog shows all custom dashboards in your Workload Factory account.
 
@@ -53,20 +54,20 @@ The dashboard updates immediately. The visibility label on the dashboard card sh
 
 Dashboard data loads when you open a dashboard. You can refresh it to see the latest information.
 
-The dashboard reloads data from your workloads. The last updated time changes to show when the data was refreshed.
+The dashboard reloads data from your workloads. 
+//The last updated time changes to show when the data was refreshed.
 
-////
-    
+== Edit dashboards
 
-You can edit a dashboard to change what it shows, including the metrics and charts.
+You can edit a dashboard to change what it shows, including the metrics, charts, and time ranges.
+
+NOTE: Only the dashboard creator can edit the dashboard. While you are editing, other users cannot see your changes until you save them.
 
 .Steps
 
 . In the *Custom dashboards* page, locate the dashboard you want to edit.
 
 . From the *Actions* menu for that dashboard, select *Edit dashboard*.
-+
-If another user is editing the dashboard, you will see a message such as “Currently being edited by [user name].” Wait for them to finish or coordinate with them.
 
 . In the AI dialog, describe the changes you want to make.
 +
@@ -77,7 +78,6 @@ This process is similar to creating a new dashboard. You can change the workload
 .Result
 
 The dashboard updates with your changes. The last modified date also updates.
-////
 
 == Delete a dashboard
 
@@ -97,5 +97,5 @@ The dashboard is permanently removed from your Workload Factory account, and all
 
 == Related information
 
-* link:create-custom-dashboard-fsx.html[Create additional custom dashboards]
-* link:troubleshoot-custom-dashboards-fsx.html[Troubleshoot custom dashboards]
+* link:create-custom-dashboard.html[Create additional custom dashboards]
+* link:troubleshoot-custom-dashboards.html[Troubleshoot custom dashboards]
