@@ -19,14 +19,14 @@ Once created, you can refresh the dashboard to see updated data.
 
 Remember that custom dashboards are read-only by design and cannot make changes to your storage or workload configurations.
 
-NOTE: If your account admin has turned off AI features, you'll see a message and won't be able to create dashboards. Contact your administrator or link:manage-genai-features.html[learn about AI administration].
+NOTE: If your account admin has turned off AI features, you'll see a message and won't be able to create dashboards. Contact your administrator or link:../admin/manage-genai-features.html[learn about AI administration].
 
 == Create a dashboard
 
 .Steps
 
 . Log in to the link:https://console.netapp.com[NetApp Console^].
-. From the NetApp Console menu, select *Workloads* > *Workloads Overview* > *Custom dashboards*.
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to workloads like storage, eda, ai, databases, vmware, and administration.] and then select *Workloads Overview* > *Custom dashboards*.
 +
 If this is your first dashboard, you'll see a blank screen with sample prompts to help you get started. You can select *Copy prompt* to copy a sample prompt into the AI dialog text box.
 
@@ -47,18 +47,19 @@ Your dashboard is being created. This might  take a moment.
 
 .Result
 
-Your custom dashboard is created and added to the dashboard catalog. By default, the dashboard is private and only visible to you. You can change the visibility to public if you want to share it with other users in your Workload Factory account. link:manage-custom-dashboards-fsx.html#change-dashboard-visibility[Learn how to change dashboard visibility].
+Your custom dashboard is created and added to the dashboard catalog. By default, the dashboard is private and only visible to you. You can change the visibility to public if you want to share it with other users in your Workload Factory account. link:../admin/manage-custom-dashboards-fsx.html#change-dashboard-visibility[Learn how to change dashboard visibility].
 
-You'll get a notification when your dashboard is ready. If it can't be created, you'll get a notification with a link to try again. link:configure-notifications.html[Learn about configuring notifications].
+You'll get a notification when your dashboard is ready. If it can't be created, you'll get a notification with a link to try again. link:../admin/configure-notifications.html[Learn about configuring notifications].
 
 .What's next
 After creation, you can:
 
 * Change dashboard visibility to share with your team
 * Refresh dashboard data to see the latest information  
+* Edit dashboards to change what they show, including metrics, charts, and time ranges
 * Delete dashboards you no longer need  
 * View dashboard details, including who created it and when it was last updated
 
 == Related information
-* link:manage-custom-dashboards-fsx.html[Manage your custom dashboards]
-* link:troubleshoot-custom-dashboards-fsx.html[Troubleshoot custom dashboards]
+* link:../admin/manage-custom-dashboards-fsx.html[Manage your custom dashboards]
+* link:../admin/troubleshoot-custom-dashboards-fsx.html[Troubleshoot custom dashboards]
