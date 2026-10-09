@@ -4,7 +4,6 @@ permalink: fsx-storage/learn-custom-rules.html
 keywords: custom rules, byor, bring your own rules, fsx, ontap, well architected, organizational standards
 summary: Learn how to define and manage your own architectural rules to enforce organizational standards alongside NetApp best practices.
 ---
-
 = Learn about custom rules in NetApp Console
 :hardbreaks:
 :nofooter:
@@ -19,7 +18,7 @@ Custom rules let you set, check, and enforce your own architecture standards, al
 The Rule builder lets you create custom rules using plain language. These rules are checked across all your resources.
 Custom rules help you enforce your organization's standards, risk limits, and operational requirements that default rules might not cover.
 
-NOTE: If your account administrator has turned off AI features, you cannot create new rules or edit existing rules. Any rules that are already scheduled continue to run.  link:../admin/manage-genai-features.html.[Learn about managing AI features^].
+NOTE: If your account administrator has turned off AI features, you cannot create new rules or edit existing rules. Any rules that are already scheduled continue to run. link:../admin/manage-genai-features.html[Learn about managing AI features].
 
 == How custom rules work
 Custom rules use AI to turn plain-language instructions into clear, structured rules. The AI translates your request, suggests a rule, explains how it understood your instructions, and asks for approval before saving or scheduling the rule.
@@ -33,9 +32,9 @@ This process helps ensure that:
 == Before you begin
 Before you can create and run custom rules, ensure you have the following:
 
-AWS credentials:: Read-only access to your AWS environment. Custom rules require read-only permissions as a security boundary. link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html[Add AWS credentials to Workload Factory^].
+AWS credentials:: Read-only access to your AWS environment. Custom rules require read-only permissions as a security boundary. link:add-credentials.html[Add AWS credentials to Workload Factory].
 ONTAP credentials:: FSx viewer user with read-only permissions. Workload Factory creates a read-only user on each FSx for ONTAP file system if one does not already exist, allowing it to perform evaluations.
-Link or agent:: Only required for rules that must connect directly to ONTAP to check settings that AWS APIs cannot access. link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html[Connect to an FSx for ONTAP file system with a link^].
+Link or agent:: Only required for rules that must connect directly to ONTAP to check settings that AWS APIs cannot access. link:create-link.html[Connect to an FSx for ONTAP file system with a link].
 
 == Limitations
 * Rules cannot fix issues automatically. You must correct non-compliant resources yourself using the provided guidance.
@@ -69,5 +68,5 @@ File system naming standards:: "All file systems must follow the naming conventi
 This rule validates that file systems adhere to organizational naming conventions for easier management and cost allocation.
 
 == What to do next
-link:../fsx-storage/create-custom-rule.html[Create a custom rule]
-link:../fsx-storage/manage-custom-rules.html[Manage custom rules]
+link:create-custom-rule.html[Create a custom rule]
+link:manage-custom-rules.html[Manage custom rules]
