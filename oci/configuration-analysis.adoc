@@ -1,0 +1,70 @@
+---
+sidebar: sidebar
+permalink: oci/configuration-analysis.html
+keywords: configuration issues, issues, improve, analyze, storage configuration, Amazon FSx for NetApp ONTAP, FSx for ONTAP, recommendation, recommendations
+summary: "NetApp Workload Factory analyzes Amazon FSx for NetApp ONTAP file system configurations regularly to determine if there are any configuration issues."  
+---
+ = Configuration analysis for OCI NSS systems
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+NetApp Workload Factory analyzes OCI NSS system configurations regularly to determine if there are any configuration issues. When issues are found, Workload Factory shows you what the issues are and explains what to change so your file system storage achieves peak performance, cost efficiency, and compliance with best practices. 
+
+Key capabilities include: 
+
+* Daily configuration analysis
+* Automatic best practice validations
+* Proactive observability
+* Insights to action
+* OCI Well-Architected Framework advisor
+
+== How it works 
+
+Workload Factory analyzes your workloads on supported cloud storage deployments every day. The analysis provides well-architected status, insights, and recommendations. 
+
+After the daily analysis completes, configurations appear as "optimized" or "not optimized" in the Well-architected dashboard for the deployment. You'll find configuration issues organized by category, along with recommendations. Workload Factory can automatically fix some issues; for issues that require manual intervention, Workload Factory provides detailed instructions to help you implement the recommended changes.
+
+You can dismiss the analysis of configurations that do not apply to your environments. This avoids unnecessary alerts and inaccurate optimization results. 
+
+You can also create custom rules in plain language to validate your environments against your organization's standards and NetApp best practices. Test rules with a dry run, then schedule them to run across your environments. link:learn-custom-rules.html[Learn more about custom rules^].
+
+== Why it matters
+
+Workload Factory applies best practices to large storage, database, and VMware environments by combining ongoing assessment with recommendation insights and remediation. Automated fixes reduce human error, ensure uniform management, and preserve performance and reliability across your workload infrastructures.
+
+== Analysis requirements
+For a complete file system analysis, you must do the following: 
+
+* Associate a link. Link connectivity lets Workload Factory analyze all OCI NSS system configurations like data protection and performance.
++
+link:create-link.html[Learn how to associate an existing link or to create and associate a new link^]. 
+* Grant _view, planning, and analysis_ permissions in your OCI account. 
++
+link:add-credentials.html[Learn how to grant permissions to an OCI account^].
+
+== Best practices and recommendations for storage workloads
+
+The well-architected dashboard assesses storage configurations against ONTAP best practices and the AWS Well-Architected Framework. The assessment also recommends improvements and fixes.  
+
+The well-architected analysis categorizes configurations in the following pillars of the framework: _reliability_, _security_, _operational excellence_, _cost optimization_, and _performance efficiency_.
+
+NOTE: Currently, Workload Factory doesn't provide workload-specific recommendations for all configurations. Tailor your configurations to specific workload needs. 
+
+=== Cost optimization
+Cost optimization helps you get the most value for your business while keeping costs low.
+
+* *Storage efficiencies* 
++
+Enable storage efficiencies — compaction, compression, and deduplication — to optimize storage utilization and reduce the SSD tier cost.
+
+* *Snapshot expiration*
++
+Delete old or manually created snapshots you no longer need. Removing them can lower costs and reduce clutter, especially if they aren't required for your SLA or recovery needs.
+
+* *Tiering*
+Use the snapshot-only tiering policy, which moves only snapshot data to the capacity tier while keeping active data on the SSD tier. This approach preserves low-latency performance for database workloads while reducing storage costs. Tier snapshot data after a 7-day cooling period.
+
+.What's next
+
+link:improve-configurations.html[Implement well-architected file system configurations]

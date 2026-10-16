@@ -323,6 +323,10 @@ sidebar:
           url: /oci/create-discover-systems.html
         - title: Connect to an OCI Storage system 
           url: /oci/create-link.html
+        - title: Configuration analysis for OCI NetApp Storage Service
+          url: /oci/configuration-analysis.html
+        - title: Improve OCI NetApp Storage Service configurations
+          url: /oci/improve-configurations.html
         - title: Permissions reference for OCI NetApp Storage Service
           url: /oci/permissions-oci.html
     - title: Administer Workload Factory
