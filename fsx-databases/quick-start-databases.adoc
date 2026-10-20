@@ -9,7 +9,7 @@ summary: "Get started with NetApp Workload Factory for Databases to use Infrastr
 :imagesdir: ../media/
 
 [.lead]
-With NetApp Workload Factory for Databases, you can get started immediately with _view, planning, and analysis_ permissions. If you'd like to use Workload Factory to discover hosts, manage resources, and more, you can get started in a few steps. 
+With NetApp Workload Factory for Databases, you can get started immediately without any permissions. If you'd like to use Workload Factory to discover hosts, manage resources, and more, you can get started in a few steps. 
 
 You must have an AWS account to use Databases. 
 
@@ -19,7 +19,7 @@ Follow these steps to get started.
 
 [role="quick-margin-para"]
 
-You'll need to link:../setup/sign-up-and-log-in.html[sign up^] and log in to the NetApp Console.
+You'll need to link:https://console.netapp.com[log in to the NetApp Console^]. If you don't have an account, link:https://docs.netapp.com/us-en/console-setup-admin/task-sign-up-saas.html[sign up^] to NetApp Console first and then log in. 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Add credentials and permissions for the Databases workload
 
