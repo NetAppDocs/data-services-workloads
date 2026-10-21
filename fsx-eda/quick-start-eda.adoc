@@ -14,7 +14,7 @@ Get started with Workload Factory for EDA by setting up your environment, enabli
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Log in to Workload Factory
 
 [role="quick-margin-para"]
-You'll need to link:../setup/sign-up-and-log-in.html[sign up and log in] to the NetApp Console.
+You'll need to link:https://console.netapp.com[log in to the NetApp Console^]. If you don't have an account, link:https://docs.netapp.com/us-en/console-setup-admin/task-sign-up-saas.html[sign up^] to NetApp Console first and then log in. 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Add credentials and permissions for the EDA workload
 
