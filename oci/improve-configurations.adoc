@@ -9,7 +9,7 @@ summary: "Workload Factory scans Amazon FSx for NetApp ONTAP configurations prov
 :imagesdir: ../media/
 
 [.lead]
-Use Workload Factory to implement best practices for your Oracle Cloud Infrastructure NetApp Storage Service (OCI NSS) systems. You can easily review the well-architected status, learn about issues with your configurations, and fix issues to improve the architecture of any systems that aren't optimized for reliability, security, efficiency, performance, and cost.
+Use Workload Factory to implement best practices for your Oracle Cloud Infrastructure NetApp Storage Service (OCI NSS) systems. You can easily review the well-architected status and , learn about issues with your configurations that aren't optimized for reliability, security, efficiency, performance, and cost.
 
 link:configuration-analysis.html[Learn about the configuration analysis and well-architected status.]
 
@@ -23,11 +23,9 @@ Link connectivity allows Workload Factory to scan for issues with performance, d
 .What is analyzed
 Workload Factory analyzes the well-architected status of the following configurations for OCI NSS systems:
 
-* Reliability: volume backups, snapshot policy, cross-region replication, SSD capacity headroom, replication policy labels, and file object capacity
-* Security: Ransomware Protection (ARP/AI) and unauthorized iSCSI volume access
-* Operational excellence: automatic capacity management, volume file capacity headroom, FlexCache write mode, FlexCache replica size, host-visible capacity reporting, OS type, block device space management, and thin provisioning
-* Cost optimization: cold data tiering, storage efficiencies, backup expiration, snapshot expiration, inactive block devices, overprovisioned SSD capacity, and inactive NAS volumes
-* Performance efficiency: FlexGroup volumes rebalance and FlexVol volumes rebalance
+* Reliability: file object capacity, snapshot policy, and SSD capacity headroom
+* Operational excellence: host-visible capacity reporting and volume capacity headroom
+* Cost optimization: cold data tiering, snapshot cleanup, and storage efficiencies
 
 == Before you begin
 
