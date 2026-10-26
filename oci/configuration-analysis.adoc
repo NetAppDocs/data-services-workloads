@@ -1,15 +1,15 @@
 ---
 sidebar: sidebar
 permalink: oci/configuration-analysis.html
-keywords: configuration issues, issues, improve, analyze, storage configuration, Amazon FSx for NetApp ONTAP, FSx for ONTAP, recommendation, recommendations
-summary: "NetApp Workload Factory analyzes Amazon FSx for NetApp ONTAP file system configurations regularly to determine if there are any configuration issues."  
+keywords: configuration issues, issues, improve, analyze, storage configuration, OCI NSS, recommendation, recommendations
+summary: "NetApp Workload Factory analyzes OCI NSS system configurations regularly to determine if there are any configuration issues."  
 ---
- = Configuration analysis for OCI NSS systems
+= Configuration analysis for OCI NSS systems
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-NetApp Workload Factory analyzes OCI NSS system configurations regularly to determine if there are any configuration issues. When issues are found, Workload Factory shows you what the issues are and explains what to change so your file system storage achieves peak performance, cost efficiency, and compliance with best practices. 
+NetApp Workload Factory analyzes OCI NSS system configurations regularly to determine if there are any configuration issues. When issues are found, Workload Factory shows you what the issues are and explains what to change so your storage environment achieves peak performance, cost efficiency, and compliance with best practices. 
 
 Key capabilities include: 
 
