@@ -1,0 +1,40 @@
+---
+sidebar: sidebar
+permalink: gcnv/manage-gcnv-volume-settings.html
+keywords: view volumes, delete volumes
+summary: "View and delete your Google Cloud NetApp Volumes in Volumes explorer, filter by credentials and region, and check logical and physical capacity usage."
+---
+= Manage volume settings in NetApp Workload Factory
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+View and delete your Google Cloud NetApp Volumes in Volumes explorer. Filter volumes by projects, credentials, and region, and check logical and physical capacity usage.
+
+== View Google Cloud NetApp Volumes
+
+.Steps
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Volumes explorer* > *Google Cloud NetApp Volumes*.
+. Use the *Projects*, *Credentials*, and *Region* filters to scope the volumes shown.
+. Check the *Logical size* card for used and provisioned storage, and the *Logical used capacity* card for SSD and capacity pool usage based on the selected filters.
+. Use the search bar above the table to search across all volumes.
+. Review the volumes table.
+
+== Delete a volume
+Delete a volume you no longer need to free up space. This action cannot be undone.
+
+.Steps
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Volumes explorer* > *Google Cloud NetApp Volumes*.
+. Select image:icon-action.png[The three-dot icon that opens the actions menu] of the volume to delete.
+. Optionally back up the volume before deleting it.
++
+The backup remains until you manually delete it. Snapshots for the volume are deleted and can't be recovered.
+. In *Delete volume*, type "delete" and select *Delete* to confirm.
+
+== Related information
+* link:learn-netapp-volumes.html[Learn about Google Cloud NetApp Volumes]
+* link:quick-start-gcnv.html[Quick start for Google Cloud NetApp Volumes]
+* link:add-credentials.html[Add Google Cloud NetApp Volumes credentials to NetApp Workload Factory]
+* link:configuration-analysis.html[Configuration analysis for Google Cloud NetApp Volumes]
