@@ -9,7 +9,7 @@ summary: "Workload Factory scans Amazon FSx for NetApp ONTAP configurations prov
 :imagesdir: ../media/
 
 [.lead]
-Use Workload Factory to implement best practices for your Oracle Cloud Infrastructure NetApp Storage Service (OCI NSS) systems. You can easily review the well-architected status and , learn about issues with your configurations that aren't optimized for reliability, security, efficiency, performance, and cost.
+Use Workload Factory to implement best practices for your Oracle Cloud Infrastructure NetApp Storage Service (OCI NSS) systems. You can easily review the well-architected status,learn about issues with your configurations, and fix issues to improve the architecture of any systems that aren't optimized for reliability, security, efficiency, performance, and cost.
 
 link:configuration-analysis.html[Learn about the configuration analysis and well-architected status.]
 
