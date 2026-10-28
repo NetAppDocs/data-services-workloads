@@ -1,2 +1,1 @@
-=== View Google Cloud NetApp Volumes in Volumes explorer
-You can now view your Google Cloud NetApp Volumes in the Volumes explorer. Filter by projects, credentials, and region, check total and used storage, search the volumes list, and delete volumes as needed.
+=== 
