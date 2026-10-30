@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: fsx-storage/create-discover-systems.html
 keywords: Amazon FSx for NetApp ONTAP, fsx, volumes, create system, delete system, access key, secret key, region, availability zones, discover, storage capacity, iops, throughput, security group, security, NetApp Console
-summary: "Create or discover cloud storage systems to add and manage volumes and additional data services from the NetApp Console."
+summary: "Create or discover FSx for ONTAP file systems to add and manage volumes and additional data services from the NetApp Console."
 ---
 = Create or discover cloud storage systems in NetApp Console
 :hardbreaks:
@@ -12,7 +12,7 @@ summary: "Create or discover cloud storage systems to add and manage volumes and
 :imagesdir: ../media/
 
 [.lead]
-Create or discover cloud storage systems to add and manage volumes and additional data services from the NetApp Console.
+Create or discover first-generation and second-generation FSx for ONTAP file systems to add and manage volumes and additional data services from the NetApp Console.
 
 == Create a storage system
 
@@ -22,7 +22,7 @@ The first step is to create a storage system. If you already created a storage s
 A storage VM is created when you create a file system. 
 
 .Before you begin
-Before creating your FSx for ONTAP file system, you will need:
+Before you create your FSx for ONTAP file system, you need:
 
 * The ARN of an IAM role that gives Workload Factory the permissions needed to create an FSx for ONTAP file system. link:permissions-reference-fsx.html[Learn how to grant permissions to an AWS account^].
 
@@ -47,7 +47,7 @@ Quick create enables you to use a recommended best-practice configuration. You c
 include::_include/create-file-system-quick.adoc[]
 
 .Result
-If you created the file system, the new FSx for ONTAP configuration appears on the Systems page. 
+After you create the file system, you can view it on the Systems page. 
 
 You can manage your FSx for ONTAP file systems in several ways, such as from Workloads in the NetApp Console, using ONTAP System Manager, and using AWS CloudFormation.
 --
@@ -64,7 +64,7 @@ include::_include/create-file-system-advanced.adoc[]
 
 .Result
 
-If you created the file system, the new FSx for ONTAP configuration appears on the Systems page. 
+After you create the file system, you can view it on the Systems page. 
 
 You can manage your FSx for ONTAP file systems in several ways, such as from Workloads in the NetApp Console, using ONTAP System Manager, and using AWS CloudFormation.
 --
@@ -72,30 +72,30 @@ You can manage your FSx for ONTAP file systems in several ways, such as from Wor
 ====
 
 
-== Discover an existing cloud storage system 
+== Discover an existing FSx for ONTAP file system 
 
-If you previously provided your credentials for your cloud storage provider in Workload Factory, you can automatically discover your storage systems from the Discoverable systems page. You can also review available data services. 
+If you previously provided your credentials for your cloud storage provider in Workload Factory, you can automatically discover your FSx for ONTAP file systems from the Discoverable systems page. You can also review available data services. 
 
 .About this task
-You can discover a cloud storage system only once within an account and attach it to one workspace. The storage system can later be removed and re-associated to a different workspace.
+You can discover a FSx for ONTAP file system only once within an account and attach it to one workspace. The file system can later be removed and re-associated to a different workspace.
 
 .Steps
 
 . From the NetApp Console menu, select *Storage*, then *Management*, and then *Discoverable systems*. 
 
-. The count of discovered cloud storage systems displays. Select *Discover*.  
+. The count of discovered FSx for ONTAP file systems displays. Select *Discover*.  
 
 . Select one or more storage systems and select *Discover* to add them to the Systems page. 
 
 [NOTE]
 ===============================
-* If you select an un-named storage system, you will receive a prompt to enter a name for the system.
+* If you select an un-named file system, you will receive a prompt to enter a name for the system.
 
-* If you select a storage system that doesn't have the credentials required to manage it from the Console, you'll receive a prompt to select credentials with the required permissions. 
+* If you select a file system that doesn't have the credentials required to manage it from the Console, you'll receive a prompt to select credentials with the required permissions. 
 
 * The following regions aren't supported for discovery: China regions, GovCloud (US) regions, Secret Cloud, and Top Secret Cloud.
 ===============================
 
 .Result
 
-The Console displays your discovered system on the Systems page. You can manage your storage systems in several ways, such as from Workloads in the NetApp Console and using ONTAP System Manager or using your cloud provider's storage management tools. 
+The Console displays your discovered file system on the Systems page. You can manage your file systems in several ways, such as from Workloads in the NetApp Console, using ONTAP System Manager, and using your cloud provider's storage management tools. 
