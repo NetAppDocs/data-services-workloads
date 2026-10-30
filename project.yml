@@ -25,8 +25,6 @@ sidebar:
           url: /setup/learn-about-workload-factory.html
         - title: Quick start
           url: /setup/quick-start.html
-        - title: Sign up and log in to Workload Factory
-          url: /setup/sign-up-and-log-in.html 
         - title: Learn about links
           url: /setup/links-overview.html
         - title: Learn about permissions
@@ -130,7 +128,7 @@ sidebar:
                     - title: Create and attach S3 access points
                       url: /fsx-storage/create-s3-access-points.html
                     - title: Manage S3 access points
-                      url: /fsx-storage/manage-s3-access-points.html
+                      url: /fsx-storage/edit-s3-access-points.html
                     - title: Set up the journal table infrastructure
                       url: /fsx-storage/setup-journal-table.html        
                 - title: Split a cloned volume
@@ -158,7 +156,7 @@ sidebar:
                 - title: Manage storage VM settings
                   url: /fsx-storage/manage-svm-settings.html
                 - title: Delete a storage VM 
-                  url: /fsx-storage/delete-svm.html   
+                  url: /fsx-storage/delete-svm.html       
         - title: Use FSx for ONTAP for database workloads
           entries:
             - title: Learn about Workload Factory for Databases
@@ -239,13 +237,13 @@ sidebar:
           entries:                   
             - title: Learn about NetApp Workload Factory for VMware
               url: /fsx-vmware/learn-about-vmware-workloads.html
-            - title: Quick start for migrating to Amazon EVS
+            - title: Quick start for Amazon EVS migration
               url: /fsx-vmware/quick-start-evs.html        
-            - title: Quick start for migrating to Amazon EC2
+            - title: Quick start for Amazon EC2 migration
               url: /fsx-vmware/quick-start-native.html
-            - title: Quick start for migrating to VMware Cloud on AWS
+            - title: Quick start for VMware Cloud on AWS migration
               url: /fsx-vmware/quick-start-vmware.html
-            - title: Quick start for migrating to Google Cloud VMware Engine
+            - title: Quick start for Google Cloud VMware Engine migration
               url: /fsx-vmware/quick-start-gcve.html
             - title: Explore the VMware planning center
               url: /fsx-vmware/explore-planning-center.html

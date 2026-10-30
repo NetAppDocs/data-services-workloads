@@ -4,7 +4,7 @@ permalink: fsx-vmware/quick-start-gcve.html
 keywords: quick start, gcve, google cloud vmware engine, gcnv, google cloud netapp volumes
 summary: Get started with the VMware migration advisor to move your current infrastructure to Google Cloud VMware Engine using Google Cloud NetApp Volumes as external NFS datastores.
 ---
-= Quick start for migrating to Google Cloud VMware Engine using the VMware workloads migration advisor
+= Quick start for Google Cloud VMware Engine migration
 :icons: font
 :imagesdir: ../media/
 
@@ -16,7 +16,7 @@ Before you get started, you should have an understanding of the link:../fsx-stor
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Log in to Workload Factory
 
 [role="quick-margin-para"]
-You'll need to link:../setup/sign-up-and-log-in.html[set up an account with Workload Factory^] and log in to the NetApp Console.
+You'll need to link:https://console.netapp.com[log in to the NetApp Console^]. If you don't have an account, link:https://docs.netapp.com/us-en/console-setup-admin/task-sign-up-saas.html[sign up^] to NetApp Console first and then log in. 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Add credentials and permissions
 
