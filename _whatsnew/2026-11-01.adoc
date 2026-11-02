@@ -130,7 +130,7 @@ You can now see client throughput recommendations and automation decision points
 ==== View Google Cloud NetApp Volumes storage pools
 You can now view your Google Cloud NetApp Volumes storage pools in NetApp Workload Factory. Filter by projects, credentials, and region, and select a storage pool's name to view its full details, including zone, replica zone, throughput, description, and labels.
 
-=== OCI NetApp Storage Service (OCI NSS) enhancements
+=== OCI NetApp Storage Service enhancements
 
 ==== Well-architected analysis for OCI NSS systems
 NetApp Workload Factory includes the well-architected assessment for OCI NSS systems. The assessment provides insights, recommendations, and fixes to help you achieve operational excellence.
