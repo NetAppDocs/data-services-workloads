@@ -26,7 +26,7 @@ link:fsx-storage/create-link.html[Learn how to create a link]
 
 ==== Audit and tracking for AI agent actions
 
-You can now use Tracker to review changes to AI agent settings and, in read-write mode, each approval request, including the agent's question and the user's answer.
+You can now use Tracker to review changes to AI agent settings and, in read/write mode, each approval request, including the agent's question and the user's answer.
 
 Resource changes made through Workload Factory APIs are logged by the Workload Factory service that performs the operation.
 
@@ -127,7 +127,7 @@ Select the main menu in the Workload Factory console, and then select *Well-arch
 image:well-architected-menu-option.png[Well-architected menu option in the Workload Factory console]
 
 ==== Throughput decision points
-You can now see client throughput recommendation and automation decision points. Hover over a decision point to view details, such as the current and recommended SKU or breached metrics in time window (%).
+You can now see client throughput recommendations and automation decision points. Hover over a decision point to view details, such as the current and recommended SKU or breached metrics in time window (%).
 
 === Google Cloud NetApp Volumes enhancements
 
