@@ -11,7 +11,7 @@ summary: "Learn what's new with Workload Factory in the NetApp Console like upda
 [.lead]
 Learn what's new with Workload Factory in the NetApp Console like updates and enhancements for workload management, service administration, storage features, permissions, and more.
 
-== 1 November 2026
+== 01 November 2026
 
 include::_whatsnew/2026-11-01.adoc[]
 
