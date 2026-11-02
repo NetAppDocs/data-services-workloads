@@ -36,10 +36,10 @@ For a complete file system analysis, you must do the following:
 
 * Associate a link. Link connectivity lets Workload Factory analyze all OCI NSS system configurations like data protection and performance.
 +
-link:create-link.html[Learn how to associate an existing link or to create and associate a new link^]. 
+link:create-link.html[Learn how to associate an existing link or to create and associate a new link]. 
 * Grant _view, planning, and analysis_ permissions in your OCI account. 
 +
-link:add-credentials.html[Learn how to grant permissions to an OCI account^].
+link:add-credentials-oci.html[Learn how to grant permissions to an OCI account].
 
 == Best practices and recommendations for storage workloads
 
@@ -91,4 +91,4 @@ Enable storage efficiencies — compaction, compression, and deduplication — t
 
 .What's next
 
-link:improve-configurations.html[Implement well-architected file system configurations]
+link:improve-configurations.html[Implement well-architected OCI NSS configurations]
