@@ -6,7 +6,7 @@ summary: "Update S3 access point details, manage tags, and enable or disable the
 ---
 = Edit the S3 access points for an FSx for ONTAP volume in NetApp Console
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 Update S3 access point details and manage tags for an FSx for ONTAP volume in NetApp Console. 
