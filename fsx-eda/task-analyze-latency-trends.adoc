@@ -9,7 +9,6 @@ summary: Use the interactive graphs to analyze volume latency trends over time, 
 :imagesdir: ../media/
 
 [.lead]
-
 After a latency breach is detected, use the charts to see how volume latency, IOPS, and throughput change over time. This helps you spot patterns and validate whether remediation improved performance.
 
 == Before you begin
