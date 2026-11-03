@@ -9,7 +9,6 @@ summary: NetApp Workload Factory for EDA helps you optimize FSx for ONTAP usage 
 :imagesdir: ../media/
 
 [.lead]
-
 Workload Factory for EDA helps you manage Amazon FSx for ONTAP across multiple file systems. It improves performance and lowers costs by automatically adjusting storage settings, finding latency issues, and providing insights into your EDA projects.
 
 It is designed to integrate with your Infrastructure as Code (IaC) frameworks.

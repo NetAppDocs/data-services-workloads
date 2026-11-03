@@ -1,0 +1,94 @@
+---
+sidebar: sidebar
+permalink: oci/configuration-analysis.html
+keywords: configuration issues, issues, improve, analyze, storage configuration, OCI NSS, recommendation, recommendations
+summary: "NetApp Workload Factory analyzes OCI NSS system configurations regularly to determine if there are any configuration issues."  
+---
+= Configuration analysis for OCI NSS systems
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+NetApp Workload Factory analyzes OCI NSS system configurations regularly to determine if there are any configuration issues. When issues are found, Workload Factory shows you what the issues are and explains what to change so your storage environment achieves peak performance, cost efficiency, and compliance with best practices. 
+
+Key capabilities include: 
+
+* Daily configuration analysis
+* Automatic best practice validations
+* Proactive observability
+* Insights to action
+* OCI Well-Architected Framework advisor
+
+== How it works 
+
+Workload Factory analyzes your workloads on supported cloud storage deployments every day. The analysis provides well-architected status, insights, and recommendations. 
+
+After the daily analysis completes, configurations appear as "optimized" or "not optimized" in the Well-architected dashboard for the deployment. You'll find configuration issues organized by category, along with recommendations. Workload Factory provides detailed instructions to help you implement the recommended changes.
+
+You can dismiss the analysis of configurations that do not apply to your environments. This avoids unnecessary alerts and inaccurate optimization results. 
+
+== Why it matters
+
+Workload Factory applies best practices to large storage, database, and VMware environments by combining ongoing assessment with recommendation insights and remediation. Automated fixes reduce human error, ensure uniform management, and preserve performance and reliability across your workload infrastructures.
+
+== Analysis requirements
+For a complete file system analysis, you must do the following: 
+
+* Associate a link. Link connectivity lets Workload Factory analyze all OCI NSS system configurations like data protection and performance.
++
+link:create-link.html[Learn how to associate an existing link or to create and associate a new link]. 
+* Grant _view, planning, and analysis_ permissions in your OCI account. 
++
+link:add-credentials-oci.html[Learn how to grant permissions to an OCI account].
+
+== Best practices and recommendations for storage workloads
+
+The well-architected dashboard assesses storage configurations against ONTAP best practices and the AWS Well-Architected Framework. The assessment also recommends improvements and fixes.  
+
+The well-architected analysis categorizes configurations in the following pillars of the framework: _reliability_, _security_, _operational excellence_, _cost optimization_, and _performance efficiency_.
+
+NOTE: Currently, Workload Factory doesn't provide workload-specific recommendations for all configurations. Tailor your configurations to specific workload needs. 
+
+=== Reliability
+Reliability ensures that workloads perform their intended functions correctly and consistently, even when there are disruptions. 
+ 
+* *File object capacity* 
++
+The file capacity threshold should be raised to avoid hitting the volume capacity limit. Low file capacity (inodes) prevents writing additional data to the volume. Workload Factory recommends maintaining file capacity utilization below 80% to allow new file creation. 
+
+* *Snapshot policy*
++
+Schedule local snapshots for efficient backup and quick restores. Snapshots are instant, point-in-time images of your volumes. This recommendation doesn't apply to database environments.
+
+* *SSD capacity headroom*
++
+The SSD storage tier capacity should not exceed 80% utilization. This might impact data reads and writes to your capacity pool storage tier and impact the throughput capacity of your file system. When capacity runs out, data volumes become read-only. Services trying to write new data also fail.
+
+=== Operational excellence
+Operational excellence ensures that workloads are operated and monitored effectively and are able to support the requirements of their users.
+
+* *Host-visible capacity reporting*
++
+Enable host-visible capacity reporting to provide better visibility into storage usage at the volume level.
+
+* *Volume capacity headroom*
++
+The volume capacity headroom should be set to 10% to allow for growth and prevent unexpected capacity issues.
+
+=== Cost optimization
+Cost optimization helps you get the most value for your business while keeping costs low.
+
+* *Cold data tiering*
+Use the snapshot-only tiering policy, which moves only snapshot data to the capacity tier while keeping active data on the SSD tier. This approach preserves low-latency performance for database workloads while reducing storage costs. Tier snapshot data after a 7-day cooling period.
+
+* *Snapshot cleanup*
++
+Delete old or manually created snapshots you no longer need. Removing them can lower costs and reduce clutter, especially if they aren't required for your SLA or recovery needs.
+
+* *Storage efficiencies* 
++
+Enable storage efficiencies — compaction, compression, and deduplication — to optimize storage utilization and reduce the SSD tier cost.
+
+.What's next
+
+link:improve-configurations.html[Implement well-architected OCI NSS configurations]
