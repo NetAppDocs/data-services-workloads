@@ -10,19 +10,19 @@ When new data is available, select *Load it now* in the notification banner to u
 
 Both *Refresh data* and *Load it now* create data collection events in Tracker.
 
-link:admin/manage-custom-dashboards-fsx.html#refresh-dashboard-data[Learn how to refresh custom dashboard data]
+link:https://docs.netapp.com/us-en/data-services-workloads/admin/manage-custom-dashboards-fsx.html#refresh-dashboard-data[Learn how to refresh custom dashboard data]
 
 ==== Specify regions for custom dashboards
 
 Custom dashboards now ask you to choose one or more regions if your request does not include them. Dashboard data is limited to the regions you select.
 
-link:admin/create-custom-dashboard-fsx.html[Learn how to create a custom dashboard]
+link:https://docs.netapp.com/us-en/data-services-workloads/admin/create-custom-dashboard-fsx.html[Learn how to create a custom dashboard]
 
 ==== IAM policy for FSx for ONTAP link creation
 
 The CloudFormation template and Terraform code for creating links now use an IAM policy instead of inline Lambda permissions.
 
-link:fsx-storage/create-link.html[Learn how to create a link]
+link:https://docs.netapp.com/us-en/data-services-workloads/fsx-storage/create-link.html[Learn how to create a link]
 
 ==== Audit and tracking for AI agent actions
 
@@ -30,7 +30,7 @@ You can now use Tracker to review changes to AI agent settings and, in read/writ
 
 Resource changes made through Workload Factory APIs are logged by the Workload Factory service that performs the operation.
 
-link:admin/learn-agent.html#audit-and-tracking-for-agent-actions[Learn about audit and tracking for agent actions]
+link:https://docs.netapp.com/us-en/data-services-workloads/admin/learn-agent.html[Learn about audit and tracking for agent actions]
 
 === Amazon FSx for NetApp ONTAP enhancements
 
@@ -141,5 +141,5 @@ Configuration assessments are available for the following pillars of the OCI Wel
 * Operational excellence: host-visible capacity reporting and volume capacity headroom
 * Cost optimization: cold data tiering, snapshot cleanup, and storage efficiencies
 
-Learn more about link:oci/configuration-analysis.html[the well-architected analysis for OCI NSS systems] and about link:oci/improve-configurations.html[implementing well-architected configurations].
+Learn more about link:https://docs.netapp.com/us-en/data-services-workloads/oci/add-credentials-oci.html[the well-architected analysis for OCI NSS systems] and about link:https://docs.netapp.com/us-en/data-services-workloads/oci/improve-configurations.html[implementing well-architected configurations].
 
