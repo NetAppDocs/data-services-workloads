@@ -29,7 +29,7 @@ Workload Factory analyzes the well-architected status of the following configura
 
 == Before you begin
 
-* You must link:add-credentials.html[grant _operations and remediation_ permissions] in your OCI account. 
+* You must link:add-credentials-oci.html[grant _operations and remediation_ permissions] in your OCI account. 
 * link:create-link.html[Connect to an OCI NSS system using a link] for the most comprehensive analysis of your file system resources.
 
 == Fix a configuration issue

@@ -47,4 +47,4 @@ Optionally, you can use the Journal table feature with S3 access points in Workl
 
 Other related topics: 
 
-link:manage-s3-access-points.html[Edit or delete S3 access points for a volume in NetApp Workload Factory]
+link:edit-s3-access-points.html[Edit or delete S3 access points for a volume in NetApp Workload Factory]
