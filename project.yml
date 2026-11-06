@@ -291,6 +291,8 @@ sidebar:
           entries: 
             - title: Performance for FSx for ONTAP
               url: /fsx-storage/performance-reference.html
+            - title: Permissions for FSx for ONTAP
+              url: /fsx-storage/permissions-reference-fsx.html
             - title: Security for FSx for ONTAP
               url: /fsx-storage/security-reference.html   
     - title: Google Cloud NetApp Volumes
@@ -313,22 +315,32 @@ sidebar:
           url: /gcnv/improve-configurations.html
     - title: OCI NetApp Storage Service
       entries:
-        - title: Learn about OCI NetApp Storage Service
-          url: /oci/learn-about-oci.html
-        - title: Quick start for OCI NetApp Storage Service
-          url: /oci/quick-start-oci.html  
-        - title: Add OCI credentials
-          url: /oci/add-credentials-oci.html
-        - title: Discover OCI Storage systems
-          url: /oci/create-discover-systems.html
-        - title: Connect to an OCI Storage system 
-          url: /oci/create-link.html
-        - title: Configuration analysis for OCI NetApp Storage Service
-          url: /oci/configuration-analysis.html
-        - title: Improve OCI NetApp Storage Service configurations
-          url: /oci/improve-configurations.html
-        - title: Permissions reference for OCI NetApp Storage Service
-          url: /oci/permissions-oci.html
+        - title: Use OCI NetApp Storage Service in Workload Factory
+          entries:
+            - title: Learn about OCI NetApp Storage Service
+              url: /oci/learn-about-oci.html
+            - title: Quick start for OCI NetApp Storage Service
+              url: /oci/quick-start-oci.html
+            - title: Add OCI credentials
+              url: /oci/add-credentials-oci.html
+            - title: Discover OCI Storage systems
+              url: /oci/create-discover-systems.html
+            - title: Connect to an OCI Storage system 
+              url: /oci/create-link.html
+        - title: Protect your data
+          entries: 
+            - title: Create a cyber vault to protect data
+              url: /oci/create-cyber-vault.html         
+        - title: Manage OCI NetApp Storage Service resources
+          entries:
+            - title: Configuration analysis for OCI NetApp Storage Service
+              url: /oci/configuration-analysis.html
+            - title: Improve OCI NetApp Storage Service configurations
+              url: /oci/improve-configurations.html
+        - title: Reference 
+          entries: 
+            - title: Permissions reference for OCI NetApp Storage Service
+              url: /oci/permissions-oci.html
     - title: Administer Workload Factory
       entries:
         - title: Build and operate well-architected workloads
