@@ -125,6 +125,34 @@ image:well-architected-menu-option.png[Well-architected menu option in the Workl
 ==== Throughput decision points
 You can now see client throughput recommendations and automation decision points. Hover over a decision point to view details, such as the current and recommended SKU or breached metrics in time window (%).
 
+=== Workload Factory for EDA enhancements
+
+These enhancements cover volume details in latency analysis, a file system pressure check, throughput decision points, and running a latency analysis again.
+
+==== View volume details during latency analysis
+
+You can view more volume details in Workload Factory while you analyze a latency event so that you can see how the volume is configured. The Detailed latency analysis page shows *Volume type* (RW or DP) and *Volume style* (FlexVol or FlexGroup).
+
+link:https://docs.netapp.com/us-en/data-services-workloads/fsx-eda/task-analyze-latency-trends.html[Learn how to analyze latency trends]
+
+==== Check file system pressure for a latency event
+
+In Workload Factory, you can check whether file system pressure affected performance when a latency event occurred so that you can decide whether to investigate the file system. For a volume with a latency alert, you can view CloudWatch data from the 40 minutes before the event and open the file system to investigate further.
+
+link:https://docs.netapp.com/us-en/data-services-workloads/fsx-eda/learn-latency-monitoring.html#file-system-pressure[Learn about file system pressure checks]
+
+==== Review throughput decision points for EDA
+
+You can review client throughput decision points on the EDA Overview dashboard so that you can see when Workload Factory recommended or applied a throughput change. Hover over a decision point to view details, such as the current and recommended SKU or the breached metrics in the time window.
+
+link:https://docs.netapp.com/us-en/data-services-workloads/fsx-eda/task-use-overview-dashboard.html#analyze-capacity-and-throughput-trends-and-decision-points[Learn how to review throughput decision points]
+
+==== Run a latency analysis again
+
+You can run a latency analysis again in Workload Factory for a volume so that you can refresh the results after you investigate or make a change. Select *Run analysis again* to start a new analysis and update the results.
+
+link:https://docs.netapp.com/us-en/data-services-workloads/fsx-eda/task-analyze-latency-issues.html[Learn how to analyze latency issues]
+
 === Google Cloud NetApp Volumes enhancements
 
 ==== View Google Cloud NetApp Volumes storage pools
