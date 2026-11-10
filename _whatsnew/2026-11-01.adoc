@@ -125,6 +125,10 @@ image:well-architected-menu-option.png[Well-architected menu option in the Workl
 ==== Throughput decision points
 You can now see client throughput recommendations and automation decision points. Hover over a decision point to view details, such as the current and recommended SKU or breached metrics in time window (%).
 
+=== Workload Factory for VMware enhancements
+
+These enhancements cover the EVS TCO calculator for VMware migrations.
+
 ==== Support for i7i.metal-24xl and i7i.metal-48xl instances in the EVS TCO calculator
 
 The EVS TCO calculator now supports AWS i7i.metal-24xl and i7i.metal-48xl EC2 instances as cluster hosts. Compared to i4i.metal configurations, i7i.metal-24xl instances lower the EVS starting cost by about 33% for compute and 25% for vSAN storage.
