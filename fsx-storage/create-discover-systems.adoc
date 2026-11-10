@@ -44,7 +44,7 @@ Quick create enables you to use a recommended best-practice configuration. You c
 . From the NetApp Console menu, select *Storage* and then *Management*. 
 . Select *Add system* from the Systems page. 
 . Select *Amazon Web Services* as the location, and then select *Add new* for Amazon FSx for NetApp ONTAP. 
-include::_include/create-file-system-quick.adoc[]
+include::../_include/create-file-system-quick.adoc[]
 
 .Result
 After you create the file system, you can view it on the Systems page. 
@@ -60,7 +60,7 @@ With Advanced create, you set all of the configuration options, including availa
 . From the NetApp Console menu, select *Storage* and then *Management*. 
 . Select *Add system* from the Systems page. 
 . Select *Amazon Web Services* as the location, and then select *Add new* for Amazon FSx for NetApp ONTAP. 
-include::_include/create-file-system-advanced.adoc[]
+include::../_include/create-file-system-advanced.adoc[]
 
 .Result
 
