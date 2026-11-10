@@ -60,7 +60,7 @@ An interactive latency graph of CloudWatch metrics for the affected volume is di
 
 For detailed instructions on using the graphs, see link:task-analyze-latency-trends.html[Analyze latency trends].
 
-=== Steps
+.Steps
 
 . In the *Latency* tab, locate the event you want to analyze.
 . In the *Severity* column, select a latency event to open an analysis panel for that event.
