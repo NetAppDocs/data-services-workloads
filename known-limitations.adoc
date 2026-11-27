@@ -167,3 +167,6 @@ When registering Oracle Database on SUSE Linux Enterprise Server 12, Workload Fa
 
 === Operator permissions required
 NetApp Workload Factory for EDA requires Operator permissions to function correctly.
+
+=== Latency breakdown for DP volumes
+The component breakdown in basic latency analysis isn't available for data protection (DP) volumes.

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: gcnv/improve-configurations.html
-keywords: improve configurations, optimize configurations, implement best practices, well-architected storage pool, Google Cloud NetApp Volumes, GCNV
+keywords: improve configurations, optimize configurations, implement best practices, well-architected storage pool, Google Cloud NetApp Volumes
 summary: "Workload factory scans Google Cloud NetApp Volumes configurations providing insights and recommendations to help you achieve operational excellence." 
 ---
 = Implement well-architected Google Cloud NetApp Volumes configurations
@@ -28,6 +28,7 @@ You can view recommendations for configuration issues after the daily analysis c
 .Steps
 . Log in to the link:https://console.netapp.com/home[NetApp Console^].
 . From the NetApp Console menu, select *Workloads* and then *Well-architected*.
+. Optional: Use the *Projects*, *Credentials*, and *Regions* filters to scope the dashboard.
 . From the Well-architected dashboard, select *View* for any configuration.
 +
 Optionally, download a CSV file of the recommendations for all configurations.

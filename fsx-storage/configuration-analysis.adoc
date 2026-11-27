@@ -27,7 +27,7 @@ After the daily analysis completes, configurations appear as "optimized" or "not
 
 You can dismiss the analysis of configurations that do not apply to your environments. This avoids unnecessary alerts and inaccurate optimization results. 
 
-You can also create custom rules in plain language to validate your environments against your organization's standards and NetApp best practices. Test rules with a dry run, then schedule them to run across your environments. link:learn-custom-rules.html[Learn more about custom rules^].
+You can also create custom rules in plain language to validate your environments against your organization's standards and NetApp best practices. You can start a rule from a supported well-architected configuration, or write your own prompt. Test rules with a dry run, then schedule them to run across your environments. link:learn-custom-rules.html[Learn more about custom rules^].
 
 == Why it matters
 
@@ -86,17 +86,9 @@ Raise the file capacity threshold to avoid reaching the volume capacity limit. L
 +
 Workload Factory recommends connecting hosts to the failover node to maintain connectivity and avoid disruptions during failovers.
 
-* *SAP HANA snapshot policy*
+* *Database snapshot policy*
 +
-Set the snapshot policy to "None" for SAP HANA volumes to lower storage costs and improve performance for active database data.
-
-* *MySQL snapshot policy*
-+
-Set the snapshot policy to "None" for MySQL volumes to lower storage costs and improve performance for active database data.
-
-* *PostgreSQL snapshot policy*
-+
-Set the snapshot policy to "None" for PostgreSQL volumes to lower storage costs and improve performance for active database data.
+Set the snapshot policy to "None" for SAP HANA, MySQL, and PostgreSQL volumes to lower storage costs and improve performance for active database data.
 
 === Security 
 Security emphasizes protecting data, systems, and assets through risk assessments and mitigation strategies. 
@@ -112,10 +104,6 @@ Volumes serving application data using iSCSI should not allow NAS access at the 
 * *ARP/AI multi-device detection gap* 
 + 
 ARP/AI provides full protection coverage when a volume has only one block device attached to it. If a volume has multiple block devices attached, Workload Factory moves the block devices to new volumes so that each volume has only one block device. 
-
-* *Bidirectional CHAP for Kubernetes iSCSI backends*
-+
-Use bidirectional CHAP authentication for Trident iSCSI backends to ensure iSCSI initiator and target are mutually authenticated. This prevents unauthorized hosts from establishing iSCSI sessions against the storage VM.
 
 * *Disable `showmount` on the application storage VM*
 +
@@ -160,10 +148,6 @@ Configure thin provisioning for FSx for ONTAP volumes hosting database instances
 +
 Configure FSx for ONTAP file systems with the required AWS Transform MGN (MGN) connectivity and API authentication settings before using them with AWS MGN. 
 
-* *Dedicated Kubernetes storage VM*
-+
-Use a dedicated storage VM for Kubernetes workloads. Keeping Kubernetes storage separate makes it easier to manage, simplifies policy setup, and helps ensure consistent storage settings.
-
 * *Match igroup OS to host*
 + 
 Match the operating system of the initiator group (igroup) to the host's operating system to prevent I/O or performance issues.
@@ -173,7 +157,7 @@ Cost optimization helps you get the most value for your business while keeping c
 
 * *Cold data tiering* 
 +
-Enable cold data tiering to reduce SSD storage tier utilization. Apply a tiering policy to every volume focused on general data storage. For database volumes, enable cold data tiering where appropriate. FSx for ONTAP continuously scans the data for cold data and moves it to the capacity pool tier without disruption. 
+Enable cold data tiering to reduce SSD storage tier utilization. Apply a tiering policy to every volume focused on general data storage. For database volumes other than SAP HANA primary volumes, enable cold data tiering where appropriate. FSx for ONTAP continuously scans the data for cold data and moves it to the capacity pool tier without disruption. 
 
 * *Storage efficiencies* 
 +
@@ -197,7 +181,11 @@ Excess SSD capacity adds unnecessary cost. Reduce the SSD tier while maintaining
 
 * *Inactive NAS volumes*
 +
-After a NAS volume isn't used for 31 days, archive or delete the unused NAS volume to reduce costs. 
+After a NAS volume isn't used for 31 days, archive the data to the capacity pool tier or delete the unused NAS volume to reduce costs.
+
+* *Clone cleanup* 
++
+Delete any volume clones older than 30 days to optimize storage usage and reduce costs.
 
 * *Clone cleanup* 
 +

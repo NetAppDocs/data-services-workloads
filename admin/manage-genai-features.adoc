@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: admin/manage-genai-features.html
-keywords: gen ai, generative ai, bedrock, ask me, custom dashboards, rules builder, cloudshell ai, ems analyzer, db log analyzer, latency analyzer, byom, bring your own model, administration
+keywords: gen ai, generative ai, bedrock, ask me, custom dashboards, custom rules, cloudshell ai, ems analyzer, db log analyzer, latency analyzer, byom, bring your own model, administration
 summary: "Control access to Bedrock-based AI features in Workload Factory. You can turn off AI capabilities or use NetApp-managed or customer-managed Bedrock."
 ---
 
@@ -17,7 +17,7 @@ Control access to AI features in Workload Factory. You can turn off AI features 
 
 == About AI features
 
-Workload Factory includes several AI-powered features that enhance your experience such as Ask Me, AI agents, custom dashboards, Rule builder, and analyzers for EMS, database logs, and latency.
+Workload Factory includes several AI-powered features that enhance your experience such as Ask Me, AI agents, custom dashboards, custom rules, and analyzers for EMS, database logs, and latency.
 
 As a Workload Factory administrator, you can control how these features use AI on the AI settings page.
 
@@ -33,9 +33,9 @@ NetApp-managed Bedrock (Recommended):: Use a NetApp-managed AWS Bedrock service.
 
 Customer-managed Bedrock:: Use your own AWS Bedrock configuration.
 +
-* For best results, NetApp recommends using Anthropic Claude Sonnet 4.5 or 4.6 with your Amazon Bedrock configuration
+* For best results, NetApp recommends using the latest Anthropic Claude Sonnet model with your Amazon Bedrock configuration
 
-GenAI features off:: Turns off all AI features. Users can no longer use Ask Me, the AI Agent, analyzers, custom dashboards, rules builder, or other AI-powered tools.
+GenAI features off:: Turns off all AI features. Users can no longer use Ask Me, the AI Agent, analyzers, custom dashboards, custom rules, or other AI-powered tools.
 
 == Before you begin
 
