@@ -1,0 +1,31 @@
+---
+sidebar: sidebar
+permalink: gcnv/delete-storage-pool.html
+keywords: delete storage pool, remove storage pool, storage pool
+summary: "Delete a Google Cloud NetApp Volumes storage pool that has no volumes in NetApp Workload Factory."
+---
+= Delete a Google Cloud NetApp Volumes storage pool in NetApp Workload Factory
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Delete a storage pool that no longer contains volumes, without using the Google Cloud console.
+
+== Before you begin
+Make sure your storage pool and user role allow deletion so the delete option is available when needed.
+
+* The storage pool must have no volumes.
+* The storage pool must be in the Ready or Error state.
+* You must have the Google Cloud NetApp Volumes Admin role.
+
+== Delete a storage pool
+Delete the storage pool only when you are sure that nothing depends on it, because you can't undo the action.
+
+.Steps
+. Log in to the link:https://console.netapp.com[NetApp Console^].
+. Select the menu image:workloads-menu-icon.png[The hamburger menu icon is used to navigate to Workloads, the menu item for Workload Factory], *Workloads* > *Storage* > *Google Cloud NetApp Volumes*.
+. In the storage pools table, select image:screenshot_gallery_options.gif[An icon with three dots.] for the storage pool, and then select *Delete*.
+. In the confirmation dialog, enter the text *delete* to confirm, and then select *Delete*.
+
+.Result
+The storage pool status changes to Deleting. When deletion is complete, Workload Factory removes the storage pool from the table. If deletion fails, the storage pool stays in the table and an error message appears in link:../admin/monitor-operations.html[Tracker].

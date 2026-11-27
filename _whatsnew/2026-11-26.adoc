@@ -1,0 +1,100 @@
+=== Amazon FSx for NetApp ONTAP enhancements
+
+==== Associate multiple FSx for ONTAP file systems with a link
+
+You can now associate multiple FSx for ONTAP file systems with a new or existing link in one workflow, instead of repeating the association for each file system. You can authenticate the link by entering ONTAP credentials for each file system or by applying the same credentials to multiple file systems.
+ 
+link:https://docs.netapp.com/us-en/data-services-workloads/setup/links-overview.html[Learn more about links]
+
+==== New recommendations for storage VM name services
+Workload Factory now includes the following recommendations for storage VM name services in the well-architected analysis:
+
+*DNS and LDAP server redundancy*: recommends at least two DNS servers on storage VMs that use DNS, and at least two LDAP servers on storage VMs that use LDAP. A single server failure can block name resolution, domain authentication, or NFS access.
+
+==== Volumes explorer enhancements
+
+===== New Volumes explorer table columns
+The Volumes explorer table includes the following new columns:
+
+* *Logical used size*: shows the space that clients see as used, before storage efficiency savings. This column appears by default.
+* *Junction path*: shows the junction path for a volume.
+
+===== Manage mount points
+You can now manage where volumes are mounted in a storage VM namespace directly from Volumes explorer. Select *Manage mount points* from the *Advanced* menu for a volume to view the storage VM namespace as a tree, then mount, unmount, or change the junction path for the volume. Workload Factory checks dependencies before it unmounts a volume. You can't unmount a volume that has other volumes mounted under it, and you get a warning when the volume has SMB shares. 
+
+===== Nested junction paths for new volumes
+When you create a volume, you can now enter a nested junction path, such as `/test1/test2`, in the *Advanced configuration* section. 
+
+link:https://docs.netapp.com/us-en/data-services-workloads/fsx-storage/create-volume.html[Learn how to create a volume]
+
+==== Customize a well-architected configuration as a custom rule
+
+You can start a custom rule from a well-architected configuration so that you can apply your own threshold or scope while the original best practice stays in place. Workload Factory opens Custom rules with an editable prompt based on that configuration. The rule starts as a draft, and its description states which configuration it is based on.
+
+link:https://docs.netapp.com/us-en/data-services-workloads/fsx-storage/improve-configurations.html[Learn how to customize a well-architected configuration]
+
+==== Receive notifications for scheduled custom rule runs
+
+Turn on notifications for a scheduled custom rule to get results without signing in to Workload Factory. You can receive notifications after every scheduled run or only when a run fails or partially succeeds. Notifications are sent through the channels you already set up. Manual tests do not send notifications.
+
+link:https://docs.netapp.com/us-en/data-services-workloads/fsx-storage/manage-custom-rules.html[Learn how to receive notifications for scheduled custom rules]
+
+=== Workload Factory administration enhancements
+
+These enhancements cover custom dashboards and other administration tasks in Workload Factory.
+
+==== Edit a custom dashboard title and description
+
+You can edit a custom dashboard's title and description from the dashboard catalog or the dashboard view to keep them accurate as the dashboard changes. Both fields are required, and two dashboards can have the same title.
+
+link:https://docs.netapp.com/us-en/data-services-workloads/admin/manage-custom-dashboards-fsx.html[Learn how to manage custom dashboards]
+
+=== Workload Factory for EDA enhancements
+
+These enhancements cover automatic AI analysis for tracked volumes, clearer root cause explanations in AI analysis, and how long latency analysis results are kept.
+
+==== Track volumes for automatic AI analysis
+
+You can mark volumes for automatic AI analysis when a latency issue is detected. Analysis results are saved for 72 hours and included in notification emails, so you can review the cause without running the analysis yourself.
+
+link:https://docs.netapp.com/us-en/workload-eda/task-analyze-latency-issues.html[Learn about analyzing latency issues^].
+
+==== Clearer explanations of the root causes in AI analysis
+
+Use AI analysis to get a clearer explanation of what may have caused a latency event. The analysis checks for issues related to FlexCache, capacity pools, and file systems, as well as throughput and IOPS limits, high SSD usage, write saturation, and other volumes using the same resources.
+
+link:https://docs.netapp.com/us-en/workload-eda/task-analyze-latency-issues.html[Learn about analyzing latency issues^].
+
+==== Latency analysis results kept for 72 hours
+
+Latency analysis results are now available in the interface for 72 hours instead of 24 hours, so you can review an earlier analysis of a volume.
+
+link:https://docs.netapp.com/us-en/workload-eda/task-analyze-latency-issues.html[Learn about analyzing latency issues^].
+
+=== Google Cloud NetApp Volumes enhancements
+
+These enhancements cover storage pool deletion, opening the storage pool inventory from a system, adding a system across regions, and managing a system from the right panel.
+
+==== Delete a storage pool
+
+You can delete a Google Cloud NetApp Volumes storage pool that has no volumes and is Ready or Error. The delete cannot be undone. If the delete fails, the pool stays in the inventory and the error is in Tracker.
+
+link:https://docs.netapp.com/us-en/data-services-workloads/gcnv/delete-storage-pool.html[Learn how to delete a storage pool]
+
+==== Open the storage pool inventory from a system
+
+*Enter system* on a Google Cloud NetApp Volumes system opens the storage pool inventory in Workload Factory, with that system's project, credentials, and region already selected. A system that covers all regions opens with every region selected.
+
+link:https://docs.netapp.com/us-en/data-services-workloads/gcnv/view-storage-pools.html[Learn how to view storage pools]
+
+==== Add a system across all regions
+
+When you add a Google Cloud NetApp Volumes system, region is optional and defaults to all regions. Workload Factory discovers storage pools in every region for the credentials you select. A selected region sets what the system shows on the canvas and what Compliance and DRaaS use. It does not limit discovery.
+
+link:https://docs.netapp.com/us-en/data-services-workloads/gcnv/create-discover-systems.html[Learn how to add a system]
+
+==== Manage a system from the right panel
+
+The right panel of a Google Cloud NetApp Volumes system lets you view its volumes and enter the system from the NetApp Console.
+
+link:https://docs.netapp.com/us-en/data-services-workloads/gcnv/view-storage-pools.html[Learn how to view storage pools]

@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar
 permalink: gcnv/create-discover-systems.html
-keywords: Google Cloud NetApp Volumes, gcnv, volumes, create system, delete system, access key, secret key, region, availability zones, discover, storage capacity, iops, throughput, security group, security, NetApp Console
-summary: "Create or discover cloud storage systems to add and manage volumes and additional data services from the NetApp Console."
+keywords: Google Cloud NetApp Volumes, gcnv, add system, system name, credentials, region, NetApp Console
+summary: "Add a Google Cloud NetApp Volumes system to the NetApp Console to manage its storage pools, volumes, and data services."
 ---
-= Create or discover Google Cloud NetApp Volumes systems in NetApp Console
+= Add a Google Cloud NetApp Volumes system in NetApp Console
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -12,32 +12,23 @@ summary: "Create or discover cloud storage systems to add and manage volumes and
 :imagesdir: ../media/
 
 [.lead]
-Discover Google Cloud NetApp Volumes systems and manage volumes and additional data services from the NetApp Console.
+Add a Google Cloud NetApp Volumes system so that you can manage its storage pools and volumes from the NetApp Console.
 
-== Discover an existing cloud storage system 
-Discover your storage systems from the Discoverable systems page. 
+== Add a system
+Register the project you want to manage so that Workload Factory includes its storage pools in every region.
 
 .Before you begin
-Provide your credentials for your Google Cloud NetApp Volumes in Workload Factory. 
-
-.About this task
-You can discover a cloud storage system only once within an account and attach it to one workspace. The storage system can later be removed and re-associated to a different workspace.
+Add credentials for your Google Cloud NetApp Volumes project in Workload Factory. link:add-credentials.html[Learn how to add credentials].
 
 .Steps
-
-. From the NetApp Console menu, select *Storage*, then *Management*, and then *Discoverable systems*. 
-
-. The count of discovered cloud storage systems displays. Select *Discover*.  
-
-. Select one or more storage systems and select *Discover* to add them to the Systems page. 
-
-[NOTE]
-===============================
-* If you select an un-named storage system, you will receive a prompt to enter a name for the system.
-
-* If you select a storage system that doesn't have the credentials required to manage it from the Console, you'll receive a prompt to select credentials with the required permissions. 
-===============================
+. From the NetApp Console menu, select *Storage* > *Management* > Systems, and then select *Add system* > *Google Cloud Platform*.
+. Under *Google Cloud NetApp Volumes*, select *Discover*.
+. Enter a name for the system.
+. Select the credentials for the system.
+. Optionally, select a region. If you don't select a region, the system covers all regions.
++
+NOTE: The region does not limit discovery. Workload Factory discovers storage pools in every region for the credentials. The region you select sets what the system shows on the canvas and what Compliance and DRaaS use.
+. Click *Discover*.
 
 .Result
-
-The Console displays your discovered system on the Systems page. You can manage your storage systems in several ways, such as from Workloads in the NetApp Console and using ONTAP System Manager or using your cloud provider's storage management tools. 
+The NetApp Console shows the system on the Systems page. You can add any number of systems for the same credentials.
